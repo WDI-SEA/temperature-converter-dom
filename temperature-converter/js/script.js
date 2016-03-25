@@ -56,54 +56,61 @@ var convert = function(tempFrom, scaleFrom, scaleTo)
 
 var determineColor = function(tempFrom, scaleFrom)
 {
-	var warm;
-	var cool;
-	var warm_color;
-	var cool_color;
-	var mid_color;
+	var mappedTemp;
+	var redColor;
+	var greenColor;
+	var blueColor;
 
-	if (debug) {console.log("determineColor arguments are " + tempFrom + " " + scaleFrom);}
+	mappedTemp = Math.floor(convert(tempFrom, scaleFrom, "F"),0);
 
-	warm = convert(tempFrom, scaleFrom, "C");
-	cool = 100 - warm;
-	if (debug) {console.log("warm = " + warm + " and cool = " + cool);}
+	if (debug) {console.log("mappedTemp = " + mappedTemp);}
 
-	if(warm >= 100)
+	if (mappedTemp < 0)
 	{
-		warm_color = 255;
-		cool_color = 0;
-
-		if(debug) {console.log("case: hot");}
-
-		return "rgba(" + warm_color + ", 0, " + cool_color + ", 1)";
-		
+		redColor = 0;
+		greenColor = 0;
+		blueColor = 127;
 	}
-	else if(warm <= 0)
+	else if (mappedTemp < 32)
 	{
-		warm_color = 0;
-		cool_color = 255;
-
-		if (debug) {console.log("case: cold");}
-
-		return "rgba(" + warm_color + ", 0, " + cool_color + ", 1)";
+		redColor = 0;
+		greenColor = 0;
+		blueColor = (mappedTemp * 4) + 127;
+	}
+	else if (mappedTemp < 96)
+	{
+		redColor = 0;
+		greenColor = (mappedTemp - 32) * 4;
+		blueColor = 255;
+	}
+	else if (mappedTemp < 160)
+	{
+		redColor = (mappedTemp - 96) * 4;
+		greenColor = 255;
+		blueColor = 255 - redColor;
+	}
+	else if (mappedTemp < 224)
+	{
+		redColor = 255;
+		greenColor = 255 - ((mappedTemp - 160) * 4);
+		blueColor = 0;
+	}
+	else if (mappedTemp < 256)
+	{
+		redColor = 255 - ((mappedTemp - 224) * 4);
+		greenColor = 0;
+		blueColor = 0;
 	}
 	else
 	{
-		warm_color = Math.floor((255 * warm) / 100);
-		cool_color = Math.floor((255 * cool) / 100);
-		if (warm_color >= cool_color)
-		{
-			mid_color = Math.floor(cool_color * 1.2);
-		}
-		else
-		{
-			mid_color = Math.floor(warm_color * 1.2);
-		}
-
-		if (debug) {console.log("case: mid " + warm_color + " " + mid_color + " " + warm_color);}
-
-		return "rgba(" + warm_color + ", " + mid_color + ", " + cool_color + ", 1)";
+		redColor = 127;
+		greenColor = 0;
+		blueColor = 0;
 	}
+
+	if (debug) {console.log("rgba(" + redColor + ", " + greenColor + ", " + blueColor + ", 1)");}
+
+	return "rgba(" + redColor + ", " + greenColor + ", " + blueColor + ", 1)";
 }
 
 var getDegrees = function(convertTo)
@@ -129,6 +136,8 @@ var runIt = function()
 	var tempTo = convert(document.getElementById("input_temp").value,
 		document.getElementsByName("convert_from")[0].value,
 		document.getElementsByName("convert_to")[0].value);
+
+	tempTo = tempTo * 1; // make sure it's a number
 
 	var colorString = determineColor(document.getElementById("input_temp").value,
 		document.getElementsByName("convert_from")[0].value);
