@@ -67,14 +67,17 @@ h3 {
 
 .hot {
 background-color: red;
+opacity: .5;
 }
 
 .nice {
-background-color: lightblue;
+background-color: green;
+opacity: .5;
 }
 
 .cold {
 background-color: blue;
+opacity: .5;
 }
 
 
