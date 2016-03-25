@@ -19,7 +19,7 @@ var FahrToCels = function() {
 // 	return newTemp;
 // }
 
-convertButton.addEventListener('click', function(){
+convertButton.addEventListener('click', function(e){
 	var inputTemp = document.getElementById('inputTemp').value;
 	var outputTemp = FahrToCels(inputTemp);
 	// console.log(outputTemp);
@@ -29,7 +29,7 @@ convertButton.addEventListener('click', function(){
 })
 
 
-resetButton.addEventListener('click', function() {
+resetButton.addEventListener('click', function(e) {
 	var inputTemp = document.getElementById('inputTemp');
 	var outputTemp = document.getElementById('tempResult');
 	outputTemp.value = "";
