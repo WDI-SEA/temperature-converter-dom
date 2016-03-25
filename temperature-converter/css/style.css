@@ -1,12 +1,16 @@
 @import url(https://fonts.googleapis.com/css?family=Monofett);
 @import url(https://fonts.googleapis.com/css?family=Abel);
 
+/* Page Background */
+
 body {
   background-image: url('../mtns.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
+/* Page Header Styling */
 
 h1{
   text-align: center;
@@ -15,20 +19,21 @@ h1{
   font-size: 100px;
 }
 
+/* Value Output Area */
+
 section {
   height:200px;
   border: solid black;
   margin: 5px 5%;
 }
 
-label {
-  display
-}
+/* Form Styling */
 
 form {
-  /*margin: 0% 0% -5px 10%;*/
   display: inline-block;
 }
+
+/* Form Input Area */
 
 input {
   height: 40px;
@@ -39,6 +44,8 @@ input {
   font-family: arial;
 }
 
+/* Button Styling */
+
 button {
   margin-top: 10px;
   height: 40px;
@@ -48,11 +55,15 @@ button {
   font-size: 20px;
 }
 
+/* Output Button Styling*/
+
 h3 {
   text-align: center;
   font-size: 70px;
   font-family: arial;
 }
+
+/* Classes That I Could Not Get to Work with My JS  >:( */
 
 .hot {
 background-color: red;
