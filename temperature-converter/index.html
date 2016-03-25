@@ -10,20 +10,17 @@
     <div id="container">
         <p>Enter temperature to be converted:</p>
 
-        <div class="input-group">
-          <input type="text" class="form-control" placeholder="Temperature in F">
+        <div id="form"class="input-group">
+          <input id="field" type="text" class="form-control" placeholder="Enter Temperature">
           <span class="input-group-btn">
             <button class="btn btn-primary" id="submit" type="submit">Convert</button>
           </span>
-          <span class="input-group-btn">
-            <button class="btn btn-danger hidden" id="clear" type="submit"> Clear </button>
-          </span>
         </div><!-- /input-group -->
         <div id="options">
-            <ul class="nav nav-pills">
-              <li id="toF" role="presentation" class="active"><a href="#"> to F </a></li>
-              <li id="toC" role="presentation"><a href="#"> to C </a></li>
-              <li id="clear" ><a href="#"> Reset </a></li>
+            <ul id="options-list" class="nav nav-pills">
+              <li id="toC" role="presentation"  class="active"><a href="#"> to C </a></li>
+              <li id="toF" role="presentation"><a href="#"> to F </a></li>
+              <li id="clear" role="presentation"><a href="#"> Reset </a></li>
             </ul>
         </div>
         </form>
@@ -32,6 +29,7 @@
             <h1 id="temp"></h1>
         </div>
     </div>
+    <script src="js/script.js"></script>
 </body>
 </html>
 <form>

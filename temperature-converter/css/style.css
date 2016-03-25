@@ -12,6 +12,7 @@ p {
 li {
 	margin: 0px 10px 0px 0px;
 	border-radius: 5px;
+	text-align: center;
 }
 
 #container {
@@ -30,14 +31,18 @@ li {
 }
 
 #toF {
+	width: 65px;
 	background-color: #CDCED1;
 }
 #toC {
+	width: 65px;
 	background-color: #CDCED1;
 }
 #clear {
 	background-color: #FA1E43;
 	color: white;
+	width: 80px;
+	text-align: center;
 }
 #clear a {
 	color: white;
