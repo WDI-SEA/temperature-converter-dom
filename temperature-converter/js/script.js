@@ -5,5 +5,3 @@ function fToC(fahrenheit)
   var message = fTemp+'\xB0F is ' + fToCel + '\xB0C.';  
     console.log(message);  
 }   
-cToF(60);  
-fToC(45);  
