@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fahrenheit-Celsius Converter</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <p>Enter temp. Select units:</p>
+    <form id="idForm">
+      <input type="radio" name="unit" id="idF" value="F" checked/>F
+      <input type="radio" name="unit" id="idC" value="C" />C<br/>Enter temp
+      <input              name="temp" id="temp" />
+      <div id="idDiv">
+        <p id="idOut">
+      </div>
+      <input type="button" id= "calc" value="Calculate" onclick="convert()"</button>
+      <input type="button" id= "clear" value="Reset"</button>
+    </form>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
