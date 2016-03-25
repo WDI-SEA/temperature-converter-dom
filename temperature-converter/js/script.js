@@ -24,6 +24,8 @@ document.getElementById('form').addEventListener('submit',function(event) {
 document.getElementById('clear').addEventListener('click',function() {
   event.preventDefault();
   document.getElementById('displayNewTemp').innerHTML="";
+  document.getElementById('input').value ="";
+
 });
 
 
