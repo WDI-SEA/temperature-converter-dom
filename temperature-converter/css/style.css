@@ -1,0 +1,21 @@
+
+
+
+
+
+div {
+	border: 1px solid black;
+}
+
+h1 {
+	margin-top: 10%;
+	text-align: center;
+	color: red;
+	width: 100%;
+}
+
+#tempConvert {
+	margin-top: 15%;
+	text-align: center;
+
+}
