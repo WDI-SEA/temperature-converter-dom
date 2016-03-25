@@ -2,3 +2,10 @@ body {
 	background-color: gray;
 	margin: 0 auto;
 }
+
+#submit_button {
+	height: 100px;
+	width: 200px;
+	border: 2px;
+	background-color: red;
+}

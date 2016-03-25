@@ -12,22 +12,33 @@
 	</div>
 
 	<div id = "div_middle">
-		<div id = "div_prompt">
-			Please enter a temperature
-		</div>
+		<form>
+			<div id = "div_prompt">
+				Input:
+				<input id="input_temp" type="number" placeholder="temperature"/>
+			</div>
 
-		<div id = "div_input">
-			<form>
-				<input type="number" placeholder="temperature"/>
-				<select name="scale">
+			<div id = "div_input">
+				<select name="convert_from">
 					<option value="C"> Celcius </option>
 					<option value="F"> Fahrenheit </option>
 					<option value="K"> Kelvin </option>
 				</select>
-				<input type="submit"/>
-			</form>
+				to
+				<select name="convert_to">
+					<option value="C"> Celcius </option>
+					<option value="F"> Fahrenheit </option>
+					<option value="K"> Kelvin </option>
+				</select>
+				<div id="submit_button">Submit</div>
+			</div>
+		</form>
+		<div>
+			Output:
+			<div id="div_output">
+			</div>
 		</div>
 	</div>
-
+    <script src="js/script.js"></script>
 </body>
 </html>
