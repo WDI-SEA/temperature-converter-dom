@@ -5,11 +5,15 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-    <h1>Welcome to the Temperature converter</h1>
-    <p>Enter a temperature in Fahrenheit and convert it to Celcius! Soooooo much fun!!!!</p>
-    <input type="number" id="temperature-input"></input>
-    <button type="submit" id="convert-button">Convert!</button>
-    <div id="result-output">______ degrees Celcius</div>
-    <script type="text/javascript" src="js/script.js"></script>
+    <div id="container">
+        <h1>Welcome to the Temperature converter</h1>
+        <p>Enter a temperature in Fahrenheit and convert it to Celcius! Soooooo much fun!!!!</p>
+        <form id="converter">
+            <input type="number" id="temperature-input"></input>
+            <button type="submit" id="convert-button">Convert!</button>
+            <div id="result-output"></div>
+        </form>
+        <script type="text/javascript" src="js/script.js"></script>
+    </div>
 </body>
 </html>
