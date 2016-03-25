@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Temp Converter</title>
+</head>
+	<link rel="stylesheet" href="css/style.css">
+<body>
+	<p>Convert a temperature:</p>
+	<form class="converter">
+		<div id=CTF>
+			<input id="c"> degrees Celsius
+		</div>
+	</form>
+		<button onclick="convert('C')">Convert to Fahrenheit!</button> 
+	<form class ="converter">
+		<div id=FTC>
+			<input id="f"> degrees Fahrenheit
+		</div>
+	</form>
+		<button onclick="convert('F')">Convert to Celsius!</button>
+	<form class="converter">
+		<div id="cleartemp">
+			<button onclick="clear()">Clear</button>
+		</div>
+	</form>
+	<script src="js/script.js"></script>
+</body>
+</html>
