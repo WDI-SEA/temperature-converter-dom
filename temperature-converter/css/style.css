@@ -1,0 +1,46 @@
+body {
+  background: gray;
+}
+
+h1 {
+  color: blue;
+  text-align: center;
+  margin-top: 50px;
+}
+
+div {
+  width: 500px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+form {
+  float: left;
+  margin-left: 200px;
+  display: center;
+}
+
+
+#input {
+  margin: 10px;
+}
+#submit {
+  float: right;
+  margin-right: 200px;
+}
+
+#reset{
+/*  margin-right:px;*/
+  float: right;
+}
+
+#output {
+  width: 60px;
+  height: 30px;
+  border: solid black;
+  margin-top: 50px;
+  margin-right: -70px;
+  text-align: center;
+  font-size: 30px;
+  float: right;
+}
