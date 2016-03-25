@@ -1,4 +1,4 @@
-.container {
+#container {
   margin: 0 auto;
   height: 50%;
   width: 75%;
@@ -7,3 +7,13 @@
   position: relative;
 }
 
+#gradient{
+  background: linear-gradient(330deg, red 0%, gray 50%, blue 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+#center {
+  margin: 0 auto;
+}
