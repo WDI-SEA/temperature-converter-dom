@@ -9,8 +9,22 @@ var generateCel = function (){
 		return; 
 	}
 	document.getElementById("temp_converter").value= convertFToC(Degree);
+	// if (convertFToC(degree)<=0){
+	// 	document.getElementById('background-color')[grey]=blue;
+	// } else if (convertFToC(degree)>100){
+	// 	document.getElementById('background-color')[grey]=red;
+	// } else {
+	// 	return;
+	// }
 }
 
 var clear_degrees =function () {
 	document.getElementById("temp_converter").value='';
+}
+
+var temp_cel =convertFToC(Degree)
+var colorChange = function() {
+	if (temp_cel<0) {
+		
+	}
 }
