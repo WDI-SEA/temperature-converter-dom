@@ -1,6 +1,5 @@
 var debug = true;
 
-var buttonClick = document.getElementById("div_submit_button");
 var changeNumber = document.getElementById("input_temp");
 var changeSelectionFrom = document.getElementsByName("convert_from")[0];
 var changeSelectionTo = document.getElementsByName("convert_to")[0];
@@ -120,11 +119,6 @@ var runIt = function()
 	document.getElementById("div_output").innerHTML = " " + tempTo + " degrees " + document.getElementsByName("convert_to")[0].value;
 	document.getElementById("div_left").style.backgroundColor = colorString;
 }
-
-buttonClick.addEventListener("click", function(){
-	runIt();
-	if (debug) {console.log("Used click");}
-});
 
 changeNumber.addEventListener("keyup", function(){
 	if (debug) {console.log("Used keyup");}
