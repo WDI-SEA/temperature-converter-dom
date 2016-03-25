@@ -19,6 +19,16 @@ document.getElementById('form').addEventListener('submit',function(event) {
   var inputReceived = document.getElementById('input').value;
   var valConversion = fToC(inputReceived);
   document.getElementById('displayNewTemp').innerHTML=valConversion;
+
+  if(inputReceived >= 85) {
+    console.log("its hot out!");
+  } else if (inputReceived <= 84 && inputReceived > 40) {
+    console.log("its nice out");
+  } else if (inputReceived <= 40) {
+    console.log("its cold");
+  } else {
+    console.log("I hope this message never shows.");
+  }
 });
 
 // When the clear button is pressed, clear out the input field
