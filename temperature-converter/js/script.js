@@ -106,17 +106,38 @@ var determineColor = function(tempFrom, scaleFrom)
 	}
 }
 
+var getDegrees = function(convertTo)
+{
+	if (debug) {console.log("convertTo = " + convertTo)}
+
+	if (convertTo === "C")
+	{
+		return "&#x2103";
+	}
+	else if (convertTo === "F")
+	{
+		return "&#x2109";
+	}
+	else // convertTo === K
+	{
+		return "K";
+	}
+}
+
 var runIt = function()
 {
 	var tempTo = convert(document.getElementById("input_temp").value,
 		document.getElementsByName("convert_from")[0].value,
 		document.getElementsByName("convert_to")[0].value);
+
 	var colorString = determineColor(document.getElementById("input_temp").value,
 		document.getElementsByName("convert_from")[0].value);
 
+	var degrees = getDegrees(document.getElementsByName("convert_to")[0].value);
+
 	if (debug) {console.log("tempTo = " + tempTo + " and colorString " + colorString);}
 
-	document.getElementById("div_output").innerHTML = " " + tempTo + " degrees " + document.getElementsByName("convert_to")[0].value;
+	document.getElementById("div_output").innerHTML = " " + tempTo.toFixed(2) + " " + degrees;
 	document.getElementById("div_left").style.backgroundColor = colorString;
 }
 
@@ -135,3 +156,4 @@ changeSelectionTo.addEventListener("change", function(){
 	if (debug) {console.log("Used convert_to");}
 });
 
+runIt();
