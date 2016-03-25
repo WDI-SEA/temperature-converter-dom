@@ -1,7 +1,15 @@
+
+
+body {
+  background-image: url('../mtns.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 section {
   height:200px;
-  width: 100%;
   border: solid black;
+  margin: 15% 10%;
 }
 
 .hot {
@@ -15,3 +23,5 @@ background-color: lightblue;
 .cold {
 background-color: blue;
 }
+
+
