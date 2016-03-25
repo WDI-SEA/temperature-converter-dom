@@ -3,25 +3,26 @@
 <head>
   <title>Temperature Conversion</title>
    <link rel="stylesheet" type="text.css" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Inknut+Antiqua:400,800' rel='stylesheet' type='text/css'>
 </head>
 <body>
-  <div id="container"> 
-    <div id="center">
+
+  <div id="container">
+    <div id="text">
       <h1 id="gradient">I have no idea how hot that is</h1>
-      <h3>a temperature converter for dumb Americans</h3>
-
-
-      <p id="message"></p>
-
-
+      <h3>a temperature converter for Americans</h3>
       <form>
         <input  name="fahrenheit" id="fahrenheit" type="text" placeholder="fahrenheit to celcius" />   
-        <button type="button" onClick="fToC();">convert</button>
+        <button type="button" value="PLAY" onClick="fToC();">convert</button>
         <button type="reset">clear</button>
       </form>
+      <p>According to every other country in the world, the temperature currently is:</p>
+      <p id="message"></p>
     </div>
-    </div>
+  </div>
 
+<!--   <audio id="audio" src="http://vocaroo.com/i/s0DgTbaFBygQ"></audio>
+  My attempt at getting the national anthem to play sarcastically whenever the page loads-->
 
 
   <script src="js/script.js"></script>
