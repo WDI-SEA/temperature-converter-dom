@@ -5,9 +5,10 @@ document.getElementById('button1').addEventListener('click', function() {
 
         var cTempVal = (fTempVal - 32) * (5 / 9);
         console.log(cTempVal);
-        document.getElementById('output').textContent = cTempVal;
+        document.getElementById('output').textContent = Math.round(cTempVal);
 
     }
+
 
     convertToC();
 
