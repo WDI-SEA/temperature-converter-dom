@@ -19,6 +19,7 @@ document.getElementById('form').addEventListener('submit',function(event) {
   //var Cel = fToC(fTemp);
   console.log('input received= '+ inputReceived);
   console.log('val conversion received= '+ valConversion);
+  document.getElementById('displayNewTemp').innerHTML=valConversion;
 });
 
 
