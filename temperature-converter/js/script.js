@@ -1,6 +1,9 @@
 var debug = true;
 
 var buttonClick = document.getElementById("div_submit_button");
+var changeNumber = document.getElementById("input_temp");
+var changeSelectionFrom = document.getElementsByName("convert_from")[0];
+var changeSelectionTo = document.getElementsByName("convert_to")[0];
 
 var convert = function(tempFrom, scaleFrom, scaleTo)
 {
@@ -21,7 +24,7 @@ var convert = function(tempFrom, scaleFrom, scaleTo)
 		else //scaleTo === K
 		{
 			if (debug) {console.log("C to K");}
-			return tempFrom + 273;
+			return tempFrom * 1 + 273;
 		}
 	}
 	else if (scaleFrom === "F")
@@ -104,7 +107,8 @@ var determineColor = function(tempFrom, scaleFrom)
 	}
 }
 
-buttonClick.addEventListener("click",function(){
+var runIt = function()
+{
 	var tempTo = convert(document.getElementById("input_temp").value,
 		document.getElementsByName("convert_from")[0].value,
 		document.getElementsByName("convert_to")[0].value);
@@ -115,5 +119,25 @@ buttonClick.addEventListener("click",function(){
 
 	document.getElementById("div_output").innerHTML = " " + tempTo + " degrees " + document.getElementsByName("convert_to")[0].value;
 	document.getElementById("div_left").style.backgroundColor = colorString;
+}
+
+buttonClick.addEventListener("click", function(){
+	runIt();
+	if (debug) {console.log("Used click");}
+});
+
+changeNumber.addEventListener("keyup", function(){
+	if (debug) {console.log("Used keyup");}
+	runIt();
+});
+
+changeSelectionFrom.addEventListener("change", function(){
+	runIt();
+	if (debug) {console.log("Used convert_from");}
+});
+
+changeSelectionTo.addEventListener("change", function(){
+	runIt();
+	if (debug) {console.log("Used convert_to");}
 });
 
