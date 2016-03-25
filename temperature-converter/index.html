@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Temperature Converter</title>
+</head>
+<body>
+    <div id="container">
+        <p>Enter temperature to be converted:</p>
+
+        <div id="form"class="input-group">
+        <!-- <form> -->
+          <input id="field" type="text" class="form-control" placeholder="Enter Temperature">
+          <span class="input-group-btn">
+            <button class="btn btn-primary" id="submit" type="submit">Convert</button>
+          </span>
+          <!-- </form> -->
+        </div>
+        <div id="options">
+            <ul id="options-list" class="nav nav-pills">
+              <li id="toC" role="presentation"  class="active"><a href="#"> to C </a></li>
+              <li id="toF" role="presentation"><a href="#"> to F </a></li>
+              <li id="clear" role="presentation"><a href="#"> Reset </a></li>
+            </ul>
+        </div>
+        <div class="hidden" id="result">
+            <p>The temperature is:</p>
+            <p id="temp"></p>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
+<form>
+  

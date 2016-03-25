@@ -1,0 +1,99 @@
+body {
+	background-color: #E3E5E8;
+	margin: 0;
+}
+
+p {
+	margin-bottom: 10px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+li {
+	margin: 0px 10px 0px 0px;
+	border-radius: 5px;
+	text-align: center;
+}
+form {
+	display: inline-block;
+}
+
+#container {
+	margin: 0 auto;
+	width: 310px;
+	margin-top: 30%;
+}
+
+#submit {
+	float: right;
+}
+
+#options {
+	margin: 0 auto;
+	margin-top: 10px;
+}
+
+#toF {
+	width: 65px;
+	background-color: #CDCED1;
+}
+#toC {
+	width: 65px;
+	background-color: #CDCED1;
+}
+#clear {
+	background-color: #FA1E43;
+	color: white;
+	width: 80px;
+	text-align: center;
+}
+#clear a {
+	color: white;
+}
+#clear a:hover {
+	color: black;
+}
+#clear a:focus {
+	color: black;
+}
+
+#result {
+	text-align: center;
+	margin-top: 35px;
+	padding: 10px 0px;
+	border-radius: 5px;
+}
+
+#result p {
+	font-family: Helvetica;
+	/*padding: 5px 0px;*/
+	font-size: 24px;
+	color: white;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+.gray {
+	background-color: gray;
+}
+.cool {
+	background-color: #90caf9;
+}
+.cold {
+	background-color: #64b5f6;
+}
+.freezing {
+	background-color: #2962ff;
+}
+.warm {
+	background-color: #ef9a9a;
+}
+.hot {
+	background-color: #e57373;
+}
+.scorching {
+	background-color: #f44336
+}
+
