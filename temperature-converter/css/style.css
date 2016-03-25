@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Monofett);
+@import url(https://fonts.googleapis.com/css?family=Abel);
 
 body {
   background-image: url('../mtns.jpg');
@@ -17,7 +18,7 @@ h1{
 section {
   height:200px;
   border: solid black;
-  margin: 15% 10%;
+  margin: 5px 5%;
 }
 
 label {
@@ -34,12 +35,17 @@ input {
   width: 200px;
   border-radius: 15px;
   display: block;
+  font-size: 30px;
+  font-family: arial;
 }
 
 button {
   margin-top: 10px;
-  height: 30px;
+  height: 40px;
   opacity: .8;
+  background-color: transparent;
+  font-family: abel;
+  font-size: 20px;
 }
 
 h3 {
