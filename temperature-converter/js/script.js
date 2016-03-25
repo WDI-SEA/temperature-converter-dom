@@ -22,12 +22,19 @@ document.getElementById("submit").addEventListener("click", function(){
    console.log(temperatureC); 
    document.getElementById("output").textContent = Math.round(temperatureC);
  }
- //tried to add color here - does not work
-  // if (document.getElementById("output").textContent < 0) {
-  //   document.getElementById("output").textContent.style.backgroundColor ="red";
-  // }
+
  convertToC();
+ // console.log("I'm calling the function convertToC :" + convertToC());
+ //tried to add color here - only does red
+  if (document.getElementById("output").textContent < 0) {
+    document.getElementById("output").style.backgroundColor ="blue";
+  } else {
+     document.getElementById("output").style.backgroundColor ="red";
+  }
+
+
 });
+
 
 //textContent => calls output and anything else but value
 // .value is for input only

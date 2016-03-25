@@ -8,6 +8,12 @@ h1 {
   margin-top: 50px;
 }
 
+div {
+  width: 500px;
+  height: 300px;
+  margin: 0 auto;
+}
+
 form {
   float: left;
   margin-left: 200px;
@@ -15,23 +21,26 @@ form {
 }
 
 
-  #input {
-  margin: 10px
+#input {
+  margin: 10px;
+}
+#submit {
+  float: right;
+  margin-right: 200px;
 }
 
 #reset{
-  margin-right: 10px;
-}
-
-.div.output {
-  text-align: center;
+/*  margin-right:px;*/
+  float: right;
 }
 
 #output {
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 30px;
   border: solid black;
-  margin: 0 auto;
-  display: center;
-  margin-top: 100px;
+  margin-top: 50px;
+  margin-right: -70px;
+  text-align: center;
+  font-size: 30px;
+  float: right;
 }
