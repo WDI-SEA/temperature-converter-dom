@@ -1,0 +1,83 @@
+@import url(https://fonts.googleapis.com/css?family=Monofett);
+@import url(https://fonts.googleapis.com/css?family=Abel);
+
+/* Page Background */
+
+body {
+  background-image: url('../mtns.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Page Header Styling */
+
+h1{
+  text-align: center;
+  margin:5% 0% 5% 0%;
+  font-family: monofett;
+  font-size: 100px;
+}
+
+/* Value Output Area */
+
+section {
+  height:200px;
+  border: solid black;
+  margin: 5px 5%;
+}
+
+/* Form Styling */
+
+form {
+  display: inline-block;
+}
+
+/* Form Input Area */
+
+input {
+  height: 40px;
+  width: 200px;
+  border-radius: 15px;
+  display: block;
+  font-size: 30px;
+  font-family: arial;
+}
+
+/* Button Styling */
+
+button {
+  margin-top: 10px;
+  height: 40px;
+  opacity: .8;
+  background-color: transparent;
+  font-family: abel;
+  font-size: 20px;
+}
+
+/* Output Button Styling*/
+
+h3 {
+  text-align: center;
+  font-size: 70px;
+  font-family: arial;
+}
+
+/* Classes That I Could Not Get to Work with My JS  >:( */
+
+.hot {
+background-color: red;
+opacity: .5;
+}
+
+.nice {
+background-color: green;
+opacity: .5;
+}
+
+.cold {
+background-color: blue;
+opacity: .5;
+}
+
+
