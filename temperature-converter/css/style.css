@@ -1,4 +1,6 @@
 body {
 	background-color: lightblue;
-	width: 500px;
+	float: left;
+	padding-left: 5%;
+	padding-top: 5%;
 }
