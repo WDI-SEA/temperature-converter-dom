@@ -1,0 +1,58 @@
+body {
+	background-color: #E3E5E8;
+	margin: 0;
+}
+
+p {
+	margin-bottom: 10px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+li {
+	margin: 0px 10px 0px 0px;
+	border-radius: 5px;
+}
+
+#container {
+	margin: 0 auto;
+	width: 310px;
+	margin-top: 30%;
+}
+
+#submit {
+	float: right;
+}
+
+#options {
+	margin: 0 auto;
+	margin-top: 10px;
+}
+
+#toF {
+	background-color: #CDCED1;
+}
+#toC {
+	background-color: #CDCED1;
+}
+#clear {
+	background-color: #FA1E43;
+	color: white;
+}
+#clear a {
+	color: white;
+}
+#clear a:hover {
+	color: black;
+}
+
+#results {
+	margin-top: 65px;
+	height: 50px;
+	background-color: blue;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
