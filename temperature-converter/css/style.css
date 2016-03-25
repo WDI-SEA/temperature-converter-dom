@@ -1,32 +1,53 @@
+body {
+  background: url("../img/woodbg.jpg")
+}
+
+
 #container {
   position: relative;
   margin: 0 auto;
   width: 960px;
 }
 
+#format-box {
+  position: absolute;
+  left: 242px;
+  top: 132px;
+  height: 175px;
+  width: 500px;
+  background-color: rgba(204, 204, 204, .5);
+}
+
 #templabelandinput {
   position: absolute;
-  left: 39%;
+  left: 427px;
   top: 200px;
+}
+
+#radio-buttons {
+  position: absolute;
+  left: 440px;
+  top: 165px;
 }
 
 #submit {
   position: absolute;
   left: 42%;
-  top: 230px;
+  top: 270px;
 }
 
 #clear {
   position: absolute;
   left: 55%;
-  top: 230px;
+  top: 270px;
 }
 
 #conversion {
   position: absolute;
   left: 41%;
-  top: 260px;
+  top: 230px;
   width: 200px;
-  height: 40px;
+  height: 20px;
+  font-weight: bold;
   text-align: center;
 }
