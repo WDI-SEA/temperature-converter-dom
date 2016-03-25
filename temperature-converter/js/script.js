@@ -20,7 +20,7 @@ celToFar = function(event) {
 			document.body.style['background-color'] = 'orange';
 		} else {
 			console.log('Man this is a nice temp.... unless its still hot....');
-			document.body.style['background-color'] = 'white';
+			document.body.style['background-color'] = 'rgb(144, 237, 235)';
 		}
 	}
 }
@@ -54,7 +54,7 @@ farToC = function(event) {
 			console.log("why\'s it sooo stinking hot!")
 		} else {
 			console.log('Man this is a nice temp.... unless its still hot....');
-			document.body.style['background-color'] = 'white';
+			document.body.style['background-color'] = 'rgb(144, 237, 235)';
 		}	
 	}
 }
@@ -85,7 +85,7 @@ celkv = function(event) {
 			console.log("why\'s it sooo stinking hot!")
 		} else {
 			console.log('Man this is a nice temp.... unless its still hot....');
-			document.body.style['background-color'] = 'white';
+			document.body.style['background-color'] = 'rgb(144, 237, 235)';
 		}	
 	}
 }
@@ -118,7 +118,7 @@ farkv = function(event) {
 			console.log("why\s it sooo stinking hot!")
 		} else {
 			console.log('Man this is a nice temp.... unless its still hot....');
-			document.body.style['background-color'] = 'white';
+			document.body.style['background-color'] = 'rgb(144, 237, 235)';
 		}	
 	}
 }
@@ -151,7 +151,7 @@ kelvinc = function(event) {
 			console.log("why\s it sooo stinking hot!")
 		} else {
 			console.log('Man this is a nice temp.... unless its still hot....');
-			document.body.style['background-color'] = 'white';
+			document.body.style['background-color'] = 'rgb(144, 237, 235)';
 		}	
 	}
 }
@@ -183,7 +183,7 @@ kelvinf = function(event) {
 			console.log("why\s it sooo stinking hot!")
 		} else {
 			console.log('Man this is a nice temp.... unless its still hot....');
-			document.body.style['background-color'] = 'white';
+			document.body.style['background-color'] = 'rgb(144, 237, 235)';
 		}	
 	}
 }
