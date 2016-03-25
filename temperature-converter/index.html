@@ -2,21 +2,22 @@
 <html>
 <head>
   <title>getElementById example</title>
-  <script>
-  function changeTemp(newTemp) {
-    var F = document.getElementById("para1");
-    elem.style.color = newColor;
-  }
-  </script>
+  
+  // function changeTemp(newTemp) {
+  //   var F = document.getElementById("para1");
+  //   elem.style.color = newColor;
+  // }
 </head>
 <body>
   <div>
-    <button id="Clear" type="button" "reset">Clear</button>
-    <label for="temp_converter">Temperature-Converter:
-      <input id="temp_converter" type="number" placeholder="Degrees"/>
-    </label>
-      <button id="Convert" type="button">Convert</button>
-  </div>
+    <form id='Degree-form' method='post' action="demo_form.asp" >
+      <button id="Clear" type="button" "reset">Clear</button>
+      <label for="temp_converter">Temperature-Converter:
+        <input id="temp_converter" type="number" placeholder="Degrees"/>
+      </label>
+       <button id="Convert" type="button">Convert</button>
+    </div>
+    <script src="script.js"></script>
  <!--  <button onclick="changeColor('blue');">blue</button>
   <button onclick="changeColor('red');">red</button> -->
 </body>
