@@ -2,7 +2,6 @@ body {
   background: url("../img/woodbg.jpg")
 }
 
-
 #container {
   position: relative;
   margin: 0 auto;
@@ -10,8 +9,9 @@ body {
 }
 
 #format-box {
-  position: absolute;
-  left: 242px;
+  position: relative;
+  /*left: 242px;*/
+  margin: 0 auto;
   top: 132px;
   height: 175px;
   width: 500px;
