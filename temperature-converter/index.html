@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DOM</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="container">
+    <div id="format-box"></div>
+      <div id="templabelandinput">
+        <input type="text" id="userinput" name="temperature">
+      </div>
+      <div id="radio-buttons">
+        <label>
+          <input name="system" type="radio" id="f-radio" value="fahrenheit" /> 
+            to f
+        </label>  
+        <label>
+          <input name="system" type="radio" id="c-radio" value="celsius" checked/> 
+            to C
+        </label>
+      </div>
+      <input type="submit" id='submit' value="Submit">
+      <input type="reset" id='clear' value="Clear">
+      <div id="conversion"></div>   
+  </div>  
+<script src="js/script.js"></script>
+</body>
+</html>
+
