@@ -16,6 +16,14 @@ var generateCel = function (){
 	// } else {
 	// 	return;
 	// }
+document.getElementById("temp_converter").addEventListener("click", function() {
+ // trying to debug clickEvent
+ //   	if (convertFToC(degree)<=0){
+	// 	document.getElementById('background-color')[grey]=blue;
+	// } else if (convertFToC(degree)>100){
+	// 	document.getElementById('background-color')[grey]=red;
+	// } else {
+	// 	return;
 }
 
 var clear_degrees =function () {
