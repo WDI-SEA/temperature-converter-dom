@@ -12,13 +12,15 @@
 	</div>
 
 	<div id = "div_middle">
-		<form>
-			<div id = "div_prompt">
+		<div id = "div_left">
+		</div>
+		<div id = "div_right">
+			<div id = "div_input">
 				Input:
-				<input id="input_temp" type="number" placeholder="temperature"/>
+				<input id="input_temp" type="number" placeholder="75"/>
 			</div>
 
-			<div id = "div_input">
+			<div id = "div_switch">
 				<select name="convert_from">
 					<option value="C"> Celcius </option>
 					<option value="F"> Fahrenheit </option>
@@ -30,12 +32,14 @@
 					<option value="F"> Fahrenheit </option>
 					<option value="K"> Kelvin </option>
 				</select>
-				<div id="submit_button">Submit</div>
 			</div>
-		</form>
-		<div>
-			Output:
+
+			<div id="submit_button">
+				Submit
+			</div>
+			
 			<div id="div_output">
+				Output: 75 degrees C
 			</div>
 		</div>
 	</div>

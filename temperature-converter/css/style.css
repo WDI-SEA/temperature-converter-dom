@@ -1,11 +1,45 @@
 body {
 	background-color: gray;
+}
+
+div {
 	margin: 0 auto;
+	text-align: center;
+}
+
+#div_top{
+	background-color: red;
+}
+
+#div_middle{
+	background-color: orange;
+}
+
+#div_left{
+	background-color: yellow;
+	height: 400px;
+	width: 50%;
+	float: left;
+}
+
+#div_right{
+	background-color: green;
+	height: 400px;
+	width: 50%;
+	float: right;
+}
+
+#div_input{
+	margin: 30px 0 0 0;
+}
+
+#div_switch{
+	margin: 30px 0 30px 0;
 }
 
 #submit_button {
 	height: 100px;
 	width: 200px;
 	border: 2px;
-	background-color: red;
+	background-color: blue;
 }
