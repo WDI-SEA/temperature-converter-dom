@@ -4,6 +4,8 @@ var buttonClick = document.getElementById("submit_button");
 
 var convert = function(tempFrom, scaleFrom, scaleTo)
 {
+	if (debug) {console.log("Arguments are " + tempFrom + " " + scaleFrom + " " + scaleTo);}
+
 	if(scaleFrom === scaleTo)
 	{
 		if (debug){console.log("scaleFrom === scaleTo");}
@@ -51,11 +53,11 @@ var convert = function(tempFrom, scaleFrom, scaleTo)
 }
 
 buttonClick.addEventListener("click",function(){
-	var tempTo = convert(document.getElementById("input_temp"),
+	var tempTo = convert(document.getElementById("input_temp").value,
 		document.getElementsByName("convert_from")[0].value,
 		document.getElementsByName("convert_to")[0].value);
 
-	console.log("Got tempTo!");
+	if (debug){console.log("tempTo = " + tempTo);}
 
 	document.getElementById("div_output").innerHTML = " " + tempTo + " degrees " + document.getElementsByName("convert_to")[0].value;
 })
