@@ -11,11 +11,13 @@
         <p>Enter temperature to be converted:</p>
 
         <div id="form"class="input-group">
+        <!-- <form class="form-inline"> -->
           <input id="field" type="text" class="form-control" placeholder="Enter Temperature">
           <span class="input-group-btn">
             <button class="btn btn-primary" id="submit" type="submit">Convert</button>
           </span>
-        </div><!-- /input-group -->
+          <!-- </form> -->
+        </div>
         <div id="options">
             <ul id="options-list" class="nav nav-pills">
               <li id="toC" role="presentation"  class="active"><a href="#"> to C </a></li>
@@ -23,7 +25,6 @@
               <li id="clear" role="presentation"><a href="#"> Reset </a></li>
             </ul>
         </div>
-        </form>
         <div class="hidden" id="result">
             <p>The temperature is:</p>
             <p id="temp"></p>

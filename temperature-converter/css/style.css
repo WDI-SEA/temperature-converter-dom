@@ -14,6 +14,9 @@ li {
 	border-radius: 5px;
 	text-align: center;
 }
+form {
+	display: inline-block;
+}
 
 #container {
 	margin: 0 auto;
@@ -50,12 +53,14 @@ li {
 #clear a:hover {
 	color: black;
 }
+#clear a:focus {
+	color: black;
+}
 
 #result {
 	text-align: center;
 	margin-top: 35px;
 	padding: 10px 0px;
-	background-color: blue;
 	border-radius: 5px;
 }
 
@@ -68,5 +73,15 @@ li {
 
 .hidden {
 	visibility: hidden;
+}
+
+.blue {
+	background-color: blue;
+}
+.red {
+	background-color: red;
+}
+.gray {
+	background-color: gray;
 }
 
