@@ -1,4 +1,4 @@
-
+@import url(https://fonts.googleapis.com/css?family=Monofett);
 
 body {
   background-image: url('../mtns.jpg');
@@ -9,7 +9,9 @@ body {
 
 h1{
   text-align: center;
-  margin:10% 0% 5% 0%;
+  margin:5% 0% 5% 0%;
+  font-family: monofett;
+  font-size: 100px;
 }
 
 section {
