@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Temperature Converter</title>
+	<link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+	<div id = "div_top">
+		<h1>
+			Temperature Converter
+		</h1>
+	</div>
+
+	<div id = "div_middle">
+		<div id = "div_left">
+		</div>
+		<div id = "div_right">
+			<div id = "div_input_label" class="right_divs">
+				Input:
+			</div>
+
+			<div id = "div_input" class="right_divs">
+				<input id="input_temp" type="number" step="0.1" value="25"/>
+			</div>
+
+			<div id = "div_switch" class="right_divs">
+				<select name="convert_from">
+					<option value="C"> Celcius </option>
+					<option value="F"> Fahrenheit </option>
+					<option value="K"> Kelvin </option>
+				</select>
+				to
+				<select name="convert_to">
+					<option value="F"> Fahrenheit </option>
+					<option value="C"> Celcius </option>
+					<option value="K"> Kelvin </option>
+				</select>
+			</div>
+			
+			<div id = "div_output_label" class="right_divs">
+				Output:
+			</div>
+
+			<div id="div_output" class="right_divs">
+				75 degrees C
+			</div>
+		</div>
+	</div>
+    <script src="js/script.js"></script>
+</body>
+</html>
