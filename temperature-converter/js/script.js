@@ -4,12 +4,13 @@ var convertFToC = function(degrees_f){
 	}
 
 var generateCel = function (){
-	// if(document.querySelector('Degree-form') >0){
-	// 	return; 
-	// }
-		var Degree=document.getElementById("temp_converter").value;
-	Degree= convertFToC(Degree);
-	alert(Degree);
+	var Degree=document.getElementById("temp_converter").value;
+	if(Degree ==null ){
+		return; 
+	}
+	document.getElementById("temp_converter").value= convertFToC(Degree);
 }
 
-
+var clear_degrees =function () {
+	document.getElementById("temp_converter").value='';
+}

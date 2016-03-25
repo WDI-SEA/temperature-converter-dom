@@ -2,21 +2,19 @@
 <html>
 <head>
   <title>getElementById example</title>
+  <link rel= "stylesheet" href="./css/style.css">
 </head>
 <body>
  <script src="js/script.js"></script>
   <div>
-    <form id='Degree-form' method='post' >
-      <button id="Clear" type="button" "reset" onclick="generateCel()">Clear</button>
+    <form id='Degree-form' >
+      <button id="Clear" type="button" onclick="clear_degrees()">Clear</button>
       <label for="temp_converter">Temperature-Converter:
         <input id="temp_converter" type="number" placeholder="Degrees" value=0>
-
       </label>
-    </form>
+  
        <button id="Convert" type="button" onclick="generateCel()">Convert</button>
+     </form>
     </div>
-   
- <!--  <button onclick="changeColor('blue');">blue</button>
-  <button onclick="changeColor('red');">red</button> -->
 </body>
 </html>
