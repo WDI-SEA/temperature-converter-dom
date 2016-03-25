@@ -14,20 +14,22 @@
 document.getElementById("submit").addEventListener("click", function(){
   //empty function
   function convertToC() {
- var tempF = document.getElementById("input").value; 
-  console.log(tempF);
-  
+   var tempF = document.getElementById("input").value; 
+   console.log(tempF);
 
-    var temperatureC = (tempF - 32) * (5 / 9);
-       console.log(temperatureC); 
-   document.getElementById("output").textContent = temperatureC;
+
+   var temperatureC = (tempF - 32) * (5 / 9);
+   console.log(temperatureC); 
+   document.getElementById("output").textContent = Math.round(temperatureC);
  }
- 
+ //tried to add color here - does not work
+  // if (document.getElementById("output").textContent < 0) {
+  //   document.getElementById("output").textContent.style.backgroundColor ="red";
+  // }
  convertToC();
 });
 
 //textContent => calls output and anything else but value
-
 // .value is for input only
 // .textContent is for anything else
 
@@ -36,10 +38,5 @@ document.getElementById("submit").addEventListener("click", function(){
 document.getElementById("reset").addEventListener("click", function(){
   document.getElementById('input').value ="";
   document.getElementById('output').textContent ="";
-  
 })
 
-// })
-// function myFunction() {
-//   document.getElementById("input").reset();
-// }
