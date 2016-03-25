@@ -1,0 +1,32 @@
+#container {
+  position: relative;
+  margin: 0 auto;
+  width: 960px;
+}
+
+#templabelandinput {
+  position: absolute;
+  left: 39%;
+  top: 200px;
+}
+
+#submit {
+  position: absolute;
+  left: 42%;
+  top: 230px;
+}
+
+#clear {
+  position: absolute;
+  left: 55%;
+  top: 230px;
+}
+
+#conversion {
+  position: absolute;
+  left: 41%;
+  top: 260px;
+  width: 200px;
+  height: 40px;
+  text-align: center;
+}
