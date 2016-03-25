@@ -51,10 +51,19 @@ li {
 	color: black;
 }
 
-#results {
-	margin-top: 65px;
-	height: 50px;
+#result {
+	text-align: center;
+	margin-top: 35px;
+	padding: 10px 0px;
 	background-color: blue;
+	border-radius: 5px;
+}
+
+#result p {
+	font-family: Helvetica;
+	/*padding: 5px 0px;*/
+	font-size: 24px;
+	color: white;
 }
 
 .hidden {
