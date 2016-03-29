@@ -1,11 +1,12 @@
-var fToC = (temp - 32) * 5 / 9;
+// var fToC = (temp - 32) * 5 / 9;
 
 var celsius = function() {
 	var temperature = document.getElementById('temp').value; 
-	console.log(temperature)
+	console.log("celsuis function: " + temperature)
 
-	var newTemperature = temperature * 2
+	var newTemperature = (temperature - 32) * 5 / 9; 
 	document.getElementById('temp').value = newTemperature;
+	// document.getElementById('output').innerText = newTemperature;
 
 	// var result = -32) * 5 / 9;
 	// console.log(celsius)
@@ -18,7 +19,7 @@ document.getElementById('convert').addEventListener('click', function() {
 })
 
 document.getElementById('clear').addEventListener('click', function() {
-	console.log("clear pressed");
+	document.getElementById('temp').value = '';
 });
 
 
