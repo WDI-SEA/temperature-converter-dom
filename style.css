@@ -1,16 +1,30 @@
-div {
+/*div {
 	outline-style: solid;
-	outline-color: black 1px;
-	background-color: red;
+	outline-color: black 10px;
 	width: 500px;
 	margin: 0 auto;
 	margin-top: 200px;
 	padding: 100px;
-}
+}*/
 
 #container {
 	text-align: center;
 	padding: 100px;
+	margin-left: 140px;
+	margin-top: 150px;
 	outline-style: solid;
 	outline-color: black;
+	background-color: grey;
+}
+
+body {
+	background-image: url(heat.jpeg);
+	padding-right: 100px;
+}
+
+#header {
+	outline-style: solid;
+	outline-color: black 1px;
+	background-color: blue;
+	margin: 0 auto;
 }
