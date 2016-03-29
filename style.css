@@ -1,3 +1,16 @@
 div {
+	outline-style: solid;
+	outline-color: black 1px;
+	background-color: red;
+	width: 500px;
 	margin: 0 auto;
+	margin-top: 200px;
+	padding: 100px;
+}
+
+#container {
+	text-align: center;
+	padding: 100px;
+	outline-style: solid;
+	outline-color: black;
 }
