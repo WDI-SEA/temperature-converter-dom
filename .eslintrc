@@ -1,0 +1,15 @@
+{
+  "extends": "airbnb/legacy",
+
+  "env": {
+    "browser": true,
+    "jquery": true
+  },
+
+  "globals": {},
+
+  "rules": {
+    "func-names": 0,
+    "space-before-function-paren": 0
+  }
+}

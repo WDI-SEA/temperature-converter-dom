@@ -13,7 +13,7 @@ We will be using JavaScript to make a temperature conversion utility. A folder i
 3. `div` gets updated with converted value.
 4. Make a clear button to reset the fields
 
-**Bonus**
+**Additional Tasks**
 
 1. Have the `div` turn **blue** for freezing temperatures, **red** for scorching temperatures.
 
@@ -26,3 +26,11 @@ We will be using JavaScript to make a temperature conversion utility. A folder i
   * images
   * colors
   * borders
+
+##Getting Started
+
+* Fork and clone this repository
+* Run `npm install` to install dependencies
+  * `npm start` - start the BrowserSync server
+  * `npm run lint:css` - lint CSS
+  * `npm run lint:js` - lint JS
