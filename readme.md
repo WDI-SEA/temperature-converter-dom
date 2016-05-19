@@ -2,10 +2,6 @@
 
 We will be using JavaScript to make a temperature conversion utility. A folder is provided for you, with empty HTML and CSS files.
 
-##Requirements
-* Create a single page using HTML/CSS that contains an `<input>` field, a `<button>` and a `<div>`.
-* Convert the temperature from F to C using the formula we created earlier this week (or Google it).
-* 
 ##Getting Started
 
 * Fork and clone this repository
@@ -14,14 +10,19 @@ We will be using JavaScript to make a temperature conversion utility. A folder i
   * `npm run lint:css` - lint CSS
   * `npm run lint:js` - lint JS
 
-###User Experience
+##Requirements
+* Create a single page using HTML/CSS that contains an input field and a submit button, all within a form element.
+* Additionally, add a clear button
+* When the submit button is pressed, convert the inputted temperature from F to C using the appropriate conversion formula (may need to Google it)
+
+##User Experience
 
 1. User puts in a value into the text field
 2. User clicks on button
 3. The page gets updated with the converted temperature value.
 4. Clicking a "Clear" button resets the text field
 
-**Bonus Tasks**
+##Bonuses
 
 1. Have the `div` turn **blue** for freezing temperatures, **red** for scorching temperatures.
 
