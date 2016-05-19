@@ -10,7 +10,7 @@ We will be using JavaScript to make a temperature conversion utility. A folder i
   * `npm run lint:css` - lint CSS
   * `npm run lint:js` - lint JS
 
-##Requirements
+## Requirements
 * Create a single page using HTML/CSS that contains an input field and a submit button, all within a form element.
 * Additionally, add a clear button
 * When the submit button is pressed, convert the inputted temperature from F to C using the appropriate conversion formula (may need to Google it)
@@ -35,3 +35,9 @@ We will be using JavaScript to make a temperature conversion utility. A folder i
   * images
   * colors
   * borders
+
+##Deliverables
+
+See the screenshot below for an example. Don't feel like you need to do it exactly the same though. Be creative with CSS!
+
+![Solution image](solution.jpg)
