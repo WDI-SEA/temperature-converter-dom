@@ -4,10 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
+  <title>Temperature Converter</title>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
+  <h1>Temperature Converter</h1>
+
+  <form id="tempForm">
+    <input type="number" id="temperature">
+    <div>
+      <button id="submit" type="submit">Submit</button>
+      <button id="reset" type="reset">Clear</button>
+    </div>
+  </form>
+
+  <div id="convertedTemp"></div>
 
   <script type="text/javascript" src="js/script.js"></script>
 </body>
