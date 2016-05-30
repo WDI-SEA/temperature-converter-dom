@@ -1,3 +1,28 @@
+body {
+  text-align: center;
+  background-color: #999;
+  font-family: arial;
+  padding-top: 100px;
+}
+
 h1 {
   color: blue;
+}
+
+button {
+  border:1px black solid;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+#temperature {
+  border: 1px black solid;
+  margin: 10px 10px 30px 10px;
+}
+
+#outputDiv {
+  border: 1px black solid;
+  margin: 0 auto;
+  background-color: white;
+  width: 160px;
 }
