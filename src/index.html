@@ -3,11 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
+  <title>Temperature converter</title>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
+	<div id="mainDiv" class="container-fluid">
+  
+	  <form id="form" class="form-group">
+		  <div class="form-group">
+		  	<div class="form-group">
+			  	<input id="radioFahrenheit" type="radio" name="tempChoice" value="Fahrenheit" checked> Fahrenheit to Celcius
+			  </div>
+			  <div class="form-group">
+			  	<input id="radioCelcius" type="radio" name="tempChoice" value="Celcius"> Celcius to Fahrenheit
+			  </div>
+			  <div class="form-group">
+			  	<label for="tempInput">Input Temperature</label>
+			  	<input id="tempInput" type="number" name="tempInput" class="form-control" placeholder="temp">
+			  </div>
+
+			  	<button type="submit" class="btn btn-default">Submit</button>
+			  	<button type="reset" class="btn btn-default">Clear</button>
+		  </div>
+	  </form>
+
+	  <div id="output" class="container-fluid"></div>
+	</div>
 
   <script type="text/javascript" src="js/script.js"></script>
 </body>

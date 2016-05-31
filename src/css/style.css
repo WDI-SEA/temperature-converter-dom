@@ -1,3 +1,19 @@
-h1 {
-  color: blue;
+#mainDiv {
+
+}
+
+#form {
+
+}
+
+#output {
+	border: solid black 1px;
+}
+
+.hot {
+	background-color: red;
+}
+
+.cold {
+	background-color: blue;
 }
