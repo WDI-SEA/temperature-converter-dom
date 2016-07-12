@@ -41,3 +41,9 @@ We will be using JavaScript to make a temperature conversion utility. A folder i
 See the screenshot below for an example. Don't feel like you need to do it exactly the same though. Be creative with CSS!
 
 ![Solution image](solution.jpg)
+
+---
+
+## Licensing
+1. All content is licensed under a CC-BY-NC-SA 4.0 license.
+2. All software code is licensed under GNU GPLv3. For commercial use or alternative licensing, please contact legal@ga.co.
