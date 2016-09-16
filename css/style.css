@@ -1,3 +1,43 @@
+* {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-family: Arial;
+}
+
 h1 {
-  color: blue;
+  color: grey;
+  font-size: 2em;
+  margin: 20px 0; 
+}
+
+input {
+	display: inline-block;
+}
+
+input#submitted {
+	margin-bottom: 20px;
+	padding: 10px;
+}
+
+button {
+	display: block;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+div.together {
+	display: block;
+	margin: 20px 0;
+}
+
+div.together p {
+	margin-top: 15px;
+}
+
+div.result p#finalTemp {
+	margin-top: 40px;
+	padding: 20px;
+	font-size: 2em;
+	font-weight: bold;
 }
