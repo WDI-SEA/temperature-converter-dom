@@ -1,14 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
+	<title></title>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
+	<h1>Temperature Converter</h1>
 
-  <script type="text/javascript" src="js/script.js"></script>
+	<form method="GET" action = "">
+
+	<input type="text" placeholder="Insert A Number Here"name="" id="insertNumber">
+
+	<div class="together">
+
+	<input type="radio" name="degrees" id="fahTocel"> <p>Celsius to Fahrenheit</p>
+
+	</div>
+
+	<div class="together">
+
+	<input type="radio" name="degrees" id="celTofah"> <p>Fahrenheit to Celsius</p>
+
+	</div>
+
+	<input type="button" name="" id="submitted" value="Submit">
+
+	<input type="button" name="" id="deleted" value="Clear">
+
+	</form>
+
+	<div class="result">
+		<p id="finalTemp"></p>
+	</div>
+
+
 </body>
 </html>
