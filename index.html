@@ -14,13 +14,13 @@
 <body>
   <h1>Temperature Converter</h1>
   <div class="options">
-    <form action="#" id="form">
+    <form id="form" onsubmit="return false">
       <input class="inputBox" type="text"  name="tempToConvert">
       <div class="selection">
-        <input type="radio" id="tempInF" name="radio" value="fahrenheit"> ˚F
-        <input type="radio" id="tempInC" name="radio" value="celsius"> ˚C
+        <label><input type="radio" id="tempInF" name="radio" value="fahrenheit"> ˚F</label>
+        <label><input type="radio" id="tempInC" name="radio" value="celsius"> ˚C</label>
       </div>
-      <div class="submit"><input type="button" onclick="drawOutput()" name="Submit" value="Submit">
+      <div class="submit"><input type="submit" onclick ="drawOutput()">
         <input type="reset" name="clear" value="Clear">
       </div>
     </form>
