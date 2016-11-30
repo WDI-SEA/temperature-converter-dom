@@ -1,3 +1,31 @@
+body {
+    background-color: grey;
+}
 h1 {
-  color: blue;
+    text-align: center;
+    color: #484848;
+}
+.inputBox {
+    text-align: center;
+    display: block;
+    width: 50%;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid;
+    margin: 0 auto;
+    font-size: 28px;
+}
+form {
+    width: 0 auto;
+}
+.selection {
+    text-align: center;
+    display: block;
+    margin: 10px 0;
+    letter-spacing: 5px;
+}
+.submit {
+    display: block;
+    text-align: center;
+
 }
