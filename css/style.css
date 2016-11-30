@@ -1,43 +1,59 @@
 body {
-    background-color: grey;
+  background-color: #ccc;
+  background-size: cover;
 }
+
 h1 {
-    text-align: center;
-    color: #484848;
+  text-align: center;
+  color: #FFF;
+  text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
 }
+
 .inputBox {
-    text-align: center;
-    display: block;
-    width: 50%;
-    height: 40px;
-    border-radius: 10px;
-    border: 1px solid;
-    margin: 0 auto;
-    font-size: 28px;
+  text-align: center;
+  display: block;
+  width: 50%;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid;
+  margin: 0 auto;
+  font-size: 28px;
 }
+
 form {
-    width: 0 auto;
+  width: 0 auto;
 }
+
 .selection {
-    text-align: center;
-    display: block;
-    margin: 10px 0;
-    letter-spacing: 5px;
+  text-align: center;
+  display: block;
+  margin: 10px 0;
+  letter-spacing: 5px;
 }
+
 .submit {
-    display: block;
-    text-align: center;
+  display: block;
+  text-align: center;
+}
+
+.result {
+  text-align: center;
+  display: block;
+  height: 60px;
+  font-size: 35px;
+  color: white;
+}
+
+#colorBox {
+  /*width: 50%;*/
+  margin: 0 auto;
 
 }
-.result {
-    text-align: center;
-    display: block;
-    height: 60px;
-    font-size: 35px;
-    color: white;
+#colorBox p {
+  text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+
 }
-#colorBox {
-    width: 50%;
-    margin: 0 auto;
-    /*background-color: goldenrod;*/
+
+img {
+  background-color: transparent;
 }

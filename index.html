@@ -11,27 +11,28 @@
   <title>Temperature Converter</title>
 </head>
 
-<body>
+<body id="body">
   <h1>Temperature Converter</h1>
   <div class="options">
     <form id="form" onsubmit="return false">
-      <input class="inputBox" type="text"  name="tempToConvert">
+      <input class="inputBox" type="text" name="tempToConvert">
       <div class="selection">
         <label><input type="radio" id="tempInF" name="radio" value="fahrenheit"> ˚F</label>
         <label><input type="radio" id="tempInC" name="radio" value="celsius"> ˚C</label>
       </div>
-      <div class="submit"><input type="submit" onclick ="drawOutput()">
+      <div class="submit"><input type="submit" onclick="drawOutput()">
         <input type="reset" name="clear" value="Clear">
       </div>
     </form>
   </div>
   <div class="result">
-        <div id ="colorBox">
-            <p id="output"></p>
-        </div>
+    <div id="colorBox">
+      <p id="output"></p>
     </div>
+  </div>
 
 
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
 
   <script type="text/javascript" src="js/script.js"></script>
