@@ -29,13 +29,23 @@ function convertTemp() {
 }
 
 function drawOutput() {
-    document.getElementById("output").innerHTML = convertTemp();
-    if (convertTemp() > 89) {
-        document.getElementById('colorBox').style.backgroundColor = "red";
-    } else if (convertTemp() < 50) {
-      document.getElementById('colorBox').style.backgroundColor = "blue";
-    } else {
-      document.getElementById('colorBox').style.backgroundColor = "goldenrod";
+        if (radioC.checked === true) {
+            if (convertTemp() > 89) {
+                document.getElementById('colorBox').style.backgroundColor = "red";
+            } else if (convertTemp() < 50) {
+                document.getElementById('colorBox').style.backgroundColor = "blue";
+            } else {
+                document.getElementById('colorBox').style.backgroundColor = "goldenrod";
+            }
+            document.getElementById("output").innerHTML = convertTemp() + "˚F";
+        } else {
+            if (convertTemp() > 31) {
+                document.getElementById('colorBox').style.backgroundColor = "red";
+            } else if (convertTemp() < 10) {
+                document.getElementById('colorBox').style.backgroundColor = "blue";
+            } else {
+                document.getElementById('colorBox').style.backgroundColor = "goldenrod";
+            }
+            document.getElementById("output").innerHTML = convertTemp() + "˚C";
+        }
     }
-
-}
