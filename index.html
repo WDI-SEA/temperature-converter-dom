@@ -4,11 +4,55 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
+  <title>US Customary Unit System can go stand in front of a steamroller</title>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
+  <div id="container">
+    <div class="header-box">
+      <h1>we can convert that for you.</h1>
+    </div>
 
+    <div class="disclaimer-box">
+      <h3>(... to an extent.)</h3>
+    </div>
+
+    <div class="form-box">
+      <form>
+        <select id="measure">
+          <option value="l" selected>length</option>
+          <option value="a">area</option>
+          <option value="v">volume</option>
+          <option value="mg">weight/mass</option>
+          <option value="T">temperature</option>
+        </select>
+
+        <input id="quantity" class="text-box" type="number">
+
+        <label>
+          <input type="radio" name="system" value="US" onClick="update_system();" checked>
+          <span id="unit-US"></span>
+        </label>
+        <label>
+          <input type="radio" name="system" value="metric" onClick="update_system();">
+          <span id="unit-metric">test2</span>
+        </label>
+
+        <div class="button-box">
+          <input type="button" onClick="calculate();" value="calculate that sh*t">
+        </div>
+
+      </form>
+    </div>
+
+    <div class="chat-box">
+      <h2 id="chat-h2">awaiting your input.</h2>
+    </div>
+
+
+    <div id="output-box">
+    </div>
+
+  </div>
   <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

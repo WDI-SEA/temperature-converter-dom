@@ -1,3 +1,38 @@
-h1 {
-  color: blue;
+body {
+  background-color: crimson;
+  text-align: center;
+  font-family: Helvetica, Arial, san-serif;
+}
+
+#container {
+  width: 960px;
+  background-color: pink;
+  margin: 0 auto;
+}
+
+.header-box {
+  background-color: lavender;
+}
+
+.disclaimer-box {
+  background-color: skyblue;
+}
+
+.form-box {
+
+}
+
+.button-box {
+  
+}
+
+.chat-box {
+  background-color: lavender;
+}
+
+#output-box {
+  background-color: #555555;
+  margin: 0 auto;
+  width: 70%;
+  height: 100px;
 }
