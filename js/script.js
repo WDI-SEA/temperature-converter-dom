@@ -29,6 +29,13 @@ function convertTemp() {
 }
 
 function drawOutput() {
-
     document.getElementById("output").innerHTML = convertTemp();
+    if (convertTemp() > 89) {
+        document.getElementById('colorBox').style.backgroundColor = "red";
+    } else if (convertTemp() < 50) {
+      document.getElementById('colorBox').style.backgroundColor = "blue";
+    } else {
+      document.getElementById('colorBox').style.backgroundColor = "goldenrod";
+    }
+
 }

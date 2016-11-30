@@ -29,3 +29,15 @@ form {
     text-align: center;
 
 }
+.result {
+    text-align: center;
+    display: block;
+    height: 60px;
+    font-size: 35px;
+    color: white;
+}
+#colorBox {
+    width: 50%;
+    margin: 0 auto;
+    /*background-color: goldenrod;*/
+}
