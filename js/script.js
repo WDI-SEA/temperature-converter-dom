@@ -62,7 +62,7 @@ function calculate() {
   // is qty empty?
   if (qty == "") {
     output.style.backgroundColor = "crimson";
-    output.textContent = "yeah, enter a number first.";
+    output.textContent = "enter a number first.";
   } else {
     switch (measure) {
       case 'l':
