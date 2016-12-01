@@ -1,14 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <title>Temperature Converter</title>
 </head>
+
 <body>
-  <h1>Hello Front-End</h1>
+
+  <div id="container">
+
+  <div class ="titleStyle">
+  <h1>Temperature Converter</h1>
+  </div>
+
+  <form class="submit">
+
+      <!-- <input type="text" id="userInput" /> -->
+
+      <input type="text" id="userInput"  />
+
+    <div class="tempUnits">
+      <input id="radioF" type="radio" name="radioButton" checked> &deg;F
+      <input type="radio" name="radioButton" > &deg;C
+    </div>
+
+    <div class="appButtons">
+      <div class="convert">
+        <button type="button" name="Convert">Convert</button>
+      </div>
+      <div class="clear">
+        <button type="button" name="Clear">Clear</button>
+      </div>
+    </div>
+
+  </form>
+
+    <div class="result">
+
+    </div>
+
 
   <script type="text/javascript" src="js/script.js"></script>
+
+  </div>
+
 </body>
+
 </html>
