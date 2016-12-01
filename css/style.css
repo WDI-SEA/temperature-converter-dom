@@ -1,3 +1,75 @@
-h1 {
-  color: blue;
+body{
+  width: 350px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.container{
+  background-image: url("../img/thermometer.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 150px;
+}
+.title{
+  font-size: 18px;
+  color: gray;
+  font-weight: bold;
+  margin: 20px 0px 10px 0px;
+  padding: 0px;
+}
+
+#degrees-number{
+  display: inline-block;
+  width: 80%;
+  height: 23px;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 2px;
+  border: 1px gray solid;
+  margin: 10px 0px;
+  padding: 0px;
+}
+
+#degrees-unit{
+  width: 100%;
+  margin: 10px 0px;
+  padding: 0;
+}
+
+.degrees-unit{
+  font-size: 12px;
+  margin: 0px 3px;
+  display: inline-block;
+  background-color: white;
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px gray solid;
+}
+
+.radio{
+  padding: 0;
+  margin: 0;
+}
+
+.buttons{
+  margin: 10px 0px;
+  padding: 0px;
+}
+
+button{
+  margin: 0px 3px;
+  border-radius: 3px;
+  border: 1px gray solid;
+  background-color: white;
+}
+
+#result{
+  width: 100%;
+  height: 50px;
+  color: white;
+  background-color: red;
+  font-size: 50px;
+  line-height: 50px;
+  padding: 0;
 }
