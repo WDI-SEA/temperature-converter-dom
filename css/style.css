@@ -16,3 +16,14 @@ h1 {
   margin-left: 390px;
   border: solid black 1px;
 }
+
+.inputBox {
+  border: solid black 1px;
+}
+
+.unitID {
+  width: auto;
+  height: 20px;
+  border: solid black 1px;
+  display: inline;
+}

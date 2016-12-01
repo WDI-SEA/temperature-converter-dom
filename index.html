@@ -14,38 +14,39 @@
 
   <div id="container">
 
-  <div class ="titleStyle">
-  <h1>Temperature Converter</h1>
-  </div>
-
-  <form class="submit">
-
-      <!-- <input type="text" id="userInput" /> -->
-
-      <input type="text" id="userInput"  />
-
-    <div class="tempUnits">
-      <input id="radioF" type="radio" name="radioButton" checked> &deg;F
-      <input type="radio" name="radioButton" > &deg;C
+    <div class="titleStyle">
+      <h1>Temperature Converter</h1>
     </div>
 
-    <div class="appButtons">
-      <div class="convert">
-        <button type="button" name="Convert">Convert</button>
-      </div>
-      <div class="clear">
-        <button type="button" name="Clear">Clear</button>
-      </div>
-    </div>
+    <form class="submit">
 
-  </form>
+      <div class="inputBox">
+        <input type="text" id="userInput" />
+        <div class="unitID"></div>
+      </div>
+
+      <div class="tempUnits">
+        <input id="radioF" type="radio" name="radioButton" value="fahrenheit" checked> &deg;F
+        <input type="radio" name="radioButton" value="celsius"> &deg;C
+      </div>
+
+      <div class="appButtons">
+        <div class="convert">
+          <button type="button" name="Convert">Convert</button>
+        </div>
+        <div class="clear">
+          <button type="button" name="Clear">Clear</button>
+        </div>
+      </div>
+
+    </form>
 
     <div class="result">
 
     </div>
 
 
-  <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 
   </div>
 
