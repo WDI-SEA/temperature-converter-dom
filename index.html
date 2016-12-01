@@ -4,11 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
+  <title>Temperature Converter</title>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
+  <h1>Temperature Converter</h1>
+
+  <form action="">
+
+    <input class="putnumber" id="x" type="number" name="temperature"> <br>
+
+    <input class="radio" id="ftoc" type="radio" name="f to c" value="&#8457;" onClick='one()'>&#8457; &nbsp;
+    <input class="radio" id="ctof" type="radio" name="c to f" value="&#8451;" onClick='two()'>&#8451;<br>
+
+
+    <input class="submit" id="submit" type="submit" value="submit">
+    <input class="submit" id="clear" type="submit" value="clear">
+
+  </form>
+
+  <div class=result>text</div>
 
   <script type="text/javascript" src="js/script.js"></script>
+
 </body>
 </html>
