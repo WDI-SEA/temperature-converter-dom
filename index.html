@@ -5,10 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <title>Hello Front-End</title>
+  <script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
+  <h1>Temp Converter</h1>
+  <form>
+    Enter the temp you want to convert:
+    <input type="text" value="72" id="userInput">
 
-  <script type="text/javascript" src="js/script.js"></script>
+    <br>
+    <br>
+
+    What kind of temp did you just enter?
+    <input type="radio" id="f" name="scale" value="F" checked> F
+    <input type="radio" id="c" name="scale" value="C">C
+
+    <br>
+    <br>
+
+
+  </form>
+
+  <input type="submit" value="Submit" id="submitButton">
+
+  <p id="userOutput">
+    This is where you'll see the conversion...
+  </p>
+
+
 </body>
 </html>
