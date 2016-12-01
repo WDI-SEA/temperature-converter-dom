@@ -1,21 +1,21 @@
 body {
-  background-color: crimson;
+  background-color: skyblue;
   text-align: center;
   font-family: Helvetica, Arial, san-serif;
 }
 
 #container {
   width: 960px;
-  background-color: pink;
-  margin: 0 auto;
+  /*background-color: pink;*/
+  margin: 50px auto;
 }
 
 .header-box {
-  background-color: lavender;
+  /*background-color: lavender;*/
 }
 
 .disclaimer-box {
-  background-color: skyblue;
+  /*background-color: skyblue;*/
 }
 
 .form-box {
@@ -23,19 +23,19 @@ body {
 }
 
 .button-box {
-
+margin: 10px auto;
 }
 
 .chat-box {
-  background-color: lavender;
+  /*background-color: lavender;*/
 }
 
 #output-box {
-  background-color: #555555;
+  background-color: #888888;
   margin: 0 auto;
   width: 70%;
   height: 100px;
   line-height: 100px;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: bold;
 }

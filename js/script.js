@@ -49,53 +49,62 @@ function update_system() {
   system = document.querySelector('input[name="system"]:checked').value;
 }
 
+function textboxreset() {
+  output.style.backgroundColor = "";
+  output.textContent = "typey typey."
+}
+
 // these are conversion equations
 // by measure and chosen system
 function calculate() {
   // update qty
   qty = document.getElementById("quantity").value;
   // is qty empty?
-  switch (measure) {
-    case 'l':
-      if (system === "US") {
-        result = qty * 2.54;
-      } else if (system === "metric") {
-        result = qty / 2.54;
-      }
-      break;
-    case 'a':
-      if (system === "US") {
-        result = qty * 2.54 ** 2;
-      } else if (system === "metric") {
-        result = qty / 2.54 ** 2;
-      }
-      break;
-    case 'v':
-      if (system === "US") {
-        result = qty * 2.54 ** 3;
-      } else if (system === "metric") {
-        result = qty / 2.54 ** 3;
-      }
-      break;
-    case 'mg':
-      if (system === "US") {
-        result = qty / 2.20462;
-      } else if (system === "metric") {
-        result = qty * 2.20462;
-      }
-      break;
-    case 'T':
-      if (system === "US") {
-        result = (qty - 32) * (5/9);
-      } else if (system === "metric") {
-        result = qty * (9/5) + 32;
-      }
-      break;
+  if (qty == "") {
+    output.style.backgroundColor = "crimson";
+    output.textContent = "yeah, enter a number first.";
+  } else {
+    switch (measure) {
+      case 'l':
+        if (system === "US") {
+          result = qty * 2.54;
+        } else if (system === "metric") {
+          result = qty / 2.54;
+        }
+        break;
+      case 'a':
+        if (system === "US") {
+          result = qty * 2.54 ** 2;
+        } else if (system === "metric") {
+          result = qty / 2.54 ** 2;
+        }
+        break;
+      case 'v':
+        if (system === "US") {
+          result = qty * 2.54 ** 3;
+        } else if (system === "metric") {
+          result = qty / 2.54 ** 3;
+        }
+        break;
+      case 'mg':
+        if (system === "US") {
+          result = qty / 2.20462;
+        } else if (system === "metric") {
+          result = qty * 2.20462;
+        }
+        break;
+      case 'T':
+        if (system === "US") {
+          result = (qty - 32) * (5/9);
+        } else if (system === "metric") {
+          result = qty * (9/5) + 32;
+        }
+        break;
+    }
+    if (system === "US") {
+      output.textContent = result.toFixed(2) + " " + these_units[measure][1];
+    } else if (system === "metric") {
+      output.textContent = result.toFixed(2) + " " + these_units[measure][0];
+    }
   }
-  if (system === "US") {
-    output.textContent = result.toFixed(2) + " " + these_units[measure][1];
-  } else if (system === "metric") {
-    output.textContent = result.toFixed(2) + " " + these_units[measure][0];
-  }
-
 }
