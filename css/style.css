@@ -128,8 +128,8 @@ button {
 #reset {
 	z-index: 0;
 	position: absolute;
-	top: 40px;
-	right: 40px;
+	top: 20px;
+	right: 20px;
 
 	color: #f9dfe0;
 	border: 2px solid #f9dfe0;
