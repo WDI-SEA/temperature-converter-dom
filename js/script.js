@@ -49,6 +49,11 @@ function update_system() {
   system = document.querySelector('input[name="system"]:checked').value;
 }
 
+function clear_field() {
+
+     document.getElementById("quantity").value = "";
+}
+
 function textboxreset() {
   output.style.backgroundColor = "";
   output.textContent = "typey typey."
