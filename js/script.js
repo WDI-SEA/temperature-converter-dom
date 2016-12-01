@@ -1,11 +1,11 @@
 console.log('Hello, front end');
 
 function convertToC(f) {
-   return (f - 32) * 5/9;
+   return Math.round((f - 32) * 5/9);
  }
 
 function convertToF(c) {
-  return c * 1.8 + 32;
+  return Math.round(c * 1.8 + 32);
 }
 
 document.addEventListener('DOMContentLoaded', function() {
