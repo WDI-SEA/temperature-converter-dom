@@ -23,7 +23,7 @@ body {
 }
 
 .button-box {
-  
+
 }
 
 .chat-box {
@@ -35,4 +35,7 @@ body {
   margin: 0 auto;
   width: 70%;
   height: 100px;
+  line-height: 100px;
+  font-size: 50px;
+  font-weight: bold;
 }

@@ -42,6 +42,9 @@ measure_select.addEventListener("change", function() {
   unit_metric.textContent = these_units[measure][1];
 });
 
+// radio is set up to listen for click in HTML, not here
+// radio's onclick executes this function
+// updating system with appropriate system
 function update_system() {
   system = document.querySelector('input[name="system"]:checked').value;
 }
@@ -89,4 +92,10 @@ function calculate() {
       }
       break;
   }
+  if (system === "US") {
+    output.textContent = result.toFixed(2) + " " + these_units[measure][1];
+  } else if (system === "metric") {
+    output.textContent = result.toFixed(2) + " " + these_units[measure][0];
+  }
+
 }
