@@ -21,7 +21,8 @@ $(document).ready(function() {
 
     //Convert user input to alternate unit type and return result
     document.querySelector('.convert').addEventListener('click', function() {
-            if ($('#radioF').is(':checked')) {
+            if (document.getElementById("radioF").checked == true) {
+            // if ($('#radioF').is(':checked')) {
                 convertedTemp = (Math.round(((userTemp * (9/5)) + 32)) + "&deg;F");
                 console.log(convertedTemp);
                 document.querySelector('.result').innerHTML = (userTemp + "&deg;C converts to " + convertedTemp);
@@ -35,9 +36,10 @@ $(document).ready(function() {
 
     //Clears user input and result
     $('.clear').click(function(){
-        $(this).closest('form').find("input[type=text], textarea").val("");
+        $(this).closest('form').find("input[type=number], textarea").val("");
         $('.result').html("");
         userTemp = NaN;
+        convertedTemp = NaN;
     });
 });
 };
