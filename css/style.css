@@ -16,6 +16,7 @@ body {
 
 .disclaimer-box {
   /*background-color: skyblue;*/
+  margin: -10px auto 30px auto;
 }
 
 .form-box {
