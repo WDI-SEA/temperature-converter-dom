@@ -30,12 +30,13 @@ document.addEventListener('DOMContentLoaded', function() {
       document.getElementById("clearButton").addEventListener("click", function() {
           console.log("clear pressed");
 
-          var input = document.getElementById("userInput");
+          var userInput = document.getElementById("userInput");
           var userOutput = document.getElementById("userOutput");
+          var radioSelected = document.getElementById("f");
 
-          var converted = "need input";
-          userOutput.textContent = converted;
-          userInput.textContent = converted;
+          userOutput.textContent = "enter something";
+          userInput.value = "";
+
       })
 
 
