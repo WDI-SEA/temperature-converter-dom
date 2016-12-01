@@ -14,10 +14,10 @@ $(document).ready(function() {
     //Modify unit type based on radio button status
     $('input[type=radio][name=radioButton]').change(function () {
         if (this.value == "fahrenheit") {
-            $('.unitID').html("&deg; Celsius");
+            $('.unitId').html("&deg; Celsius");
         }
         else {
-            $('.unitID').html("&deg; Fahrenheit");
+            $('.unitId').html("&deg; Fahrenheit");
         }
     });
 

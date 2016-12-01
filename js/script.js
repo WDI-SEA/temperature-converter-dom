@@ -1,23 +1,21 @@
 var userText;
 var userTemp;
 var convertedTemp;
+window.onload = function() {
 $(document).ready(function() {
 
-    //Set inital unit type
-    $('.unitID').html("&deg; Celsius");
-
     //Acquire and convert user input to integer
-    $("#userInput").keyup(function() {
-        userTemp = parseInt($(this).val());
+    document.getElementById('userInput').addEventListener('keyup', function() {
+        userTemp = parseInt(this.value);
     });
 
     //Modify unit type based on radio button status
     $('input[type=radio][name=radioButton]').change(function () {
         if (this.value == "fahrenheit") {
-            $('.unitID').html("&deg; Celsius");
+            document.querySelector(".unitId").innerHTML = "&deg; Celsius";
         }
         else {
-            $('.unitID').html("&deg; Fahrenheit");
+            document.querySelector(".unitId").innerHTML = "&deg; Fahrenheit";
         }
     });
 
@@ -40,3 +38,4 @@ $(document).ready(function() {
         $('.result').html("");
     });
 });
+};
