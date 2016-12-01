@@ -24,10 +24,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     clear.addEventListener('click', function(){
       gauge.innerHTML="Temperature &deg";
+      document.getElementById('value').value= "";
     });
 
 
-        console.log(value);
+
+    //     console.log(value);
       if (radioButton.checked) {
         document.getElementById("gauge").innerHTML = toFahrenheit(value) + "&deg Fahrenheit";
         // console.log("Inside if");
