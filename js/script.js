@@ -18,7 +18,23 @@ function two(){
   ftoc.checked=false;
 }
 
+function valid()
+{
+  if(ftoc.checked) {
+    ftoc()
+  } else if(ctof.checked) {
+    ctof()
+  }
+}
 
+function ctof() {
+  var x;
+  i
+}
+
+function ftoc() {
+
+}
 
 function convert(degree) {
     var x;
