@@ -16,19 +16,26 @@ var toFahrenheit = function (value) {
 document.addEventListener('DOMContentLoaded', function() {
   // console.log("DOM loaded"));
 
+    document.getElementById("clear").addEventListener("click", function(){
+        var gauge = document.getElementById('gauge');
+        var value = document.getElementById('value').value;
+
+        gauge.innerHTML="Temperature &deg";
+        document.getElementById('value').value= "";
+        });
+
     document.getElementById("submit").addEventListener("click", function(){
 
     var value = document.getElementById('value').value;
     var radioButton = document.getElementById('Fahrenheit');
-    var clear = document.getElementById("clear");
+    // var clear = document.getElementById("clear");
+    var gauge = document.getElementById('gauge');
 
-    clear.addEventListener('click', function(){
-      gauge.innerHTML="Temperature &deg";
-      document.getElementById('value').value= "";
-    });
-
-
-
+    // clear.addEventListener('click', function(){
+    //   console.log(new Date())
+    // gauge.innerHTML="Temperature &deg";
+    // document.getElementById('value').value= "";
+    // });
     //     console.log(value);
       if (radioButton.checked) {
         document.getElementById("gauge").innerHTML = toFahrenheit(value) + "&deg Fahrenheit";
@@ -39,11 +46,3 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
-//       document.getElementById("clear").addEventListener("click", function(){
-//           document.getElementById("clear").innerHTML = "";
-//
-//
-// resetButton.addEventListener('click', function(x){
-//   x.preventDefault();
-//   tempDisplay.innerHTML=" ";
-//    })
