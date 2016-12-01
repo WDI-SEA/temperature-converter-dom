@@ -3,6 +3,15 @@ var radioF = input.tempInF;
 var radioC = input.tempInC;
 radioF.addEventListener('click', radioSelector(radioF));
 radioC.addEventListener('click', radioSelector(radioC));
+function valueTest () {
+    if ((parseInt(input.tempToConvert.value)) || input.tempToConvert.value === "0") {
+        return true;
+    } else {
+      document.getElementsByClassName('inputBox')[0].value = "Please enter a number";
+      return false;
+    }
+}
+
 function radioSelector(option) {
   if (option.checked === false) {
     option.checked = true;
@@ -50,26 +59,30 @@ function convertTemp() {
 }
 
 function drawOutput() {
-  $("#colorBox").find("img").remove();
-  var thermometer = document.createElement('img');
-  if (radioC.checked === true) {
-    document.getElementById("output").innerHTML = convertTemp() + "˚F";
-  } else {
-    document.getElementById("output").innerHTML = convertTemp() + "˚C";
-  }
-  if (findComfortLevel() == "hot") {
-    thermometer.setAttribute("src", "img/thermometer_hot.png");
-    document.getElementById("colorBox").appendChild(thermometer);
-    document.getElementById('body').style.backgroundImage = "url(img/desert.jpg)"; // set background as desert and display hot thermometer
-  } else if (findComfortLevel() == "cold") {
-    thermometer.setAttribute("src", "img/thermometer_cold.png");
-    document.getElementById("colorBox").appendChild(thermometer);
-    document.getElementById('body').style.backgroundImage = "url(img/winter.jpg)";// set background as winter and display cold thermometer
-  } else {
-    thermometer.setAttribute("src", "img/thermometer_warm.png");
-    document.getElementById("colorBox").appendChild(thermometer);
-    document.getElementById('body').style.backgroundImage = "url(img/tropical-island-beach.jpg)";// set background as beach and display warm thermometer
+  var isNumber = valueTest();
+  if (isNumber) {
+    $("#colorBox").find("img").remove();
+    var thermometer = document.createElement('img');
+    if (radioC.checked === true) {
+      document.getElementById("output").innerHTML = convertTemp() + "˚F";
+    } else {
+      document.getElementById("output").innerHTML = convertTemp() + "˚C";
+    }
+    if (findComfortLevel() == "hot") {
+      thermometer.setAttribute("src", "img/thermometer_hot.png");
+      document.getElementById("colorBox").appendChild(thermometer);
+      document.getElementById('body').style.backgroundImage = "url(img/desert.jpg)"; // set background as desert and display hot thermometer
+    } else if (findComfortLevel() == "cold") {
+      thermometer.setAttribute("src", "img/thermometer_cold.png");
+      document.getElementById("colorBox").appendChild(thermometer);
+      document.getElementById('body').style.backgroundImage = "url(img/winter.jpg)";// set background as winter and display cold thermometer
+    } else {
+      thermometer.setAttribute("src", "img/thermometer_warm.png");
+      document.getElementById("colorBox").appendChild(thermometer);
+      document.getElementById('body').style.backgroundImage = "url(img/tropical-island-beach.jpg)";// set background as beach and display warm thermometer
 
+    }
   }
+
 
 }
