@@ -1,3 +1,41 @@
 h1 {
   color: blue;
 }
+
+.container {
+  border:solid blue 5px;
+  width: 530px;
+  height: 215px;
+  margin: 100px auto;
+  text-align: center;
+  background-color:lightgrey;
+
+}
+
+#input {
+  height:39px;
+  width:47px;
+  color: blue;
+  font-size: 16pt;
+  font-weight: bold;
+  border: solid blue 2px;
+}
+
+button {
+  border:solid 2px;
+  color: blue;
+  height:43px;
+  width:75px;
+  font-weight:bold;
+}
+
+fieldset {
+  display: inline-block;
+  border-color:blue;
+  color:blue;
+}
+
+.result {
+  /*border:solid red 5px;*/
+  height: 30px;
+}
