@@ -1,5 +1,5 @@
 #container {
-  width: 1000px;
+  width: auto;
   height: auto;
   background-color: rgba(42, 158, 189, 0.8);
   text-align: center;
@@ -10,20 +10,33 @@ h1 {
   font-size: 3em;
 }
 
+.inputBox {
+  display: inline-block;
+}
+
 .result {
   width: 200px;
   height: 50px;
-  margin-left: 390px;
+  margin: 0 auto;
   border: solid black 1px;
 }
 
 .inputBox {
   border: solid black 1px;
+  font-size: 0.85em;
 }
 
 .unitID {
-  width: auto;
+  width: 75px;
   height: 20px;
+  display: inline-block;
+  float: right;
+  position: absolute;
+  bottom: 777px;
+  z-index: 1;
+}
+
+.convert {
   border: solid black 1px;
-  display: inline;
+  display: inline-block;
 }
