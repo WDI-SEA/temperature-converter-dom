@@ -7,23 +7,32 @@
     <title>Temp Converter</title>
   </head>
   <body>
-    <div class="container">
-      <div class="title">Temperature Converter</div>
-      <form>
-        <input type="number" id="degrees-number" placeholder="Input"/>
-        <div>
-          <form id="degrees-unit">
-            <label class="degrees-unit"><input type="radio" class="radio" name="degrees-unit" value="F" id="F" checked>  &deg;F --> &deg;C</label>
-            <label class="degrees-unit"><input type="radio" class="radio" name="degrees-unit" value="C" id="C">  &deg;C --> &deg;F</label>
-          </form>
+    <div class="container-all">
+      <div class="left">
+        <div class="container">
+          <div class="title">Temperature Converter</div>
+          <!-- <form name="form" id="form"  onsubmit="calcTemp(); return false"> -->
+            <!-- <fieldset> -->
+              <input type="number" id="degrees-number" placeholder="Input"/>
+              <div>
+                <form id="degrees-unit">
+                  <label class="degrees-unit"><input type="radio" class="radio" name="degrees-unit" value="F" id="F" checked>  &deg;F --> &deg;C</label>
+                  <label class="degrees-unit"><input type="radio" class="radio" name="degrees-unit" value="C" id="C">  &deg;C --> &deg;F</label>
+                </form>
+              </div>
+              <div class="buttons">
+                <button id="submit">Submit</button>
+                <button id="clear">Clear</button>
+              </div>
+            <!-- </fieldset> -->
+          <!-- </form> -->
         </div>
-        <div class="buttons">
-          <button id="submit">Submit</button>
-          <button id="clear">Clear</button>
-        </div>
-      </form>
+        <div id="result" class="normal">Output</div>
+        <script type="text/javascript" src="js/script.js"></script>
+      </div>
+      <div class="right">
+
+      </div>
     </div>
-      <div id="result">Output</div>
-      <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>

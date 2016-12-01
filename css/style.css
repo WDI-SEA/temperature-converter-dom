@@ -1,5 +1,5 @@
 body{
-  width: 350px;
+  width: 409px;
   margin: 0 auto;
   text-align: center;
   font-family: sans-serif;
@@ -15,7 +15,7 @@ body{
   font-size: 18px;
   color: gray;
   font-weight: bold;
-  margin: 20px 0px 10px 0px;
+  margin: 0px 0px 10px 0px;
   padding: 0px;
 }
 
@@ -68,8 +68,47 @@ button{
   width: 100%;
   height: 50px;
   color: white;
-  background-color: red;
+  /*background-color: red;*/
   font-size: 50px;
   line-height: 50px;
   padding: 0;
+}
+
+.hot{
+  background-color: red;
+}
+
+.cold{
+  background-color: blue;
+}
+
+.normal{
+  background-color: rgb(154, 188, 208);
+}
+
+.left{
+  border-radius: 4px;
+  overflow: hidden;
+  border: 2px solid grey;
+  border-right: 1px solid grey;
+  width: 350px;
+  height: 200px;
+  display: inline-block;
+  float: left
+}
+
+.right{
+  border-radius: 4px;
+  overflow: hidden;
+  border: 2px solid grey;
+  border-left: 1px solid grey;
+  height: 200px;
+  width: 50px;
+  display: inline-block;
+  margin: 0;
+  float: left;
+}
+
+.container-all{
+  margin: 10px 0px;
 }
