@@ -9,7 +9,6 @@ div {
 }
 
 #display {
-  background-color: red;
   border-radius: 10px;
   border: 3px solid black;
   color: white;
@@ -17,4 +16,10 @@ div {
   width: 370px;
   margin: 0 auto;
   font-size: 100px;
+}
+.hot {
+  background-color: red;
+}
+.cold {
+  background-color: blue;
 }

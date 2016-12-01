@@ -19,8 +19,15 @@ function getTempC() {
   var input = document.getElementById("temp");
 
   var value = temp.value;
-  var result = Math.round((value-32)*(5/9)) + "° C";
-  display.textContent = result;
+  var result = Math.round((value - 32) * (5 / 9));
+  if (result <= 0){
+    display.classList.remove("hot");
+    display.classList.add("cold");
+  } else {
+    display.classList.remove("cold");
+    display.classList.add("hot");
+  };
+  display.textContent = result  + "° C";
 }
 
 function getTempF() {
@@ -28,8 +35,15 @@ function getTempF() {
   var input = document.getElementById("temp");
 
   var value = temp.value;
-  var result = Math.round((value*(9/5))+32) + "° F";
-  display.textContent = result;
+  var result = Math.round((value * (9 / 5)) + 32);
+  if (result <= 32){
+    display.classList.remove("hot");
+    display.classList.add("cold");
+  } else {
+    display.classList.remove("cold");
+    display.classList.add("hot");
+  };
+  display.textContent = result  + "° F";
 }
 
 
@@ -38,7 +52,6 @@ document.getElementById("submit").addEventListener("click", function() {
   fOrC();
   event.preventDefault()
 });
-
 
 
 
