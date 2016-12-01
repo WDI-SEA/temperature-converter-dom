@@ -21,18 +21,17 @@ $(document).ready(function() {
 
     //Convert user input to alternate unit type and return result
     document.querySelector('.convert').addEventListener('click', function() {
-            if (document.getElementById("radioF").checked == true) {
-            // if ($('#radioF').is(':checked')) {
-                convertedTemp = (Math.round(((userTemp * (9/5)) + 32)) + "&deg;F");
-                console.log(convertedTemp);
-                document.querySelector('.result').innerHTML = (userTemp + "&deg;C converts to " + convertedTemp);
-            }
-            else {
-                convertedTemp = (Math.round(((userTemp - 32) * (5/9))) + "&deg;C");
-                console.log(convertedTemp);
-                document.querySelector('.result').innerHTML =(userTemp + "&deg;F converts to " + convertedTemp);
-            }
-        });
+        if (document.getElementById("radioF").checked == true) {
+            convertedTemp = (Math.round(((userTemp * (9/5)) + 32)) + "&deg;F");
+            console.log(convertedTemp);
+            document.querySelector('.result').innerHTML = (userTemp + "&deg;C converts to " + convertedTemp);
+        }
+        else {
+            convertedTemp = (Math.round(((userTemp - 32) * (5/9))) + "&deg;C");
+            console.log(convertedTemp);
+            document.querySelector('.result').innerHTML =(userTemp + "&deg;F converts to " + convertedTemp);
+        }
+    });
 
     //Clears user input and result
     $('.clear').click(function(){
