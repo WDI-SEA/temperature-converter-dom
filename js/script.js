@@ -3,6 +3,21 @@ var clearButton = document.getElementById('clear');
 var degreesNumber = document.getElementById('degrees-number');
 var form = document.getElementById('form');
 
+$( function() {
+    $( "#slider-vertical" ).slider({
+      orientation: "vertical",
+      range: "min",
+      min: -300,
+      max: 300,
+      value: 70,
+      slide: function( event, ui ) {
+        $( "#degrees-number" ).val( ui.value );
+        calcTemp();
+      },
+    });
+    $( "#degrees-number" ).val( $( "#slider-vertical" ).slider( "value" ) );
+});
+
 
 var calcTemp = function(){
   var num = document.getElementById('degrees-number').value;
