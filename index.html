@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <title>Temperature Converter</title>
 </head>
+
 <body>
-  <h1>Temperature Converter</h1>
-  <form id="conversionForm">
-     <input type="tempInput" id="quantity" name="quantity">
-     <label>
-      <input  type="radio" id="fButton" name="tempType" value="f" checked> F
-    </label>
-    <label>
-      <input type="radio" id="cButton" name="tempType" value="c"> C
-    </label>
-    <button id="convertButton" type="submit">Convert</button>
-    <button id="resetButton" type="button">Reset</button>
-  </form>
-  <div id="tempDisplay">
+  <div id='wrapper'>
+    <h1>Temperature Converter</h1>
+    <form id='conversionForm'>
+      <input type='number' id='temp2Convert' placeholder='Input temperature here'> </br>
+      <input type='radio' id='c2f' name='conversion' checked> °C
+      <input type='radio' id='f2c' name='conversion'> °F </br>
+      <button type='submit' value='Submit' id='submit'>Submit</button>
+      <button type='reset' value='Reset' id='reset'>Clear</button> </br>
+    </form>
+    <div id='display'> </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
   </div>
-  <script type="text/javascript" src="js/script.js"></script>
 </body>
+
 </html>
