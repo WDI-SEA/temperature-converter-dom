@@ -1,3 +1,61 @@
-h1 {
-  color: blue;
+body {
+	text-align: center;
+	background-color: honeydew;
+	font-family: 'Roboto', sans-serif;
+
 }
+
+h2 {
+	color: midnightblue;
+	font-size: 2em;
+}
+
+form {
+	margin-bottom: 10px;
+}
+
+#input {
+	width: 31%;
+	height: 50px;
+	font-size: 32px;
+	text-align: center;
+}
+
+#convert, #reset {
+	width: 15%;
+	height: 50px;
+	color: white;
+	font-size: 24px;
+}
+
+#convert {
+	background-color: seagreen;
+	border-style: none;
+	margin-right: 12px;
+}
+
+#convert:hover {
+	cursor: pointer;
+	background-color: springgreen;
+	color: midnightblue;
+}
+
+#reset {
+	background-color: orangered;
+	border-style: none;
+}
+
+#reset:hover {
+	cursor: pointer;
+	background-color: orange;
+}
+
+.display {
+	background-color: red;
+	color: white;
+	width: 31%;
+	height: 50px;
+	margin: 0 auto;
+	line-height: 50px;
+}
+

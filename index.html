@@ -4,10 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,700" rel="stylesheet">
+  <title>Temperature Converter</title>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
+  <h2>TEMPERATURE CONVERTER</h2>
+  	<form>
+	  	<input type="radio" id="fahr" name="selection" checked>
+	  	&deg F convert to &deg C
+	  	<br>
+	  	<input type="radio" id="cel" name="selection">
+	  	&deg C convert to &deg F
+	</form>
+  <input type="number" name="degree" id="input" placeholder="Enter Temperature">
+  <h3>
+  	<button id="convert">Convert</button>
+  	<button id="reset" type="reset">Reset</button>
+  </h3>
+  <div id="result">
+  	<h1 id="degreeResult"></h1>
+  </div>
 
   <script type="text/javascript" src="js/script.js"></script>
 </body>
