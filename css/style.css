@@ -1,3 +1,77 @@
-h1 {
-  color: blue;
+ * {
+   transition: all 0.5s ease-out;
+ }
+
+body {
+  text-align: center;
+  font-family: 'Oxygen Mono', monospace;
+  background-color: AliceBlue;
+}
+
+img {
+  width: 5%;
+}
+
+form {
+  display: inline-block;
+  width: 60%;
+  margin-top: 20px;
+}
+
+button {
+  color: #3cb371;
+  background: rgba(0,0,0,0);
+  border: solid 3px #3cb371;
+  width: 100px;
+  height: 50px;
+  margin: 10px;
+  font-size: 1.5em;
+}
+button:hover,
+button.hover {
+  border-color: #267349;
+  color: #267349;
+}
+button:active,
+button.active {
+  border-color: #267349;
+  color: #267349;
+}
+
+a {
+  text-decoration: none;
+  color: #3cb371;
+}
+
+a:hover {
+  color: #267349;
+}
+
+#temp {
+  width: 80%;
+  height: 50px;
+  font-size: 2em;
+  text-align: center;
+  font-family: 'Oxygen Mono', monospace;
+}
+
+#result {
+  font-size: 3em;
+  padding: 20px;
+}
+
+.thermometer {
+   content:url("../img/thermometer.svg");
+}
+
+.freezing {
+  content:url("../img/freezing.svg");
+}
+
+.scorching {
+  content:url("../img/scorching.svg");
+}
+
+.mild {
+    content:url("../img/mild.svg");
 }

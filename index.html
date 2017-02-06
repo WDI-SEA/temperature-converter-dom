@@ -4,10 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
+  <link href="https://fonts.googleapis.com/css?family=Oxygen+Mono" rel="stylesheet">
+  <title>Temperature Converter</title>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
+  <div id="header">
+    <h1>Temperature Converter</h1>
+    <img class="thermometer">
+  </div>
+
+  <form method="GET" action="">
+
+    <input id="temp" name="temp" type="text" placeholder="Enter a valid temperature here"><br><br>
+    <input type="radio" name="conversion" value="f" id="fahrenheit" checked>&deg;F</input>
+    <input type="radio" name="conversion" value="c" id="celsius">&deg;C</input><br><br>
+    <button type="button" id="submit">Submit</button>
+    <button type="button" id="clear">Clear</button>
+    <h1 id="result">---</h1>
+  </form>
+  <p id="error-msg">Have a nice day</p>
+  <p id="error-msg"><3 <a href="http://github.com/dddotcom" target="_blank">dddotcom</a></p>
 
   <script type="text/javascript" src="js/script.js"></script>
 </body>
