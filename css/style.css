@@ -1,6 +1,10 @@
 
 
 
+body {
+	margin: 0 auto;
+}
+
 #wrapper {
 
 	margin: 0 auto; /*give 0 l/r auto to center*/
@@ -36,9 +40,16 @@ h1 {
 }
 
 #buttonone	{	
-	width: 200px
+	width: 200px;
 }
 
 #buttontwo	{	
-	width: 200px
+	width: 200px;
+}
+
+#resultredbox{
+	width: 300px;
+	height: 75px;
+	background-color: red;
+	margin: 50px auto;
 }
