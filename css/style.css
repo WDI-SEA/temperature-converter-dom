@@ -1,3 +1,62 @@
-h1 {
-  color: blue;
+body {
+  width: 400px;
+  margin: 0 auto;
+  background-color: #161616;
+  text-align: center;
+  font-family: 'Roboto';
+  color: #fff;
 }
+
+.title {
+  font-size:32px;
+  color: white;
+  font-weight: bold;
+  margin: 200px 0px 50px 0px;
+  padding: 0px;
+}
+
+#temperature {
+  display: inline-block;
+  width: 80%;
+  height: 23px;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 2px;
+  border: 1px gray solid;
+  margin: 10px 0px;
+}
+
+#degrees {
+  width: 100%;
+  margin: 10px;
+  padding: 0;
+}
+
+.degrees {
+  font-size: 12px;
+  margin: 0px 3px;
+  display: inline-block;
+  padding: 5px;
+}
+
+.buttons {
+  margin: 15px;
+  padding: 0px;
+}
+
+button {
+  margin: 0px 3px;
+  border-radius: 4px;
+  border: 1px solid grey;
+}
+
+#result {
+  width: 100%;
+  height: 50px;
+  color: white;
+  background-color: grey;
+  font-size: 45px;
+  line-height: 50px;
+  padding: 0;
+  border-radius: 4px;
+ }

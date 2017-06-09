@@ -1,14 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
+<link href='https://fonts.googleapis.com/css?family=Roboto:100,300,700,400' rel='stylesheet' type='text/css'>
+  <title>What's the Temperature?</title>
 </head>
-<body>
-  <h1>Hello Front-End</h1>
 
-  <script type="text/javascript" src="js/script.js"></script>
+<body>
+
+     <div class="title">Temperature Converter</div>
+      
+      <form>
+        <input type="text" id="temperature" placeholder="Please enter the temperature"/>
+        
+        <div>
+          <form id="degrees">
+          
+           <label class="degrees"><input type="radio" id="F"> &deg;F</label>
+           
+           <label class="degrees"><input type="radio" id="C"> &deg;C</label>
+          
+          </form>
+        </div>
+        
+
+        <div class="buttons">
+          <button id="submit">Submit</button>
+          <button id="clear">Clear</button>
+        </div>
+      </form>
+
+      
+      <div id="result"></div>
+
+
+<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
+
