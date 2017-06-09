@@ -1,5 +1,5 @@
 body {
-  width: 400px;
+  width: 500px;
   margin: 0 auto;
   background-color: #161616;
   text-align: center;
@@ -8,8 +8,9 @@ body {
 }
 
 .title {
-  font-size:32px;
+  font-size:50px;
   color: white;
+  font-family: 'Lobster', cursive;
   font-weight: bold;
   margin: 200px 0px 50px 0px;
   padding: 0px;
@@ -17,7 +18,7 @@ body {
 
 #temperature {
   display: inline-block;
-  width: 80%;
+  width: 50%;
   height: 23px;
   font-size: 14px;
   text-align: center;
@@ -40,7 +41,7 @@ body {
 }
 
 .buttons {
-  margin: 15px;
+  margin: 30px 20px 50px 20px;
   padding: 0px;
 }
 
