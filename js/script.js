@@ -92,6 +92,43 @@ function disableRadio(radioId) {
 
 
 
+// fake an api call
+
+function randomWeather() {
+  
+  var array = [{
+    precipitation: 90,
+    icon: 'icon ion-umbrella',
+    day: 'Monday'
+    },
+  {
+    precipitation: 0,
+    icon: 'icon ion-ios-sunny-outline',
+    day: 'Friday'
+  }]
+    //returns a value between 0 and 1
+    var randomNumber = Math.floor(Math.random() * array.length)
+    return array[randomNumber]
+  }
+
+
+displayWeather()
+
+
+function displayWeather() {
+  var weather = randomWeather();
+
+    //populate the array info into html list
+    document.getElementById('precipitation').innerHTML = "Precipitation: " + weather.precipitation + "%";
+    document.getElementById('day').innerHTML = weather.day;
+    document.getElementById('icon').className = weather.icon;
+
+}
+
+
+
+
+
 
 
 
