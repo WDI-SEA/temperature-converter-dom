@@ -65,3 +65,40 @@ button {
  li {
   list-style: none;
  }
+
+
+/* add weather icon animations */
+
+ #icon {
+  margin: 0 auto;
+  font-size: 45px;
+  -webkit-border-radius: 50px;
+  height: 100px;
+  width: 100px;
+  left: 20px;
+  top: 214px;
+  -webkit-animation: pulsate 4s ease-out;
+  -webkit-animation-iteration-count: infinite;
+  opacity: 0.0
+}
+
+@-webkit-keyframes pulsate {
+  0% {
+    -webkit-transform: scale(0.1, 0.1);
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 1.0;
+  }
+  100% {
+    -webkit-transform: scale(1.2, 1.2);
+    opacity: 0.0;
+  }
+}
+
+#icon:hover {
+  cursor: pointer;
+  color: #006dcc;
+  -webkit-animation: none;
+  opacity: 0.8;
+}
