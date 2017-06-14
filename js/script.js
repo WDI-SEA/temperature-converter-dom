@@ -1,3 +1,33 @@
+var apiKey =  '80efc361793bca58b234b2c7f90d6343'
+
+$.ajax({
+  url: 'http://api.openweathermap.org/data/2.5/weather?q=seattle&APPID=' + apiKey,
+  dataType: 'json',
+  data: 'get',
+  succes: function(response){
+    console.log(response)
+
+    createWeatherDataDiv(response)
+
+  }, 
+  error: function(error){
+    console.log(error)
+  }
+})
+
+function createWeatherDataDiv(weather){
+  var div = $('<div>').css({
+    'backgroundColor': 'blue',
+    'color': 'white',
+    'marginLeft': '40%'})
+  
+  div.append('<p>' + weather.main.temp + '</p>')
+  $('body').append(div)
+
+}
+
+
+
 //submit button should calculate converted temperature
 var submitButton = document.getElementById('submit');
 
