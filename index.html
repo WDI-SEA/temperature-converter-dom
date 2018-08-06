@@ -4,10 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
+  <title>Temperature Converter</title>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
+  <h1>Temperature Converter</h1>
+ 
+  <input type="text" id="degree1" value=0 /> <br>
+  <input  id="Fah" type="radio" name="degreeType" class="radio-input" checked="checked"><label class="radio-label"> F</label>
+  <input id="Cel" type="radio" class="radio-input" name="degreeType"><label class="radio-label">C</label><br />
+  <button id="submit" onclick="degreee()">Submit</button>
+  <button id="clear" onlick="#">Clear</button>
+  <p id="result"></p>
 
   <script type="text/javascript" src="js/script.js"></script>
 </body>

@@ -1,3 +1,52 @@
+body {
+	background-color: grey;
+}
 h1 {
-  color: blue;
+  color: brown;
+  text-align: center;
+  paddind: 30px;
+}
+
+#degree1{
+	width: 400px;
+	height: 50px;
+	font-size: 20px;
+	color: blue;
+	font-weight: bold;
+	text-align: center;
+	margin: 50px auto;
+	display: block;
+	
+}
+
+.result {
+	width: 400px;
+	height: 50px;
+	font-size: 30px;
+	color: red;
+	font-weight: bold;
+	text-align: center;
+	margin: 50px auto;
+	padding: 10px;
+
+}
+
+.radio-input {
+	display: inline-block;
+	text-align: center;
+	margin: 0 auto;
+}
+.radio-label {
+	display: inline-block;
+	text-align: center;
+	margin: 0 auto;
+}
+
+#result {
+	width: 500px;
+	height: 60px;
+	background-color: white;
+	color: blue;
+	margin: 50px auto;
+	text-align: center;
 }
