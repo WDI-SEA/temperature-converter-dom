@@ -1,8 +1,8 @@
 // Converts to/from C,F,K,R scales
-const convertTemperature = function(fromTemp, fromUnit, toUnit) {
-  switch(fromUnit) {
+const convertTemperature = function (fromTemp, fromUnit, toUnit) {
+  switch (fromUnit) {
     case 'c':
-      switch(toUnit) {
+      switch (toUnit) {
         case 'c':
           return fromTemp;
         case 'f':
@@ -14,9 +14,8 @@ const convertTemperature = function(fromTemp, fromUnit, toUnit) {
         default:
           return 0;
       }
-      break;
     case 'f':
-      switch(toUnit) {
+      switch (toUnit) {
         case 'c':
           return (fromTemp - 32) * (5 / 9);
         case 'f':
@@ -28,9 +27,8 @@ const convertTemperature = function(fromTemp, fromUnit, toUnit) {
         default:
           return 0;
       }
-      break;
     case 'k':
-      switch(toUnit) {
+      switch (toUnit) {
         case 'c':
           return fromTemp - 273.15;
         case 'f':
@@ -42,9 +40,8 @@ const convertTemperature = function(fromTemp, fromUnit, toUnit) {
         default:
           return 0;
       }
-      break;
     case 'r':
-      switch(toUnit) {
+      switch (toUnit) {
         case 'c':
           return (fromTemp - 491.67) * (5 / 9);
         case 'f':
@@ -62,8 +59,8 @@ const convertTemperature = function(fromTemp, fromUnit, toUnit) {
 };
 
 // Main function for form to run when submitted
-const submitForm = function(evt) {
-  //This will prevent from refreshing page
+const submitForm = function (evt) {
+  // This will prevent from refreshing page
   evt.preventDefault();
 
   // Get temperature and convert to float
@@ -78,15 +75,12 @@ const submitForm = function(evt) {
 
   const convertedTemp = convertTemperature(originalTemp, fromUnitType, toUnitType);
 
-  //+temp.toFixed(2) keeps the decimals to 2 only if needed
+  // +temp.toFixed(2) keeps the decimals to 2 only if needed
   toTempBox.value = +convertedTemp.toFixed(2);
-
 };
 
-document.addEventListener('DOMContentLoaded', function() {
-
+document.addEventListener('DOMContentLoaded', () => {
   const formData = document.querySelector('#converterForm');
 
   formData.addEventListener('submit', submitForm);
-
 });
