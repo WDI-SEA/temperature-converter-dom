@@ -1,3 +1,50 @@
+body {
+	background-color: #bfbfbf;
+}
+
 h1 {
-  color: blue;
+	color: grey;
+	font-family: Arial, san-serif;
+	text-align: center;
+}
+
+.center {
+	display: flex;
+	align-content: center;
+}
+
+
+#cold {
+	background-color: blue;
+	color: white;
+	height: 100px;
+	width: 300px;
+	text-align: center;
+	font-size: 44px;
+}
+
+#hot {
+	background-color: red;
+	color: yellow;
+	height: 100px;
+	width: 300px;
+	text-align: center;
+	font-size: 44px;
+}
+
+#temperate {
+	background-color: #bbedae;
+	color: teal;
+	height: 100px;
+	width: 300px;
+	text-align: center;
+	font-size: 44px;
+}
+
+.output {
+	background: #bfbfbf;
+	height: 100px;
+	width: 300px;
+	text-align: center;
+	font-size: 44px;
 }
