@@ -1,3 +1,45 @@
-h1 {
-  color: blue;
+.container {
+  display: flex;
+}
+
+body {
+  /* background: gray; */
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div, header {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header {
+  /* background: rgb(255, 192, 245); */
+}
+.tempForm {
+  /* background: blue; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.tempInputContainer {
+  /* background: rgb(255, 162, 239); */
+}
+
+.inputField {
+  /* background: rgb(255, 124, 233); */
+}
+
+.btn {
+  /* background: rgb(255, 97, 229); */
+}
+
+.result {
+  /* background: rgb(255, 67, 224); */
+}
+
+.clear {
+  /* background: rgb(255, 67, 204); */
 }

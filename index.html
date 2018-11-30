@@ -3,12 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <title>Temperature Converter</title>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
-
+  <header class="header">
+    <h1>Temperature Converter</h1>
+  </header>
+  <main>
+    <div class="tempInputContainer">
+      <form method="GET" id="tempNum" class="tempForm">
+        <label for="tempInputNum">Temperature to convert: </label></br>
+        <input type="text" name="tempInput" class="inputField" id="tempInputNum">
+        <input type="radio" name="fOrC" id="f" value="Fahrenheit">&deg;Fahrenheit
+        <input type="radio" name="fOrC" id="c" value="Celsius">&deg;Celsius</br>
+        <input id="submitBtn" class="btn" type="submit" value="Convert">
+      </form>
+    </div>
+    <div class="result">
+      <p id="resultText">Result will go here</p>
+    </div>
+    <div class="clear">
+      <button id="clearBtn">Clear</button>
+    </div>
+  </main>
   <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
