@@ -4,11 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="img/stamp-tab.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Sarala:700" rel="stylesheet">
   <title>Hello Front-End</title>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
+	<div class="main">
+  		<h1>Temperature Converter</h1>
+  		<form class="form">
+  			<input onfocus="this.value=''" type="text" class="enter" placeholder="Enter number" id="ohYeup"><br>
+         
 
-  <script type="text/javascript" src="js/script.js"></script>
+  				<td align="left">
+	  				<input id="fah" name="round" type="radio"><label>°F</label>
+	   				<input id="cel" name="round" type="radio"><label>°C</label><br>
+	   				<input id="letsGo" type="button" value="submit">
+  				</td><br>
+		</form>
+		<div>
+		<p id="output" class="result">0&deg;</p>
+		</div>
+<script type="text/javascript" src="js/script.js"></script>
+	</div>
 </body>
 </html>
