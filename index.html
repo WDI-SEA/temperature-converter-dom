@@ -5,10 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <title>Hello Front-End</title>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400, 700|Overlock:900" rel="stylesheet">
 </head>
 <body>
-  <h1>Hello Front-End</h1>
+  <h1>temperature converter</h1>
 
+<!-- field entry for temp value -->
+
+  <p>Enter temperature here:</p>
+
+
+  <input type="text" name="temperature" value="" id="enteredTemp">
+  <br><br>
+
+
+<!-- radio buttons for F and C -->
+
+  <input type="radio" name="course" value="F" id="fBtn">Fahrenheit 
+  <input type="radio" name="course" value="C" id="cBtn">Celcius<br><br>
+
+
+<!-- submit and clear buttons -->
+
+  <button onclick="solveOutputTemp()">submit</button>
+  <button onclick="clearTemp()">clear</button>
+ 
+
+<!-- readout of conversion results -->
+
+
+<h3 id="resultTemp"></h3>
+
+</p>
   <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

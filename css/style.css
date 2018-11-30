@@ -1,3 +1,65 @@
+body {
+	text-align: center;
+	font-family: 'Noto Sans', sans-serif;
+
+}
+
 h1 {
-  color: blue;
+	color: blue;
+	font-family: 'Overlock', cursive;
+	font-size: 50px;
+
+}
+
+h3 {
+	font-family: 'Overlock', cursive;
+	font-size: 20px;
+}
+
+p {
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 14px;
+	line-height: 1.4;
+}
+
+input {
+	font-family: 'Noto Sans', sans-serif;
+	color: blue;
+	font-size: 14px;
+
+}
+
+button {
+	font-family: 'Noto Sans', sans-serif;
+	color: blue;
+	font-size: 14px;
+
+
+}
+
+#enteredTemp {
+	color: black;
+	font-weight: 700;
+	letter-spacing: .1em;
+	font-size: 14px;
+	text-align: center;
+	background-color: lightblue;
+}
+
+#fBtn {
+	font-family: 'Noto Sans', sans-serif;
+	color: blue;
+	font-size: 14px;
+
+}
+
+#cBtn {
+	font-family: 'Noto Sans', sans-serif;
+	color: blue;
+	font-size: 14px;
+
+}
+
+#resultTemp {
+
 }
