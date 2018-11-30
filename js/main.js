@@ -1,58 +1,42 @@
 // Converts to/from C,F,K,R scales
 const convertTemperature = function (fromTemp, fromUnit, toUnit) {
-  switch (fromUnit) {
-    case 'c':
-      switch (toUnit) {
-        case 'c':
-          return fromTemp;
-        case 'f':
-          return fromTemp * 1.8 + 32;
-        case 'k':
-          return fromTemp + 273.15;
-        case 'r':
-          return (fromTemp + 273.15) * 1.8;
-        default:
-          return 0;
-      }
-    case 'f':
-      switch (toUnit) {
-        case 'c':
-          return (fromTemp - 32) * (5 / 9);
-        case 'f':
-          return fromTemp;
-        case 'k':
-          return (fromTemp + 459.67) * (5 / 9);
-        case 'r':
-          return fromTemp + 459.67;
-        default:
-          return 0;
-      }
-    case 'k':
-      switch (toUnit) {
-        case 'c':
-          return fromTemp - 273.15;
-        case 'f':
-          return fromTemp * 1.8 - 459.67;
-        case 'k':
-          return fromTemp;
-        case 'r':
-          return fromTemp * 1.8;
-        default:
-          return 0;
-      }
-    case 'r':
-      switch (toUnit) {
-        case 'c':
-          return (fromTemp - 491.67) * (5 / 9);
-        case 'f':
-          return fromTemp - 459.67;
-        case 'k':
-          return fromTemp * (5 / 9);
-        case 'r':
-          return fromTemp;
-        default:
-          return 0;
-      }
+  switch (true) {
+    // CELSIUS -->
+    case (fromUnit === 'c' && toUnit === 'c'):
+      return fromTemp;
+    case (fromUnit === 'c' && toUnit === 'f'):
+      return fromTemp * 1.8 + 32;
+    case (fromUnit === 'c' && toUnit === 'k'):
+      return fromTemp + 273.15;
+    case (fromUnit === 'c' && toUnit === 'r'):
+      return (fromTemp + 273.15) * 1.8;
+    // FAHRENHEIT -->
+    case (fromUnit === 'f' && toUnit === 'c'):
+      return (fromTemp - 32) * (5 / 9);
+    case (fromUnit === 'f' && toUnit === 'f'):
+      return fromTemp;
+    case (fromUnit === 'f' && toUnit === 'k'):
+      return (fromTemp + 459.67) * (5 / 9);
+    case (fromUnit === 'f' && toUnit === 'r'):
+      return fromTemp + 459.67;
+    // KELVIN -->
+    case (fromUnit === 'k' && toUnit === 'c'):
+      return fromTemp - 273.15;
+    case (fromUnit === 'k' && toUnit === 'f'):
+      return fromTemp * 1.8 - 459.67;
+    case (fromUnit === 'k' && toUnit === 'k'):
+      return fromTemp;
+    case (fromUnit === 'k' && toUnit === 'r'):
+      return fromTemp * 1.8;
+    // RANKINE -->
+    case (fromUnit === 'r' && toUnit === 'c'):
+      return (fromTemp - 491.67) * (5 / 9);
+    case (fromUnit === 'r' && toUnit === 'f'):
+      return fromTemp - 459.67;
+    case (fromUnit === 'r' && toUnit === 'k'):
+      return fromTemp * (5 / 9);
+    case (fromUnit === 'r' && toUnit === 'r'):
+      return fromTemp;
     default:
       return 0;
   }
