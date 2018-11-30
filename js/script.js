@@ -23,6 +23,7 @@ function solveOutputTemp() {
 		outputTemp = Math.round((inputTemp - 32)*(5/9));
 		document.getElementById("resultTemp").textContent = (inputTemp + " degrees Fahrenheit equals " + outputTemp + " degrees Celcius");
 	} else if (tempScale === "Celcius") {
+		outputTemp = Math.round((inputTemp * 9/5) + 32);
 		document.getElementById("resultTemp").textContent = (inputTemp + " degrees Celcius equals " + outputTemp + " degrees Fahrenheit");
 	} else {
 		alert("Something went wrong. You need to enter a number in the blue box."); 
