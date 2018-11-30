@@ -4,10 +4,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
+  <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Text+Me+One" rel="stylesheet">
+  <title>Temperature Converter</title>
 </head>
+
 <body>
-  <h1>Hello Front-End</h1>
+  <h1>Temperature Converter</h1>
+	<img src="img/arrows.png">
+
+  <form id="my-form" action="" method="GET" >
+ <br>
+  <label> Put Temperature Here! </label>
+ <br>
+  	<input class="inputBut" id="input" type="number" name="quantity">
+ <br>
+ <br>
+  	<input id="fahrenheit" type="radio" name="unit" value="f"> from °F (Fahrenheit) to °C (Celcius)
+ <br>
+  	<input id="celsius" type="radio" name="unit" value="c"> from °C (Celcius) to °F (Fahrenheit) 
+ <br>
+ <br>
+	<input class= "button" type="submit" id="submitBtn" value="Convert"/>
+	<input class= "button" type="reset" onclick="reset_function()" id="clearBtn" value="Reset"/> 
+
+</form>
+<br>
+<label> Ta-da! </label>
+
+<div class="box">
+	<p id="output"></p>
+</div>
 
   <script type="text/javascript" src="js/script.js"></script>
 </body>
