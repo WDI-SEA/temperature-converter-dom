@@ -1,3 +1,6 @@
-h1 {
-  color: blue;
+.resultContainer {
+  background-color: blue;
+  height: 200px;
+  width: 500px;
+  color: white;
 }

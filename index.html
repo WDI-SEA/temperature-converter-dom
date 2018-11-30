@@ -1,14 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
-</head>
-<body>
-  <h1>Hello Front-End</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"
+    />
 
-  <script type="text/javascript" src="js/script.js"></script>
-</body>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <title>Temperature Converter</title>
+  </head>
+  <body class="dark-gray bg-washed-green">
+    <main class="mw5 mw7-ns center pa3 ph5-ns">
+      <h1 class="avenir f1 fw5 lh-title">
+        Temperature<br />
+        Converter
+      </h1>
+      <form id="myForm">
+        <input id="temperature" type="number" class="avenir" />
+        <div>
+          <p class="avenir">
+            <input type="radio" id="fromF" name="fromUnit" value="F" checked />
+            <label for="fromC">From C to F</label>
+          </p>
+          <p class="avenir">
+            <input type="radio" id="fromC" name="fromUnit" value="C" />
+            <label for="fromF">From F to C</label>
+          </p>
+        </div>
+
+        <input
+          type="submit"
+          id="submitBtn"
+          class="avenir bw0 br2 silver pa2 white fw1 tc ttu"
+        />
+        <input
+          type="reset"
+          id="clearBtn"
+          value="Clear"
+          class="avenir bw0 br2 silver pa2 white fw1 tc ttu"
+        />
+      </form>
+      <div id="resultContainer"><p id="result" class="avenir f1 fw5"></p></div>
+    </main>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
 </html>
