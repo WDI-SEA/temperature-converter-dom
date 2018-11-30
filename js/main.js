@@ -90,7 +90,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const convertedTemp = convertTemperature(originalTemp, fromUnitType, toUnitType);
 
-    updateConversion(convertedTemp, toTempBox);
+    //+temp.fixed(2) keeps the decimals to 2 onlh if needed
+    updateConversion(+convertedTemp.toFixed(2), toTempBox);
 
   });
 
