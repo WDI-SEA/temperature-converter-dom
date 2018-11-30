@@ -7,21 +7,23 @@
   <title>Temperature Converter</title>
 </head>
 <body>
-  	<h1>Temperature Conversion Calculator</h1>
-	<form class="form">
-		<div>
-			<input type="number" name="userTempType" placeholder="Temperature" id="text-box">
-		</div>
-		<div>
-		  	<input type="radio" name="temp-type" value="F" class="temp-type-f" checked>Fahranheit to Celsius<br>
-		  	<input type="radio" name="temp-type" value="C" class="temp-type-c">Celsius to Fahranheit<br>
-		  	<input type="submit" value="Submit" class="submit-button">
-		  	<input type="submit" value="Clear" class="clear-button">
-		  </div>
-	 </form>
-	 <div class="output">
-	 	<p><span class="result">0&deg;</span></p>
-	 </div>
+  	<main>
+  		<h1>Temperature Conversion Calculator</h1>
+		<form class="form">
+			<div>
+				<input type="number" name="userTempType" placeholder="Temperature" id="text-box">
+			</div>
+			<div>
+			  	<input type="radio" name="temp-type" value="F" class="temp-type-f" checked>Fahranheit to Celsius<br>
+			  	<input type="radio" name="temp-type" value="C" class="temp-type-c">Celsius to Fahranheit<br>
+			  	<input type="submit" value="Submit" class="submit-button">
+			  	<input type="reset" value="Clear" class="clear-button">
+			  </div>
+		 </form>
+		 <div class="output">
+		 	<p><span class="result">0&deg;</span></p>
+		 </div>
+	</main>
   <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

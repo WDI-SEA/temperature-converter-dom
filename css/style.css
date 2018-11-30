@@ -8,6 +8,12 @@ h1 {
 	text-align: center;
 }
 
+/*main {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}*/
+
 .center {
 	display: flex;
 	align-content: center;
@@ -17,7 +23,7 @@ h1 {
 #cold {
 	background-color: blue;
 	color: white;
-	height: 100px;
+	height: 50px;
 	width: 300px;
 	text-align: center;
 	font-size: 44px;
@@ -26,7 +32,7 @@ h1 {
 #hot {
 	background-color: red;
 	color: yellow;
-	height: 100px;
+	height: 50px;
 	width: 300px;
 	text-align: center;
 	font-size: 44px;
@@ -35,7 +41,7 @@ h1 {
 #temperate {
 	background-color: #bbedae;
 	color: teal;
-	height: 100px;
+	height: 50px;
 	width: 300px;
 	text-align: center;
 	font-size: 44px;
@@ -43,7 +49,7 @@ h1 {
 
 .output {
 	background: #bfbfbf;
-	height: 100px;
+	height: 50px;
 	width: 300px;
 	text-align: center;
 	font-size: 44px;

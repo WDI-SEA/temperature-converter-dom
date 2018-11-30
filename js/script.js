@@ -15,11 +15,12 @@ function celsiusToFahranheit(inputTemp){
 };
 
 
-var formValue = document.querySelector('form');
+//var formValue = document.querySelector('form');
 var fToCRadio = document.querySelector('.temp-type-f')
 var cToFRadio = document.querySelector('.temp-type-c')
 var result = document.querySelector('.result');
 var tempForm = document.querySelector('.form');
+var clearButton = document.querySelector('.clear-button');
 //var background = document.querySelector('.output');
 
 function backgroundF(fTemp){
@@ -37,6 +38,11 @@ function backgroundC(cTemp){
 		document.querySelector('.output').id = "hot";
 	} else if(cTemp <33 && cTemp>0) { document.querySelector('.output').id = "temperate"}
 };
+
+// clearButton.addEventListener('Clear',function(e){
+// 	e.preventDefault();
+// 	tempForm = "";
+// });
 
 tempForm.addEventListener('submit',function(e){
 	e.preventDefault();
