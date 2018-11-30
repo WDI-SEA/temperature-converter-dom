@@ -1,3 +1,4 @@
+// Converts to/from C,F,K,R scales
 const convertTemperature = function(fromTemp, fromUnit, toUnit) {
   switch(fromUnit) {
     case 'c':
@@ -60,31 +61,32 @@ const convertTemperature = function(fromTemp, fromUnit, toUnit) {
   }
 };
 
-document.addEventListener('DOMContentLoaded', function() {
+// Main function for form to run when submitted
+const submitForm = function(evt) {
+  //This will prevent from refreshing page
+  evt.preventDefault();
 
-  const updateConversion = function(temp, elem) {
-    elem.value = temp;
-  }
+  // Get temperature and convert to float
+  // Will need to be updated since form only sends Int
+  const originalTemp = parseFloat(evt.target.fromTemp.value);
+
+  const toTempBox = evt.target.toTemp;
+
+  // Get unit types to send to conversion function
+  const fromUnitType = evt.target.fromUnit.value;
+  const toUnitType = evt.target.toUnit.value;
+
+  const convertedTemp = convertTemperature(originalTemp, fromUnitType, toUnitType);
+
+  //+temp.toFixed(2) keeps the decimals to 2 only if needed
+  toTempBox.value = +convertedTemp.toFixed(2);
+
+};
+
+document.addEventListener('DOMContentLoaded', function() {
 
   const formData = document.querySelector('#converterForm');
 
-  // Submit Form
-  formData.addEventListener('submit', function(e) {
-    //This will prevent from refreshing page
-    e.preventDefault();
+  formData.addEventListener('submit', submitForm);
 
-    // Get temperature and convert to float
-    const originalTemp = parseFloat(formData.fromTemp.value);
-
-    const toTempBox = formData.toTemp;
-    
-    // Get unit types to send to converstion function
-    const fromUnitType = formData.fromUnit.value;
-    const toUnitType = formData.toUnit.value;
-
-    const convertedTemp = convertTemperature(originalTemp, fromUnitType, toUnitType);
-
-    //+temp.fixed(2) keeps the decimals to 2 onlh if needed
-    updateConversion(+convertedTemp.toFixed(2), toTempBox);
-  });
 });
