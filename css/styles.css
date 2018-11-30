@@ -3,9 +3,7 @@ body {
   text-align: center;
 }
 
-
 .converter {
-  /* border: 1px solid black; */
   border-radius: 5px;
   background-color: white;
   padding: 10px;
@@ -24,7 +22,6 @@ body {
 }
 
 /* Mobile first queries */
-
 /* Larger than phone */
 @media (min-width: 550px) {
   .converter {
@@ -40,14 +37,3 @@ body {
   }
   
 }
-
-/* Larger than tablet */
-@media (min-width: 750px) {
-
-}
-
-/* Larger than desktop */
-@media (min-width: 1000px) {
-
-}
-

@@ -66,13 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
     elem.value = temp;
   }
 
-  const clearButton = document.querySelector('#clearButton');
   const formData = document.querySelector('#converterForm');
-
-  // Reset Form
-  clearButton.addEventListener('click', function() {
-    
-  });
 
   // Submit Form
   formData.addEventListener('submit', function(e) {
@@ -92,7 +86,5 @@ document.addEventListener('DOMContentLoaded', function() {
 
     //+temp.fixed(2) keeps the decimals to 2 onlh if needed
     updateConversion(+convertedTemp.toFixed(2), toTempBox);
-
   });
-
 });
