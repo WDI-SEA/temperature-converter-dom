@@ -21,7 +21,6 @@ body {
   height: auto;
 }
 
-/* Mobile first queries */
 /* Larger than phone */
 @media (min-width: 550px) {
   .converter {
@@ -35,5 +34,4 @@ body {
   .button-row {
     margin-top: 25px;
   }
-  
 }
