@@ -3,11 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+  <title>Temperature Converter</title>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
+  <h1>Temperature Converter</h1>
+<div>
+	<input id="data" Type="text" name="dataInput" placeholder="key in value">
+	</div>
+  <form id="temp">
+   <input type="number" id="temp2">
+   <div>
+   	<input id="fah" value="f" type="radio">Fahrenheit to Celsius</input> <br>
+   	<input id="cel" value="c" type="radio">Celsius to Fahrenheit</input> <br>
+  	<button id="submit" type="submit">Submit</button> <br>
+  	<button id="reset" class="button" type="reset">Clear</button> <br>
+  </div>
+</form>
+<div>
+	<p id="result"> </p>
+</div>	
 
   <script type="text/javascript" src="js/script.js"></script>
 </body>

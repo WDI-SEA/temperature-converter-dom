@@ -1,3 +1,36 @@
-h1 {
-  color: blue;
+body {
+  text-align: center;
+}
+
+#data{
+	text-align: center;
+	width: 550px;
+	height: 100px;
+
+}
+
+
+h1{
+	color: grey;
+	text-align: center;
+}
+
+.userinput {
+	background-color: grey;
+	height: 50px;
+	width:550px;
+	margin-right: auto;
+}
+
+
+.button {
+	display: inline-block;
+}
+
+#result{
+	width: 700px;
+	height: 100px;
+	background-color: red;
+	font-size: 10em;
+	color: white;
 }
