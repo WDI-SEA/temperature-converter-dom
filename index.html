@@ -1,14 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Temperature Converter</title>
+  <meta name="description" content="">
+  <meta name="author" content="Parker Couch">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/ico" href="img/favicon.ico">
+
 </head>
 <body>
-  <h1>Hello Front-End</h1>
 
-  <script type="text/javascript" src="js/script.js"></script>
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container converter">
+    <header class="row">
+      <h2 class="title">Temperature Converter</h2>
+    </header>
+    <form id="converterForm">
+      <div class="row">
+        <div class="seven columns">
+          <input id="fromTemp" class="u-full-width" type="number"
+          name="fromTemp" placeholder="Enter temperature to convert here">
+        </div>
+        <div class="five columns">
+          <select id="fromUnit" class="u-full-width" name="fromUnit">
+            <option value="c" selected="selected">Celsius</option>
+            <option value="f">Fahrenheit</option>
+            <option value="k">Kelvin</option>
+            <option value="r">Rankine</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="seven columns">
+          <input id="toTemp" class="u-full-width"
+                 type="text" name="toTemp" readonly>
+        </div>
+        <div class="five columns">
+          <select id="toUnit" class="u-full-width" name="toUnit">
+            <option value="c">Celsius</option>
+            <option value="f" selected="selected">Fahrenheit</option>
+            <option value="k">Kelvin</option>
+            <option value="r">Rankine</option>
+          </select>
+        </div>
+      </div>
+      <div class="row button-row">
+        <div class="one-half column">
+          <input id="submitButton" type="submit" class="button-primary"
+                 value="Convert">
+        </div>
+        <div class="one-half column">
+          <input id="clearButton" class="button-primary" type="reset" 
+                 value="Clear">
+        </div>
+      </div>
+    </form>
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
