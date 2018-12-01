@@ -1,3 +1,53 @@
 h1 {
-  color: blue;
+  color: white;
+  font-size: 50px;
+  font-family: sans-serif;
 }
+html {
+	background-size: 100%;
+}
+
+
+.container {
+	text-align: center;
+	padding-top: 20px;
+	background: linear-gradient(to bottom, #9595b7, #c2c2d6, #c3c3d5);
+	height: 800px;
+	
+}
+
+
+.degrees {
+	margin: 10px;
+}
+
+.results {
+	margin: 20px 40%;
+	font-size: 18px;
+	font-family: sans-serif;
+}
+
+#input {
+	border: 7px solid red;
+	width: 20%;
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+
+#convert, #clear {
+	margin-top: 20px;
+	background-color: white;
+	border: 10px solid white;
+	font-family: sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+#outPut {
+	font-size: 30px;
+	color: red;
+	border-color: darkgray;
+}
+
+
+
