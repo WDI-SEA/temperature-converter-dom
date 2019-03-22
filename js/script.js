@@ -13,13 +13,15 @@ input.addEventListener("click", convertTemp);
 //check for keypress - not working
 input.addEventListener("keyup", function(event) {
 	//13 is the enter key
-	consoleLog(event)
+	// console.Log(event)
 	if (event.keyCode === 13) {
 		//don't submit the damn form
 		event.preventDefault();
 		document.getElementsById("clear").preventDefault();
 		//trigger the button click instead
+	} else{
 		document.getElementById("submitTemp").click();
+	
 	}
 })
 
