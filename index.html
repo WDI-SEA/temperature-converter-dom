@@ -4,11 +4,46 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+
   <title>Hello Front-End</title>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
-
+  <div id="converter">
+  	<div id="cheaterFlex">
+  <h1 class="topName">Temperature Converter</h1>
+  	<form method="post">
+  		<input type = "number" name="temp" value="33" id="temp"><br />
+  		<!-- <div id="connect4"> -->
+  			<input name="units" type="radio"value="f" checked="checked"><span class="chngfnt">F</span>
+  			<input name="units" type="radio" value="c"><span class="chngfnt">C</span>
+  	</form>
+  		<button id="submitTemp">Submit</button>
+  		<form method="post"><button id="clear">Clear</button></form>
+  	
+  	<div id="tempResult">
+  		<h1 ID="tempH1">Result</h1>
+  	</div>
+  </div>
+  </div>
   <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
+
+<!-- do at least 1 bonus - more if you can.  no more than 3 hours. at least an hour. -->
+<!--
+
+requirements
+	-within a form element add an: 
+		+input field 
+		+ submit button
+		+ clear button
+
+	-when the submit button is pressed, convert input from F to C
+	
+bonus
+	-Have the div turn blue for freezing temperatures, red for scorching temperatures.
+	-use a dropdown or radio buttons for F-C or C - F
+	-ENTER key converts (event submit vs click)
+	-style this mf
+
