@@ -4,11 +4,87 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
+  <title>Temp Converter</title>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
+  <header>
+    <h1>Temperature Converter</h1>
+  </header>
+  <main>
+    <div class="formholder">
+      <form method="post">
+        <div class="radioholder">
+          <div class="degrees fahrenheitholder">
+            <input type="radio" id="fromfahrenheit" name="fromtemp"><label name="fromtemp">&deg;F</label>
+          </div>
+          <div class="degrees celsiusholder">
+            <input type="radio" id="fromcelsius" name="fromtemp"><label name="fromtemp">&deg;C</label>
+          </div>
+          <div class="degrees kelvinholder">
+            <input type="radio" id="fromkelvin" name="fromtemp"><label name="fromtemp">&deg;K</label>
+          </div>
+        </div>
+        <div class="textholder">
+          <input type="text" id="temp-original" name="tempinput" placeholder="34">
+        </div>
+        <div class="radioholder">
+          <div class="degrees fahrenheitholder">
+            <input type="radio" id="tofahrenheit" name="totemp"><label name="totemp">&deg;F</label>
+          </div>
+          <div class="degrees celsiusholder">
+            <input type="radio" id="tocelsius" name="totemp"><label name="totemp">&deg;C</label>
+          </div>
+          <div class="degrees kelvinholder">
+            <input type="radio" id="tokelvin" name="totemp"><label name="totemp">&deg;K</label>
+          </div>
+        </div>
+        <div class="buttonholder">
+          <input type="button" id="convert-button" value="Convert">
+          <input type="button" id="clear-button" value="Clear">
+        </div>
+      </form>
+    </div>
+    <div class="resultholder">
+      <div class="resultsbox">
+        <p>Your new temp is <span class="resulttemp"><span class="resulttemp" id="outputdisplay"></span></span></p>
+      </div>
+      <div class="resultsmessage">
+
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footercontent">
+      <p>&copy;temperatureauthority</p>
+    </div>
+  </footer>
+
+
+
+
 
   <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
+
+<!--
+User Experience
+User puts in a value into the text field
+User clicks on button
+The page gets updated with the converted temperature value.
+Clicking a "Clear" button resets the text field
+Bonuses
+Have the div turn blue for freezing temperatures, red for scorching temperatures.
+
+Use a dropdown or radio buttons to select different units to convert (Fahrenheit to Celsius, or Celsius to Fahrenheit)
+
+Place the <input> and <button> elements into a form, so that pressing ENTER will automatically convert the temperature. Note that there's an event type called 'submit' that you can use instead of 'click'.
+
+Add your own personal sense of style using CSS styling and positioning techniques. Ideas include:
+
+different fonts (see Google Fonts for how to link fonts into a webpage)
+images
+colors
+borders
+Add the ability to convert to and from Kelvins!
+-->
