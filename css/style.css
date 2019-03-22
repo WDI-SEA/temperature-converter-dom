@@ -1,3 +1,98 @@
+ body{
+   background-color: #003333;
+ }
+
 h1 {
-  color: blue;
+  color: #00BFFF;
+  font-family: 'Gochi Hand', cursive;
+  font-size: 50px;
+}
+
+#termo{
+  height: 80px;
+  margin-left: 20px;
+  width: 40px;
+}
+
+.head{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.input{
+  background-color: #407F7F;
+  height: 300px;
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 40px;
+}
+
+.head{
+  display: flex;
+  justify-content: center;
+}
+
+.intro{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  font-family: 'Gochi Hand', cursive;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 17px;
+  color: white;
+}
+
+select {
+  height: 50px;
+  width: 600px;
+  font-size: 30px;
+  font-family: 'Gochi Hand', cursive;
+  font-family: 'Ubuntu', sans-serif;
+}
+.output{
+  background-color: #407F7F;
+  height: 300px;
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.principal{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+#units,#units2{
+  height: 200px;
+  width: 400px;
+  background-color: white;
+  border: 2px solid black;
+  font-size: 50px;
+  text-align: center;
+}
+
+.buttons{
+  display: flex;
+  justify-content: center;
+
+}
+
+button{
+  height: 60px;
+  width: 300px;
+  font-size: 20px;
+  margin: 40px 80px 10px 0;
+  font-family: 'Gochi Hand', cursive;
+  font-family: 'Ubuntu', sans-serif;
+  background: #669999;
+  color: white;
 }
