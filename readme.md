@@ -31,6 +31,8 @@ We will be using JavaScript to make a temperature conversion utility. A folder i
   * images
   * colors
   * borders
+  
+5. Add the ability to convert to and from Kelvins! 
 
 ## Deliverables
 
