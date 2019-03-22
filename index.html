@@ -12,7 +12,7 @@
   </header>
   <main>
     <div class="formholder">
-      <form method="post">
+      <form method="get">
         <div class="radioholder">
           <div class="degrees fahrenheitholder">
             <input type="radio" id="fromfahrenheit" name="fromtemp"><label name="fromtemp">&deg;F</label>
@@ -25,7 +25,7 @@
           </div>
         </div>
         <div class="textholder">
-          <input type="text" id="temp-original" name="tempinput" placeholder="34">
+          <input type="text" id="temp-original" name="tempinput" placeholder="type number here">
         </div>
         <div class="radioholder">
           <div class="degrees fahrenheitholder">
@@ -44,11 +44,11 @@
         </div>
       </form>
     </div>
-    <div class="resultholder">
-      <div class="resultsbox">
-        <p>Your new temp is <span class="resulttemp"><span class="resulttemp" id="outputdisplay"></span></span></p>
+    <div id="resultholder" class="resultholder">
+      <div id="resultsbox" class="resultsbox">
+
       </div>
-      <div class="resultsmessage">
+      <div class="resultsmessage" id="resultsmessage">
 
       </div>
     </div>
