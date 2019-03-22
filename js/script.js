@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
 
 	var buttonS = document.getElementById("submit");
+	var buttonC = document.getElementById("clear");
 	// console.log(tempF)
 	var tempC = 0;
 	var display = document.getElementById("output");
@@ -19,5 +20,9 @@ document.addEventListener("DOMContentLoaded", function() {
 			return display.style.backgroundColor = "red"
 		} 
 
+	})
+	buttonC.addEventListener("click", function(e) {
+		e.preventDefault()
+		document.getElementById("input").value = ""
 	})
 })
