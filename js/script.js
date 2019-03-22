@@ -8,6 +8,7 @@ var buttonReset = document.getElementById('reset');
 var buttonConvert = document.getElementById('convert');
 
 
+
 function calculateTemperature (){
 
 var typeTemp = inputSelector.value;
@@ -53,6 +54,46 @@ switch (typeTemp || conv) {
 
 outputText.value = converted.toFixed(2) ;
 console.log(converted);
+
+function changeColor (color){
+   inputNumber.style.backgroundColor = color;
+   outputText.style.backgroundColor = color;
+}
+
+
+if(typeTemp == "celsius"){
+  if(units <= 10){
+    changeColor ("blue");
+
+  }else if(units >= 30){
+    changeColor ("red");
+  }else{
+    changeColor ("white");
+  }
+}else if(typeTemp == "fahrenheit"){
+  var newy = units;
+  newy = (newy - 32) * (5 / 9);
+  if(newy <= 10){
+    changeColor ("blue");
+
+  }else if(newy >= 30){
+    changeColor ("red");
+  }else{
+    changeColor ("white");
+  }
+}else if(typeTemp == "kelvin"){
+  var newy = units;
+  newy = newy - 273.15;
+  if(newy <= 10){
+    changeColor ("blue");
+
+  }else if(newy >= 30){
+    changeColor ("red");
+  }else{
+    changeColor ("white");
+  }
+}
+
 }
 
 function reset (){
@@ -60,6 +101,9 @@ function reset (){
   inputNumber.value = 0;
   inputSelector.value = "";
   outputSelector.value = "";
+  inputNumber.style.backgroundColor = "white";
+  outputText.style.backgroundColor = "white";
+  converted=0;
 }
 
 
