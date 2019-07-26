@@ -1,14 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
+  <title>Temperature Converter</title>
 </head>
-<body>
-  <h1>Hello Front-End</h1>
 
-  <script type="text/javascript" src="js/script.js"></script>
+<body>
+  <header>
+    <h1>Temperature Converter</h1>
+  </header>
+  <main>
+    <div class="form-wrapper">
+      <form id="temperature-form">
+        <input id="starting-temp" type="number">
+        <div class="scales">
+          <label>Starting scale:</label>
+          <input id="starting-scale-f" type="radio" name="startingScale" value="F" checked>F
+          <input id="starting-scale-c" type="radio" name="startingScale" value="C">C
+        </div>
+        <div class="scales">
+          <label>Target scale:</label>
+          <input id="target-scale-f" type="radio" name="targetScale" value="F" checked>F
+          <input id="target-scale-c" type="radio" name="targetScale" value="C">C
+        </div>
+        <div class="buttons">
+        <button class="button" type="submit">Convert</button>
+        <button id="clear-button" class="button">Clear</button>
+      </div>
+      </form>
+    </div>
+
+    <div id="result-view">
+      <div id="result" />
+    </div>
+  </main>
+  <script type="text/javascript" src="./js/script.js"></script>
 </body>
+
 </html>
+
