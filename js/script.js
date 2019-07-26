@@ -15,8 +15,8 @@ console.log(farhenheitI);
     var tempI = Number(document.getElementById('temp-before').value);
     console.log(tempI);
     // if (farhenheitI.checked == true && celciusR.checked == true) {
-    //   newTemp = Math.floor((tempI - 32) * (5/9));
-    //   return newTemp
+      // newTemp = Math.floor((tempI - 32) * (5/9));
+      // return newTemp
     //   console.log(newTemp)
     // }
     // else if (farhenheitI == true && kelvinR == true) {
@@ -24,7 +24,6 @@ console.log(farhenheitI);
     //   return
     // }
     newTemp = Math.floor((tempI - 32) * (5/9));
-    return newTemp
     console.log(newTemp)
     output.innerText = newTemp.toString();
     console.log(newTemp);
