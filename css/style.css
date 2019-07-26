@@ -1,3 +1,44 @@
 h1 {
   color: blue;
 }
+
+div {
+  border: 10px solid orange;
+}
+body {
+  display: grid;
+  grid-template-rows:100px 1fr 100px;
+  grid-template-columns:1fr 1fr;
+  grid-template-areas:
+    "title title"
+    "interactive image"
+    "footer footer";
+}
+
+p {
+  text-align: center;
+}
+
+header{
+  grid-area: title;
+  text-align: center;
+}
+
+.temp-conv {
+  grid-area: interactive;
+}
+
+.reactive-image {
+  grid-area: image;
+}
+
+.result {
+  width: 1fr;
+  height: 150px;
+  background-color: blue;
+}
+
+footer {
+  grid-area: footer;
+
+}

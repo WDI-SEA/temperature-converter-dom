@@ -4,11 +4,46 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
+  <title>Temperature Converter</title>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
+  <header>
+    <h1>Temperature Converter</h1>
+  </header>
+  <main>
+    <div class="temp-conv">
+      <form id="temp-form">
+        <input id="temp-before" placeholder="Temperature Here"></input>
+        <button class="input" type="submit"></button>
+      </form>
+      <label class="container">F&#176;
+        <input type="radio" checked="checked"id="farhenheitI" name="drone1" value="farhenheit">
+      </label>
+      <label class="container">C&#176;
+        <input type="radio" id="celciusI" name="drone1" value="celcius">
+      </label>
+      <label class="container">K&#176;
+        <input type="radio" id="kelvinI" name="drone1" value="kelvin">
+        </label>
+      <div id="result">
+        <p></p>
+      </div>
+        <label class="container">F&#176;
+        <input type="radio" id="farhenheitR" name="drone2" value="farhenheit">
+      </label>
+      <label class="container">C&#176;
+        <input type="radio" checked="checked" id="celciusR" name="drone2" value="celcius">
+      </label>
+      <label class="container">K&#176;
+        <input type="radio" id="kelvinR" name="drone2" value="kelvin">
+      </label>
+    </div>
+    <div class="reactive-image">
+    </div>
+  </main>
+  <footer>
 
+  </footer>
   <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
