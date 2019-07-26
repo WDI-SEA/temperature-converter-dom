@@ -1,3 +1,46 @@
+* { box-sizing: border-box } 
+
 h1 {
-  color: blue;
+  color: red;
+  text-align: center;
+  font-size: 60px;
+}
+
+body {
+  background-image: url("https://i.imgur.com/1PGOxV4.jpg") ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: relative;
+  object-fit: cover;
+  text-align:center;
+}
+
+
+label {
+  font-size:18px;
+  color: yellowgreen;
+}
+
+#formAlign{
+  text-align:center;
+}
+
+#input {
+  width: 550px;
+  height: 50px;
+}
+
+#output {
+  font-weight: bold;
+  font-size: 50px;
+  color: white;
+  /* text-align: center;
+  /* background-color: red;
+  /* display: block; */
+  /* margin: auto;
+  padding-block-start: 100px;
+  padding-block-end: 10px; */
+  /* padding-block: 50px; */
+  /* width: 50%;
+  margin-top: 50px; */ 
 }
