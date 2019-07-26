@@ -1,3 +1,140 @@
+body {
+	background-image: url("../img/page_bluebrocade_01.jpg");
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+
 h1 {
-  color: blue;
+	color: white;
+}
+
+label {
+	color: white;
+}
+
+button {
+	font-size: 24px;
+}
+
+#fahrenheit {
+	width: 400px;
+	height: 24px;
+	border-radius: 10px;
+	font-size: 20px;
+	text-align: center;
+/*	position: relative;
+	top: 50%;
+  	left: 50%;
+  	transform: translate(-200px, -12px);*/
+}
+
+.container {
+	display: grid;
+/*	border: 3px solid aqua;
+*/	background-image: url("../img/comicrepeat.png");
+	grid-template-columns: 3fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-areas: "temp-form-title thermometer" "temp-form-form thermometer" "temp-form-display thermometer";
+	width: 833px;
+	max-width: 833px;
+	margin: 0 auto;
+	padding: 0;
+
+}
+
+.form-top {
+	background-image: url("../img/comictop.png");
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+/*	border: 3px solid red;
+*/	margin: 40px auto 0 auto;
+	padding: 0;
+	width: 833px;
+	height: 161px;
+}
+
+.form-grid {
+	background-image: url("../img/comicrepeat.png");
+	background-repeat: repeat-y;
+/*	border: 3px solid yellow;
+*/	width: 800px;
+	height: 400px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.form-bottom {
+	background-image: url("../img/comicbottom.png");
+	background-repeat: no-repeat;
+/*	border: 3px solid green;
+*/	width: 833px;
+	height: 171px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.form-thermometer {
+	width: 100px;
+}
+
+.thermometer {
+	border: 5px solid white;
+	border-radius: 20px;
+	width: 40px;
+	height: 400px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	z-index: 110;
+
+}
+
+.mercury {
+	background: red;
+	height: 100px;
+	width: 100%;
+	border-radius: 15px;
+	z-index: 101;
+	margin: 0;
+}
+
+.temp-form-title {
+	/*border: 2px solid white;*/
+	grid-area: 1 / 1 / span 1 / span 1;
+	margin: 0 0 0 60px;
+	padding: 40px 0 0 0;
+	align-items: center;
+
+}
+
+.temp-form-form {
+/*	border: 2px solid white;
+*/	grid-area: 2 / 1 / span 1 / span 1;
+	margin: 0 0 0 60px;
+}
+
+.temp-form-display {
+/*	border: 2px solid white;
+*/	grid-area: 3 / 1 / span 1 / span 1;
+	margin: 0 0 0 60px;
+}
+
+.temp-thermometer {
+/*	border: 2px solid white;
+*/	grid-area: 1 / 2 / span 3 / span 1;
+	display: flex;
+	align-items: center;
+	justify-content: pxenter;
+	margin: 0 60px 0 0;
+}
+
+.result {
+	background: white;
+	margin: 40px 80px;
+	padding: 20px;
 }

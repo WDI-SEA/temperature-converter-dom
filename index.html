@@ -4,11 +4,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
+  <title>Kirk's Temperature Converter</title>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
-
+  	<div class="form-top">
+  		<h1>Kirk's Temperature Converter</h1>
+	</div>
+  	<div class="container">
+  		<div class="temp-form-title">
+  			<input id="fahrenheit" placeholder="Enter a temperature">
+  		</div>
+  		<div class="temp-form-form">
+  			<input type="radio" name="scale" id="c" checked>
+  			<label for="c">°F to °C</label>
+  			<input type="radio" name="scale" id="f">
+  			<label for="f">°C to °F</label>
+  			<input type="radio" name="scale" id="k">
+  			<label for="k">°F to °K</label><br><br>
+  			<button class="convert">Convert</button>
+  		</div>
+  		<div class="temp-form-display">
+  			<p class="result">Result</p>
+  		</div>
+ 		<div class="temp-thermometer">
+ 			<div class="thermometer">
+ 				<div class="mercury"> </div>
+ 			</div>
+ 		</div>
+ 	</div>
+  	<div class="form-bottom"> </div>
   <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
