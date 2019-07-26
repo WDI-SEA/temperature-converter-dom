@@ -1,10 +1,10 @@
 
-var farhenheitI = document.getElementById("farhenheitI");
-var celciusI = document.getElementById("celciusI");
-var kelvinI = document.getElementById("kelvinI");
-var farhenheitR = document.getElementById("farhenheitR");
-var celciusR = document.getElementById("celciusR");
-var kelvinR = document.getElementById("kelvinR")
+var farhenheitIEl = document.getElementById("farhenheitI");
+var celciusIEl = document.getElementById("celciusI");
+var kelvinIEl = document.getElementById("kelvinI");
+var farhenheitREl = document.getElementById("farhenheitR");
+var celciusREl = document.getElementById("celciusR");
+var kelvinREl = document.getElementById("kelvinR")
 var newTemp;
 console.log(farhenheitI);
 
@@ -14,20 +14,39 @@ console.log(farhenheitI);
     var output = document.createElement('p');
     var tempI = Number(document.getElementById('temp-before').value);
     console.log(tempI);
-    // if (farhenheitI.checked == true && celciusR.checked == true) {
-      // newTemp = Math.floor((tempI - 32) * (5/9));
-      // return newTemp
-    //   console.log(newTemp)
-    // }
-    // else if (farhenheitI == true && kelvinR == true) {
-    //   newTemp = Math.floor((tempI - 32) * (5/9) + 273)
-    //   return
-    // }
-    newTemp = Math.floor((tempI - 32) * (5/9));
+     if (farhenheitIEl.checked == true && celciusREl.checked == true) {
+      newTemp = Math.floor((tempI - 32) * (5/9));
+      console.log('sanity check')
+
+      console.log(newTemp)
+    }
+    else if (farhenheitIEl.checked == true && kelvinREl.checked == true) {
+      newTemp = Math.floor((tempI - 32) * (5/9) + 273);
+    }
+    else if (farhenheitIEl.checked == true && kelvinREl.checked == true) {
+      newTemp = Math.floor((tempI - 32) * (5/9));
+    }
+    else if (celciusIEl.checked == true && farhenheitREl.checked == true) {
+      newTemp = Math.floor((tempI)*(9/5) + 32);
+    }
+    else if (celciusIEl.checked == true && kelvinREl.checked == true) {
+      newTemp = Math.floor(tempI + 273);
+    }
+    else if (kelvinIEl.checked == true && farhenheitREl.checked == true) {
+      newTemp = Math.floor((tempI - 273)*(9/5) + 32);
+    }
+    else if (kelvinIEl.checked == true && celciusREl.checked == true) {
+      newTemp = Math.floor(tempI - 273);
+    }
+    else {
+      newTemp = 'Please input a number, or choose different units'
+    };
+    // newTemp = Math.floor((tempI - 32) * (5/9));
     console.log(newTemp)
     output.innerText = newTemp.toString();
     console.log(newTemp);
     console.log(output);
+    console.log('sanity')
 
     document.getElementById('result').appendChild(output);
     console.log(output);
