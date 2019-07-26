@@ -12,7 +12,7 @@
 	</div>
   	<div class="container">
   		<div class="temp-form-title">
-  			<input id="fahrenheit" placeholder="Enter a temperature">
+  			<input id="input-temp" placeholder="Enter a temperature">
   		</div>
   		<div class="temp-form-form">
   			<input type="radio" name="scale" id="c" checked>
@@ -21,14 +21,14 @@
   			<label for="f">°C to °F</label>
   			<input type="radio" name="scale" id="k">
   			<label for="k">°F to °K</label><br><br>
-  			<button class="convert">Convert</button>
+  			<button class="convert" id="convert-button">Convert</button>
   		</div>
   		<div class="temp-form-display">
-  			<p class="result">Result</p>
+  			<p class="result" id="result"> </p>
   		</div>
  		<div class="temp-thermometer">
  			<div class="thermometer">
- 				<div class="mercury"> </div>
+ 				<div class="mercury" id="mercury"> </div>
  			</div>
  		</div>
  	</div>
