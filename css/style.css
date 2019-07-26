@@ -1,3 +1,89 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  background-color: rgb(2, 34, 102);
+  background-image: linear-gradient(transparent, red);
+  background-size: 100vw 50vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom;
+}
+button {
+  font-size: 24px;
+  border-radius: 40px;
+}
+div {
+  position: relative;
+  text-align: center;
+}
 h1 {
-  color: blue;
+  color: aqua;
+  font-size: 50px;
+  text-align: center;
+}
+input {
+  font-size: 24px;
+  border-radius: 40px;
+}
+label {
+  font-size: 24px;
+  padding: 10px;
+  text-align: center;
+  color: aqua;
+}
+main {
+  font-size: 48px;
+  color: aqua;
+  text-align: center;
+  max-width: 50vw;
+  align-items: center;
+}
+select {
+  font-size: 24px;
+}
+
+.grid {
+  margin: auto;
+  padding-top: 10vh;
+  max-width: 75vw;
+  display: grid;
+  grid-template-rows: 2fr 1fr 2fr 3fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "row1"
+    "row2"
+    "row3"
+    "row4"
+    "row5";
+  row-gap: 1vw;
+}
+
+#entry {
+  width: 20vw;
+}
+
+.grid-row-1 {
+  grid-area: row1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid-row-2 {
+  grid-area: row2;
+}
+.grid-row-3 {
+  grid-area: row3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid-row-4 {
+  grid-area: row4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid-row-5 {
+  grid-area: row5;
 }

@@ -1,14 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>TempConverter</title>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
-
-  <script type="text/javascript" src="js/script.js"></script>
+  	<h1>Christo's Temperature Convertor</h1>
+  	<div class="grid">
+		
+		<form>
+			<div class="grid-row-1">
+				<input type="text" id="entry" placeholder=" Name Your Degree Value" required>
+			</div>
+			<div class="grid-row-2">
+					<label>From Degree:</label>
+						<select id="from-temp">
+							<option value="1" id="f" selected>°F</option>;
+							<option value="2" id="c" >°C</option>;
+							<option value="3" id="k" >°K</option>;
+						</select>
+						<label>To Degree:</label>
+						<select id="to-temp">
+							<option id="f1" >°F</option>;
+							<option id="c1"  selected>°C</option>;
+							<option id="k1" class="to-temp">°K</option>;
+					</select>	
+				</div>
+				<div class="grid-row-3">
+					<button type ="submit" id="convert-button">Convert</button>
+				</div>
+		</form>
+		<div class="grid-row-4">
+			<main id="result">ANSWER</main>
+		</div>
+		<div>
+		<button class="grid-row-5" id="clear">Try Another</button>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
+
