@@ -1,3 +1,44 @@
-h1 {
-  color: blue;
+body {
+	background-color: grey;
 }
+
+h1 {
+  color: pink;
+  text-align: center;
+}
+
+#div1 {
+	background-color: grey;
+	color: red;
+	text-align: center;
+	padding: 30px;
+}
+
+#fOrC {
+	background-color: grey;
+	text-align: center;
+	padding: 10px;
+
+}
+
+#result {
+	background-color: grey;
+	padding: 30px;
+}
+
+#divButtons {
+	background-color: pink;
+	text-align: center;
+	padding: 30px;
+}
+
+#displayResult {
+	background-color: white;
+}
+
+input {
+	width: 50%;
+	height: 35%;
+	font-size: 30px;
+}
+
