@@ -1,5 +1,6 @@
 console.log('Hello, front end');
 var convertButton = document.getElementById("convert-button");
+var resetButton = document.getElementById("reset-form-button");
 var mercury = document.getElementById("mercury");
 
 function convertButtonClick() {
@@ -17,26 +18,38 @@ function convertButtonClick() {
 	}
 
 	var calcResult = 0;
-	switch (conversionChoice) {
-		case "c": // F to C
-			calcResult = convertFtoC(inputTemp.value);
-			result.innerText = `${inputTemp.value}°F is ${calcResult}°C`;
-			setMercury(calcResult, "c");
-			break;
-		case "f": // C to F
-			calcResult = convertCtoF(inputTemp.value);
-			result.innerText = `${inputTemp.value}°C is ${calcResult}°F`;
-			setMercury(calcResult, "f");
-			break;
-		case "k": // F to K
-			calcResult = convertFtoK(inputTemp.value);
-			result.innerText = `${inputTemp.value}°F is ${calcResult}°K`;
-			setMercury(calcResult, "k");
-			break;
+	if (inputTemp.value != "") {
+		switch (conversionChoice) {
+			case "c": // F to C
+				calcResult = convertFtoC(inputTemp.value);
+				result.innerText = `${inputTemp.value}°F is ${calcResult}°C`;
+				setMercury(calcResult, "c");
+				break;
+			case "f": // C to F
+				calcResult = convertCtoF(inputTemp.value);
+				result.innerText = `${inputTemp.value}°C is ${calcResult}°F`;
+				setMercury(calcResult, "f");
+				break;
+			case "k": // F to K
+				calcResult = convertFtoK(inputTemp.value);
+				result.innerText = `${inputTemp.value}°F is ${calcResult}°K`;
+				setMercury(calcResult, "k");
+				break;
+		}
 	}
 }	
 
+function resetButtonClick() {
+	var inputTemp = document.getElementById("input-temp");
+	var result = document.getElementById("result");
+	
+	inputTemp.value = "";
+	result.innerText = "";
+	setMercury(-20, "f");	
+}
+
 convertButton.addEventListener("click", convertButtonClick);
+resetButton.addEventListener("click", resetButtonClick);
 
 function convertFtoC(f) {
 	return Math.floor(((f - 32) * 5 / 9) * 100) / 100;

@@ -11,6 +11,13 @@ h1 {
 	color: white;
 }
 
+p {
+	font-size: 32px;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+}
+
 label {
 	color: white;
 }
@@ -102,7 +109,7 @@ button {
 	z-index: 101;
 	margin: 0;
 	padding: 0;
-	transition: height 1s;
+	transition: height 1s, background 1s;
 }
 
 .temp-form-title {
@@ -137,6 +144,8 @@ button {
 
 .result {
 	background: white;
+	height: 37px;
+	width: 400px;
 	margin: 40px 80px;
-	padding: 20px;
+	padding: 0px;
 }
