@@ -6,10 +6,11 @@ document.getElementById('temperature').addEventListener("submit", function(event
 	var newTemp;
 	
 	if (document.getElementById("radio1").checked){
-		newTemp = (temp * 9/5) + 32;
-		console.log("god it works")
-	} else {
 		newTemp = (temp - 32)*(5/9);
+		
+		// console.log("god it works")
+	} else {
+		newTemp = (temp * 9/5) + 32;
 		// console.log("Bwah")
 	};
 	// var x = document.getElementsByTag("p");
@@ -30,3 +31,8 @@ document.getElementById('temperature').addEventListener("submit", function(event
 document.getElementById("clear").addEventListener("click", function(event){
 	location.reload();
 });
+
+
+//console.log(fromTempDegEl.children[fromTempDegEl.selectedIndex])
+//i can create a div that has children and get selected index
+//by referencing the selected index (or checked if using radio buttons)
