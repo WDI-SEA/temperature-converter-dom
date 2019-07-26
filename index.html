@@ -1,14 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
-</head>
-<body>
-  <h1>Hello Front-End</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title>Hello Front-End</title>
+  </head>
+  <body>
+    <div id="myDiv"></div>
+    <h1>Temperature Converter</h1>
 
-  <script type="text/javascript" src="js/script.js"></script>
-</body>
+    <form class="form-info">
+      <div id="wrap-radio">
+        <input id="radio-button-F" type="radio" name="temp" value="F" />F <br />
+        <input id="radio-button-C" type="radio" name="temp" value="C" />C <br />
+      </div>
+      <div class="input">
+        <input id="temp-input" />
+      </div>
+      <div id="submit-or-clear">
+        <button class="submit-button" type="submit">Submit</button>
+        <button class="clear-button">Clear</button>
+      </div>
+      <div id="result-container">
+        <div id="result"></div>
+      </div>
+    </form>
+
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
 </html>

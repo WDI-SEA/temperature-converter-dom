@@ -1,3 +1,54 @@
+body {
+  /* background-color: rgb(25, 148, 230); */
+  height: 100vh;
+  background-image: linear-gradient(purple, red, yellow, blue, purple);
+}
 h1 {
-  color: blue;
+  color: rgba(3, 3, 3, 0.767);
+  text-align: center;
+}
+.form-background {
+  height: 35%;
+  max-width: 100%;
+  background-color: firebrick;
+  position: relative;
+  z-index: 1;
+  padding: 300px auto;
+}
+#wrap-radio {
+  justify-content: center;
+  display: flex;
+  margin: 0;
+}
+.input {
+  text-align: center;
+  padding: 30px;
+}
+#temp-input {
+  margin: 0px auto;
+  position: center;
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16pt;
+}
+.form-info {
+  margin: 0px auto;
+  padding: 10px;
+}
+#submit-or-clear {
+  margin: 0px auto;
+  text-align: center;
+  padding: 10px;
+}
+#result-container {
+  border-radius: 5px;
+  max-width: 35%;
+  margin: 0px auto;
+}
+#result {
+  text-align: center;
+  height: 20px;
+  padding: 30px;
+  font-size: 24pt;
 }
