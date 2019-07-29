@@ -6,8 +6,49 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <title>Hello Front-End</title>
 </head>
+
+
 <body>
-  <h1>Hello Front-End</h1>
+  	<div class="waterBottle">
+  		<h1>How Hot Is It?</h1>
+
+		
+		<form id="form">
+			<div class="temperature-converter">
+				<label>Temperature Converter:
+					<input id="deg" type="number" placeholder="degrees">
+				</label>
+			</div>
+			
+			<div>
+				<button id='submit'>Submit</button>
+				<button id="clear">Clear</button>
+			</div>
+			
+			<input id="radioF" type="radio" name="fahrenheit" value="f">
+
+			<div class="fahrenheit">
+				<label>&deg;F</label>
+			</div>
+			
+
+			<input id="radioC" type="radio" name="celsius" value="c">
+			
+			<div class="celsius">
+				<label>&deg;C</label>
+			</div>
+			
+			<div id="output">
+				<label></label>
+				<input id="conversion" type="number" placeholder="conversion">
+			</div>
+		</form>
+	</div>  	
+
+
+
+
+
 
   <script type="text/javascript" src="js/script.js"></script>
 </body>
