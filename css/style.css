@@ -1,3 +1,74 @@
 h1 {
   color: blue;
+  grid-area: head;
+  
+  margin-left: 500px;
+ 
+}
+body{
+	background-color: grey;
+}
+#container{
+
+width: 100%;
+height: 100vh;
+display: grid;
+grid-template-areas: 
+	". head ."
+	". main ."
+	". answers .";
+grid-template-rows: 1fr 1fr 1fr;
+grid-template-columns: 10px 1fr 10px;
+}
+#box{
+	grid-area: main;
+	align-items: center;
+	margin-left: 500px;
+}
+#buttons{
+	grid-area: main;
+	margin-top: 50px;
+	margin-left: 500px;
+	justify-content: space-between;
+}
+#answers{
+	grid-area: answers;
+	font-size: 20px;
+	margin-left: 500px;
+	
+	
+
+
+}
+#clear{
+	margin-left: 50px;
+	padding: 10px;
+	margin-top: 50px;
+	background-color: grey;
+	color: white;
+}
+#box1{
+	border-radius: 20px;
+	padding: 10px 50px;
+	text-align: center;
+}
+#enter{
+	padding: 10px;
+	margin-left: 30px;
+	background-color: grey;
+	color: white;
+}
+#FC{
+	grid-area: main;
+	margin-top: 60px;
+	margin-left: 530px;
+	display:inline-block;
+	
+
+	
+}
+#Celcius{
+	margin-left: 20px;
+
+	/*position: absolute;*/
 }
