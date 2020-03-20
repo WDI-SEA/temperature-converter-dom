@@ -1,3 +1,36 @@
+body {
+  text-align: center;
+}
 h1 {
   color: blue;
+}
+.input {
+  background-color: lightblue;
+  padding: 50px;
+  border-color: lightgrey;
+  margin: 20px;
+}
+  .temp {
+    padding: 30px;
+    width: 250px;
+    text-align: center;
+    font-size: 30px
+}
+
+.fOrC {
+}
+
+
+
+.output {
+  background-color: blue;
+  padding: 30px;
+  display: center;
+  width: 100%;
+  text-align: center;
+  font-size: 30px
+}
+
+#submit{
+  
 }
