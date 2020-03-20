@@ -1,3 +1,11 @@
 h1 {
   color: blue;
+  font-family: 'Monda', sans-serif;
+
 }
+input {
+  display: block;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 1em;
+  color: #70b2e5;
