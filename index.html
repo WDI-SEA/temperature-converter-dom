@@ -4,10 +4,57 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
+  <link href="https://fonts.googleapis.com/css?family=Monda&display=swap" rel="stylesheet">
+
+  <title>Temperature Converter</title>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
+  <header>
+	 <h1>Temperature Converter Pro 2.0</h1>
+	 <h2>Making sense of your degrees, one click at a time.<h2>
+  </header>
+   <div class="intro">  
+	 <p>Sometimes, a little knowledge can be a dangerous thing. For example, you might happen to know what the temperature is in degrees. But then you find yourself asking questions. Questions like:</p>
+	 <div class="questions">
+	 <p> "What kind of degrees are these?"</p>
+	 <p> "What does it all mean?!"</p>
+	 <p> "Is it too hot or too cold?"</p>
+	 <p> "What if it's just right. Am I Goldilocks? Oh NO!!!"</p>
+	 <p> "Will I die immediately if I step outside?"</p>
+	 <p>"Who toucha my spaghet and whya?"</p>
+	</div>
+	 <div class="pic">
+  		<img class="spag" src="https://i.kym-cdn.com/entries/icons/facebook/000/025/054/SOMEBODY_TOUCHA_MY_SPAGHET.jpg" alt="temperature graph">
+  	 </div>
+	 <p> We, the developers of Temperature Converter Pro 2.0, understand the complexities and existential nature of these questions. That's why we decided to help you out, dear viewer. Just below is our handy conversion tool, feel free to give it a try. It has the capability of converting temperature units from degrees Fahrenheit to Celsius, Celsius to Fahrenheit, and degrees Celsius to Kelvins - with a two decimal float. With water (H2O) as our reference, freezing temperatures will show up as <span class="tempf">blue</span> and boiling temperatures will appear <span class="tempb">red</span>. Fair warning, it does handle temperature conversions like an absolute beast! Enjoy!</p>
+  
+  </div>
+  
+
+  <div>
+  	<form onsubmit="return false">
+  		<div>
+   			<label>Temperature:</label></br>
+  			<input id="temperature" type="text" placeholder="Number of Degrees">
+		</div>
+		<div>
+			<label>Unit Selection:</label></br>
+			<input name="degree" type="radio" value="FC">°F to °C
+    		<input name="degree" type="radio" value="CF">°C to °F
+    		<input name="degree" type="radio" value="FK">°C to K
+		</div>
+		<div>
+			<button type="submit" onclick="convert()" onsubmit="convert()">Convert!</button>
+		</div>
+		<div>
+			<label for="answer">Converted Temperature:</label></br>
+			<input type="text" id="answer" name="answer">
+		</div>
+		<div>
+			<button type="reset" onclick="reset()">Reset</button>
+		</div>
+  	</form>
+  </div>
 
   <script type="text/javascript" src="js/script.js"></script>
 </body>
