@@ -1,3 +1,9 @@
 h1 {
   color: blue;
 }
+.errthang {
+  background-color: lightgray;
+}
+#result {
+  background-color: red;
+}
