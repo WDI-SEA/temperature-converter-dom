@@ -1,3 +1,16 @@
 h1 {
-  color: blue;
+  
+}
+label {
+  display: block;
+  margin-top: 10px;
+}
+input {
+  display: block;
+}
+[name='units'] {
+  display: inline;
+}
+[type='button'], [type='reset'] {
+  margin-top: 10px;
 }

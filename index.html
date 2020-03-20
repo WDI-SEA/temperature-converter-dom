@@ -4,10 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
+  <title>Temperature Converter</title>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
+  <h1>Convert Temperatures between Celsius and Fahrenheit</h1>
+  <form>
+    <label for='temp'>Temperature:</label>
+    <input type='text' id='temperature' name='temperature'>
+    
+    <label for='conv'>Convert:</label>
+    <input type='radio' name='units' value='CtoF' checked> Celsius to Fahrenheit<br>
+    <input type='radio' name='units' value='FtoC'> Fahrenheit to Celsius
+    
+    <!--  At first I used type='submit' but that seems to make
+          the form reset the page and re-call the functions, 
+          but after a refresh they would be empty so the boxes 
+          would blink with the correct values before all turning 
+          blank-->
+    <input type='button' value='submit' onclick="chooseConv()">
+    
+    <label for='result'>Result</label>
+    <input type='text' id='result' name='result'>
+    
+    <input type='reset' value='reset'>
+    
+  </form>
 
   <script type="text/javascript" src="js/script.js"></script>
 </body>
