@@ -1,3 +1,11 @@
+body {
+	text-align: center;
+}
+
 h1 {
   color: blue;
+}
+#display {
+	background-color: yellow;
+	margin: 20px 50px;
 }
