@@ -4,10 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
+  <title>Temperature Converter</title>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
+  <h1>Temperature Converter</h1>
+  <div class="container">
+    <form onsubmit="return false" >
+      <!-- user input field for temp -->
+      <input type="text" name="tempInput" id="tempInput" placeholder="0">
+      <!-- type of temp conversion radio buttons -->
+      <div id="radio">
+        <input type="radio" class="tempType" name="tempType" value="F" checked>
+        <label for="F">&#x2109</label>
+        <input type="radio" class="tempType" name="tempType" value="C">
+        <label for="C">&#x2103</label>
+      </div>
+      <!-- submission & clear buttons -->
+      <div>
+        <button id="submit">Submit</button>
+        <button id="clear">Clear</button>
+      </div>
+      <!-- display of coverted temperature  -->
+      <div id="display"></div>
+    </form>
+  </div>
+  
 
   <script type="text/javascript" src="js/script.js"></script>
 </body>
