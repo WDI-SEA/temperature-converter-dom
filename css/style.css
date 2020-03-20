@@ -1,3 +1,15 @@
-h1 {
-  color: blue;
+body {
+  position: center;
 }
+h1 {
+  color: solid black;
+  font-family: 'Jaldi', sans-serif;
+  position: center;
+  
+}
+h3 {
+  color: solid black;
+  font-family: 'Jaldi', sans-serif;
+}
+
+

@@ -12,7 +12,6 @@ We will be using JavaScript to make a temperature conversion utility. A folder i
 * When the submit button is pressed, convert the inputted temperature from F to C using the appropriate conversion formula (may need to Google it)
 
 ## User Experience
-
 1. User puts in a value into the text field
 2. User clicks on button
 3. The page gets updated with the converted temperature value.
