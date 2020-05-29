@@ -22,7 +22,7 @@ submitButton.addEventListener("click", function(e) {
 
 var clearButton = document.querySelector(".clear")
 clearButton.addEventListener("click", function(e) {
-    clearButton.remove(inputtedVal)
+    results.innerText = "";
 })
 
 
