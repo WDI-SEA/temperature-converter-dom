@@ -1,3 +1,19 @@
-h1 {
-  color: blue;
+body {
+  margin: 0;
+}
+h1, h2 {
+  color: Grey;
+  text-align: center;
+}
+div {
+  margin: 0 45%;
+  display: inline;
+}
+.selectors {
+  display: inline-block;
+  margin: 0 autp;
+  text-align: center
+}
+form {
+  display: inline;
 }
