@@ -5,3 +5,9 @@ toCelsius.addEventListener("click", function(event){
     solution = ((input * (9/5)) + (32) + "°F");
 })
 
+var clearOut = document.querySelector("#clear");
+clearOut.addEventListener("click", function(event) {
+    var solutionBox = document.querySelector("#convertedValue").innerHTML = 
+    solutionBox = "";
+})
+
