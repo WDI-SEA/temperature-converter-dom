@@ -1,3 +1,79 @@
+body {
+  background-color: #505050;
+  margin:0;
+  color: mintcream;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+section {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.tempInput {
+  position: relative;
+  top: 600px;
+}
+
 h1 {
-  color: blue;
+  margin: 50px;
+  font-size: 300px;
+  position: absolute;
+  text-align: right;
+  display: inline;
+  border-left: outset;
+}
+
+h2 {
+  color: rgb(240, 240, 240);
+  font-weight: bold;
+  font-size: 100px;
+  position: absolute;
+  text-align: left;
+  width: 100%;
+}
+
+.textYour {
+  top: 120px;
+}
+
+.textTemperature {
+  top: 240px;
+}
+
+.degree {
+  margin: 20px;
+  display: inline-flex;
+  position: relative;
+}
+
+.radioFarenheit {
+  padding-right: 20px;
+}
+
+.radioCelcius {
+  padding-left: 20px;
+}
+
+.button {
+  background-color: #303030;
+  padding: 5px 20px;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 4px;
+  color: mintcream;
+}
+
+.textInput {
+  width: 225px;
+  height: 20px;
+  padding: 5px 5px;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
 }

@@ -4,10 +4,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+  </style>
+  <title>Temperature Converter</title>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
+  <section class="fullPage">
+    <h2 class="textConvert">Convert</h2>
+    <h2 class="textYour">your</h2>
+    <h2 class="textTemperature">temperature</h2>
+    <h1>
+      <div id="convertedTemp">::</div>
+    </h1>
+    <section class="tempInput">
+      <input class="textInput" type="number" id="userTempLA" placeholder="Enter temperature here" value="0">
+      <form>
+        <div class="degree temp-container">
+           <div class="radioFarenheit"> 
+            <input type="radio" id="degreeF" name="temperature" value="farenheit" checked="checked">
+            <label for="farenheit">F°</label>
+           </div>
+           <div class="radioCelcius">
+            <input type="radio" id="degreeC" name="temperature" value="celcius">
+            <label for="celcius">C°</label>
+           </div>
+        </div>
+      </form>
+      <button class="button submit">Submit</button>
+      <button class="button clear">Clear</button>
+    </section>
+  </section>
 
   <script type="text/javascript" src="js/script.js"></script>
 </body>
