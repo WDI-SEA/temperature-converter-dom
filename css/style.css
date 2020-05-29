@@ -1,3 +1,11 @@
+body {
+  background-color: #DDDDDD;
+}
+
 h1 {
-  color: blue;
+  color: #777777;
+}
+
+#result {
+  font-size: 32px;
 }
