@@ -28,6 +28,7 @@ submitButton.addEventListener("click", function(){
         conversion.innerText = "The result is " + result +"° !";
       }
    } else {
+       alert("Check a button, dumb dumb!")
    }
 })
 

@@ -1,44 +1,17 @@
-# Temperature Converter
+SO! I made a thing and it's cute and I like it. Nothing too fancy. 
 
-We will be using JavaScript to make a temperature conversion utility. A folder is provided for you, with empty HTML and CSS files.
+Couple of things - you can enter 4 characters in the 'enter temperature' box INCLUDING a '-' for negative numbers. This means you not enter a number smaller than -999. Sorry. 
 
-## Getting Started
+When a result is freezing, you will see some cooooold emojis!
+Conversely, when a result is boiling, you will see hot emojis! How cute!
 
-* Fork and clone this repository
-
-## Requirements
-* Create a single page using HTML/CSS that contains an input field and a submit button, all within a form element.
-* Additionally, add a clear button
-* When the submit button is pressed, convert the inputted temperature from F to C using the appropriate conversion formula (may need to Google it)
-
-## User Experience
-
-1. User puts in a value into the text field
-2. User clicks on button
-3. The page gets updated with the converted temperature value.
-4. Clicking a "Clear" button resets the text field
-
-## Bonuses
-
-1. Have the `div` turn **blue** for freezing temperatures, **red** for scorching temperatures.
-
-2. Use a `dropdown` or `radio` buttons to select different units to convert (Fahrenheit to Celsius, or Celsius to Fahrenheit)
-
-3. Place the `<input>` and `<button>` elements into a form, so that pressing ENTER will automatically convert the temperature. Note that there's an event type called `'submit'` that you can use instead of `'click'`.
-
-4. Add your own personal sense of style using CSS styling and positioning techniques. Ideas include:
-  * different fonts (see [Google Fonts](https://developers.google.com/fonts/docs/getting_started) for how to link fonts into a webpage)
-  * images
-  * colors
-  * borders
-  
-5. Add the ability to convert to and from Kelvins! 
+If you click 'Convert' without selecting one of the radio buttons, you get an alert. It's a bit rude. Sorry.
 
 ## Deliverables
 
-See the screenshot below for an example. Don't feel like you need to do it exactly the same though. Be creative with CSS!
+See the screenshot below for a preview.
 
-![Solution image](solution.jpg)
+![Preview](preview.jpg)
 
 ---
 
