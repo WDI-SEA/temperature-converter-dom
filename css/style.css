@@ -1,3 +1,18 @@
-h1 {
-  color: blue;
+body {
+  width: 500px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  background-color: darkgray;
+}
+
+.buttons {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+#results {
+  height: 30px;
+  color: black;
+  font-size: 30px;
 }
