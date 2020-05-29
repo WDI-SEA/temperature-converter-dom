@@ -1,3 +1,35 @@
-h1 {
-  color: blue;
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap');
+
+body {
+  text-align: center;
+  background-color: #15616d;
+  color: #001524;
+}
+
+h1, h2 {
+  font-family: 'Lobster', cursive;
+  font-size: 42px;
+}
+
+input {
+  font-family: 'Roboto', sans-serif;
+}
+
+button {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  width: 500px;
+  height: 250px;
+  line-height: 75px;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+.bigContainer {
+  background-color: #ffecd1;
+  border: 2px dotted black;
+  width: 75%;
+  margin: 0 auto;
 }
