@@ -1,10 +1,30 @@
 console.log('Hello, front end');
 
 
+//// TESTING PURPOSES PPLEASE IGNORE /////
+
+// const getNum_getElem = document.getElementById('inputField')
+
+
+// const getNum_querySel = document.querySelector('#inputField')
+
+
+// getNum_getElem;
+// console.log(document.getElementById('inputField')).value;
+
+// getNum_querySel;
+// console.log(document.querySelector('#inputField')).value;
+
+
+///// TESTING PURPOSES PLEASE IGNORE /////
+
+
+
+
 ////////// VARIABLES ////////////
 
-let Celcius = null;
-let Farenheit = null;
+// let Celcius = null;
+// let Farenheit = null;
 let temp = 0;
 
 //let getNum = document.getElementById('inputField'); moved to functions
@@ -26,6 +46,14 @@ submitButton.addEventListener('click', function(e) {
   writeToReadout(calculateConversion(document.querySelector('#inputField').value));
 })
 
+//test function
+// submitButton.addEventListener('click', function(e) {
+//   writeToReadout(calculateConversion(getNum_querySel))
+// })
+// submitButton.addEventListener('click', function(e) {
+//   writeToReadout(calculateConversion(getNum_getElem).value)
+// })
+
 clearButton.addEventListener('click', function(e) {
   clearInputField();
   clearReadout();
@@ -36,14 +64,17 @@ clearButton.addEventListener('click', function(e) {
 // if radial FtC (farenheit to Celcius) is clicked, returns (number + 32)*(9/5);
 
 function calculateConversion(t) {
-  if (document.getElementById('temp1').checked) {
-    return ((t - 32)*(5 / 9));
+  if (inputField.value === "") {
+    return "Please enter a value."
+  }
+  else if (document.getElementById('farenToCelc').checked) {
+    return (t + " degrees Farenheit is equivalent of " + ((t - 32)*(5 / 9)).toFixed(2) + " degrees Celcius.");
 }
-  else if (document.getElementById('temp2').checked) {
-    return ((t + 32)*(9 / 5));
+  else if (document.getElementById('celcToFaren').checked) {
+    return (t + " degrees celcius is equivalent of " + (32 + t * (9 / 5)).toFixed(2) + "degrees farenheit.");
   }
   else {
-    return t;
+    return "please select a conversion type.";
 }
 }
 
@@ -62,8 +93,8 @@ function clearInputField() {
   // newInput.id = "inputField";
   // newInput.type = "text";
   // document.getElementById('inputContainer').appendChild(newInput);
-  document.getElementById('inputField').select()
-  document.getElementById('inputField').setRangeText("")
+  document.getElementById('inputField').select();
+  document.getElementById('inputField').setRangeText("");
 }
 
 // writeToReadout
