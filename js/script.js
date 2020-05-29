@@ -11,12 +11,10 @@ function tempConvert() {
     var fahrenheit = document.getElementById("Fahrenheit").checked;
     let input = document.getElementById("temp").value
     if (fahrenheit) {
-      console.log(input)
         celciusInput = (parseInt(input) - 32) / (5 / 9);
         document.getElementById("converted").textContent = celciusInput
     } else {
-        console.log("hitting the else")
-        fahrenheitInput = (parseInt(input) * (5 / 9) + 32);
+        fahrenheitInput = (parseInt((input) * (5 / 9)) + 32);
         document.getElementById("converted").textContent = fahrenheitInput
     }
 }
