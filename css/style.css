@@ -1,3 +1,52 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
 h1 {
-  color: blue;
+  text-align: center;  
+  margin: 100px 0 50px 0;
+}
+
+#temp {
+  height: 50px;
+  width: 300px;
+}
+
+input[type="text"]
+{
+    font-size:24px;
+    text-align: center;
+}
+
+p {
+  font-size: 32px;
+}
+
+#conversion {
+  text-align: center; 
+  margin: 80px;
+  font-size: 3em;
+}
+
+.radiobuttons{
+  margin: 20px 40px;
+}
+
+#submit {
+  margin: 0 20px;
+}
+
+#clear {
+  margin: 0 20px;
+}
+
+#clickables {
+text-align: center;
+}
+
+::-webkit-input-placeholder {
+  text-align: center;
+}
+
+:-moz-placeholder {
+  text-align: center;
 }
