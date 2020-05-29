@@ -1,3 +1,40 @@
-h1 {
-  color: blue;
+body {
+  text-align: center;
+  background-color: #ffc4a3;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
 }
+h1 {
+  color: #bb596b;
+  margin-top: 30px;
+}
+
+.result {
+  width: 400px;
+  height: 60px;
+  background-color: #f96d80;
+  color: white;
+  position: relative;
+  margin: 15px auto;
+  font-size: 20px;
+}
+
+#userTemp{
+  display: block;
+  margin: 15px auto;
+  height: 25px;
+  width: 200px;
+}
+
+.buttons{
+  display: inline-block;
+  margin: 5px;
+  height: 15px;
+  width: 100px;
+}
+
+.radio{
+margin: 15px 10px;
+}
+
+
