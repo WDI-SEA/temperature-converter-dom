@@ -31,35 +31,9 @@ button {
 .tempRadio {
   padding: 5px;
 }
-/* F radio button */
-#far {
-
-}
-/* C radio button */
-#cel {
-
-}
-/* K radio button  */
-#kel {
-
-}
-/* div for buttons  */
-.buttons {
-
-}
-/* convert button  */
-#conv {
-
-}
-/* clear button  */
-#clr {
-
-}
 /* temp calculation div  */
 .tempDisplays {
-
   text-align: center;
-
 }
 /* first temp display  */
 #temp1Box {

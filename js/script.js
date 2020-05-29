@@ -24,10 +24,6 @@ var kToF = function(x){
   return kToC(cToF(x));
 }
 
-var y = cToK(0);
-
-console.log(typeof y);
-
 function updateTemp(){
   let inputTemp = document.getElementById('userInput').value;
   let temp1 = null;
@@ -36,8 +32,8 @@ function updateTemp(){
       case document.getElementById("far").checked:
         temp1 = fToC(inputTemp);
         temp2 = fToK(inputTemp);
-        document.getElementById("temp1").innerHTML = temp1.toFixed(2) + ' °C';
-        document.getElementById("temp2").innerHTML = temp2.toFixed(2) + ' °K';
+        document.getElementById("temp1").textContent = temp1.toFixed(2) + ' °C';
+        document.getElementById("temp2").textContent = temp2.toFixed(2) + ' °K';
         break;
       case document.getElementById("cel").checked:
         temp1 = cToF(inputTemp);
@@ -45,14 +41,14 @@ function updateTemp(){
         //i shouldn't have to parse temp2 to int, but for some reason a string is being
         //returned here and I'm not sure why sp using parseInt() is a cheap fix 
         temp2 = parseFloat(temp2);
-        document.getElementById("temp1").innerHTML = temp1.toFixed(2) + ' °F';
-        document.getElementById("temp2").innerHTML = temp2.toFixed(2) + ' °K';
+        document.getElementById("temp1").textContent = temp1.toFixed(2) + ' °F';
+        document.getElementById("temp2").textContent = temp2.toFixed(2) + ' °K';
         break;
       case document.getElementById("kel").checked:
         temp1 = kToC(inputTemp);
         temp2 = kToF(inputTemp);
-        document.getElementById("temp1").innerHTML = temp1.toFixed(2) + ' °C';
-        document.getElementById("temp2").innerHTML = temp1.toFixed(2) + ' °F';
+        document.getElementById("temp1").textContent = temp1.toFixed(2) + ' °C';
+        document.getElementById("temp2").textContent = temp1.toFixed(2) + ' °F';
         break;
 
   }
@@ -61,8 +57,8 @@ function updateTemp(){
 
 var clear = function(){
   document.getElementById("userInput").value = 0;
-  document.getElementById("temp1").innerHTML = '-';
-  document.getElementById("temp2").innerHTML = '-';
+  document.getElementById("temp1").textContent = '-';
+  document.getElementById("temp2").textContent = '-';
 }
 
 const convertButton = document.querySelector('#conv').addEventListener('click', function() { updateTemp(); });
