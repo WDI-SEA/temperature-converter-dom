@@ -4,10 +4,47 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
+  <title>Temperature Converter</title>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
+
+  <div class = "header">
+    <h1>Temperature Converter</h1>
+  </div>
+
+  <!-- Form -->
+  <form id = "options">
+
+    <!-- TEXTFIELD -->
+    <input id = "userInput" type="text">
+
+    <!-- Buttons -->
+    <div class = "radioButtons">
+      
+      <input type="radio" id = "F" name = "test" value = "F" required checked>
+      <label> °F </label>
+
+      <input type="radio" id = "C" name = "test" value = "C" required>
+      <label> °C </label>
+
+    </div>
+    
+    <!-- Submit&Clear buttons -->
+    <div class = "buttons">
+
+      <button id = "submit" type = "submit">Submit</button>
+      <button id = "clear">Clear</button>
+
+    </div>
+
+  </form>
+
+  <!-- Converted Temp -->
+  <div class = "conTemp">
+
+    <h1 id = "converted"></h1>
+
+  </div>
 
   <script type="text/javascript" src="js/script.js"></script>
 </body>

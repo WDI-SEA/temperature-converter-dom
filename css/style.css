@@ -1,3 +1,46 @@
-h1 {
-  color: blue;
+html{
+  text-align:center;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color : grey;
+  position:relative;
+}
+
+body {
+  background: #d3d3d3;
+}
+
+#options #userInput{
+  text-align: center;
+  font-size:30px;
+  color:black;
+  width:700px;
+  height:50px;
+  border:1px solid black;
+  border-radius: 4px;
+}
+
+label {
+  font-size:20px;
+}
+
+.radioButtons {
+  margin-top:20px;
+}
+
+button {
+  box-shadow: 2px 2px grey;
+  margin-top: 30px;
+}
+
+.conTemp {
+  position: relative;
+  margin: 0 auto;
+  color:black;
+  height:200px;
+  width: 60%;
+}
+
+.conTemp h1{
+  position:relative;
+  font-size:150px;
 }
