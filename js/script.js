@@ -17,9 +17,12 @@ function display(){
     document.getElementById('history').prepend(listItem)
 }
 
+function removeList(){
+    var itemToRemove = document.getElementById('history');
+    itemToRemove.parentNode.removeChild(itemToRemove);
+}
 
-
-
+document.getElementById("clear").addEventListener ("click", ()=> removeList())
 document.getElementById("submit").addEventListener ("click", ()=> convert());
 
 
