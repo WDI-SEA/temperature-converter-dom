@@ -3,12 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
+  <link rel="stylesheet" 
+        type="text/css" 
+        href="css/style.css">
+  <title>Temp Check</title>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
+  <h1>Temperature Converter</h1>
+   <form>
+    <input id="submit" 
+           class="hot" 
+           type="form" 
+           placeholder="Temperature">
+   </form>
+   <form id=temp>
+    <input class="radio" 
+           type="radio" 
+           name = "temperature" 
+           value="°F">
+      <label for="°F">°F</label>
+    <input class="radio" 
+           type="radio" 
+           name = "temperature" 
+           value="°C">
+      <label for="°C">°C</label>
+   </form>
+   <form>
+    <input id="entry" 
+           class="button" 
+           type="submit" 
+           value="Submit">
+    <input class="button" 
+           type="submit" 
+           value="Clear">
+    </form>√
 
+    <div>
+      <center>
+        <p></p>
+      </center>
+    </div>
   <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
