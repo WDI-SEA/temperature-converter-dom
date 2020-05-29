@@ -1,6 +1,6 @@
 SO! I made a thing and it's cute and I like it. Nothing too fancy. 
 
-Couple of things - you can enter 4 characters in the 'enter temperature' box INCLUDING a '-' for negative numbers. This means you not enter a number smaller than -999. Sorry. 
+Couple of things - you can enter 4 characters in the 'enter temperature' box INCLUDING a '-' for negative numbers. This means you can not enter a number smaller than -999. Sorry. 
 
 When a result is freezing, you will see some cooooold emojis!
 Conversely, when a result is boiling, you will see hot emojis! How cute!
