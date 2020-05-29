@@ -4,11 +4,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
+  <title>Temperature Converter</title>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
-
+  <div class="title">
+    <h1>Temperature Converter</h1>
+  </div>
+  <div class="inputForm">
+    <form>
+      <input type="text" class="tempInput" name="temp" placeholder="34">
+    </form>
+  </div>
+  <div class="radioButtons">
+  <form>
+      <input type="radio" id="farenheit" class="tempConverter" name="converter" value="farenheit">
+      <label for="farenheit">Celsius to Farenheit</label>
+      <input type="radio" id="celsius" class="tempConverter" name="converter" value="celsius">
+      <label for="celsius">Farenheit to Celsius</label>
+    </form>
+  </div>
+  <div class="buttons">
+    <button class="submit">Submit</button>
+    <button class="clear">Clear</button>
+  </div>
+  <div class="results">
+    <!-- <h2></h2> -->
+  </div>
   <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

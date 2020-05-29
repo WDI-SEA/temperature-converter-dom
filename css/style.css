@@ -1,3 +1,21 @@
+body {
+  margin: 0;
+  text-align: center;
+}
+
 h1 {
-  color: blue;
+  color: black;
+  font-size: 48px;
+}
+
+.tempInput {
+  height: 50px;
+  width: 400px;
+  text-align: center;
+  font-size: 64px;
+}
+
+.tempConverter {
+ margin-top: 20px;
+ margin-bottom: 20px;
 }
