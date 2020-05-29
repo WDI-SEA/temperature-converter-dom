@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  background-color: lightgoldenrodyellow;
+  color: #45484D;
+  font-family: Helvetica, sans-serif;
+}
+
+h1 {
+  color: grey;
+  margin: 0 auto;
+  text-align: center;
+}
