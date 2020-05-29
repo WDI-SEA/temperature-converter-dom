@@ -1,14 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <title>Hello Front-End</title>
 </head>
-<body>
-  <h1>Hello Front-End</h1>
 
+<body>
+  <div>
+    <h1>Temperature Converter</h1>
+  </div>
+  <form id="converter">
+    <div>
+      <input id="user-input" type="text">
+    </div>
+    <div class="toggles">
+      <div class="radio-button">
+        <input type="radio" name="temperature" id="f-button" value="f-button" checked="">
+        <label for="f-button">F to C</label>
+      </div>
+      <div class="radio-button">
+        <input type="radio" name="temperature" id="c-button" value="c-button">
+        <label for="c-button">C to F</label>
+      </div>
+    </div>
+    <div id="sub-clear">
+      <div class="submit-button">
+        <button type="submit">submit</button>
+      </div>
+      <!-- place holder for clear button-->
+    </div>
+  </form>
+  <div>
+    <button id="clear-button">clear</button>
+  </div>
+  <div id="display-result"></div>
   <script type="text/javascript" src="js/script.js"></script>
 </body>
+
 </html>
