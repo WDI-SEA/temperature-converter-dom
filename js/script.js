@@ -34,7 +34,7 @@ function calcTempFare() {
 function calcTempCelc() {
     let enteredTemp = document.getElementById("userTempLA").value
     console.log(enteredTemp)
-    let displayTemp = (((enteredTemp * 9) / 5) + 32)
+    let displayTemp = Math.round(((enteredTemp - 32) * 5) / 9)
     document.getElementById("convertedTemp").innerText = displayTemp
 }
 
