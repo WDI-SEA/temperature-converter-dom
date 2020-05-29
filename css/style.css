@@ -1,3 +1,27 @@
-h1 {
-  color: blue;
+body {
+  background-color:rgb(147, 243, 147);
+  text-align: center;
+  font-family: 'Balsamiq Sans'
+}
+
+input {
+  position: inline-block; 
+  margin: 0
+  font-family: 'Balsamiq Sans'
+}
+
+.radio {
+  text-align: center; 
+  position: inline-block; 
+  margin: 0;
+  font-family: 'Balsamiq Sans'
+}
+.button {
+  font-family: 'Balsamiq Sans'
+}
+
+.div {
+  position: relative; 
+  margin: auto;
+  text-align: center; 
 }
