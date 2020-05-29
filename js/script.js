@@ -22,7 +22,7 @@ temp.addEventListener("click", function(e){
         return ((value - 32) *5)/9; 
     }
 })}
-else (farenheit.checked === true) {
+else (celsius.checked === true) {
 let temp = document.querySelector(".radio");
 temp.addEventListener("click", function(e){
     function temp(value) {
