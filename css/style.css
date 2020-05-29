@@ -1,3 +1,73 @@
-h1 {
-  color: blue;
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #39393B;
+  text-align: center;
+  color: #FAFAFA;
+}
+
+button {
+  background-color: black; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+}
+/* the input form */
+#form {
+  padding: 5px;
+}
+/* the numbox */
+#userInput {
+  padding: 5px;
+}
+/* radio button div */
+.tempRadio {
+  padding: 5px;
+}
+/* F radio button */
+#far {
+
+}
+/* C radio button */
+#cel {
+
+}
+/* K radio button  */
+#kel {
+
+}
+/* div for buttons  */
+.buttons {
+
+}
+/* convert button  */
+#conv {
+
+}
+/* clear button  */
+#clr {
+
+}
+/* temp calculation div  */
+.tempDisplays {
+
+  text-align: center;
+
+}
+/* first temp display  */
+#temp1Box {
+  height: 40;
+  width: 100%;
+}
+/* second temp display  */
+#temp2Box {
+  height: 40;
+  width: 100%;
 }

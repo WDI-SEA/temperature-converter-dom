@@ -3,12 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
+  <link rel="stylesheet" 
+        type="text/css" 
+        href="css/style.css">
+  <title>Temperature Converter</title>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
-
+  <h1>Temperature Converter</h1>
+  <p><i>enter the temp you need to convert:</i></p>
+  <form id="form"></form>
+    <input type="number" id="userInput" value="0">
+      <div class="tempRadio">
+        <input type="radio" id="far" name="temps" checked>
+        <label for="far">°F</label>
+        <input type="radio" id="cel" name="temps">
+        <label for="cel">°C</label>
+        <input type="radio" id="kel" name="temps">
+        <label for="kel">K</label>
+      </div>
+      <div class="buttons">
+        <button type="submit" id="conv">Convert</button>
+        <button id="clr">Clear</button>
+      </div>
+  </form>
+  <div class="tempDisplays">
+    <div id="temp1Box">
+      <h2 id="temp1">-</h2>
+    </div>
+    <div id="temp2Box">
+      <h2 id="temp2">-</h2>
+    </div>
+  </div>
   <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
