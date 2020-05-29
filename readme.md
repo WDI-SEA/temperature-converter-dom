@@ -11,7 +11,7 @@ If you click 'Convert' without selecting one of the radio buttons, you get an al
 
 See the screenshot below for a preview.
 
-![Preview](preview.png)
+![Preview](coldbois.png)
 
 ---
 
