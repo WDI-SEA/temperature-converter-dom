@@ -3,12 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css"> 
   <title>Hello Front-End</title>
-</head>
-<body>
-  <h1>Hello Front-End</h1>
 
-  <script type="text/javascript" src="js/script.js"></script>
+  <h1>Temperature Converter</h1>
+
+  <!--  Celcius Output on screen --------->
+  <p>
+    <label>Fahrenheit in Here </label>
+    <input id="inputFahrenheit" type="number" placeholder="Fahrenheit" 
+    oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+  </p>
+  
+  <p>Celcius: <span id="outputCelcius"></span></p>
+
+  <script>
+    function temperatureConverter(valNum) {
+      valNum = parseFloat(valNum);
+      document.getElementById("outputCelcius").innerHTML=(valNum-32)/1.8;
+    } </script>
+
+   
+<!--   Radio Buttons part Working ------------------>
+<Section>
+  <input type="radio" class="farenheit" name="gender" value="male">
+  <label for="F">F</label><br>
+  <input type="radio" class="celsius" name="gender" value="female">
+  <label for="C">C</label><br>
+
+  <button id="submit1">Submit</button>
+  <button class="clear"> Clear</button>
+
+</Section>
+
+<!--  Output from  Buttons -------------------------- -->
+
+<p id="submit"> </p>
+ 
+<script>
+  document.getElementById("submit1").addEventListener("click", displayDate);
+  function displayDate() {
+    document.getElementById("submit").innerText = Date();
+  }
+
+
+
+var submitButton = document.querySelector(".submit1")
+var submitButton = addEventListener("click", function() {
+
+  var inputtedVal = document.querySelector(".tempInput").value
+  let farenheit = document.getElementById("farenheit");
+  let celsius = document.getElementById("celsius");
+
+  if (farenheit.checked === true) {
+    inputtedVal = ( inputtedVal -32) * 5/9 
+    console.log(inputtedVal + " degrees farenheit")
+  } else if { (celsius.checked ==true)
+  inputtedVal = (inputtedVal)
+}
+console.log (inputtedVal)
+
+})
+
+  </script>
+
+<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
+
+ 
+ 
+ 
+
