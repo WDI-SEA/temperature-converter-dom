@@ -1,3 +1,37 @@
 h1 {
-  color: blue;
+  color: drark gray;
+  text-align: center;
+  font-size: 50px;
+}
+
+form {
+  margin: 0 auto; 
+  width: 400px;
+  height: 100px;
+
+}
+#numdiv {
+  margin-left: 125px;
+}
+
+#tempdiv{
+  margin-top: 10px;
+  margin-left: 147px;
+}
+
+#butdiv {
+  margin-top: 20px;;
+  margin-left: 140px;
+}
+#result {
+  margin: 0 auto;
+  margin-top: 50px;
+  height: 50px;
+  width: 500px;
+  border: 1px solid black;
+  background-color: red;
+
+}
+body {
+  background-color: gray;
 }
