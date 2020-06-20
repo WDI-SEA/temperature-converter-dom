@@ -1,3 +1,57 @@
+body {
+  background-image: url("https://www.desktopbackground.org/p/2012/09/01/445858_fire-flame-image-free-desktop-backgrounds-free-wallpapers-image_1829x1298_h.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: black;
+  text-align: center;
+  margin-top: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 h1 {
-  color: blue;
+  color: white;
+  margin-top: 20px;
+  font-size: 50px;
+  text-align: center;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#convertToC, #convertToK {
+  font-size: 45px;
+  color: white;
+  background-color:#808080;
+  text-align: center;
+  height: 60px;
+  width: 60px;
+  border-radius: 10%;
+}
+
+#amount {
+  text-align: center;
+  height: 54px;
+  width: 130px;
+  border: 4px solid grey;
+  border-radius: 10%;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+#temperature {
+  height: 100px;
+  font-size: 90px;
+  font-weight: bold;
+  color: white;
+}
+
+
+#controls {
+  margin-top: 20px;
+  display: flex;  
+ 	justify-content: center;  
+ 	align-items: center; 
+}
+
+#convertToC:hover, #convertToK:hover {
+  background-color: white;
+  color: #808080;
 }
