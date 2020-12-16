@@ -7,8 +7,34 @@
   <title>Hello Front-End</title>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
+  <h1 class="header">Trisha's Terrific Temperature Translator</h1>
+  <h6 class="header">Improve your cosmopolitan finesse by effortlessly speaking different temperatures.</h6>
+  <div id="outer">
+    <div id="entry">
+      <form>
+        <label for="number"></label>
+        <input name="number" type="text" placeholder="Temperature">
+        <label for="voila"></label>
+        <button type="submit" name="voila">Et Voilà!</button>
+      </form>
 
-  <script type="text/javascript" src="js/script.js"></script>
+    </div>
+    
+    <div id="results">
+
+    </div>
+  </div>
+
 </body>
+
+  <!-- Always invoke JS *after* building HTML page out. -->
+  <script type="text/javascript" src="js/script.js"></script> 
+
+
+  <!-- How to add tooltips: 
+  https://www.w3schools.com/css/css_tooltip.asp 
+Fahrenheight = Freedom units
+Celsius = Everywhere else units
+K = Science units -->
+
 </html>

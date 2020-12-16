@@ -1,3 +1,14 @@
-h1 {
+body {
+  margin: auto;
+}
+
+.header {
   color: blue;
+  margin: auto;
+  text-align: center;
+}
+
+div {
+  margin: auto;
+  text-align: center;
 }
