@@ -7,19 +7,31 @@
   <title>Hello Front-End</title>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
+    <div class="content">
     
     <form id="inputForm">
     
         <p>Input a temperature to convert from F to C.</p>
         <input id="temp" for="inputForm" type="text">
         <input for="inputForm" type="submit">
-
         <button>Clear</button>
+        
+        <div class="button-bank">
+            <input type="radio" name ="f" value="f">
+            <label for="f">Fahrenheit</label>
+
+            <input type="radio" name="c" value="c">
+            <label for="c">Celsius</label>
+
+            <input type="radio" name="k" value="k">
+            <label for="k">Kelvin</label>
+        </div>
     
     </form>
     
     <p id="output">Output: </p>
+        
+    </div>
 
   <script type="text/javascript" src="js/script.js"></script>
 </body>

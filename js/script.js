@@ -22,9 +22,9 @@ document.addEventListener('DOMContentLoaded', ()=>{
     
     document.querySelector('form').addEventListener('submit', (e)=> {
         e.preventDefault();
-        console.log(document.querySelector('#temp').value)
+        let tempInput = document.querySelector('#temp').value
         
-        output.innerText = document.querySelector('#temp').value
+        output.innerText = "Output: " + Math.round((tempInput-32)*5/9) + "C";
     })
     
 })
