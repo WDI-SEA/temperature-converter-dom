@@ -1,1 +1,3 @@
-console.log('Hello, front end');
+document.addEventListener('DOMContentLoaded') , () =>{
+    console.log('Hello, front end');
+}
