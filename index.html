@@ -4,37 +4,62 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
+  <title>T's TTT</title>
 </head>
 <body>
   <h1 class="header">Trisha's Terrific Temperature Translator</h1>
-  <h6 class="header">Improve your cosmopolitan finesse by effortlessly speaking different temperatures.</h6>
+  <h5 class="header">Improve your cosmopolitan finesse by effortlessly speaking different temperatures.</h5>
   <div id="outer">
     <div id="entry">
       <form>
-        <label for="number"></label>
-        <input name="number" type="text" placeholder="Temperature">
-        <label for="voila"></label>
-        <button type="submit" name="voila">Et Voilà!</button>
+        <div id="entry1">
+          <label for="entry-text"></label>
+          <input 
+            id="entry-text" 
+            type="number" 
+            placeholder="Temperature"
+          >
+        </div>
+        
+        <div id="entry2">
+          <input type="radio" class="radioButton" id="F" name="F">
+          <label for="F">Fahrenheit</label>
+
+          <input type="radio" class="radioButton" id="C" name="C">
+          <label for="C">Celsius</label>
+
+          <input type="radio" class="radioButton" id="K" name="K">
+          <label for="K">Kelvin</label>
+
+        </div>
+        
+        <div id="entry3">
+          <label for="convert"></label>
+          <button type="submit" name="convert">Convert!</button> <!-- Convert button. -->
+          <label for="clear"></label>
+          <button type="submit" name="clear">CLEAR!!!!</button> <!-- Clear button. -->
+        </div> 
       </form>
 
     </div>
     
-    <div id="results">
+    <hr size="8" width="90%" color=#1e899c>  <!-- Adding a line to HTML: https://www.javatpoint.com/how-to-add-a-line-in-html -->
 
-    </div>
+      <div id="results">  
+      </div>
   </div>
 
+  <!-- Always invoke JS *after* building HTML page out. -->
+  <script type="text/javascript" src="./js/script.js"></script> 
 </body>
 
-  <!-- Always invoke JS *after* building HTML page out. -->
-  <script type="text/javascript" src="js/script.js"></script> 
+
 
 
   <!-- How to add tooltips: 
   https://www.w3schools.com/css/css_tooltip.asp 
-Fahrenheight = Freedom units
-Celsius = Everywhere else units
-K = Science units -->
+  Fahrenheight = Freedom units
+  Celsius = Everywhere else units
+  Kelvin = Science units -->
 
 </html>

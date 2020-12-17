@@ -1,14 +1,33 @@
 body {
+  background-color:azure;
+  font-size: 30px;
   margin: auto;
+  margin-top: 50px;
 }
 
 .header {
-  color: blue;
+  color: #1e899c;
   margin: auto;
   text-align: center;
+}
+
+h5.header {
+  color: #6fa2a8;
 }
 
 div {
   margin: auto;
   text-align: center;
 }
+
+#entry {
+  margin-top: 30px;
+  font-size: 36px;
+}
+
+/* 8 was too small, and color wasn't working: */
+/* hr {
+  size: 8; 
+  width: 90%;
+  color: #1e899c;
+} */
