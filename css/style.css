@@ -1,3 +1,73 @@
 h1 {
   color: blue;
 }
+h1 {
+  font-family: sans-serif;
+  color: #70b2e5;
+}
+input {
+  display: block;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 2em;
+  color: #f4a55a;
+  font-family: cursive, sans-serif;
+}
+::-webkit-input-placeholder {
+   color: #ccc;
+}
+:-moz-placeholder { /* Firefox 18- */
+   color: #ccc;
+}
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #ccc;
+}
+:-ms-input-placeholder {
+   color: #ccc;
+}
+.otherclass{
+  color:blue;
+}
+.otherclass2{
+  color:red;
+}
+#convert {
+	background-color:#44c767;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+#convert:hover {
+	background-color:#5cbf2a;
+}
+#convert:active {
+	position:relative;
+	top:1px;
+}
+#clear {
+	background-color:#476e9e;;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+#clear:hover {
+	background-color:#476e9e;;
+}
+#clear:active {
+	position:relative;
+	top:1px;
+}
