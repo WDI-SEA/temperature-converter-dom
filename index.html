@@ -10,51 +10,53 @@
   <h1 class="header">Trisha's Terrific Temperature Translator</h1>
   <h5 class="header">Improve your cosmopolitan finesse by effortlessly speaking different temperatures.</h5>
   <div id="outer">
-    <div id="entry">
+    <div id="form">
       <form>
-        <div id="entry1">
-          <label for="entry-text"></label>
+        <div id="input-div">
+          <label for="input"></label>
           <input 
-            id="entry-text" 
+            id="inputBox" 
             type="number" 
             placeholder="Temperature"
           >
         </div>
         
-        <div id="entry2">
-          <input type="radio" class="radioButton" id="F" name="F">
-          <label for="F">Fahrenheit</label>
+        <div id="radio-buttons">
 
-          <input type="radio" class="radioButton" id="C" name="C">
-          <label for="C">Celsius</label>
+          <input type="radio" class="radio-button" id="F" name="unit">
+          <label for="F" class="label">Fahrenheit</label> <!-- 'for' attribute is for accessibility. Have the value match the 'id' value. -->
 
-          <input type="radio" class="radioButton" id="K" name="K">
-          <label for="K">Kelvin</label>
+          <input type="radio" class="radio-button" id="C" name="unit">
+          <label for="C" class="label">Celsius</label> <!-- 'for' attribute is for accessibility. Have the value match the 'id' value. -->
 
+          <!-- <input type="radio" class="radioButton" id="K" name="unit">
+          <label for="unit">Kelvin</label> -->
         </div>
         
-        <div id="entry3">
-          <label for="convert"></label>
-          <button type="submit" name="convert">Convert!</button> <!-- Convert button. -->
-          <label for="clear"></label>
-          <button type="submit" name="clear">CLEAR!!!!</button> <!-- Clear button. -->
-        </div> 
-      </form>
+        <div id="submit-buttons">
 
+          <!-- Convert button. -->
+          <label for="convert"></label> <!-- 'for' attribute is for accessibility. Have the value match the 'id' value. -->
+          <button id="convert-button">Convert!</button> 
+
+          <!-- Clear button. -->
+          <label for="clear"></label> <!-- 'for' attribute is for accessibility. Have the value match the 'id' value. -->
+          <button id="clear-button">CLEAR!!!!</button> 
+        </div>  <!-- id='submit-buttons' -->
+      </form>
     </div>
     
-    <hr size="8" width="90%" color=#1e899c>  <!-- Adding a line to HTML: https://www.javatpoint.com/how-to-add-a-line-in-html -->
-
-      <div id="results">  
-      </div>
+    <!-- Adding a line to HTML: https://www.javatpoint.com/how-to-add-a-line-in-html -->
+    <hr size="8" width="90%" color=#1e899c>  
+    
+    <!-- Conversion results will show up below. -->
+    <div id="results">  
+    </div>
   </div>
 
-  <!-- Always invoke JS *after* building HTML page out. -->
+  <!-- Always invoke JS *after* building HTML page out, but have the script link within the body. -->
   <script type="text/javascript" src="./js/script.js"></script> 
 </body>
-
-
-
 
   <!-- How to add tooltips: 
   https://www.w3schools.com/css/css_tooltip.asp 
