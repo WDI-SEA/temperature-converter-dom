@@ -1,3 +1,17 @@
+body {
+  background-color: dimgray;
+  text-align: center;
+  margin-top: 35%
+}
 h1 {
   color: blue;
 }
+div {
+  font-size: 24px;
+  margin-bottom = 5%
+}
+#sub, #rst, #to, #from {
+  font-size: 16px
+}
+
+
