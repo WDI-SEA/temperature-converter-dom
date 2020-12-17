@@ -1,3 +1,65 @@
+body {
+  background-color: rgb(170, 170, 170);
+}
 h1 {
-  color: blue;
+border: 2px solid blue;
+margin: 0px 0px 15px 0px;
+padding: 2px;
+text-align: center;
+font-family: 'Georgia', sans-serif;
+color: rgb(105,105,105);
+text-weight: bold;
+}
+#tempentry {
+width: 545px;
+height: 45px;
+border: 2px solid yellow;
+margin: 15px;
+padding: 2px;
+display: block;
+position: relative;
+margin-left: 30.75%;
+text-align: center;
+text-weight: bold;
+font-size: 33px;
+}
+.clicks {
+border: 2px solid green;
+margin: 15px;
+padding: 2px;
+text-align: center;
+display: block;
+position: relative;
+}
+#flabel {
+color: red;
+font-size: 20px;
+}
+#clabel {
+color: blue;
+font-size: 20px;
+}
+.formpart3 {
+border: 2px solid orange;
+margin: 15px;
+padding: 2px;
+text-align: center;
+display: block;
+position: relative;
+}
+p {
+height: 103px;
+width: 627px;
+border: 0px solid red;
+margin: 0px 400px 0px 400px;
+padding: 0px;
+background-color: red;
+text-align:center;
+color: white;
+text-weight: bold;
+display: block;
+position: relative;
+}
+button:hover {
+box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)
 }
