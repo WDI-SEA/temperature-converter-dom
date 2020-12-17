@@ -12,12 +12,25 @@
     <form id="inputForm">
     
         <p>Input a temperature to convert from F to C.</p>
-        <input id="temp" for="inputForm" type="text">
+        <input id="temp" for="inputForm" type="text" autocomplete="off">
         <input for="inputForm" type="submit">
         <button id="clear">Clear</button>
         
+        <p>Convert</p>
         <div class="button-bank">
-            <input type="radio" id="temp-f" name ="temp-radio" value="f">
+            <input type="radio" id="start-f" name ="start-temp" value="f" checked>
+            <label for="f">Fahrenheit</label>
+
+            <input type="radio" id="start-c" name="start-temp" value="c">
+            <label for="c">Celsius</label>
+
+            <input type="radio" id="start-k" name="start-temp" value="k">
+            <label for="k">Kelvin</label>
+        </div>
+        
+        <p>to</p>
+        <div class="button-bank">
+            <input type="radio" id="temp-f" name ="temp-radio" value="f" checked>
             <label for="f">Fahrenheit</label>
 
             <input type="radio" id="temp-c" name="temp-radio" value="c">
