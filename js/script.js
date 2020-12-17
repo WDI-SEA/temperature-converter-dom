@@ -1,5 +1,7 @@
 console.log('Hello, front end');
+//document.getElementById("clearButton").onclick = clearInput;
 document.addEventListener('DOMContentLoaded', ()=>{
+    
     console.log("Hi")
     document.querySelector("input[type=submit]")
     submitButton.addEventListener("click", (e)=>{
@@ -21,5 +23,9 @@ document.addEventListener('DOMContentLoaded', ()=>{
         console.log(temp);
         
     })
+    clearButton.addEventListener("click", (e)=>{
+        document.getElementById("submitText").value=" ";
+    })
     
 })
+

@@ -1,6 +1,7 @@
 *{
   text-align:center;
   background-color: rgb(192, 187, 187);
+  font-size:30px;
 }
 h1 {
   color:grey;
@@ -35,6 +36,7 @@ input {
   height: 20px;
   width: 70px;
   margin: 25px auto;
+  display:inline;
 }
 #temperature{
   display:inline-block;
@@ -42,9 +44,7 @@ input {
   background-color: red;
   padding: 20px 390px;
   margin:0px auto;
-  font-size: 60px;
-  
-}
-#output1{
+  color: white;
+  font-size: 70px;
   
 }
