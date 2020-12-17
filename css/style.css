@@ -1,5 +1,6 @@
 body {
   background-color: rgb(170, 170, 170);
+  font-family: sans-serif;
 }
 
 
@@ -30,6 +31,8 @@ h1 {
 
 .buttons{
   display: inline;
+  box-shadow: rgb(90, 90, 90, .14);
+ 
 }
 
 
@@ -43,4 +46,8 @@ label {
   color:rgb(110, 110, 110)
 }
 
+#output {
+  border: rosybrown;
+  color: yellow;
+}
 
