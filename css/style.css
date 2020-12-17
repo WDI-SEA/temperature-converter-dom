@@ -1,3 +1,24 @@
+
+#submit {
+  background-color: red;
+  text-align: center;
+}
+body {
+  background-color: grey;
+}
+
 h1 {
-  color: blue;
+  font-family: Helvetica;
+  color: rebeccapurple;
+}
+input {
+  text-align: center;
+  display: block;
+
+  color: red;
+  font-family: Helvetica ;
+}
+button {
+  text-align: center;
+  color: #545454;
 }
