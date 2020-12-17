@@ -17,3 +17,6 @@ h3 {
 #clear {
   padding: 30px;
 }
+.form {
+  background-image: linear-gradient(to right, rgba( 0,0,0,.9), rgba(0,0,0,0.2))
+}
