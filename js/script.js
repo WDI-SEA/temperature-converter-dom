@@ -10,10 +10,10 @@ document.addEventListener('DOMContentLoaded', ()=>{
         var temp=0
         if(conv){
             temp = (tempValue -32)*(5/9);
-            document.getElementById("output1").innerText="F";
+            document.getElementById("output1").innerText="C";
         } else {
             temp = tempValue*9/5+32;
-            document.getElementById("output1").innerText="C";
+            document.getElementById("output1").innerText="F";
         }
         document.getElementById("output").innerText=Math.round(temp);
         //document.getElementById("feedback").innerText=res
