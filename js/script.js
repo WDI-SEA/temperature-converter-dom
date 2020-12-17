@@ -1,22 +1,3 @@
-//document.addEventListener('DOMContentLoaded', ()=>{
-//
-//    myDiv.addEventListener('click', (event) => {
-//        console.log(event);
-//        event.target.style.size = event.target.style.size + 10;
-//    })
-//    
-//     document.querySelector('form').addEventListener('submit', (e)=>{
-//         e.preventDefault()
-//         console.log(document.querySelector('#info').value)
-//     })
-//    
-//    let a = document.createElement('a')
-//    a.href ='http://hackertyper.com/'
-//    a.textContent = 'hack!'
-//    
-//    document.body.appendChild(a)
-//})
-
 document.addEventListener('DOMContentLoaded', ()=>{
     console.log('Hello, front end');
     
@@ -24,7 +5,23 @@ document.addEventListener('DOMContentLoaded', ()=>{
         e.preventDefault();
         let tempInput = document.querySelector('#temp').value
         
-        output.innerText = "Output: " + Math.round((tempInput-32)*5/9) + "C";
+        let currentTemp = document.querySelector("input[name='temp-radio']:checked").value
+        
+        if (currentTemp === "c") {
+            output.innerText = "Output: " + Math.round((tempInput-32)*5/9) + "C";
+        } else if (currentTemp === "f") {
+            output.innerText = "Output: " + Math.round((tempInput-32)*5/9) + "C";
+        } else if (currentTemp === "k") {
+            output.innerText = "Output: " + Math.round((tempInput-32)*5/9+273.15) + "K";
+        } else {
+            output.innerText = "Please select a temperature to convert to!";
+        }
+        
+        
     })
     
+    document.querySelector('button').addEventListener('click', (e)=> {
+        e.preventDefault();
+        document.querySelector('#temp').value = "";
+    })
 })
