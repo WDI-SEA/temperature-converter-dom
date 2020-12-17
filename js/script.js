@@ -1,1 +1,1 @@
-console.log('Hello, front end');
+document.getElementById("submit").addEventListener("click");

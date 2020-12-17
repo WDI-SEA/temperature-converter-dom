@@ -4,11 +4,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+  <title>Temperature Converter</title>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
+  <h1>Temperature Converter</h1>
+  <form>
+   
+  </form>
 
+  <form> 
+    <div>
+      <input type="text" id='numberForm' name="numberForm">
+    </div>
+    <div class="tempType">
+      <input id="farenheight" type="radio" name="temp">
+      <label class="radio" for="farenheight">&#176;F</label>
+    
+      <input id="celcius" type="radio" name="temp">
+      <label class="radio" for="Celcius">&#176;C</label>
+    </div>
+    <div class="submitBar">
+      <button type="button" class="submitButtons" value="Submit">Submit</button>
+      <button type="reset" class="submitButtons" value="Reset">Clear</button>
+    </div>
+    <div class="output">
+      <output name="x" for="#numberform - 32 / 1.8"></output>
+    </div>
+  </form>
   <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
