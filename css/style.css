@@ -1,3 +1,30 @@
+body {
+  margin: 0 auto;
+}
 h1 {
-  color: blue;
+  color: grey;
+  text-align: center;
+}
+h2 {
+  text-align: center;
+}
+div {
+  margin: 0 auto;
+  text-align: center;
+  height: 100px;
+  width: 300px;
+}
+span {
+  margin: 0 auto;
+  text-align: center;
+  width: 300px;
+  padding: 25px;
+}
+input {
+  text-align: center;
+  font-size: 30px;
+}
+#temps {
+  margin: 0 auto;
+  padding: 10px;
 }
