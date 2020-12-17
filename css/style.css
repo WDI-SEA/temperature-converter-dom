@@ -1,3 +1,17 @@
+* {
+  background-color: #9B9E9E;
+}
+
 h1 {
-  color: blue;
+  color: #676D6E;
+  text-align: center;
+}
+
+form {
+  text-align: center;
+  width: 100%;
+}
+
+.tempSub {
+  text-align: center;
 }
