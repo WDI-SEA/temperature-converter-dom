@@ -29,3 +29,7 @@ if tempInput && f && submitButton{
 if tempInput && c  && submitButton{
 
 }
+
+if clearButton === True {
+    location.reload()
+}
