@@ -1,4 +1,3 @@
-console.log('Hello, front end');
 document.querySelector("form").addEventListener("submit", (e)=>{
     e.preventDefault()
     document.querySelector("#practice").value

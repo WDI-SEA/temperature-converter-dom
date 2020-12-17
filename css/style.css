@@ -1,3 +1,19 @@
-h1 {
-  color: blue;
+body {
+  
+}
+.top {
+  padding: 200px;
+  background-image: url(/home/jj/Desktop/general_assembly/unit_one/homeworks/temperature-converter-dom/img/ef90bda20a5e47f49564db1ca16890d1.jpg);
+  background-position: cover;
+  
+}
+h3 {  
+ 
+  color: rgb(255, 255, 255);
+  background-color: rgba(000, 000, 000, .5);
+
+  
+}
+#clear {
+  padding: 30px;
 }
