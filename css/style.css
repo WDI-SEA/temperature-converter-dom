@@ -1,3 +1,53 @@
-h1 {
-  color: blue;
+body {
+  text-align: center;
+  margin: 0 auto;
+  background-color: rgb(0, 109, 109);
+  font-family: 'Russo One', sans-serif;
 }
+
+#userInput {
+  text-align: center;
+  font-size: 20px;
+  width: 50px;
+  padding: 10px 100px;
+  margin-bottom: 6px;
+  color: rgb(29, 24, 24); 
+  border: 4px groove lightskyblue;
+}
+
+.radio {
+  margin-bottom: 15px;
+}
+
+.submit {
+  padding: 5px 3px 5px 3px; 
+  border: 4px groove lightskyblue;
+  background-color: white;
+}
+
+#Results {
+  font-family: 'Russo One', sans-serif;
+  font-size: 14px;
+  font-style: none;
+  color: rgb(0, 34, 34);
+}
+
+#Clear {
+  font-family: 'Russo One', sans-serif;
+  font-size: 14px;
+  font-style: none;
+  color: rgb(0, 34, 34);
+}
+
+h2 {
+  color: rgba(255, 255, 255, 0.966);
+  font-size: 60px;
+}
+
+.images {
+  margin: 30px 0 20px 0; 
+  height: 450px;
+  width: 400px;
+}
+
+

@@ -1,14 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
+  <title>Temperature Converter</title>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
-
+  <h2>Temperature Converter</h2>
+  <form>
+    <input id="userInput" type="text">
+    <br>
+    <input type="radio" class="radio" id="F" name="degrees" value="&#8457">
+    <lable for="F">&#8457</lable>
+    <input type="radio" class="radio" id="C" name="degrees" value="&#8451">
+    <label for="C">&#8451</label>
+    <br>
+    <input class="submit" type="submit" id="Results" onmouseover="myFunction()" onclick="alert('clicked')" value="Results">
+    <input class="submit" type="button" id="Clear" value="Clear">
+  </form>
+  <div id="feedback">
+  </div>
+  <div>
+    <img class="images" src="https://www.kindpng.com/picc/m/63-638377_transparent-thermometer-clipart-body-temperature-clip-art-hd.png" alt="Outside Thermometer Clipart"
+  </div>
   <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
