@@ -4,11 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
+  <title>Temperature Converter</title>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
-
+  <h1>Santa's Temperature Converter</h1>
+  <p>Check your temperature before Santa comes!</p>
+  
+  <form>
+    <input
+      id="tempInput" 
+      type="text"
+      placeholder="Enter your temperature"
+      >
+    <br>
+    <input id="F" type="radio" class="option" name="measure">
+    <label for="F" class="degree">°F</label>
+    <input id="C" type="radio" class="option" name="measure">
+    <label for="C" class="degree">°C</label>
+    <br>
+    <input
+    type="submit"
+    id="submit"
+    class="clickable"
+    value="Submit"
+    >
+    <input
+    type="button"
+    id="clear"
+    class="clickable"
+    value="Clear"
+    >
+  </form>
+<br>
+<div id="output" class="tempConversion"></div>
   <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

@@ -1,3 +1,50 @@
+body {
+  background: aliceblue;
+  text-align: center;
+}  
+
 h1 {
-  color: blue;
+  color: steelblue;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p {
+  color: rgb(108, 165, 211);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 21px;
+}
+
+#tempInput {
+  width: 500px;
+  height: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 10%;
+  border-color: steelblue;
+}
+
+.option {
+  margin-top: 15px;
+}
+
+.degree {
+  font-family: Arial, Helvetica, sans-serif;
+  color: steelblue;
+}
+
+.clickable {
+  margin-top: 8px;
+  background-color: rgb(108, 165, 211);
+  color: white;
+  border-color: steelblue;
+}
+
+.tempConversion {
+  background-color: steelblue;
+  color: whitesmoke;
+  font-size: 72px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 600px;
+  height: 100px;
+  margin: auto;
 }
