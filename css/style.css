@@ -47,7 +47,10 @@ label {
 }
 
 #output {
+  height: 40px;
+  width: 50px;
   border: rosybrown;
-  color: yellow;
+  background: yellow;
+  position: relative;
 }
 
