@@ -4,11 +4,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="js/script.js"></script>
+  <title>Temperature Converter</title>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
+  <div class="working">
+    
+    <div class="inputBox">
+      <form id="submit">
+        <div id="answer">
+          <p id="answerNum"></p>
+        </div>
+        <input type="text" placeholder="your temperature, number only" id="submitTemp"><br>
+      </form>
 
-  <script type="text/javascript" src="js/script.js"></script>
+        <p>Your temperature is in...</p><br>
+        <input type="radio" id="submitTempC" class="radioB" name="inputT" value="CelInput">
+        <label for="celsius">°C</label>
+        <input type="radio" id="submitTempF" class="radioB" name="inputT" value="FahInput">
+        <label for="fahrenheit">°F</label>
+        <br>
+        <div class="buttons">
+          <button type="submit" id="clickA" value="convert">convert</button>
+          <button type="submit" id="clickB" value="clear">clear</button>
+        </div>
+      
+   </div>
+  </div>
+   
 </body>
 </html>
