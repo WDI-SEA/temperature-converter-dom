@@ -72,6 +72,8 @@ document.addEventListener('DOMContentLoaded', ()=>{
                     newDiv.style.backgroundColor = '#AEFAF1'
                 } else if (tempOutput > 100) {
                     newDiv.style.backgroundColor = '#FACAAE'
+                } else {
+                    newDiv.style.backgroundColor = 'white'
                 }
             } else {
                 //Initialize div element containing output
@@ -85,6 +87,8 @@ document.addEventListener('DOMContentLoaded', ()=>{
                     newDiv.style.backgroundColor = '#AEFAF1'
                 } else if (tempOutput > 100) {
                     newDiv.style.backgroundColor = '#FACAAE'
+                } else {
+                    newDiv.style.backgroundColor = 'white'
                 }
                 
                 //Append output div to HTML document
