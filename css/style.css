@@ -47,10 +47,11 @@ label {
 }
 
 #output {
-  height: 40px;
-  width: 50px;
-  border: rosybrown;
+  height: 100px;
+  width: 446px;
+  border: solid 20px rosybrown;
   background: yellow;
   position: relative;
+  margin: auto;
 }
 
