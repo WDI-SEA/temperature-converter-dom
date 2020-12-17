@@ -98,5 +98,10 @@ document.addEventListener('DOMContentLoaded', ()=>{
     document.querySelector('button').addEventListener('click', (e)=> {
         e.preventDefault();
         document.querySelector('#temp').value = "";
+        
+        let newDiv = document.getElementById('output')
+        if (newDiv !== null) {
+            document.body.removeChild(newDiv)
+        }
     })
 })
