@@ -1,1 +1,9 @@
-console.log('Hello, front end');
+const tempInput = document.getElementById("temps")
+
+
+
+
+
+
+
+
