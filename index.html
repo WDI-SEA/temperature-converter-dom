@@ -13,19 +13,20 @@
 
     </h1>
     <h1>Temperature Convertor</h1>
-    <form id="submitForm">
-        <input type="text" id="submitText">
-        <br>
-        
-        <input type="radio" id="radio" class="farenheit" value="f">
-                <label>farenheit</label>
-
-        <input type="radio" id="radio" class="celcius" value="c">
-          <label>celcius</label>
-      <input type="radio" id="kelvin" value="k">
-      <label> Kelvin </label>
-
-        <br>
+      <form>
+          <input type="text" id="submitText">
+          <p>Please select your temp unit:</p>
+          <div>
+            <input type="radio" id="fahrenheit"
+                   name="tempUnit" value="fahrenheit">
+            <label for="contactChoice1">fahrenheit</label>
+            <input type="radio" id="celsius"
+                   name="tempUnit" value="celsius">
+            <label for="contactChoice2">celsius</label>
+            <input type="radio" id="contactChoice3"
+                   name="tempUnit" value="kelvin">
+            <label for="contactChoice3">kelvin</label>
+          </div>
         <input type="submit">
         <input type="reset">
       </form>
