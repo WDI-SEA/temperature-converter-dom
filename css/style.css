@@ -1,3 +1,66 @@
+body {
+  background-color: #888888;
+  position: relative;
+}
+
 h1 {
-  color: blue;
+  color: #444449;
+  font-size: 50px;
+  text-align: center;
+}
+form {
+  width: 750px;
+  margin: 0 auto;
+}
+
+#tempInput {
+  padding: 25px 200px;
+  font-size: 44px;
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  border-radius: 15px;
+  outline: none;
+}
+
+#tempType {
+  width: 750px;
+  margin: 0 45%;
+  margin-top: 20px;
+}
+
+.tempSpecifics {
+  width: 20px;
+  height: 20px;
+  left: 10px;
+  margin: 0 20px;
+}
+
+label {
+  font-size: 25px;
+}
+
+.btn {
+  font-size: 20px;
+  border-radius: 15px;
+  outline: none;
+}
+
+#buttons{
+  margin: 0 45%;
+  margin-top: 10px;
+}
+
+#displayResults {
+  margin: 0 22.5%;
+  margin-top: 32px;
+}
+
+#finalDisplay {
+  font-size: 100px;
+  text-align: center;
+  height: 200px;
+  outline: none;
+  background-color: red;
+  color: white;
 }
