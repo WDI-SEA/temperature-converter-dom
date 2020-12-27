@@ -11,25 +11,19 @@
     <h1 id="temp"></h1>
     <!--  -->
 
-    </h1>
-    <h1>Temperature Convertor</h1>
-      <form id="myForm" name="myForm">
-          <input type="text" id="submitText">
-          <p>Please select your temp unit:</p>
-          <div>
-            <input type="radio" id="fahrenheit"
-                   name="tempUnit" value="fahrenheit">
-            <label for="contactChoice1">fahrenheit</label>
-            <input type="radio" id="celsius"
-                   name="tempUnit" value="celsius">
-            <label for="contactChoice2">celsius</label>
-            <input type="radio" id="contactChoice3"
-                   name="tempUnit" value="kelvin">
-            <label for="contactChoice3">kelvin</label>
-          </div>
-        <input type="submit">
-        <input type="reset">
-      </form>
+</h1>
+<h1>Temperature Convertor</h1>
+  <form id="myForm" name="myForm">
+    <input type="text" id="submitText">
+    <p>Please select your temp unit:</p>
+    <select id="unitSelect">
+      <option class="tempUnit" value='fahrenheit'>fahrenheit</option>
+      <option class="tempUnit"  value='celcius'>celcius</option>
+      <option class="tempUnit"  value='kelvin'>kelvin</option>
+    </select>
+    <input type="submit">
+    <input type="reset">
+  </form>
 
     <div id="rectangle"> 
       
