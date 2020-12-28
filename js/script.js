@@ -23,6 +23,7 @@ form.addEventListener("submit", function(event){
   // console.log(inputValue.value);
   // console.log(tempUnit.value);   
   
+  //switch to grab the data and do temp conversions based on input
   switch (tempUnit.value){
     case 'fahrenheit':
       console.log(`${inputValue.value} ${tempUnit.value}`);
@@ -56,6 +57,7 @@ form.addEventListener("submit", function(event){
       rectangle.appendChild(tempDisplay);
     break
   }
+  //Try to change the css style background color of the div with id rectangle NOT WORKING
   let tempCheckColor;
   tempCheckColor = tempF;
   switch (tempCheckColor){
