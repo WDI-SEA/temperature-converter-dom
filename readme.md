@@ -7,7 +7,7 @@ We will be using JavaScript to make a temperature conversion utility. A folder i
 * Fork and clone this repository
 
 ## Requirements
-* Create a single page using HTML/CSS that contains an input field and a submit button, all within a form element.
+* Create a single page using HTML/CSS that contains an input field and a submit button.
 * Additionally, add a clear button
 * When the submit button is pressed, convert the inputted temperature from F to C using the appropriate conversion formula (may need to Google it)
 
