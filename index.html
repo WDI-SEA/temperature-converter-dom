@@ -7,8 +7,35 @@
   <title>Hello Front-End</title>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
+    <main>
+      <br><br><br>
+      <h1>Temperature Converter</h1>
 
-  <script type="text/javascript" src="js/script.js"></script>
+        <form action="">
+          <label for="tempinput">Input the temp you need to convert</label>
+          <br>
+          <input type="text" id="tempInput" name="tempinput"  placeholder="Type a temperature" >
+          <br>
+          <input type="radio" name="temp" id="F" value="F">
+          <label for="F"> F to C </label>
+          <br>
+          <input type="radio" name="temp" id="C" value = "C">
+          <label for="F"> C to F </label>
+        
+        </form>
+
+        <div class="buttons2">
+          <br>
+        <button id="convert">Convert</button> <button id="clear">Clear</button>
+      </div>
+        <div class="conversionDiv">
+          <h3 id="disp"> </h3> 
+        </div>
+        
+        
+
+
+      <script type="text/javascript" src="js/script.js"></script>
+  </main>
 </body>
 </html>

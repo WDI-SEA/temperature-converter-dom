@@ -1,3 +1,19 @@
 h1 {
   color: blue;
 }
+body{
+  text-align: center;
+  
+}
+.conversionDiv{
+  background-color: #2a9d8f;
+}
+body{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+form{
+  background-color: #f4a261
+}
+.buttons2{
+  background-color: #e9c46a;
+}
