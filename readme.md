@@ -26,13 +26,13 @@ We will be using JavaScript to make a temperature conversion utility. A folder i
 
 3. Place the `<input>` and `<button>` elements into a form, so that pressing ENTER will automatically convert the temperature. Note that there's an event type called `'submit'` that you can use instead of `'click'`.
 
-4. Add your own personal sense of style using CSS styling and positioning techniques. Ideas include:
+4. **Bonus #1:** Add your own personal sense of style using CSS styling and positioning techniques. Ideas include:
   * different fonts (see [Google Fonts](https://developers.google.com/fonts/docs/getting_started) for how to link fonts into a webpage)
   * images
   * colors
   * borders
   
-5. Add the ability to convert to and from Kelvins! 
+5. **Bonus #2:** Add the ability to convert to and from Kelvins! 
 
 ## Deliverables
 
