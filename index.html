@@ -4,11 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script type="text/javascript" src="js/script.js"></script>
   <title>Hello Front-End</title>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
-
-  <script type="text/javascript" src="js/script.js"></script>
+  <h1>Temparature Converter</h1>
+  <form id="tempToConvertForm">
+    <input id="userTempToConvert" type="text" name="userTempToConvert" placeholder="Input Temp to Convert" />
+    <input id="tempFaren" type="radio" name="typeTemp" value="faren">°F
+    <input id="tempCelcius" type="radio" name="typeTemp" value="celcius">°C
+  </form>
+  <button id="submit">Submit</button>
+  <button id="clear">Clear</button>
+  <div id="ans"></div>
 </body>
 </html>
