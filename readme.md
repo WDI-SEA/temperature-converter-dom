@@ -32,7 +32,7 @@ We will be using JavaScript to make a temperature conversion utility. A folder i
   * colors
   * borders
   
-5. **Bonus #2:** Add the ability to convert to and from Kelvins! 
+5. **Bonus:** Add the ability to convert to and from Kelvins! 
 
 ## Deliverables
 
