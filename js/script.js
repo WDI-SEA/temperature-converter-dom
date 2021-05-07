@@ -12,7 +12,6 @@ clearPressed.addEventListener("click", () => {
 
 function clear(){
     let textBox = document.getElementById("temp")
-    console.log(textBox)
     textBox.value = ""
 
     let theDiv = document.querySelector("#hidden-div")
