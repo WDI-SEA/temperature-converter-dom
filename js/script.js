@@ -7,11 +7,13 @@ const fConv = () => {
   // Check to see if integer entered
   if (isNaN(fahrenheitIn)) {
     document.getElementById("txt").innerHTML = `Hey, that's not a number!`;
+    document.getElementById("txt2").innerHTML = "";
     // Check to see if form is empty
   } else if (fahrenheitIn === "") {
     document.getElementById(
       "txt"
     ).innerHTML = `This doesn't work if you don't enter a temperature!`;
+    document.getElementById("txt2").innerHTML = "";
   } else if (fahrenheitIn >= 80) {
     document.body.style.backgroundColor = "red";
     document.getElementById("txt").innerHTML = `${fahrenheitIn}°F = ${conv}°C`;
