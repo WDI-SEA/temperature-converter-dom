@@ -1,3 +1,49 @@
+body {
+  background-color:cadetblue;
+  font-family: 'Courier New', Courier, monospace;
+}
 h1 {
-  color: blue;
+  color:darkslategray;
+  text-align: center;
+}
+
+#temperature {
+  display: block;
+  margin: 0 auto;
+  height: 50px;
+  width: 200px;
+  font-family: 'Courier New', Courier, monospace;
+  text-align:center;
+  font-size:30px;
+  font-weight:bold;
+}
+
+#radio-buttons, #submit-clear {
+  display:flex;
+  justify-content:center;
+  margin: 20px;
+  font-size: 30px;
+}
+
+input[type="radio"] {
+  margin: 0 10px 0 10px;
+}
+
+button {
+  margin: 0 10px 0 10px;
+}
+
+#answer {
+  height: 50px;
+  width: 200px;
+  margin: 0 auto;
+  border: 2px solid black;
+  font-family: 'Courier New', Courier, monospace;
+  text-align:center;
+  font-size:50px;
+  font-weight:bold;
+}
+
+p {
+  text-align:center;
 }

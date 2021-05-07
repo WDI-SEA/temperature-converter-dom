@@ -4,11 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
+  <title>Terry's Temperature Converter</title>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
-
+  <h1>Temperature Converter</h1>
+  <p>Type in a number, hit °F or °C, and click submit!</p>
+  <form>
+    <input type="text" id="temperature"></input>
+    <div id="radio-buttons">
+      <input type="radio" name="select" id="fahrenheit" value="fahrenheit">°F</input>
+      <input type="radio" name="select" id="celsius" value="celsius">°C</input>
+    </div>
+    <div id="submit-clear">
+      <button type="button" onclick="getTemperature();">Submit</button>
+      <button type="button" onclick="clearAnswer();">Clear</button>
+    </div>
+    <div id="answer">
+    </div>
+  </form>
   <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
