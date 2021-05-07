@@ -1,3 +1,54 @@
+body {
+  text-align: center;
+  background-color: #ededed;
+}
+
+.container {
+  margin: 15% auto;
+}
+
 h1 {
-  color: blue;
+  color: #9a9a9a;
+  font-weight: bolder;
+}
+
+#temp {
+  width: 50%;
+  height: 10%;
+  margin-bottom: 15px;
+  padding: 10px;
+  text-align: center;
+  font-size: 40px;
+  border: 2px solid lightgray;
+  border-radius: 10px;
+  color: black;
+}
+
+.radio {
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+label {
+  font-size: 20px;
+  padding: 10px;
+  color: #9a9a9a;
+}
+
+button {
+  padding: 7px;
+  background-color: lightgray;
+  border: 1px;
+  box-shadow: 2px 2px #9a9a9a;
+}
+
+/* #finalVlaue {
+  display: inline-flex;
+  width: 40%;
+} */
+h2 {
+  background: red;
+  font-size: 30px;
+  color: white;
+  text-align: center;
 }
