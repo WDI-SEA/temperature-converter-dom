@@ -1,17 +1,19 @@
-//Variables example: submit button, clear.
+//Variables list
 
-let form = document.getElementsByClassName("form")
 let submit = document.getElementById("submit")
-let clear = document.getElementById("clear")
 let tempInput = document.getElementById("temp")
 let tempF = document.getElementById("tempF")
 let tempC = document.getElementById("tempC")
 
+
+//Input from user 
+//Pick a radio selection
+//Convert F to C OR C to F AFTER Submit has been clicked
+//Clear input with clear button
+
 submit.onclick = function convertTemp(valNum) {
     const temps = document.querySelectorAll('input[name="Temp"]');
     valNum = parseFloat(tempInput.value);
-    
-
     
     for (const t of temps) {
         if (t.checked) {
@@ -34,4 +36,7 @@ submit.onclick = function convertTemp(valNum) {
     }
 }
 
-
+//clear button solve
+//document.querySelector('#clear').addEventListner("click", () => {
+    //tempconvertInputValue.value =""
+//})
