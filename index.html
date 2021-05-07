@@ -4,10 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
+  <title>Temperature Converter</title>
+  <script src="js/script.js"></script>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
+  <div class="container">
+    <h1>What's that temperature</h1>
+    <p>Enter the temperature</p>
+    <form>
+      <input type="text" id="entry" name="entry"><br>
+      <input type="radio" id= "f" name="temp" value="f" checked="checked"> Fahrenheit
+      <input type="radio" id= "c" name="temp" value="c"> Celcius
+    </form>
+    <button>Submit</button>
+    <button id="clear">Clear</button>
+
+    <div id="result"></div>
+  </div>
 
   <script type="text/javascript" src="js/script.js"></script>
 </body>
