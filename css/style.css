@@ -1,3 +1,12 @@
+body {
+margin: 0 auto;
+  text-align: center;
+  background-color: rgb(224, 224, 224);
+ }
+
 h1 {
-  color: blue;
+  display:inline-flex;
+  align-content: justify;
+  color: grey;
+  
 }
