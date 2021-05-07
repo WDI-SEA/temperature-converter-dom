@@ -4,11 +4,46 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
+  <script type="text/javascript" src="js/script.js"></script>
+  <title>Temperature Converter</title>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
-
-  <script type="text/javascript" src="js/script.js"></script>
+  <h1>Temperature Converter</h1>
+  <h2> Enter a Number First, Then Select a Conversion</h2>
+  <div class="imageContainer"> 
+    <img src="/img/Thermometer.jpeg"></img>
+  </div>  
+  </marquee>  
+  <form>
+    <input type="number" id="numberInput" placeholder="Enter a number!">
+    <div>
+      <h3>Select Your Conversion</h3>
+      <label>
+        <input  id="input1" type="radio"value="°F to °C" alt="Fahrenheit to Celsius">°F to °C
+      </label>
+      <label>
+        <input id="input2" type="radio" value="°F to K" alt="Fahrenheit to Kelvin">°F to K
+      </label> 
+      <label>
+        <input id="input3" type="radio" value="°C to °F" alt="Celsius to Fahrenheit">°C to °F
+      </label> 
+      <label>
+        <input id="input4" type="radio" value="°C to K" alt="Celsius to Kelvin">°C to K
+      </label> 
+      <label>
+        <input id="input5" type="radio" value="K to °F" alt="Kelvin to Fahrenheit">K to °F
+      </label> 
+      <label>
+        <input id="input6" type="radio" value="K to °C" alt="Kelvin to CeLsius">K to °C
+      </label> 
+    </div>
+    <div class="container">
+      <button class="submit-button" type="button" alt="Convert" onclick="temp()">Convert</button>
+      <button class="submit-button2" type="reset" alt="Clear" onclick="clear()">Clear</button>
+    </div>
+  </form>
+  <div id="tempContainer">
+    <p id="tempDisplay"></p> 
+  </div>  
 </body>
 </html>
