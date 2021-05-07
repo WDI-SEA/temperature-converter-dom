@@ -1,3 +1,9 @@
 h1 {
-  color: blue;
+  color:palevioletred;
+  text-shadow:3px solid slateblue;
+}
+
+.radioset {
+  display: flex;
+  justify-content:stretch;
 }
