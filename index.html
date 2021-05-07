@@ -4,11 +4,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
+  <title>Temperature Converter</title>
+  <script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
+  <h1>Temperature Converter</h1>
+  <div class="container">
+    <form>
+      <input type="text" name="temp" id="temp-input" placeholder="Enter a temperature to convert" autocomplete="off">
+      <div id="unit-container">
+        <div class="radio-container">
+          <input class="input-unit" type="radio" name="unitIn" id="F-in" value="°F" checked>
+          <label for="F-in">°F</label><br>
+          <input class="input-unit" type="radio" name="unitIn" id="C-in" value="°C">
+          <label for="C-in">°C</label><br>
+          <input class="input-unit" type="radio" name="unitIn" id="K-in" value="K">
+          <label for="K-in"> K</label><br>
+        </div>
 
-  <script type="text/javascript" src="js/script.js"></script>
+        <p>convert to:</p>
+        
+        <div class="radio-container">
+          <input class="output-unit" type="radio" name="unitOut" id="F-out" value="°F">
+          <label for="F-out">°F</label><br>
+          <input class="output-unit" type="radio" name="unitOut" id="C-out" value="°C" checked>
+          <label for="C-out">°C</label><br>
+          <input class="output-unit" type="radio" name="unitOut" id="K-out" value="K">
+          <label for="K-out"> K</label><br>
+        </div>
+      </div>
+    </form>
+    <button id="submit">Convert!</button>
+    <button id="clear">Clear</button>
+  </div>
+
+  <div id="result-container">
+    <p id="result"></p>
+  </div>
+  
 </body>
 </html>
