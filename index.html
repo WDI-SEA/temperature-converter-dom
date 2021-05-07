@@ -8,32 +8,31 @@
 </head>
 <body>
 <main>
-  <div>
-  <h1>Temperature Converter</h1>
-</div>
+    <div class='title'> 
+      <h1>Temperature Converter</h1>
+    </div>
   <form>
-    <div>
+    <div class='textfield'>
       <input type="text" id="input" value="">
     </div>
     <div class="temperature">
-      <input type="radio" id="F" name="temperature">
-      <label for="F">°F</label>
-      <input type="radio" id ="C" name="temperature">
-      <label for="C">°C</label>
+      <input type="radio" id="F" name="temperature" class="radiobox"> 
+      <label for="F" class="radiolabel">°F</label>
+      <input type="radio" id ="C" name="temperature" class="radiobox">
+      <label for="C" class="radiolabel">°C</label>
     </div>
-    <div>
+    <div class='buttons'>
      <button type="submit" id="submit">Submit</button>
      <button type="submit" id="clear">Clear</button>
     </div>
      <h1></h1>
-    <div>
+    <div class="answerbox">
       <h3 id="finalAnswer"></h3>
     </div>
 
 
   </form>
-
-  <script type="text/javascript" src="js/script.js"></script>
 </main>
+<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

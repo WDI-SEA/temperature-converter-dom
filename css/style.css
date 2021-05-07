@@ -1,4 +1,40 @@
 body {
-  color: white;
   background-color: darkslategrey;
+  color:lightgray;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  display: flex;
+  order: 0;
+}
+
+.textfield temperature answerbox {
+  display: flex;
+  text-align: center;
+  order: 1;
+}
+
+input {
+  text-align: center;
+}
+ 
+button {
+  display: inline-flex;
+  align-content: center;
+  text-align: center;
+
+
+}
+.radiobox radiolabel {
+  display: inline-block;
+}
+
+.answerbox {
+  text-align: center;
 }
