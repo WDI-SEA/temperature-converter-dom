@@ -1,3 +1,25 @@
 h1 {
-  color: blue;
+  color: grey;
+  text-align: center;
 }
+
+.temperatureData {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.selectors {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 10px 30px 10px 30px;
+}
+
+.submissions {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
