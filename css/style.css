@@ -1,3 +1,24 @@
 h1 {
-  color: blue;
+  color: grey;
+  text-align: center;
 }
+
+.temperatureData {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tempSelectors {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.submissions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
