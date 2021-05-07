@@ -81,6 +81,7 @@ window.addEventListener("DOMContentLoaded", () => {
         result.innerText = ""
         resultContainer.style.backgroundColor = "lightgray"
         resultContainer.style.color = "black"
+        document.getElementById("temp-input").value = ""
     })
 
 })
