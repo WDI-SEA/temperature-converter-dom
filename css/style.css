@@ -1,3 +1,50 @@
+body {
+  font-family: 'Roboto Mono', monospace;
+  text-align: center;
+  background-color: rgb(168, 220, 168);
+}
+
 h1 {
-  color: blue;
+  margin: 50px;
+}
+.radios {
+  display: flex;
+  justify-content: center;
+}
+
+.radios div{
+  display: inline;
+  margin: 20px; 
+}
+
+.buttons {
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+button {
+  font-family: 'Roboto Mono', monospace;
+  background-color: white;
+  border-style: none;
+  padding: 10px 50px;
+  margin: 20px;
+  border-radius: 5px;
+}
+
+button:hover{
+  background-color: orchid;
+  color: white;
+}
+
+.unhide {
+  display: flex;
+  background-color: white;
+  border: 2px solid orchid;
+  width: 250px;
+  height: 50px;
+  padding: 25px;
+  margin: 0 auto;
+  border-radius: 65px;
+  justify-content: center;
+  align-items: center;
 }
