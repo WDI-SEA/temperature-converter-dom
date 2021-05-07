@@ -1,3 +1,14 @@
+body{
+  text-align: center;
+  font-family: 'Krona One', sans-serif;
+}
+
+div {
+  border: 3px solid black;
+  padding-bottom: 20px;
+  border-radius: 15px;
+}
+
 h1 {
-  color: blue;
+  font-size: 25px;
 }
