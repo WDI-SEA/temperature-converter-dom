@@ -44,28 +44,33 @@ function getTemperature() {
 function celColorChange() {
     if (CelSolution <= 0) {
         document.getElementById("answer").style.backgroundColor = "blue"
+        document.getElementById("answer").style.color = "cyan"
     } else if (CelSolution >= 32) {
         document.getElementById("answer").style.backgroundColor = "crimson"
+        document.getElementById("answer").style.color = "orange"
     } else {
-        document.getElementById("answer").style.backgroundColor = "white"
+        document.getElementById("answer").style.backgroundColor = "lightgrey"
+        document.getElementById("answer").style.color = "black"
     }
 }
 
 function farColorChange() {
     if (FarSolution <= 32) {
         document.getElementById("answer").style.backgroundColor = "blue"
+        document.getElementById("answer").style.color = "cyan"
     } else if (FarSolution >= 90) {
         document.getElementById("answer").style.backgroundColor = "crimson"
+        document.getElementById("answer").style.color = "orange"
     } else {
-        document.getElementById("answer").style.backgroundColor = "white"
+        document.getElementById("answer").style.backgroundColor = "lightgrey"
+        document.getElementById("answer").style.color = "black"
     }
 }
-
 
 function clearAnswer() {
     document.getElementById("temperature").value = " ";
     document.getElementById("answer").innerText = " ";
-    document.getElementById("answer").style.backgroundColor = "white"
+    document.getElementById("answer").style.backgroundColor = "lightgrey"
 }
 
 

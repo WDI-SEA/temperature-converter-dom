@@ -16,6 +16,9 @@ h1 {
   text-align:center;
   font-size:30px;
   font-weight:bold;
+  box-shadow: 0 4px black;
+  border-radius: 8px;
+  background-color: lightgrey;
 }
 
 #radio-buttons, #submit-clear {
@@ -27,10 +30,55 @@ h1 {
 
 input[type="radio"] {
   margin: 0 10px 0 10px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  border-radius: 30%;
+  width: 16px;
+  height: 16px;
+
+  position: relative;
+  top: 8px;
+  left: 10px;
+
+  border: 2px solid black;
+  background: white;
+  box-shadow: 0 1px black;
+
+}
+
+input[type="radio"]:hover {
+  transition-duration: 0.2s;
+  background-color: darkgrey;
+}
+
+input[type="radio"]:checked {
+  background-color: rgb(66, 59, 59);
+  box-shadow: 0 0 black;
+  transform: translateY(1px);
 }
 
 button {
   margin: 0 10px 0 10px;
+  font-family:'Courier New', Courier, monospace;
+  font-weight:bold;
+  background-color:black;
+  color:white;
+  border-radius: 8px;
+  border: 2px solid grey;
+  box-shadow: 0 4px rgb(66, 59, 59);
+}
+
+button:hover {
+  transition-duration: 0.2s;
+  background-color: darkgrey;
+}
+
+button:active {
+  background-color:darkred;
+  box-shadow: 0 1px rgb(66, 59, 59);
+  transform: translateY(3px);
 }
 
 #answer {
@@ -42,9 +90,12 @@ button {
   text-align:center;
   font-size:50px;
   font-weight:bold;
-  background-color:white;
+  background-color: lightgrey;
+  box-shadow: 0 4px black;
+  border-radius: 8px;
 }
 
 p {
   text-align:center;
+  font-weight: bold;
 }
