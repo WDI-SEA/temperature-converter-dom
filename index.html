@@ -1,14 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
-</head>
-<body>
-  <h1>Hello Front-End</h1>
+<html>
+  <head>
+    <title>Fahrenheit Converter | GA SEI 503</title>
 
-  <script type="text/javascript" src="js/script.js"></script>
-</body>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <h1>Fahrenheit Converter</h1>
+    </div>
+    <div class="form">
+      <form>
+        <input
+          type="text"
+          id="userInput"
+          placeholder="Enter temp in Fahrenheit"
+        />
+      </form>
+      <button onclick="fConv()">Convert It!</button>
+      <button onclick="clearForm()">Clear Form</button>
+    </div>
+    <div class="txt">
+      <p id="txt"></p>
+    </div>
+    <div class="txt">
+      <p id="txt2"></p>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
 </html>
