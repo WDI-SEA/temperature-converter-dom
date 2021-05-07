@@ -1,3 +1,14 @@
 h1 {
-  color: blue;
+  color:darkslategrey;
+  display: flex;
+  justify-content: center;
+}
+#results {
+  background-color: firebrick;
+  height: 100px;
+  display: block;
+  font-size: 80px;
+  color:ghostwhite;
+  display: flex;
+  justify-content: center;
 }
