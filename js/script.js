@@ -1,1 +1,5 @@
-console.log('Hello, front end');
+
+submitButton.addEventListener('click', () => {
+    let getTemp = document.getElementById('temp-input')
+
+}) 
