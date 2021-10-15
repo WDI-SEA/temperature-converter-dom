@@ -1,7 +1,11 @@
-const getTemp = document.getElementById('temp-input').value;
+// variables needed for the functions
+const getTemp = document.getElementById('temp-input');
+const submitButton = document.getElementById('submitButton')
+const clearButtonButton = document.getElementById('clearButton')
 
 const fToCRadioButton = document.getElementById('fahrenheitButton')
 const cToFRadioButton = document.getElementById('CelciusButton')
+
 
 function workingRadioButtons () {
         if (cToFRadioButton.checked) {
@@ -9,24 +13,24 @@ function workingRadioButtons () {
         } else if (fToCRadioButton.checked) {
             displayCelsiusTemp()
         } }
-
+// fucntions for temp conversion
 function displayCelsiusTemp () {
-    let toFahrenheitEquation = Math.floor(((getTemp - 32) *5) /9)
+    let toFahrenheitEquation = Math.floor(((getTemp.value - 32) *5) /9)
     document.getElementById('temp-in-h1').innerHTML = toFahrenheitEquation
 }
 
 function displayfahrenheitTemp() {
-    let toCelciusEquation = Math.floor(((getTemp) * 9/5) + 32)
+    let toCelciusEquation = Math.floor(((getTemp.value) * 9/5) + 32)
     document.getElementById('temp-in-h1').innerHTML = toCelciusEquation
 }
 
-function clear() {
-    document.getElementById("temp-input").value = "";
-    document.getElementById("clearButton")[0].innerHTML = "";
-    
-    
+// function for clear button
+function clearButton () {
+    window.location.reload()
+}
+
 submitButton.addEventListener('click', workingRadioButtons)
-clearButton.addEventListener('click', clear)
+clearButtonButton.addEventListener('click', clearButton)
 
 
 
