@@ -26,6 +26,7 @@ const toKelvin = (temp, unit) => {
     }
 }
 
+//convert user's input to other units
 const convertTemp = (userInput, unit) => {
     switch (unit) {
         case 'k':
@@ -44,7 +45,8 @@ const convertTemp = (userInput, unit) => {
             kelvinValue = toKelvin(userInput, unit)
     }
 }
-    
+
+//grab radio value
 const findUnit = () => {
     const unit = document.getElementsByName('unit')
     for (i = 0; i < unit.length; i++) {
@@ -55,6 +57,7 @@ const findUnit = () => {
 }
 
 const clearHandler = () => {
+    //reset input field
     let inputField = document.getElementById('userInput')
     inputField.value = ""
 }
@@ -86,8 +89,10 @@ const displayConversion = (usersUnit) => {
 }
 
 const clearDisplay = () => {
+    //get last child of the form
     const input = document.querySelector('form')
     const lastChild = input.lastElementChild.className
+    //if its the right class, delete it and it's sibling
     if (lastChild === 'conversionDisplay') {
         input.lastElementChild.remove()
         input.lastElementChild.remove()
@@ -118,8 +123,8 @@ const submitHandler = () => {
             displayConversion('c')
             break
     }
+    //clear input
     clearHandler()
-    
 }
 
 //listen for click on submit
@@ -130,5 +135,5 @@ document.getElementById('submit').addEventListener('click', () => {
 //listen for click on clear
 document.getElementById('clear').addEventListener('click', () => {
     clearHandler()
-    clearDisplay()
+    
 })

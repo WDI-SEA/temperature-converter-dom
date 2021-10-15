@@ -1,5 +1,5 @@
 body {
-  font-family: sans-serif;
+  font-family: 'Oswald', sans-serif;
   text-align: center;
 }
 
@@ -7,15 +7,19 @@ form {
   margin: 0 auto;
   padding: 20px;
   width: 50%;
-  background-color: gray;
+  background-color: lightgrey;
 }
 
 h1 {
-  color: darkgray;
+  color: rgb(255, 255, 255);
+}
+
+h2 {
+  font-size: 40px;
 }
 
 button {
-  margin: 20px 0 20px 0;
+  margin: 20px 10px;
   border: 4px solid white;
   width: 150px;
   height: 50px;
@@ -23,8 +27,9 @@ button {
   font-weight: bold;
 }
 
-#submit {
-  background-color: aquamarine;
+button:hover {
+  background-color: darkcyan;
+  cursor: pointer;
 }
 
 .conversionDisplay {
@@ -33,12 +38,28 @@ button {
   display: inline-block;
 }
 
+.radio {
+  margin: 0 10px 0 0;
+}
+
+label {
+  margin-right: 45px;
+}
+
 #userInput {
   margin-bottom: 20px;
-  font-family: sans-serif;
+  font-family: 'Oswald', sans-serif;
   text-align: center;
   font-size: 32px;
   border: 1px solid black;
   border-radius: 8px;
+}
+
+#submit {
+  background-color: aquamarine;
+}
+
+#submit:hover {
+  background-color: darkcyan;
 }
 

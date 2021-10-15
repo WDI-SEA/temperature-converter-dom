@@ -5,24 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <title>Temperature Converter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <form action="">
+  <form>
     <h1>Temperature Converter</h1>
     <input type="text" id="userInput">
     <br>
-    <input type="radio" name="unit" value="f">
+    <input type="radio" name="unit" class="radio" value="f">
     <label for="fahrenheit">&#176;F</label>
-    <input type="radio" name="unit" value="c">
+    <input type="radio" name="unit" class="radio" value="c">
     <label for="celsius">&#176;C</label>
-    <input type="radio" name="unit" value="k">
+    <input type="radio" name="unit" class="radio" value="k">
     <label for="kelvin">&#176;K</label>
     <br>
     <button type="button" id="submit">Submit</button>
     <button type="button" id="clear">Clear</button>
     <br>
-    <div class="conversionDisplay"><h2>273°K</h2></div>
-    <div class="conversionDisplay"><h2>273°K</h2></div>
   </form>
 
   <script type="text/javascript" src="js/script.js"></script>
