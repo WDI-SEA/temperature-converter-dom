@@ -8,14 +8,14 @@ const value = ddlConvert.options[ddlConvert.selectedIndex].value;
 document.getElementById("submit").addEventListener("click", () => {
     // Assigning the input text to a variable
     const input = document.getElementById("temp").value;
-    // Conversions of temperature from fahr to celc and celc to fahr
+    // Conversions of temperature from fahr to cels and cels to fahr
     const fToC = (input - 32) / 1.8;
     const cToF = (input * 1.8) + 32;
         
     if (value === "fToC") {
         test.innerHTML = fToC;
     }
-    // This is not working!  It is not detecting when Celcius to Fahrenheit is selected in the dropdown options.  It only stays at the Fahrenheit to Celcius for some reason.  Cannot figure this out yet.
+    // This is not working!  It is not detecting when Celsius to Fahrenheit is selected in the dropdown options.  It only stays at the Fahrenheit to Celsius for some reason.  Cannot figure this out yet.
     else if (value == "cToF") {
         test.innerHTML = cToF;
         console.log("cToF is working!")        
