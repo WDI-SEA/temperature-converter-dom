@@ -1,38 +1,47 @@
 console.log('Hello, front end');
 
 //initialize a variable for both buttons
-const clear = document.getElementById('clear')
+const clear = document.getElementById('btn2')
+const submit = document.getElementById('button')
 
 // const form = document.getElementById('form')
 // const submit = document.createElement('button')
 // form.appendChild(submit)
 // submit.innerText ="Submit"
-const submit = document.getElementById('button')
+
 
 //write a function to convert F t C and manipulate the DOM with the answer
  const fahrToCelc= function() {
      //func active?
-     const body = document.getElementById('body')
-     const clickedIsTrue = document.createElement('h2')
-     clickedIsTrue.innerText = "Submit is Clicked and fahrToCelc is running!"
-     body.appendChild(clickedIsTrue)
+    //  const body = document.getElementById('body')
+    //  const clickedIsTrue = document.createElement('h2')
+    //  clickedIsTrue.innerText = "Submit is Clicked and fahrToCelc is running!"
+    //  body.appendChild(clickedIsTrue)
 
      //store usier input 
-     const f = document.getElementById("inputTemp")
-     console.log(f)
+     //document.getElementById("searchTxt").value;
+     const f = document.getElementById("inputTemp").value
+     console.log(`user input: ${f}`)
     //convert to celcius
     const c = Math.round(5/9 * (f-32))
         console.log(`celcius output: ${c}`)
     //modify DOM so newTemp reads the celcius
     const output = document.getElementById("newTemp")
-    output.innerText = c
+    output.innerText = ("C°: " + c)
     //text.onclick = function(){
     
+  }
+
+  const clearOut = function () {
+    //to clear: user input, and conversion answer
+    document.getElementById("inputTemp").value = null
+    document.getElementById("newTemp").innerText = "C°: "
   }
 
 
 //run conversion process on click
 submit.addEventListener('click', fahrToCelc)
+clear.addEventListener('click', clearOut )
 
 
 
