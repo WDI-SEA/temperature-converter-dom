@@ -4,10 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+  <title>Temperature Converter</title>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
+  <h1>Temperature Converter</h1>
+
+  <div class="input">
+    <label for="temp" id="tempLabel">Enter temperature</label>
+    <input type="text" class="inputTemp" id="temp" placeholder="Enter temperature here">
+    <div class="options">
+    <label for="ddlTemp">Choose temperature conversion style:</label>
+    <select name="ddlTemp" id="ddlTemp">
+      <option value="fToC">Fahrenheiht to Celcius</option>
+      <option value="cToF">Celcius to Fahrenheiht</option>
+    </select>
+    </div>
+  </div>
+
+  <div class="buttons">
+    <button id="submit">Submit</button>
+    <button id="clear">Clear</button>
+  </div>
+
+  <div class="output">
+  </div>
 
   <script type="text/javascript" src="js/script.js"></script>
 </body>

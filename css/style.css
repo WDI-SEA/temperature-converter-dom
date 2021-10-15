@@ -1,3 +1,56 @@
-h1 {
-  color: blue;
+body {
+  font-family: 'Oxygen', sans-serif;
+  background-image: url("https://images.unsplash.com/photo-1505533542167-8c89838bb19e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1740&q=80");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
+
+h1 {
+  color: gray;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.input {
+  text-align: center;
+}
+
+.inputTemp {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+#tempLabel {
+  margin: 5px;
+}
+
+.options {
+  padding: 20px;
+}
+
+.buttons {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.output {
+  background-color: green;
+  border: 1px solid black;
+  margin: 0 auto;
+  height: 200px;
+  width: 500px;
+  line-height: 200px;
+  color: white;
+  text-align: center;
+  font-size: 40px;
+}
+
+#submit, #clear{
+  margin: 20px 20px;
+  padding: 10px 40px;
+  font-weight: bold;
+  background-color: lightskyblue;
+}
+
