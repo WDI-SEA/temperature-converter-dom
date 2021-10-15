@@ -1,3 +1,18 @@
-h1 {
-  color: blue;
+body{
+  text-align: center;
 }
+h1 {
+  padding: 75px;
+  color: red;
+  font-size: 60px;
+  margin: 10px 30px 10px 30px;
+  font-style: italic;
+}
+p{
+  font-style: bold;
+  font-size: 20px;
+}
+div{
+  padding: 10px;
+}
+
