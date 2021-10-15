@@ -1,3 +1,49 @@
-h1 {
-  color: blue;
+body {
+  background-color: lightyellow;
+  margin-top: 150px;
+  text-align: center;
+  font-family: 'Quantico', sans-serif; 
 }
+
+#header {
+  color: lightseagreen;
+}
+
+#tempInput {
+  margin: 20px auto;
+  text-align: center;
+  max-width: 300px;
+  font-family: inherit;
+  font-size: 40px;
+
+}
+
+h4 {
+  position: relative;
+  display: inline-block;
+}
+
+.toggle{
+  display: inline-block;
+  margin: 10px 20px;
+  position: absolute;
+  
+  
+}
+
+#temp {
+  margin: 50px auto;
+  background-color: lightgray;
+  color: black;
+  max-width: 500px;
+  font-size: 55px;
+  border: 2px dotted black;
+}
+
+h1 #temp{
+  color: brown;
+  background-color: burlywood;
+  
+}
+
+

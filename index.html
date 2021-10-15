@@ -4,10 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quantico&display=swap" rel="stylesheet">
+  <title>Temperature Converter 1.0</title>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
+  <h1 id="header">Temperature Converter 1.0</h1>
+  <!--  make div for temperature tempOutput -->
+  <div class = 'startingTemp'> 
+    <input  name="degrees" id='tempInput' >
+  </div>
+
+  <!-- Make div for switching from F to C -->
+  <div class = selector>
+    <input type='radio' name='tempToggle' id="fahr" ><h4 >°F</h4>
+    <input type='radio' name='tempToggle' id="cels" ><h4 >°C</h4>  
+  </div>
+
+  <!-- make div with buttons for submit and clear -->
+  <div class='finalTemp'>
+    <button id='submit' onclick='convertTemp()'>Convert</button>
+    <button id='reset' onclick='clearTemp()'>Reset</button>
+    
+  </div>
+
+  <!-- make a div for displaying the converted temp -->
+  <h1 id='temp'>--</h1>
+  
 
   <script type="text/javascript" src="js/script.js"></script>
 </body>
