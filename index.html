@@ -4,10 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
+
+  <title>Temp Check</title>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
+  <h1>Temperature Converter</h1>
+<div class="FCSC">
+	<form> 
+    <input type="text" placeholder="input temp to convert" id="temp">
+    <input type="radio" id="Fahrenheit" name="typeOfTemp" value="Fahrenheit"/>
+    <label for="Fahrenheit">Fahrenheit</label> 
+    <input type="radio" id="Celsius" name="typeOfTemp" value="Celsius"/>
+    <label for="Celsius">Celsius</label>
+    <input type="submit" id="sub" value="Submit" />
+    <input type="reset" id="clear" value="Clear" />
+  </form>
+</div>
+
+  <div class="text-block">
+    <input type="text" id="outputTemp" oninput="tempConvert()">
+  </div>
 
   <script type="text/javascript" src="js/script.js"></script>
 </body>
