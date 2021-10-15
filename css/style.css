@@ -7,6 +7,7 @@ body {
 h1 {
   color: steelblue;
   font-size: 100px;
+  margin-bottom: 40px;
 }
 
 p {
@@ -15,6 +16,7 @@ p {
 
 #buttons {
   margin: 30px auto;
+  padding: 20px;
 }
 
 #radios {
@@ -24,8 +26,9 @@ p {
 #result-field {
   background: steelblue;
   width: 50%;
+  height: 100px;
+  line-height: 100px;
   margin: auto;
   color: white;
   font-size: 50px;
-  padding: 20px;
 }

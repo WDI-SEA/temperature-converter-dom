@@ -1,10 +1,11 @@
-//two functions that convert celcius to fahrenheit and vice versa, to be called later
+// two functions that convert celcius to fahrenheit and vice versa
+// includes rounding to the nearest tenth
 const celciusToFahrenheit = (inputTemp) => {
-    return inputTemp * 9 / 5 + 32
+    return Math.round((inputTemp * 9 / 5 + 32) *10) / 10
 }
 
 const fahrenheitToCelcius = (inputTemp) => {
-    return (inputTemp - 32) * 5 / 9
+    return Math.round((inputTemp - 32) * 5 / 9 * 10 ) / 10
 }
 // detect whether the button was hit
 document.getElementById('submit').addEventListener('click', () => {
@@ -25,11 +26,11 @@ document.getElementById('submit').addEventListener('click', () => {
     if (celciusCheck === true) {
         result = celciusToFahrenheit(inputTemp)
         resultP = document.createElement('p')
-        resultP.textContent = `${result} Fahrenheit`
+        resultP.textContent = `${result}°F`
     } else if (fahrenheitCheck === true) {
         result = fahrenheitToCelcius(inputTemp)
         resultP = document.createElement('p')
-        resultP.textContent = `${result} Celcius`
+        resultP.textContent = `${result}°C`
     }
     const resultDiv = document.getElementById('result-field')
     resultDiv.innerHTML = ''
