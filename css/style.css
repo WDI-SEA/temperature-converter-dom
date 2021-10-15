@@ -1,3 +1,28 @@
+body {
+  background-color: grey;
+}
+
 h1 {
-  color: blue;
+  text-align: center;
+  color: white;
+}
+
+div {
+  text-align: center;
+}
+
+.tempSelector {
+  margin: 10px 0 10px 0;
+}
+
+#TempF {
+  width: 200px;
+  padding: 5px;
+}
+
+
+
+#newTemp {
+  font-size: 40px;
+  color: black;
 }
