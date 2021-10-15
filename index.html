@@ -3,12 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <title>Hello Front-End</title>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
-
+  <h1>Temperature Converter</h1>
+  <form id="background">
+    <label for="temperature"></label>
+    <input type="text" id="temperature" name="temp_input">
+    <input type="radio" name="temp" value="yes" id="tempF"> 
+    <label id=tempType for="tempF">°F</label>
+    <input type="radio" name="temp" value="no" id="tempC">
+    <label id=tempType for="tempC">°C</label>
+    <button id=firstB onclick="userTemp()" type="button">Submit</button>
+    <label for="tempFinal"></label>
+    <input type="text" id="tempFinal" name="temp_conv">
+    <button id=secondB onclick="clearTemp()" type="button">Clear</button>
+</form>
   <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

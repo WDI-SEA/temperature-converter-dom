@@ -1,3 +1,72 @@
+body {
+  font-family: 'IM Fell English SC', serif;
+  text-align: center;
+  background-color: steelblue;
+}
 h1 {
-  color: blue;
+  font-family: 'IM Fell English SC', serif;
+  text-align: center;
+  color: black;
+}
+
+#temperature {
+  display: block;
+  margin-left: 370px;
+  margin-top: 36px;
+  margin-bottom: 26px;
+  font-size: 28px;
+}
+input[type=radio] {
+  margin-right: 30px;
+  margin-left: 50px;
+}
+
+#tempType {
+  margin-right: -10px;
+  margin-left: -20px;
+}
+
+.onClick {
+  display: block;
+}
+
+button {
+
+  background-color: white; 
+  border: 2px solid #e7e7e7;
+  color: rgb(74, 75, 79);
+  padding: 10px 48px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bolder;
+}
+#firstB{
+  display: block;
+  margin-left: 450px;
+  margin-top: 36px;
+  margin-bottom: 26px;
+}
+
+#tempFinal {
+  margin-left: 140px;
+  margin-top: 36px;
+  margin-bottom: 26px;
+  background-color: white; 
+  border: 2px solid #e7e7e7;
+  color: rgb(74, 75, 79);
+  padding: 10px 48px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 60px;
+  font-weight: bolder;
+}
+
+#secondB {
+    display: block;
+    margin-left: 450px;
+    margin-top: 36px;
+    margin-bottom: 26px;
 }
