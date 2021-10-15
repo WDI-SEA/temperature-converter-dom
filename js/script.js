@@ -12,6 +12,7 @@ console.log(clearButton)
 const radioButtons = document.querySelectorAll('input[type="radio"]')
 console.log(radioButtons)
 const tempDisplay = document.getElementById('temperature')
+const tempDisplayColor = document.getElementById('temperature-display')
 
 /* EVENT LISTENERS */
 
@@ -19,48 +20,58 @@ btnSubmit.addEventListener('click', submitInput) // for submission
 clearButton.addEventListener('click', clearInputField) // clearing text field
 
 
+/* MAIN FUNCTION */
 
 function submitInput(e) {
     /* store value of input */
     e.preventDefault()
     console.log('click')
+
+    /* catching incorrect input */
     if (typeof userInput.value !== "Number") {
         tempDisplay.innerText = `What you entered was not a Number!`
-    } else {
-    const farenheit = userInput.value;
-    console.log(farenheit)
     }
+
+    const tempValue = userInput.value;
+    console.log(tempValue)
+    
+    checkRadioValue(tempValue)
+}
+
+
+
+function checkRadioValue(tempValue) {
     /* check if C or K is selected */
-    let userChoice = 0;
-
-
     for (i = 0; i < radioButtons.length; i++) {
         console.log(radioButtons[i].checked)
         // set radio button logic prior to form submission:
         if (radioButtons[i].checked == true) {
-            userChoice = radioButtons[i].value
+             const userChoice = radioButtons[i].value
             console.log(userChoice)
+            determineConversion(userChoice, tempValue)
         } 
     }
+}
     // Apply Formula and Display with radio button Value
     // DISPLAY THE VALUE IN THE H2 CONTAINER
-    var displayText;
+function determineConversion (userChoice, tempValue) {
+    let displayText = "";
     switch(userChoice) {
     
         case "C":
-        displayText = ftoC(farenheit) 
+        displayText = ftoC(tempValue) 
         console.log(displayText)
         tempDisplay.innerText = `${displayText} Celcius`
         break;
 
-        case "K":
-        displayText = ftoC(farenheit) + 273.15
+        case "F":
+        displayText = ctoF(tempValue)
         console.log(displayText)
-        tempDisplay.innerText = `${displayText} Kelvin`
+        tempDisplay.innerText = `${displayText} Farenheit`
         break;
     
         default:
-            console.log("C or K were not selected.")
+            console.log("C or F were not selected.")
             break;
     }
 } 
@@ -70,33 +81,22 @@ function clearInputField(e) {
 }
 
 
-function ftoC (farenheit) {
-    return (farenheit - 32) * (5/9)
+function ftoC (tempValue) {
+    celciusTemp = (tempValue - 32) * (5/9)
+    if (celciusTemp <= 0) {
+        tempDisplayColor.style.backgroundColor = "#9EE4D9"
+    }
+    if (celciusTemp > 32) {
+        tempDisplayColor.style.backgroundColor = "red" }
+    return celciusTemp
 }
 
-
-
-    
-
-
-
-
-
-
-
-
-/* RETRIEVE RADIO BUTTON SELECTION */
-
-/* function addToDoItem (e) {
-  console.log("click")  
-  const newListItem = document.createElement('li')
-  const newListItemContent = inputForm.value;
-  newListItem.classList.add('todo-item');
-  const newDeleteButton = document.createElement('button')
-  newDeleteButton.classList.add('delete-item');
-  newListItem.append(newListItemContent);
-  newListItem.append(newDeleteButton);
-  todoList.append(newListItem)
-  inputForm.value = "";
-}*/
-
+function ctoF (celcius) {
+    fahrenTemp = (celcius * 9/5) + 32
+    if (fahrenTemp <= 32) {
+        tempDisplayColor.style.backgroundColor = "#9EE4D9"
+    }
+    if (fahrenTemp > 89.6) {
+        tempDisplayColor.style.backgroundColor = "red" }
+    return fahrenTemp
+}

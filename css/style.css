@@ -1,3 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  outline: 1px dotted red;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-box-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin: 20px;
+}
+
 h1 {
   color: blue;
+  margin: 20px auto;
+}
+
+#temperature-display {
+  margin-top: 100px;
+  background-color: white;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  margin: 5px;
+  padding: 15px;
+}
+
+.input-field {
+  margin: 5px;
+  padding: 15px;
 }

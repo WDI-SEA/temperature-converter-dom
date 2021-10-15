@@ -7,19 +7,23 @@
   <title>Temperature Converter</title>
 </head>
 <body>
-  <h1>Temperature Convertor uing Vanilla JS</h1>
-  <div class="form-container">
-    <form action="" id="submission">
-      <input type="text" id="input-field" autocomplete="off">
-      <button id="submit-input">Submit</button>
-      <button id="clear">Clear</button>
+  <div class="flex-container">
+    <h1>Temperature Convertor using Vanilla JS</h1>
+    <div class="form-container">
+      <form action="" id="submission">
+        <div class="input-box-container">
+          <input type="text" id="input-field" autocomplete="off">
+        </div>
+        <button id="submit-input">Submit</button>
+        <button id="clear">Clear</button>
 
-        <input type="radio" id="c-convert" name="convert-choice" value=C>
-        <label for="c-convert">C</label>
-        <input type="radio" id="k-convert" name="convert-choice" value=K>
-        <label for="k-convert">K</label>
-    </form>
-    <div class="temperature-display">
+          <input type="radio" id="c-convert" name="convert-choice" value=C>
+          <label for="c-convert">F -> C</label>
+          <input type="radio" id="f-convert" name="convert-choice" value=F>
+          <label for="f-convert">C -> F</label>
+      </form>
+    </div>
+    <div id="temperature-display">
       <h2 id="temperature">?</h2>
     </div>
   </div>
