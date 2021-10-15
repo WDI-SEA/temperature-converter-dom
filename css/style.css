@@ -12,7 +12,7 @@ div {
 }
 
 .tempSelector {
-  margin: 10px 0 10px 0;
+  margin: 10px 10px 10px 10px;
 }
 
 #TempF {
@@ -20,9 +20,32 @@ div {
   padding: 5px;
 }
 
-
-
-#newTemp {
-  font-size: 40px;
+p {
   color: black;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.buttons {
+  margin: 10px 10px 10px 10px;
+}
+
+#answer {
+  margin: auto;
+  width: 60%;
+  max-width: 550px;
+  border: 5px solid black; 
+  height: 300px; 
+  padding: 10px;
+  background: cover;
+  background-repeat: no-repeat;
+}
+
+#newTemp {  
+  margin: auto;
+  width: 60%;
+  max-width: 200px;
+  border: 5px solid black;  
+  padding: 10px;
+  background-color: white;
 }
