@@ -1,3 +1,44 @@
 h1 {
-  color: blue;
+  color: black;
+}
+
+body {
+  text-align: center;
+  background-color: rgb(156, 113, 143);
+  font-size: 70px;
+  font-family: 'Londrina Solid', cursive;
+
+}
+
+#text-box {
+  margin-bottom: 20px;
+  font-size: larger;
+}
+
+.radios {
+margin-bottom: 40px;
+font-size: 90px;
+}
+
+#submit-temp {
+margin-right: 30px;
+font-size: 45px;
+padding: 30px;
+margin-bottom: 80px;
+}
+
+#clear-temp {
+margin-left: 40px;
+font-size: 45px;
+padding: 30px;
+}
+
+p {
+background-color: rgb(46, 46, 133);
+display: inlie;
+font-size: 70px;
+}
+
+#Temp {
+  
 }
