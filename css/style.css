@@ -1,3 +1,25 @@
-h1 {
-  color: blue;
+body{
+  background-color: lightslategray;
+  text-align: center;
+
+}
+h1{
+  text-align: center;
+}
+#temp {
+  width:250px;
+            
+     
+}
+.pressy{  
+  display: inline-block;
+
+  top: 0%;
+
+}
+
+button {
+  background-color: lightgrey;
+  width: auto;
+  margin: 0;
 }
