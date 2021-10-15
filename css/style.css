@@ -1,3 +1,38 @@
-h1 {
-  color: blue;
+body {
+  background-color: white;
+  align: center;
 }
+
+h1 {
+  color: gray;
+  font-family: Arial;
+  font-size: 50px;
+  text-align: left;
+  padding-left: 150px;
+}
+
+input {
+  border: 2px solid gray;
+  border-radius: 15px;
+  height: 70px;
+  text-align: center;
+  width: 50%;
+  font-size: 50px;
+  font-family: Arial;
+  display: block;
+}
+
+button {
+  color: black;
+  background-image: url(http://s3.amazonaws.com/pix.iemoji.com/images/emoji/apple/ios-12/256/fire.png);
+  background-position: center;
+  padding: 15px;
+  border-radius: 50px;
+  font-family: Arial;
+  font-size: 50px;
+}
+
+
+
+
+
