@@ -1,14 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
+  <title>Temperature Converter</title>
 </head>
+
 <body>
-  <h1>Hello Front-End</h1>
+  <main class="container">
+    <div class="card">
+      <div class="card--header">
+        <h1>Temperature Converter</h1>
+        <input class="tempNum" id="tempNum" type="number" required placeholder="Enter Number Here" />
+      </div>
+      <div class="card--buttons-radio">
+        <input type="radio" id="f" name="group-name">
+        <label>F&deg</label>
+        <input type="radio" id="c" name="group-name">
+        <label>C&deg</label>
+      </div>
+      <form class="form-btn">
+        <button id="submit" type="button" class="btn">Submit</button>
+        <button id="clear" type="button" class="btn">Clear</button>
+      </form>
+      <div id="output" class="output"></div>
+    </div>
+  </main>
 
   <script type="text/javascript" src="js/script.js"></script>
 </body>
+
 </html>
