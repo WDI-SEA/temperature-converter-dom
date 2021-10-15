@@ -4,18 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
+  <title></title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 <body>
   <h1>Temperature Converter</h1>
   <div class="fill-in-form">
     <input type="number" id="temp-input" name="temperature" placeholder="Enter a Temp"/>
-    <label for="fahrenheitRadioButton">F:</label><input type="radio" name="temp" value="yes" id="fahrenheitButton">
-    <label for="CelciusRadioButton">C:</label><input type="radio" name="temp" value="no" id="CelciusButton">
+    <div class="radioButtons">
+      <label for="fahrenheitRadioButton">F:</label><input type="radio" name="temp" value="yes" id="fahrenheitButton">
+      <label for="CelciusRadioButton">C:</label><input type="radio" name="temp" value="no" id="CelciusButton">
+    </div>
   </div>
   <button id="submitButton">Submit</button>
   <button id="clearButton">Clear</button>
+<div class="tempDiv">
   <h1 id="temp-in-h1"></h1>
+</div>
   <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

@@ -1,3 +1,42 @@
+body {
+  font-family: 'Bebas Neue', cursive;
+  background-color: lightsteelblue;
+  text-align: center;
+}
+
 h1 {
-  color: blue;
+  font-size: 50px;
+}
+
+button {
+  margin: 20px 10px;
+  padding: 10px;
+}
+
+label {
+  margin-left: 10px;
+}
+
+div label {
+  font-size: 25px;
+}
+
+.tempDiv {
+  background-color: royalblue;
+  width: 800px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.radioButtons {
+margin-top: 30px;
+}
+
+#temp-input {
+  padding: 10px 200px;
+}
+
+#temp-in-h1 {
+  color: aliceblue;
+ font-size: 200px;
 }
