@@ -1,3 +1,44 @@
-h1 {
-  color: blue;
+body {
+  font-family: sans-serif;
+  text-align: center;
 }
+
+form {
+  margin: 0 auto;
+  padding: 20px;
+  width: 50%;
+  background-color: gray;
+}
+
+h1 {
+  color: darkgray;
+}
+
+button {
+  margin: 20px 0 20px 0;
+  border: 4px solid white;
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+#submit {
+  background-color: aquamarine;
+}
+
+.conversionDisplay {
+  width: 40%;
+  text-align: center;
+  display: inline-block;
+}
+
+#userInput {
+  margin-bottom: 20px;
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 32px;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
