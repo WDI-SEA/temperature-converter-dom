@@ -1,3 +1,53 @@
 h1 {
-  color: blue;
+  color: rgb(214, 214, 236);
+  position: absolute;
+  top:57%;
+  left: 31.2%;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+body {
+  background-image: url(https://i.imgur.com/xH4PO9e.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 2100px 1800px;
+  left: 0;
+  margin-top: 500px;
+  font-family: 'Big Shoulders Stencil Display', cursive;;
+}
+.thermo {
+  height: 380px;
+  width: 525px;
+  object-position: 60% 10%;
+  object-fit: cover;
+  margin: 0px 10px 110px 529px;
+}
+
+#fahrenheit{
+  position: absolute;
+  left: 33%;
+}
+#fahrenheitInput{
+  position: absolute;
+  left: 30%;
+}
+#celsius{
+  position: absolute;
+  left: 43%;
+}
+#celsiusOutput{
+  position: absolute;
+  left: 44%;
+}
+.tempName{
+  color: rgb(32, 260, 61);
+  font-size: 37px;
+  top: 67%;
+}
+.tempOutput{
+  position:absolute;
+  font-size: 40px;
+  color: rgb(27, 160, 49);
+  top: 72%;
 }
