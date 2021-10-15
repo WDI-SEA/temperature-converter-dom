@@ -13,9 +13,12 @@ if (document.getElementById("text-input").value !== "") {
       document.querySelector(".new-temp").appendChild(newItem)
       if (parseInt(celsius) < 12) {
         document.querySelector(".new-temp").style.backgroundColor = 'blue' 
+        document.querySelector(".new-temp").style.color = 'white' 
         //console.log ("it is cold")
         } else if (parseInt(celsius) > 30) {
          document.querySelector(".new-temp").style.backgroundColor = 'red' 
+         document.querySelector(".new-temp").style.color = 'white' 
+        
          //console.log ("it is hot")
         } else {
           document.querySelector(".new-temp").style.backgroundColor = 'none' 
@@ -24,10 +27,12 @@ if (document.getElementById("text-input").value !== "") {
         newItem.innerText = parseInt(fahr)  + "° F"
         document.querySelector(".new-temp").appendChild(newItem)
         if (parseInt(fahr) < 50) {
-        document.querySelector(".new-temp").style.backgroundColor = 'blue' 
+        document.querySelector(".new-temp").style.backgroundColor = 'blue'
+        document.querySelector(".new-temp").style.color = 'white'  
         //console.log ("it is cold")
         } else if (parseInt(fahr) > 85) {
          document.querySelector(".new-temp").style.backgroundColor = 'red' 
+         document.querySelector(".new-temp").style.color = 'white' 
          //console.log ("it is hot")
         } else {
           document.querySelector(".new-temp").style.backgroundColor = 'none' 
