@@ -12,6 +12,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: url(https://www.theemotionmachine.com/wp-content/uploads/2018/08/empathy-gap.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  color: white;
 }
 
 .flex-container {
@@ -32,22 +36,37 @@ h1 {
   margin: 20px auto;
 }
 
+h2 {
+  font-size: 3rem;
+}
+
 #temperature-display {
   margin-top: 100px;
   background-color: white;
   width: 400px;
   height: 400px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: transparent;
+  overflow-wrap:break-word;
+}
+
+#temperature {
+  width: 80%;
+  text-align: center;
 }
 
 button {
   margin: 5px;
   padding: 15px;
+  color: black;
 }
 
 .input-field {
   margin: 5px;
   padding: 15px;
+  color: black;
+
 }

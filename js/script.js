@@ -84,19 +84,19 @@ function clearInputField(e) {
 function ftoC (tempValue) {
     celciusTemp = (tempValue - 32) * (5/9)
     if (celciusTemp <= 0) {
-        tempDisplayColor.style.backgroundColor = "#9EE4D9"
+        tempDisplayColor.style.backgroundColor = "#3FB4DB"
     }
     if (celciusTemp > 32) {
-        tempDisplayColor.style.backgroundColor = "red" }
+        tempDisplayColor.style.backgroundColor = "#F3772C" }
     return celciusTemp
 }
 
 function ctoF (celcius) {
     fahrenTemp = (celcius * 9/5) + 32
     if (fahrenTemp <= 32) {
-        tempDisplayColor.style.backgroundColor = "#9EE4D9"
+        tempDisplayColor.style.backgroundColor = "#3FB4DB"
     }
     if (fahrenTemp > 89.6) {
-        tempDisplayColor.style.backgroundColor = "red" }
+        tempDisplayColor.style.backgroundColor = "#F3772C" }
     return fahrenTemp
 }
