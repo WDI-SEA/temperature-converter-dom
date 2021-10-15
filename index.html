@@ -1,14 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
-</head>
-<body>
-  <h1>Hello Front-End</h1>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="css/style.css" rel="stylesheet"  />
+  </head>
+  <body>
+    <form  id="form1">
+  
+  <label for="fname">Temperature converter:</label>
+  <input type="text" id="fname" name="fname"> <br><br>
+  <input type="radio" id="far"  name="far">
+  <label for="radio">F</label>
+  <input type="radio" id="cel"  name="far">
+  <label for="radio">C</label>
+  
 
-  <script type="text/javascript" src="js/script.js"></script>
-</body>
+  </form>
+  <button type="submit" value="Submit" id="Submit">Submit</button>
+  <button type="clear"  value="Clear" id="Clear">Clear</button>
+  <div id="tempcontainer"></div>
+  <script src="js/script.js"></script>
+  </body>
+
 </html>
