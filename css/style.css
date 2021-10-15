@@ -1,3 +1,21 @@
-h1 {
-  color: blue;
+body {
+  text-align: center;
+}
+
+h2 {
+  font-size: 16px;
+}
+
+h3 {
+  padding: 30px 50px;
+}
+
+.new-temp {
+  width: 300px;
+  margin: auto;
+}
+
+.buttons {
+  display: block;
+  margin-top: 20px;
 }
