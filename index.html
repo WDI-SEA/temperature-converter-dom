@@ -9,13 +9,13 @@
 <body>
   <h1>Temperature Converter</h1>
   <div class="fill-in-form">
-    <input type="number" id="temp-input" name="temperature" />
-    <label for="fahrenheitRadioButton">F:</label><input type="radio" id="fahrenheitButton">
-    <label for="CelciusRadioButton">C:</label><input type="radio" id="CelciusButton">
+    <input type="number" id="temp-input" name="temperature" placeholder="Enter a Temp"/>
+    <label for="fahrenheitRadioButton">F:</label><input type="radio" name="temp" value="yes" id="fahrenheitButton">
+    <label for="CelciusRadioButton">C:</label><input type="radio" name="temp" value="no" id="CelciusButton">
   </div>
   <button id="submitButton">Submit</button>
   <button id="clearButton">Clear</button>
-  <h1 id="temp-in-c"></h1>
+  <h1 id="temp-in-h1"></h1>
   <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
