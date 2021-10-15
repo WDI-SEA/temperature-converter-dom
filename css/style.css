@@ -1,3 +1,31 @@
+body {
+  text-align: center;
+  background-color: rgb(71, 80, 90);
+}
+
 h1 {
-  color: blue;
+  margin-top: 20%;
+  color: rgb(255, 255, 255);
+}
+
+.inputArea {
+  margin-bottom: 1rem;
+  display: inline-block;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+#inputField {
+  font-weight: bold;
+  color: black;
+}
+
+#displayH1 {
+  background-color: burlywood;
+  color:rgb(71, 80, 90);
+}
+
+footer {
+  margin-top: 90%;
+  color: lightgray
 }
