@@ -2,6 +2,9 @@
 function clearText() {
 
     document.getElementById("temp").value = "";
+    document.getElementById("rectangle").innerHTML = "";
+    document.getElementById("fheit").checked = false;
+    document.getElementById("celsi").checked = false;
 }
 
 const radioButtonSelection = () => {
