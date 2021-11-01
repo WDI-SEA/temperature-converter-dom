@@ -3,11 +3,30 @@ body {
   padding: 0;
   background-color: darkslategray;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
   text-align: center;
 }
-div {
-  padding-top: 20px;
+#convertedAnswer {
+  padding: 25px;
+  font-size: 50px;
   height: 100px;
-  margin: auto;
+  width: auto;
+  margin: 20px 40px 0px 40px;
   background-color: purple;
+  border: 5px solid black;
+  border-radius: 10px;
+}
+button {
+  padding: 10px;
+  margin: 15px;
+  border: 3px solid black;
+  border-radius: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#form {
+  padding: 10px;
+}
+#temp {
+  border: 3px solid black;
+  border-radius: 10px;
 }

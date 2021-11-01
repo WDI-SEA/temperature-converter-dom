@@ -12,11 +12,22 @@ submitButton.addEventListener('click', () => {
     if (fahrenheit.checked){
         let convertedToCels = (tempInputNum-32) * (5/9)
         answerDiv.innerText = `${convertedToCels} °C`
-        console.log(answerDiv.innerText)
+        if (convertedToCels <= 0){
+            answerDiv.style.backgroundColor = "blue"
+        }
+        else if (convertedToCels >= 38){
+            answerDiv.style.backgroundColor = "red"
+        }
     }
     else if (celsius.checked){
         let convertedToFahr = tempInputNum * 1.8 + 32
         answerDiv.innerText = `${convertedToFahr} °F`
+        if (convertedToFahr <= 32){
+            answerDiv.style.backgroundColor = "blue"
+        }
+        else if (convertedToFahr >= 100){
+            answerDiv.style.backgroundColor = "red"
+        }
     }
 })
 
