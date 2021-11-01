@@ -1,9 +1,13 @@
 body {
+  margin: 0;
+  padding: 0;
   background-color: darkslategray;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
 }
 div {
-  height: 50px;
-  width: 100px;
-  background-color: rgb(41, 40, 40);
-  color: whitesmoke;
+  padding-top: 20px;
+  height: 100px;
+  margin: auto;
+  background-color: purple;
 }

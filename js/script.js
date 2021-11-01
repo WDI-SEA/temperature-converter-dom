@@ -1,26 +1,27 @@
-const tempInput = document.querySelector('#temp').value
-const submit = document.querySelector('#submit')
-const clear = document.querySelector('#clear')
-const fahrenheit = document.querySelector('#fahr')
-const celsius = document.querySelector('#cels')
-const answerDiv = document.querySelector('#answer')
+window.addEventListener("DOMContentLoaded", () =>{ 
+let tempInput = document.querySelector("input[type='text']")
+let submitButton = document.querySelector('#submit')
+let clearPageButton = document.querySelector('#clear')
+let fahrenheit = document.querySelector('#fahr').checked
+let celsius = document.querySelector('#cels').checked
+let answerDiv = document.querySelector('#convertedAnswer')
 
-const celsToFahr = (temp) => {
-    (temp-32)/1.8
-}
-const fahrToCels = (temp) => {
-    (temp*2)+30
+submitButton.addEventListener('click', () => {
+    let tempInputNum = tempInput.value
+    if (fahrenheit){
+        let convertedToCels = (tempInputNum-32) * (5/9)
+        answerDiv.innerText = `${convertedToCels} °C`
+    }
+    else if (celsius){
+        let convertedToFahr = tempInputNum * 1.8 + 32
+        answerDiv.innerText = `${convertedToFahr} °F`
+    }
+})
+
+let clearPage = () => {
+    answerDiv.innerText = ''
+    tempInput.value = ''
 }
 
-const convertTemp = (e) => {
-    e.preventDefault()
-    if (fahrenheit.checked === true){
-        fahrToCels(tempInput)
-        console.log('this is the output:\n', convertTemp())
-    }
-    else if (celsius.checked === true){
-        celsToFahr(tempInput)
-    }
-}
-console.log(tempInput.value)
-submit.addEventListener('submit', convertTemp)
+clearPageButton.addEventListener('click', clearPage)
+})
