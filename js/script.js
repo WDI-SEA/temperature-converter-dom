@@ -2,9 +2,6 @@ console.log('Hello, front end');
 
 const convertSubmit = document.querySelector('#sub')
 const clearDisp =  document.querySelector('#clr')
-const fahrenheit = document.querySelector('#fah')
-const celcius = document.querySelector('cel')
-const kelvius = document.querySelector('kel')
 
 
 convertSubmit.addEventListener('click', toConvert)
@@ -19,9 +16,6 @@ function toConvert(event){
     let cTo = document.getElementsByName('to')
     let x = document.getElementById('userInput').value
     
-    if( x instanceof String){
-        return 0   
-    }else{
         if(cTo[0].checked){
             convertToFahren(document.getElementById('userInput').value)
         }else if(cTo[1].checked){
@@ -29,7 +23,7 @@ function toConvert(event){
         }else if(cTo[2].checked){
             convertToKelvin(document.getElementById('userInput').value)
         }
-    }
+   
 
 }
 
@@ -129,4 +123,27 @@ function convertToKelvin (input){
     
     out.value = num
 }
+/* Weston's Explanation */
 
+// document.querySelector('#submit-button').addEventListener('click', function(){
+//     // console.log('calculate the temp')
+//     const tempInput = document.querySelector('#temp-input').valueAsNumber
+//     const result = document.querySelector('#result')
+// })
+
+// document.querySelector('#temp-form').addEventListener('submit', function(event){
+//     // method (fucntion) that stops form from refreshing
+//     event.preventDefault()
+//     console.log('the form has been submitted')
+    
+//     //get the input value
+//     const tempInputValue = document.querySelector('#tempInput').valueAsNumber
+//     //get the result div
+//     const result = document.querySelector('#result')
+//     //do some math and st the result p
+//     result.innerText = (tempInputValue - 32)*(5/9)
+
+//     //using id.value but not recommended
+//     tempInput.value = 72
+//     console.log(tempInput)
+// })
