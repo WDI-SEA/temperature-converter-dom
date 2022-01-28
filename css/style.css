@@ -1,3 +1,27 @@
+body {
+  font-family: helvetica, sans-serif;
+  background-color: rgb(142, 150, 158);
+  margin: 2rem auto;
+  text-align: center;
+}
+button {
+  margin: 0.5rem
+}
 h1 {
-  color: blue;
+  color: rgb(78, 78, 78);
+}
+h2 {
+  color: white;
+  padding: 2rem;
+  
+}
+input[type='number'] {
+  font-size: 1.5rem;
+}
+input[type='radio'] {
+  margin: 1.5rem;
+}
+#result-box {
+  width: 50vw;
+  margin: 0 auto;
 }

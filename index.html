@@ -7,8 +7,20 @@
   <title>Hello Front-End</title>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
+  <h1>Temperature Converter</h1>
+  <div>
+    <form onsubmit="return false" id="form">
+      <input id='fTemp' name='fahren' type="number" placeholder="Enter temperature" value=""><br>
+      <label><input type='radio' name ="unit" value="f" id='f-radio' checked> °F</label>
+      <label><input type='radio' name ="unit" value="c" id='c-radio'> °C</label><br>
+      <button id='submit-button'>Submit</button>
+    </form>
+    <button id='clear-button'>Clear</button>
+  </div>
+  <div id="result-box">
+    <h2 id='resultH2'>Waiting for Input</h2>
+  </div>
 
-  <script type="text/javascript" src="js/script.js"></script>
 </body>
+<script type="text/javascript" src="js/script.js"></script>
 </html>
