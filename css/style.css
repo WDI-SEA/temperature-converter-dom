@@ -1,3 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Oooh+Baby&family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap');
+
+
 h1 {
-  color: blue;
+  color: rgb(137, 137, 151);
+  font-family: 'Oooh Baby';
+  font-size: 5rem;
+}
+
+body {
+  background-color: rgb(216, 208, 208);
+  text-align: center;
+}
+
+.output-value {
+  background-color: rgb(180, 22, 22);
+  font-size: 5rem;
+  color: white
+}
+
+.input {
+  text-align: center;
+  font-size: x-large;
+}
+
+#submit-button {
+  margin-top: 20px;
+  font-size: 2rem;
+}
+
+#clear-button {
+  margin-top: 20px;
+  font-size: 2rem;
+}
+
+#cel {
+  margin-top: 20px;
+  font-size: 2rem;
 }
