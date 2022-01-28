@@ -1,14 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
-</head>
-<body>
-  <h1>Hello Front-End</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title>Hello Front-End</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Temperature Converter</h1>
+      <div class="degrees-box">
+        <input
+          class="degrees-num"
+          id="number-field"
+          name="nameField"
+          type="text"
+          value=""
+          checked
+        />
+      </div>
 
-  <script type="text/javascript" src="js/script.js"></script>
-</body>
+      <div class="radio">
+        <label>
+          <input type="radio" id="fah" name="notaswitch-one" value="maybe" />
+          <div class="fah-letter"><h3>°F</h3></div>
+        </label>
+        <label>
+          <input type="radio" id="cel" name="notaswitch-one" value="no" />
+          <div class="cel-letter"><h3>°C</h3></div>
+        </label>
+      </div>
+      <div class="btn-wrapper">
+        <button class="submit">Submit</button>
+        <button class="clear">Clear</button>
+      </div>
+      <div class="wrapper-red-box">
+        <div class="big-h1-c" id="celsius">
+          <h1 class="number-change" id="red-b-c">1</h1>
+          <h1>°C</h1>
+        </div>
+        <!-- <h1 class="big-h1-f" id="fahrenheit">1 °F</h1> -->
+      </div>
+      <div class="wrapper-red-box">
+        <div class="big-h1-f" id="celsius">
+          <h1 class="number-change-f" id="red-b-f">1</h1>
+          <h1>°F</h1>
+        </div>
+        <!-- <h1 class="big-h1-f" id="fahrenheit">1 °F</h1> -->
+      </div>
+    </div>
+
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
 </html>

@@ -1,3 +1,133 @@
+:root {
+  --background-grey: #d3d3d3;
+  --text-grey: #808080;
+  --degrees-red: #ff0000;
+  --button-color: #c0c0c0;
+}
+
+* {
+  /*  */
+  color: var(--text-grey);
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  padding: 3rem;
+  margin-top: 35px;
+  font-family: Arial, Sans-Serif;
+  font-weight: 400;
+  background-color: var(--background-grey);
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* align-content: stretch; */
+}
+
+.degrees-num {
+  color: black;
+  font-size: 55px;
+  font-weight: 400;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  max-width: 700px;
+  margin: 0 auto 30px auto;
+  border-radius: 10px;
+  border: 2px solid var(--text-grey);
+}
+
+input {
+  text-align: center;
+}
+
+.fah-letter {
+  padding-right: 10px;
+  display: flex;
+}
+
+label {
+  display: flex;
+}
+
+.cel-letter {
+  display: flex;
+}
+
+.btn-wrapper {
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.wrapper-radio-btn {
+  padding-top: 30px;
+  margin: 0 auto;
+}
+
+/*  */
+.radio {
+  margin: 0 auto;
+  display: flex;
+}
+/*  */
+
+.wrapper-red-box {
+  position: relative;
+}
+
+.big-h1-c {
+  background-color: var(--degrees-red);
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin: 10px auto 10px auto;
+  padding: 20px;
+  font-size: 80px;
+  font-weight: 400;
+  text-align: center;
+  max-width: 900px;
+}
+
+.big-h1-f {
+  background-color: var(--degrees-red);
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin: 10px auto 10px auto;
+  padding: 20px;
+  font-size: 80px;
+  font-weight: 400;
+  text-align: center;
+  max-width: 900px;
+  /* display: none; */
+}
+
+button {
+  padding: 7px;
+  color: black;
+  background-color: var(--button-color);
+}
+
+.title {
+  color: var(--text-grey);
+  margin: 0 auto;
+  padding-bottom: 20px;
+  font-weight: 600;
+}
+
 h1 {
-  color: blue;
+  color: white;
+  font-size: 45px;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 400;
+  padding: 0 9px;
 }
