@@ -1,7 +1,3 @@
-console.log('Hello, front end');
-const body = document.querySelector('body')
-console.log(body)
-
 let submitButton = document.querySelector("#btnSubmit").addEventListener("click", buttonClick)
 let clearButton = document.querySelector("#btnClear").addEventListener("click", btnClear)
 const container = document.querySelector('#mainContainer')
