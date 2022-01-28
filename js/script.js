@@ -13,9 +13,7 @@ const convertToCelsius = (fahrenheit) => {
 console.log(results)
 const convertToKelvin = (fahrenheit) => {
    let kelvin = Math.round((((fahrenheit -32)*5/9) + 273.15) * 100) / 100;
-    // results.innerHTML = `${kelvin} in Kelvin`
-    // return kelvin 
-    // return results
+  
     return `${kelvin} in Kelvin`
 }
 
