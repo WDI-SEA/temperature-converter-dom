@@ -46,6 +46,7 @@ const clearBtnHandler = () => {
     inputNumber.value = ""
     units[0].checked = false
     units[1].checked = false
+    results.innerText = ""
 }
 
 // convertAll();

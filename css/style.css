@@ -25,7 +25,8 @@ input {
   /* border: .5rem solid var( --secondary-color); */
   border-radius: 25px;
   background-color: var(--tertiary-color);
-  margin-top: 20%;
+  margin-top: 10%;
+  
 }
 
 #results {
