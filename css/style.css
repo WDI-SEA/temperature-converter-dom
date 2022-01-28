@@ -1,3 +1,50 @@
+* {
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0 auto;
+}  
+
 h1 {
-  color: blue;
+  font-size: 100px;
+  padding: 20px;
+}
+
+button {
+  font-size: 30px;
+  background-color: lightgray;
+  margin: 20px 15px;
+}
+
+input[type='radio'] {
+  transform: scale(2);
+  margin: 0 0 0 20px;
+}
+
+.tempScale {
+  font-size: 50px;
+}
+
+.box {
+  background-color: rgba(250, 255, 240, 0.7);
+  width: 60vw;
+  position: relative;
+  top: 20vh;
+
+}
+
+.temp {
+  font-size: 50px;
+}
+
+#tempInput {
+  font-size: 50px;
+  width: 50%;
+  margin: 15px;
+}
+
+#result {
+  background-color: yellow;
+  font-size: 50px;
 }
