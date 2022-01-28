@@ -1,3 +1,31 @@
+* {
+  background-color: lightgray;
+  font-family: Helvetica, sans-serif;
+  background-image: url("https://64.media.tumblr.com/98d21f2499b09a96ee958f559f26c61a/tumblr_mxbdstH71S1sfvpsto1_1280.gifv");
+}
+
 h1 {
-  color: blue;
+  color: gray;
+  text-align: center;
+  font-size: 4rem;
+}
+
+div {
+  text-align: center;
+}
+
+input[type=number] {
+  background-color: white;
+  font-size: 34px;
+  width: 50%;
+  text-align: center;
+  padding: 10px 20px;
+  border: 2px solid darkgray;
+  border-radius: 4px;
+}
+
+button {
+  background-color: lightgray;
+  color: black;
+  padding: .5rem 1rem;
 }
