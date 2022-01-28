@@ -1,3 +1,14 @@
-h1 {
-  color: blue;
+* {
+  text-align: center;
+  padding: 1%;
 }
+
+
+.container{
+  width: 70%;
+  margin: 0 auto;
+  border: 10px solid black;
+  margin-top: 2%;
+}
+
+

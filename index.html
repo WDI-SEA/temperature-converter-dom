@@ -7,8 +7,23 @@
   <title>Hello Front-End</title>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
+  <div class="container">
+    <h1>Temperature Converter</h1>
+    
+    <form>
+      <input type="text" placeholder="0" name="fahrenheit" id="inputNumber">
+      <label for="fahrenheit">°F</label>
+      <input type="radio" value="celsius" class="unit" id="celsius">
+      <label for="celsius">°celsius</label>
+      <input type="radio" value="kelvin" class="unit" id="kelvin">
+      <label for="kelvin">°Kelvin</label>
+      <input type="submit" id="convertBtn" value="convert!">
+      <input type="submit" id="clearBtn" value="clear!">
+      
+    </form>
+    <div id="results"></div>
+  </div>
 
-  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="./js/script.js"></script>
 </body>
 </html>
