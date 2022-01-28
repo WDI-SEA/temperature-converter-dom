@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
+  <title>Temperature Converter</title>
 </head>
 <body>
   <h1>Temperature Converter</h1>
@@ -12,7 +12,7 @@
 
   <p>
     <label>Fahrenheit</label>
-    <input id="inputFahrenheit" type="number" placeholder="Fahrenheit"
+    <input id="inputFahrenheit" type="number" placeholder="Fahrenheit" 
     oninput="temperatureConverter(this.value)"
     onchange="temperatureConverter(this.value)">
     Celsius Conversion: <span id="outputCelsius"></span>
@@ -24,6 +24,19 @@
     onchange="temperatureConverterTwo(this.value)">
     Fahrenheit Conversion: <span id="outputFahrenheit"></span>
   </p>
+
+/* solution */
+<div>
+  <input id="temp-input" type="number" value="72"/>
+</div>
+
+<div>
+  <button id="submit-button">Submit</button>
+</div>
+
+<div>
+  <p id="result"></p>
+</div>
 
   <script type="text/javascript" src="js/script.js"></script>
 </body>
