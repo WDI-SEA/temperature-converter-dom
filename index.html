@@ -7,8 +7,28 @@
   <title>Hello Front-End</title>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
+  <h1>Temperature Converter</h1>
+<div>
+  <form class="buttonShmoove">
+    <input type="text" id="userTemp" name="userTemp">
+    <button type="button" onclick="getInput()"> Submit Your Temp</button>
+    <p id='confirm'> you submitted</p>
+  </form>
 
-  <script type="text/javascript" src="js/script.js"></script>
+</div>
+<form>
+  <input type="radio" id="FtoC" checked ="checked" name="tempChoice" value="ftc">
+<label for="html">Farenheit to Celcius</label><br>
+<input type="radio" id="CtoF" name="tempChoice" value="ctf">
+<label for="css">Celcius to Farenheit</label><br>
+<button type="button" onclick="displayRadioValue()">
+Convert Temp</button>
+<p id="convtChoice">change if you'd like</p>
+</form>
+<div id="result">
+  nothing converted yet
+</div>
+  
 </body>
+<script src="js/script.js"></script>
 </html>

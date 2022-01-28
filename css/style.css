@@ -1,3 +1,37 @@
+*{
+  background-color: lightgrey;
+  text-align: center;
+}
 h1 {
   color: blue;
 }
+
+button{
+  background-color: white;
+  
+}
+input{
+  background-color: white;
+}
+
+.buttonShmoove{
+  color: whi;
+}
+
+
+#result{
+  background-color: white;
+  padding: 1vh 1vw;
+  margin: 1vh 1vw;
+  border: 3vh solid white;
+}
+
+.freezing{
+  background-color: lightblue;
+}
+
+.scorching{
+  background-color: red;
+}
+
+/* make convt button grey after running to entice subit button  */
