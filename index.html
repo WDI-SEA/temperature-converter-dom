@@ -4,11 +4,52 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
+  <title>Temperature Converter</title>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
+  <h1>Temperature Converter</h1>
+  
+  <div>
+    <!-- input a temp by the user -->
+    <input id="temp-input" type="number" value="72"/>
+  </div>
 
-  <script type="text/javascript" src="js/script.js"></script>
+  <div>
+    <input type="radio" id="Fahrenheit" name="degreesFahrenheit" value="fahrenheit">°F</input>
+    
+    <input type="radio" id="Celsius" name="degreesCelsius" value="celsius" checked="checked">°C</input>
+  </div>
+  
+  <div>
+    <button id="submit-button">Submit</button>
+  </div>
+
+  <div class="result-container">
+    <p id="result"></p>
+  </div>
+  
+  <!--
+    
+    <div>
+    <form>
+      <input type="text" id="userTemp" name="userTemp"/>
+      <button type="buttonOne" onclick="getInput()" id="submitButton">Submit</button>
+    </form>
+  </div>
+
+  <form>
+    <input type="radio" id="Fahrenheit" checked="checked" name="degreesFahrenheit" value="fahrenheit">°F</input>
+    
+    <input type="radio" id="Celsius" name="degreesCelsius" value="celsius">°C</input>
+  </form>
+
+  <div>
+    <button onclick="submitFunction()">Submit</button>
+    <button onclick="clearFunction()">Clear</button>
+  </div>
+<div class="results-container">
+    <p id="results"></p>
+</div> -->
+<script src="js/script.js"></script>
 </body>
 </html>

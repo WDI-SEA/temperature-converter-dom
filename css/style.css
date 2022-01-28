@@ -1,3 +1,18 @@
-h1 {
-  color: blue;
+* {
+  text-align: center;
 }
+body {
+  background-color: rgb(211, 211, 211);
+}
+h1 {
+  color: rgb(128, 128, 128);
+}
+p {
+  font-size: 60px;
+  color: white;
+  background-color: red;
+}
+button {
+  margin-top: 20px;
+  background-color: rgb(192, 192, 192);
+} 
