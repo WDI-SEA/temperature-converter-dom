@@ -5,28 +5,36 @@ const convertBtn = document.getElementById("convertBtn");
 const clearBtn = document.getElementById("clearBtn");
 
 
+// if(units[0].checked === true){
+//     units[1].checked = false
+// } else {
+//     units[0].checked = false
+// }
+
 const convertToCelsius = (fahrenheit) => {
     let celsius = Math.round((((fahrenheit * 9) /5) +32) * 100) / 100;
     // results.innerHTML = `${celsius} in celsius`
-    return `${celsius} in celsius`
+    return `Result: ${inputNumber.value} °Fahrenheit is  ${celsius} in celsius`
 }
 console.log(results)
 const convertToKelvin = (fahrenheit) => {
    let kelvin = Math.round((((fahrenheit -32)*5/9) + 273.15) * 100) / 100;
   
-    return `${kelvin} in Kelvin`
+    return `Result: ${inputNumber.value} °Fahrenheit is  ${kelvin} in Kelvin`
 }
 
-const convertAll = () => {
+const convertAll = (e) => {
     // parseFloat(inputNumber)
+    e.preventDefault();
     if(units[0].checked === true){
         // alert(units[0].id)
         convertedValue = convertToCelsius(inputNumber.value)
-        alert(convertedValue)
-        tempDisplay.innerHTML = `${convertedValue} in ${unit[0]}`        
+        // alert(convertedValue)
+        results.innerText = `${convertedValue}`        
     } else if (units[1].checked === true) {
-        
-        alert(convertToKelvin(inputNumber.value))
+            convertedValue = convertToKelvin(inputNumber.value)
+            results.innerText = convertedValue
+        // alert(convertToKelvin(inputNumber.value))
         // tempDisplay = convertToKelvin(kelvin)
         // alert(units[1].id)
     } else {
@@ -34,9 +42,16 @@ const convertAll = () => {
     }
 }
 
+const clearBtnHandler = () => {
+    inputNumber.value = ""
+    units[0].checked = false
+    units[1].checked = false
+}
+
 // convertAll();
 
 convertBtn.addEventListener("click", convertAll)
+clearBtn.addEventListener("click", clearBtnHandler)
 
 
 

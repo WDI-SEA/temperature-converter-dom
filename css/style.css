@@ -1,14 +1,43 @@
+:root {
+  --primary-color: #4EA9C4;
+  --secondary-color: cornsilk;
+  --tertiary-color: #8D67A5;
+  --input-color: gray;
+}
+
 * {
   text-align: center;
   padding: 1%;
+}
+
+body {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+input {
+  color: var(--input-color);
 }
 
 
 .container{
   width: 70%;
   margin: 0 auto;
-  border: 10px solid black;
+  /* border: .5rem solid var( --secondary-color); */
+  border-radius: 25px;
+  background-color: var(--tertiary-color);
   margin-top: 20%;
 }
 
+#results {
+  margin: 2%;
+  padding: 2%;
+  font-size: 25px;
+}
+
+.clickBtn {
+  margin-right: 10%;
+  margin-left: 10%;
+  padding: 1% 7%;
+  border-radius: 10px;
+}
 
