@@ -1,0 +1,15 @@
+Please see following changes:
+
+Changes to be committed:
+	new file:   .DS_Store
+	new file:   My-First-Website/.DS_Store
+	new file:   My-First-Website/myfirstwebsite.html
+	new file:   My-First-Website/style.css
+	new file:   css-box-positioning/index.html
+	new file:   css-box-positioning/styles/style.css
+	new file:   html_user_inputs
+	new file:   js-control-flow
+	new file:   temperature-converter-dom
+
+Changes not staged for commit:
+modified:   temperature-converter-dom (modified content)

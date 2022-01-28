@@ -1,3 +1,62 @@
-h1 {
-  color: blue;
+@import url('https://fonts.googleapis.com/css2?family=Galindo&display=swap');
+
+header {
+  text-align: center;
 }
+
+h1 {
+  color: white;
+  font-family: 'Galindo', cursive;
+}
+
+h2 {
+  font-family: cursive;
+  color: white;
+  size: 80px;
+  font-family: 'Galindo', cursive;
+}
+
+body {
+  margin: 10% 25% 0 25%;
+  font-family: 'Galindo', cursive;
+  background-image: url(https://wallpapercave.com/wp/wp6303451.jpg);
+}
+
+
+input {
+  display: block;
+  width: 150px;
+  padding: 0 0 0 5px;
+  
+  
+}
+
+#fahrenheight {
+  margin: auto;
+  border-radius: 0 0 10px 10px;
+  font-family: 'Galindo', cursive;
+
+}
+
+#celcius {
+  margin: auto;
+  border-radius: 10px 10px 0 0;
+  font-family: 'Galindo', cursive;
+ 
+  
+}
+
+#convert {
+  margin: 2px 30% 5px 30%;
+  height: 60px;
+  width: 180px;
+  border-radius: 45px;
+  font-family: 'Galindo', cursive;
+}
+
+#clear {
+  margin: 5px 45% 0px 45%;
+  border-radius: 45px;
+  font-family: 'Galindo', cursive;
+}
+
