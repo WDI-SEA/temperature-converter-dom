@@ -7,7 +7,23 @@
   <title>Hello Front-End</title>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
+  <h1>Temperature Converter</h1>
+ 
+
+  <p>
+    <label>Fahrenheit</label>
+    <input id="inputFahrenheit" type="number" placeholder="Fahrenheit"
+    oninput="temperatureConverter(this.value)"
+    onchange="temperatureConverter(this.value)">
+    Celsius Conversion: <span id="outputCelsius"></span>
+  </p>
+  <p>
+    <label>Celsius</label> 
+    <input id="inputCelsius" type="number" placeholder="Celsius" 
+    oninput="temperatureConverterTwo(this.value)"
+    onchange="temperatureConverterTwo(this.value)">
+    Fahrenheit Conversion: <span id="outputFahrenheit"></span>
+  </p>
 
   <script type="text/javascript" src="js/script.js"></script>
 </body>
