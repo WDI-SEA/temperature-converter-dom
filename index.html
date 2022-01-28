@@ -6,9 +6,42 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <title>Hello Front-End</title>
 </head>
-<body>
-  <h1>Hello Front-End</h1>
+<body class="center">
+  <h1>Temperature Converter Deluxe</h1>
+  <div>
 
+  
+  </div>
+  <div>
+    <form id="form" class="center">
+      <div>
+        <input type="text" id="number-to-convert">
+        <p id="input-type">in celsius</p>
+      </div>
+
+      
+      <div id="radioChoices">
+
+        <p>Choose what you'd like to convert to:</p>
+
+        <input type="radio" id="celsius-input" value="c" name="temp-choice" checked>
+        <label for="celsius-input">C</label><br>
+
+        <input type = "radio" id="fahrenheit-input" value="f" name="temp-choice" checked="true">
+        <label for="f">F</label>
+
+      </div>
+      
+
+      <button id="submit-button">Submit</button>
+
+      <button id="clear-button">Clear</button>
+    </form>
+  </div>
+
+  <div class="center" id="result-div">
+    <h1 id="result"></h1>
+  </div>
   <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
