@@ -7,7 +7,25 @@
   <title>Hello Front-End</title>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
+  <h1 class="styling">Temperture Converter</h1>
+
+  <div class="input">
+    <input class="input" id="initial-temp" type="text" placeholder="TEMPERATURE">
+  </div>
+
+  <form class="styling">
+    <label class="styling temperature-font"><input id="F" type="radio" name="fc" value="f">°F to °C</label>
+    <label class="styling temperature-font"><input id="C" type="radio" name="fc" value="c">°C to °F</label>
+  </form>
+  
+  <div class="submit-clear">
+    <button id="submit">Submit</button>
+    <button id="clear">Clear</button>
+  </div>
+
+  <div class="output-box" id="result">
+    <h3 class="output" id="output">OUTPUT TEMP</h3>
+  </div>
 
   <script type="text/javascript" src="js/script.js"></script>
 </body>
