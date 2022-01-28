@@ -3,12 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <title>Temperature Converter</title>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
+  <div id="temp-convert">
+    <h1>Temperature Converter</h1>
+  </div>
 
+  <div>
+    <input type="text" placeholder="Enter Temp to Convert"  id="inputText"required>
+  </div>
+
+  <div class="radioButton">
+    <input type="radio" id="fahrenheit" name="temperature" value="fahrenheit">
+    <label for="fahrenheit">&#8457</label>
+
+    <input type="radio" id="celsius" name="temperature" value="celsius">
+    <label for="celsius">&#8451</label>
+  </div>
+
+  <div class="buttons">
+    <button id="submit">Submit</button>
+    <button id="clear">Clear</button>
+  </div>
+
+  <div id="convertANS"></div>
   <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

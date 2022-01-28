@@ -1,3 +1,25 @@
-h1 {
-  color: blue;
+body {
+  background-color: rgb(211, 211, 211);
+  text-align: center;
+  margin: 0 auto;
+}
+
+.temp-convert {
+  color: rgb(128, 128, 128);
+}
+
+.buttons {
+  color: rgb(177, 177, 177);
+}
+
+.radioButton {
+  color: rgb(129, 129, 129);
+}
+
+#inputText {
+  padding: 1rem 2rem;
+}
+
+input[type="text"] {
+  font-size: 32px;
 }
