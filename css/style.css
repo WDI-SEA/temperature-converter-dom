@@ -1,3 +1,55 @@
-h1 {
-  color: blue;
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+:root {
+  --light-pink:  rosybrown;
+  --forest-green: rgb(137, 192, 137);
+  --grey: grey;
+}
+
+* {
+  background-color: var(--light-pink);
+  font-family: Helvetica, sans-serif;
+}
+
+h2 {
+  color: black;
+}
+
+button {
+  background-color: var(--forest-green);
+  display: inline-block;
+}
+
+.rectangle-display {
+  background-color: pink;
+  height: 20vh;
+  width: 40vh;
+  margin: 10vh;
+}
+
+.center {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.wireframe-red {
+  border: .2rem dotted rgba(236, 16, 16, 0.3);
+}
+
+.wireframe-yellow {
+  border: .2rem dotted rgba(163, 194, 28, 0.3);
+}
+
+.wireframe-orange {
+  border: .2rem dotted rgba(218, 148, 18, 0.918);
+}
+

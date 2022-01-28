@@ -4,11 +4,52 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
+  <title>Temperature Converter</title>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
+  
+  <div class='wireframe-red center'>
+    <h2>Temperature Converter</h2>
+  </div>
 
-  <script type="text/javascript" src="js/script.js"></script>
+  <form id="my-converter" action='#'>
+
+    <!-- user inputs number they want converted -->
+    <div class='wireframe-yellow center'>
+      <form action='#' method='GET' >
+        <input type='number' inputmode='numberic' id='users-input' value="">
+      
+    
+    
+    <!-- radio form element/same name so user can only select one -->
+    <div class="radio-temperatures wireframe-orange center">
+      <label>
+        <input class='possible-temps' type='radio' id='fahrenheit-button' name='temperatureSelected' value='Fahrenheit' checked>
+        °F
+      </label>
+    
+      <label>
+        <input class='possible-temps' type='radio' id='celsius-button' name='temperatureSelected' value='Celsius'>
+        °C 
+      </label> 
+
+      <label>
+        <input class='possible-temps' type='radio' id='kelvin-button' name='temperatureSelected' value='Kevin'>
+        °K 
+      </label> 
+    <!-- submit takes in the information of users type of temperature choice and # and asks computer to calculate -->
+    <div class='wireframe-red center'>
+      <button class='submit-button' type='button'>Submit</button>
+    <!-- clear button... clears both top and bottom displays  -->
+      <button class='clear-button' type='reset'>Clear</button>
+    </div>
+
+    <!-- converted display -->
+    <div class='rectangle-display wireframe-red center'>
+      <img id="temp-img" src="" alt="">
+      <p id="temp-results"></p>
+    </div>
+  </form>
 </body>
+<script type="text/javascript" src="js/script.js"></script>
 </html>
