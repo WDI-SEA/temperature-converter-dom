@@ -4,11 +4,61 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
+  <title>Temperature Converter</title>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
+  <h1>Temperature Converter</h1>
+    <input type="text" id="conversion-text-box" placeholder="Convert a temperature">
+    
+    <div>
+      <input type="radio" id="fahrenheit" name="measurement" value="°F">
+      <label for="fahrenheit">°F</label>
+      <input type="radio" id="celcius" name="measurement" value="°C">
+      <label for="celcius">°C</label>
+     </div>
+    
+    <div>
+      <button id="submit-button">Submit</button>
+      <button id="clear-button">Clear</button>
+     </div>
 
+     <div class="temp-conversion-box"> 
+       <h3 class="conversion-display-text"></h3>
+    </div>
+
+
+  </body>
   <script type="text/javascript" src="js/script.js"></script>
-</body>
 </html>
+
+<!-- CODE BELOW THIS LINE DONE IN CLASS -->
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <title>Temp Converter</title>
+</head>
+<body>
+
+  <h1>Temperature Converter</h1>
+  
+    <div>
+      <input id="tempInput" type="number" value="72" />
+    </div>
+
+    <div>
+      <button id="submit-button">Submit</button>
+    </div>
+
+    <div>
+      <p id="result"></p>
+    </div>
+
+
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>  -->
