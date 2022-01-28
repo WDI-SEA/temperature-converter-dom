@@ -1,3 +1,49 @@
-h1 {
-  color: blue;
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Indie+Flower&family=Londrina+Shadow&family=Orbitron&family=Poiret+One&family=VT323&display=swap');
+
+.center{
+  text-align: center;
+  margin: 0 auto;
+}
+
+.disp{
+  display: inline-block;
+  padding: 0vh 3vw;
+  
+}
+
+.bgColor{
+  background-color: #d3d3d3;
+}
+
+.pads{
+  padding: 1.5vh 0;
+}
+
+.smallframe{
+  border: .5rem solid black;
+  width: 50%;
+}
+
+.frame {
+  border: .5rem solid black;
+  width: 50%;
+}
+h1{
+  font-size: 250%;
+}
+p{
+  font-family: 'VT323', Helvetica;
+  font-size: 180%;
+}
+
+*{
+  font-size: 110%;
+  font-family: 'Orbitron', sans-serif;
+}
+
+input[type=radio] {
+  margin: 0 auto;
+  margin-right: .5rem;
+  height: 2rem;
+  width: 1.2rem;
 }

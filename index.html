@@ -4,11 +4,46 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
+  <title>Temperature Converter</title>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
+  <main class="frame center">
+    <div class="bgColor">
+      <h1 class="center">Temperature Converter</h1>
+      
+      <div class="center pads">
+          <form  onsubmit="toConvert1()//toConvert(e)">
+          <input class="center pads" type="text" id="userInput"/>
+          </form>
+      </div>
 
+      <div class="center smallframe">
+          <div class="center disp">
+            <input type="radio" value="" name="from" id="fah" checked>°F</input>
+            <input type="radio" name="from" id="cel">°C</input>
+            <input type="radio" name="from" id="kel">°K</input>  
+          </div>
+
+        <p class="disp"> Convert To </p>
+        
+          <div class="center disp">
+              <input type="radio" name="to" id="fah">°F</input>
+              <input type="radio" name="to" id="cel">°C</input>
+              <input type="radio" name="to" id="kel">°K</input>
+          </div>      
+      </div>
+
+      <div class="center pads">
+        <input type="submit" value="Submit" id="sub"/>
+        <input type="submit" value="Clear" id="clr"/>
+      </div>
+      
+      <div class="center pads">
+        <input class="center pads" type="text" id="userOutput"/>
+      </div>
+    </div>
+  </main>
   <script type="text/javascript" src="js/script.js"></script>
 </body>
+<script src="js/script.js"></script>
 </html>
