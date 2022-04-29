@@ -4,11 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Radio+Canada:wght@600&display=swap" rel="stylesheet">
+  <title>Temperature Converter</title>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
-
+  
+  <h1 id="title">Temperature Converter</h1>
+  <input type="number" style="max-width: 300px; text-align: center"id="input-temp" placeholder="temp"/>
+</br></br>
+  <input type="radio" name="tempUnit" class="temp-unit" label="degrees Fahrenheit" value="f" id="degF">°F</button>
+  <input type="radio" name ="tempUnit" class="temp-unit" label="degrees Celsius" value ="c" id="degC">°C</button>
+</br><button id="submit-button">Submit</button>
+  <button id="clear-button">Clear</button>
+</br></br>
+  <div id="conversion-output">
+    <p id="final-temp"></p>
+  </div>
+  
+  
   <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
