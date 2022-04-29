@@ -1,3 +1,23 @@
-h1 {
-  color: blue;
+html {
+  background-color: #D3D3D3  
+}
+
+#reset:hover {
+  background-color: #dd1010;
+}
+#convert:hover {
+  background-color: #2f950c;
+}
+button {
+  padding: 10px;
+  font-size: 1.2em;
+  color: #545454;
+}
+input {
+  display: block;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 2em;
+  color: #080808;
+  
 }
