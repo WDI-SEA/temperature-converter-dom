@@ -1,14 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
-</head>
-<body>
-  <h1>Hello Front-End</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title>Temperature Converter</title>
+  </head>
+  <body>
+    <header>Temperature Converter</header>
+    <p>Note: Default Value is <span>&#8457;</span></p>
+    <div>
+      <input id="userInput" type="text" placeholder="Enter Temperature" />
+      <br />
+      <input type="radio" name="temp" id="celsius" />
+      <span>&#8451;</span>
+      <input type="radio" name="temp" id="kelvin" />
+      <span>&#8490;</span>
+    </div>
+    <div class="btns">
+      <button type="button" id="submitBtn">Submit</button>
+      <button type="button" id="clear">Clear</button>
+    </div>
+    <div class="resultText normal" id="tempBG">
+      <div>
+        <div id="result" class="result">0</div>
+        <span id="theTemp">℃</span>
+      </div>
+    </div>
 
-  <script type="text/javascript" src="js/script.js"></script>
-</body>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
 </html>

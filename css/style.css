@@ -1,3 +1,45 @@
-h1 {
-  color: blue;
+body {
+  text-align: center;
+}
+
+header {
+  color: grey;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.btns {
+  margin: 0.5rem 0;
+}
+
+.cold {
+  background-color: aqua;
+}
+
+.normal {
+  background-color: orange;
+}
+
+.hot {
+  background-color: red;
+}
+
+.resultText {
+  color: white;
+  font-size: 7rem;
+  padding: 0 3rem;
+}
+
+.resultText div {
+  display: inline-block;
+}
+
+#userInput {
+  text-align: center;
+  padding: 0.2rem 6rem;
+  margin-bottom: 15px;
+}
+
+.hidden {
+  visibility: hidden;
 }
