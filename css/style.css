@@ -1,3 +1,37 @@
 h1 {
   color: blue;
+  font-size: 100px;
+}
+body{
+  text-align: center;
+  background-color: aliceblue;
+}
+.units {
+  font-size: 50px;
+  margin-bottom: 0px;
+  margin-top: -1px;
+}
+#results {
+  font-size: 90px;
+  background-color: lightgrey;
+  display: inline-block;
+  padding: 5px, 20px;
+  /* border: 1px double darkgray;
+  margin: auto; */
+}
+.tempUnitsInput {
+  font-size: 25px
+}
+.tempUnitsOutput {
+  font-size: 25px;
+}
+.button{
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+#user-temp{
+  font-size: 25px;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }

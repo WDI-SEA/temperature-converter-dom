@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
-</head>
-<body>
-  <h1>Hello Front-End</h1>
-
-  <script type="text/javascript" src="js/script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title>Temperature Converter Deliverable</title>
+  </head>
+  <body>
+    <h1>Temperature Converter</h1>
+    <div>
+      <p class="units">Convert From:</p>
+      <input type="radio" id="freedomUnitsIn" name="tempUnitsInput" value="freedomUnits"/>
+      <label for="freedomUnits" class="tempUnitsInput">Farenheit</label>
+      <input type="radio" id="celciusIn" name="tempUnitsInput" value="celcius" class="tempUnitsInput"/>
+      <label for="celcius" class="tempUnitsInput">Celcius</label>
+      <input type="radio" id="kelvinIn" name="tempUnitsInput" value="kelvin" class="tempUnitsInput"/>
+      <label for="kelvin" class="tempUnitsInput">Kelvin</label>
+    </div>
+    <input type="number" id="user-temp" placeholder="Temp🌡" />
+    <div>
+      <p class="units">Convert to:</p>
+      <input type="radio" id="freedomUnitsOut" name="tempUnitsOutput" value="freedomUnits" class="tempUnitsOutput"/>
+      <label for="freedomUnits" class="tempUnitsOutput">Farenheit</label>
+      <input type="radio" id="celciusOut" name="tempUnitsOutput" value="celcius" class="tempUnitsOutput"/>
+      <label for="celcius" class="tempUnitsOutput">Celcius</label>
+      <input type="radio" id="kelvinOut" name="tempUnitsOutput" value="kelvin" class="tempUnitsOutput"/>
+      <label for="kelvin" class="tempUnitsOutput">Kelvin</label>
+    </div>
+    <div class="button">
+      <button class="button" id="submitButton">Submit</button>
+      <button class="button" id="clearButton">Clear</button>
+    </div>
+    <div id="results"> </div>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
 </html>

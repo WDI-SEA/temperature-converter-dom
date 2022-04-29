@@ -7,7 +7,7 @@ We will be using JavaScript to make a temperature conversion utility. A folder i
 * Fork and clone this repository
 
 ## Requirements
-* Create a single page using HTML/CSS that contains an input field and a submit button, all within a form element.
+Create a single page using HTML/CSS that contains an input field and a submit button, <!-- * all within a form element. -->
 * Additionally, add a clear button
 * When the submit button is pressed, convert the inputted temperature from F to C using the appropriate conversion formula (may need to Google it)
 
@@ -24,7 +24,7 @@ We will be using JavaScript to make a temperature conversion utility. A folder i
 
 2. Use a `dropdown` or `radio` buttons to select different units to convert (Fahrenheit to Celsius, or Celsius to Fahrenheit)
 
-3. Place the `<input>` and `<button>` elements into a form, so that pressing ENTER will automatically convert the temperature. Note that there's an event type called `'submit'` that you can use instead of `'click'`.
+<!-- 3. Place the `<input>` and `<button>` elements into a form, so that pressing ENTER will automatically convert the temperature. Note that there's an event type called `'submit'` that you can use instead of `'click'`. -->
 
 4. **Bonus #1:** Add your own personal sense of style using CSS styling and positioning techniques. Ideas include:
   * different fonts (see [Google Fonts](https://developers.google.com/fonts/docs/getting_started) for how to link fonts into a webpage)
