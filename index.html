@@ -7,7 +7,38 @@
   <title>Hello Front-End</title>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
+  <h1>Temperature Converter</h1>
+  <h2>Enter the temperature in fahrenheit:</h2>
+
+  <div class="input-div">
+  <input type="text" id="user-input" value="32">
+  </div>
+
+  <div class="temp-switches">
+
+    <div class="ck-div">
+      <label>
+        <input type="checkbox" id="c-checkbox" value="c">
+        <p class="temp-type">Celsius</p>
+      </label>  
+    </div>
+
+    <div class="ck-div">
+      <input type="checkbox" id="k-checkbox" value="k">
+      <p class="temp-type">Kelvin</p>
+    </div>
+  </div>  
+
+
+  <div class="buttons-div">
+  <button id="submit-button">Submit</button>
+  <button id="clear-button">Clear</button>
+  </div>
+
+  <div class="temp-div">
+  <p id="finalTemp">0 C</p>
+  </div>
+
 
   <script type="text/javascript" src="js/script.js"></script>
 </body>
