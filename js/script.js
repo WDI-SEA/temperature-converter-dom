@@ -1,4 +1,3 @@
-
 function tempConversion(temp, outputType) {
     let finalTemp = 0
     let cTemp = 0
@@ -51,9 +50,9 @@ document.addEventListener('DOMContentLoaded', function() {
         finalTemp.innerHTML = tempConversion(userInput.value,tempType) + " °" + tempType.toUpperCase()
         
         //sets results box to color based on water freezing/boiling temps
-        if (userInput.value < 0) {
+        if (userInput.value <= 0) {
             tempDiv.style.backgroundColor = "blue"
-        } else if (userInput.value > 212) {
+        } else if (userInput.value >= 212) {
             tempDiv.style.backgroundColor = "red"
         } else {
             tempDiv.style.backgroundColor = "white"
