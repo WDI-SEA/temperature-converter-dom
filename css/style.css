@@ -1,3 +1,54 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  text-align: center;
+  background-color: #d3d3d3;
+}
+
 h1 {
-  color: blue;
+  color: #808080;
+  padding-top: 1.5rem;
+}
+
+#input {
+  border: 2px solid #C4C4C4;
+  background-color: white;
+  padding: 14px 90px;
+  font-size: 14px;
+  cursor: pointer;
+  display: inline-block;
+  margin: 26px;
+  margin-bottom: .5rem;
+  font-size: smaller;
+  font-weight: 500;
+  position: relative;
+  text-align: center;
+}
+
+.radio-btns {
+  display: inline-block;
+  position: relative;
+  margin: .5rem 5px;
+  font-size: large;
+}
+
+.btns {
+  position: relative;
+  margin: .5rem;
+ padding: 0 10px;
+}
+
+#submit-btn, #clear-btn {
+  border: 1px;
+  border-color: black;
+  padding: auto 25px;
+  text-align: center;
+  background-color: #008C93;
+  color: white;
+  text-shadow:1px 1px 1px black;
+  font-size: larger;
+  margin-left: .5rem;
+  margin-right: .5rem;
 }

@@ -4,11 +4,74 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
+  <title>Temperature Converter</title>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
+  <h1>Temperature Converter</h1>
+  <div id="user-input-box">
+  <input type="text" id="input" placeholder="temperature to convert"/>
+  </div>
+
+
+  <div class="radio-btns">
+
+  <!-- input type radio, all need same name value === group selection, value 
+  attribute defines which was selected (needs to be sent to funtion to give
+  value that was selected) def prop called .checked returns true or false -->
+
+  <input type="radio" id="farenheit" name="temperature" value="farenheit">
+  <label for="farenheit">°F</label>
+  <input type="radio" id="celsius" name="temperature" value="celsius">
+  <label for="celsius">°C</label>
+  <input type="radio" id="kelvin" name="temperature" value="kelvin">
+  <label for="kelvin">k</label>
+  </div>
+
+  <div class="btns">
+    <button id="submit-btn">Submit</button>
+    <button id="clear-btn">Clear</button>
+  </div>
+
+  <div class="conversion">
+    <div id="conver-text">
+      <span id="converted">
+        <p id="result"></p>
+      </span>
+    </div> 
+    <!-- need to push the conversion function output +++ the radio button value-->
+    <!-- can do using spans and ids -->
+    <!-- temp convert from js-control-flow -->
+  </div>
 
   <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
+
+<!-- Requirements
+Create a single page using HTML/CSS that contains an input field and a submit 
+  button.
+Additionally, add a clear button
+When the submit button is pressed, convert the inputted temperature from 
+  F to C using the appropriate conversion formula (may need to Google it)
+User Experience
+User puts in a value into the text field
+User clicks on button
+The page gets updated with the converted temperature value.
+Clicking a "Clear" button resets the text field -->
+
+<!-- 
+everything is centered
+  text
+  input box
+  two inline radio buttons
+  two inline buttons
+    one submit to start
+    one clear to reset the function
+  one display box, displays the converted input
+  **fancies**
+  if output is less than normal temp, make output box background blue
+  if more, make red use classList to push diff css style when outputting
+  radio or dropdown buttons
+  make look cool
+  add conversion to kelvin as well, so three conversions = 3 functs
+-->
