@@ -29,27 +29,28 @@ document.addEventListener('DOMContentLoaded', function() {
     tempDiv.style.backgroundColor = "white"
 
     
-
+    //functions to toggle/unclick other checkbox
     cCheck.addEventListener("click", function(){
         kCheck.checked = false
         tempType = cCheck.value
     })
-
     kCheck.addEventListener("click", function(){
         cCheck.checked = false
         tempType = kCheck.value
     })
-
+    
+    //button to clear
     buttonClear.addEventListener('click', function(){
         userInput.value = 32
         finalTemp.innerHTML = tempConversion(userInput.value,tempType) + " °" + tempType.toUpperCase()
         tempDiv.style.backgroundColor = "white"
     })
 
+    //submit button
     buttonSubmit.addEventListener('click', function(){
         finalTemp.innerHTML = tempConversion(userInput.value,tempType) + " °" + tempType.toUpperCase()
         
-        
+        //sets results box to color based on water freezing/boiling temps
         if (userInput.value < 0) {
             tempDiv.style.backgroundColor = "blue"
         } else if (userInput.value > 212) {
