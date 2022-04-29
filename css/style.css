@@ -1,3 +1,15 @@
 h1 {
-  color: blue;
+  color: teal;
+  text-align: center;
+}
+
+body {
+  text-align: center;
+  background-color: rgb(177, 177, 177);
+}
+
+#tempOutput {
+  font-family: sans-serif;
+  font-size: 20px;
+  background-color: yellow;
 }
