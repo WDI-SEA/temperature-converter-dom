@@ -5,10 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <title>Hello Front-End</title>
+  
 </head>
+
 <body>
-  <h1>Hello Front-End</h1>
+  <div class = "container">
+    <h1> Temperature Converter</h1>
+    <input type="text" id="input" placeholder="degrees to convert">
+    <!-- radio inputs -->
+  <div>
+      <input type = "radio" id="degrees-f" value="Farenheight">
+      <label for="degrees-f">Farengeight</label>
+      <input type = "radio" id="degrees-c" value="Celsius">
+      <label for="degrees-f">Celsius</label>
+  </div>
+    <!-- buttons -->
+    <button id="btn-submit">Submit</button>
+    <button id="btn-clear">Clear</button>
+    <p id="result"></p>
+  </div>
 
   <script type="text/javascript" src="js/script.js"></script>
+  </div>
 </body>
-</html>
