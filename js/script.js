@@ -13,37 +13,49 @@ function tempConversion(temp, outputType) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
+    // declare variables and connections
+    const cCheck = document.querySelector('#c-checkbox')
+    const kCheck = document.querySelector('#k-checkbox')
+    const buttonSubmit = document.querySelector("#submit-button")
+    const buttonClear = document.querySelector("#clear-button")
+    const userInput = document.querySelector("#user-input")
+    const finalTemp = document.querySelector("#finalTemp")
+    const tempDiv = document.querySelector(".temp-div")
+    let tempType = "c"
+ 
+    
+    // default settings
+    cCheck.defaultChecked = true
+    tempDiv.style.backgroundColor = "white"
 
-const cCheck = document.querySelector('#c-checkbox')
-const kCheck = document.querySelector('#k-checkbox')
-const buttonSubmit = document.querySelector("#submit-button")
-const buttonClear = document.querySelector("#clear-button")
-const userInput = document.querySelector("#user-input")
-const finalTemp = document.querySelector("#finalTemp")
+    
 
-cCheck.defaultChecked = true
+    cCheck.addEventListener("click", function(){
+        kCheck.checked = false
+        tempType = cCheck.value
+    })
 
-let tempType = "c"
+    kCheck.addEventListener("click", function(){
+        cCheck.checked = false
+        tempType = kCheck.value
+    })
 
-cCheck.addEventListener("click", function(){
-    kCheck.checked = false
-    tempType = cCheck.value
-})
+    buttonClear.addEventListener('click', function(){
+        userInput.value = 32
+        finalTemp.innerHTML = tempConversion(userInput.value,tempType) + " °" + tempType.toUpperCase()
+        tempDiv.style.backgroundColor = "white"
+    })
 
-kCheck.addEventListener("click", function(){
-    cCheck.checked = false
-    tempType = kCheck.value
-})
-
-buttonClear.addEventListener('click', function(){
-    userInput.value = 32
-    finalTemp.innerHTML = tempConversion(userInput.value,tempType) + " °" + tempType.toUpperCase()
-})
-
-buttonSubmit.addEventListener('click', function(){
-    finalTemp.innerHTML = tempConversion(userInput.value,tempType) + " °" + tempType.toUpperCase()
-})
-
-console.dir(cCheck)
-console.log(cCheck.checked)
+    buttonSubmit.addEventListener('click', function(){
+        finalTemp.innerHTML = tempConversion(userInput.value,tempType) + " °" + tempType.toUpperCase()
+        
+        
+        if (userInput.value < 0) {
+            tempDiv.style.backgroundColor = "blue"
+        } else if (userInput.value > 212) {
+            tempDiv.style.backgroundColor = "red"
+        } else {
+            tempDiv.style.backgroundColor = "white"
+        }
+    })
 }) // DOM
