@@ -1,3 +1,71 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  text-align: center;
+  background-color: rgb(233, 230, 230);
+  
+}
 h1 {
-  color: blue;
+  color: grey;
+  margin: 3rem;
+}
+div{
+  margin:1rem;
+  
+}
+
+#user-input{
+  width: 40rem;
+  height: 3rem;
+  border: 1px solid;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 30px;
+}
+#far{
+  padding: 5px;
+  margin: 0px 10px ;
+  
+}
+.far-text{
+  color: grey;
+}
+#celcius{
+  padding: 5px;
+  margin: 0px 10px;
+  
+}
+.celcius-text{
+  color: grey;
+}
+#submit{
+  padding:10px;
+  width:5rem;
+  border-style: none ;
+  box-shadow: 1px 2px grey;
+  margin: 2px;
+}
+.clear{
+  padding:10px;
+  width:5rem;
+  border-style: none ;
+  box-shadow: 1px 2px grey;
+}
+.result{
+  display: inline-block;
+  height: 10rem;
+  width: 40rem;
+  background-color: red;
+  color: white;
+  text-align: center;
+  position: relative;
+  font-size: 40px;
+}
+p.result-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
