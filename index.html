@@ -1,14 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
-</head>
-<body>
-  <h1>Hello Front-End</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title>Hello Front-End</title>
+  </head>
+  <body>
+    <h1>Temperature Converter</h1>
+    <p>
+      Select which degree you will be inputting and then input your number into
+      the text box below
+    </p>
+    <div class="buttons-input-temp">
+      <input type="radio" id="input-F-button" name="angelika" />
+      <label for="input-F-button">°F</label><br />
+      <input type="radio" id="input-C-button" name="angelika" />
+      <label for="input-C-button">°C</label><br />
+      <input type="radio" id="input-K-button" name="angelika" />
+      <label for="input-K-button">°K</label><br />
+    </div>
 
-  <script type="text/javascript" src="js/script.js"></script>
-</body>
+    <input type="text" id="txt-input-temp" placeholder="Text Here" />
+
+    <p>Select which degree you want to output</p>
+    <div class="buttons-output-temp">
+      <input type="radio" id="output-F-button" name="sima" />
+      <label for="output-F-button">°F</label><br />
+      <input type="radio" id="output-C-button" name="sima" />
+      <label for="output-C-button">°C</label><br />
+      <input type="radio" id="output-K-button" name="sima" />
+      <label for="output-K-button">°K</label><br />
+    </div>
+
+    <button id="submit">Submit</button>
+    <button id="clear">Clear</button>
+    <p id="return"><span id="answer"></span></p>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
 </html>
