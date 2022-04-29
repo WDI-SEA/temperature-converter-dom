@@ -4,11 +4,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
+  <title>Temperature Converter</title>
+  <link rel="stylesheet" href="./css/style.css"/>
+  <!-- linking up a javascript file -->
+  <script src="./js/script.js"></script>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
-
-  <script type="text/javascript" src="js/script.js"></script>
+  <div class="container">
+    <h1>Temperature Converter</h1>
+    <input type="text" id="user-input" placeholder="Temp to Convert" />
+    <!-- //radio inputs -->
+    <div>
+      <input type="radio" id="degrees-f" value='Farenheit'>
+      <label for="degrees-f">°F</label>
+      <input type="radio" id="degrees-c" value='Celsius'>
+      <label for="degrees-c">°C</label>
+    </div>
+    <button id="submit-button">Submit</button>
+    <button id="clear-button">Clear</button>
+    <p id="result"></p>
+  </div>
+  
+  <!-- <div class="farenheitAndCelsius">
+    <button id="Farenheit">°F</button>
+    <button id="Celsius">°C</button>
+  </div>  
+  <div class="submitAndClearButtons">
+    <button id="submit-button">Submit</button>
+    <button id="clear-button">Clear</button>
+  </div>
+  <p>Conversion:<span id="input-span"></span></p>
+  <script type="text/javascript" src="js/script.js"></script> --> -->
 </body>
 </html>
