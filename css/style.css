@@ -1,3 +1,48 @@
 h1 {
-  color: blue;
+  color: darkgray;
+}
+body {
+  background-color: gainsboro;
+  font-family: sans-serif;
+}
+.card {
+  text-align: center;
+}
+input {
+  width: 400px;
+  height: 60px;
+  font-size: 50px;
+  text-align: center;
+
+}
+.buttons{
+  margin-top: 20px;
+}
+.buttons button {
+  height: 45px;
+  width: 70px;
+  margin: 10px;
+
+}
+
+.red {
+
+  position: relative;
+
+  background-color: red;
+  margin-top: 20px;
+  margin-left: 200px;
+  margin-right: 200px;
+  height: 70px;
+  text-align: center;
+}
+.red p {
+  color: white;
+  font-weight: 600;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-45%, -140%);
+
 }
