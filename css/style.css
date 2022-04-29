@@ -1,3 +1,32 @@
+html {
+  background-color: bisque;
+}
+
+body {
+  text-align: center;
+}
+
+#user-input {
+  text-align: center;
+  font-size: 300%;
+}
+
 h1 {
-  color: blue;
+  color: rgb(208, 80, 80);
+}
+
+div {
+  font-size: 175%;
+}
+
+button {
+  font-size: 200%;
+}
+
+.cool-color {
+  background-color: blue;
+}
+
+.hot-color {
+  background-color: red;
 }
