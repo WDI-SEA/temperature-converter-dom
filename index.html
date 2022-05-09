@@ -1,38 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
   <title>It's Converter</title>
+  <!-- linking with js and css file -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+
 <body>
-
-
-  <h1>Temperature Converter</h1>
-
+  
+  
   <div class="container">
-  
-     <input type="text" id="user-input" placeholder="write to convert" />
-     
-     <div>
-       <input type="radio" name="con" id="deg-far">
-       <label for="deg-far">Farenheight</label>
-       <input type="radio" name="con" id="deg-cel">
-       <label for="deg-cel">Celsisus</label>
-       
-      </div>
-      <button id="button-submit">Submit</button>
-      <button id="button-clear">Clear</button>
-       <p id="result"></p>
-  
+    <h1>Temperature Converter</h1>
+    <input type="text" id="user-input" placeholder="34">
+    <!-- radio buttons -->
+    <div>
+      <input type="radio" name="con" id="deg-far" value="Fahrenheit">
+      <label for="deg-far">°F</label>
+      <input type="radio" name="con" id="deg-cel" value="Celsius">
+      <label for="deg-cel">°C</label>
+      
+    </div>
+    <button id="button-submit">Submit</button>
+    <button id="button-clear">Clear</button>
+    <p id="result"></p>
   </div>
-    
-
   
   <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
+  
+    
+
+  
     
 
 
