@@ -1,1 +1,3 @@
-console.log('Hello, front end');
+let input = document.querySelector('#input')
+
+console.log(input)
