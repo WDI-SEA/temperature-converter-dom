@@ -1,3 +1,47 @@
+body {
+  background-color: grey;
+}
+
 h1 {
-  color: blue;
+  color: darkslateblue;
+  text-align: center;
+}
+
+#input {  
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  height: 60px;
+  width: 60%;
+  border-radius: 10px;
+  text-align: center;
+  font-size: large;
+}
+
+#btnContainer {
+  text-align: center;
+  padding-top: 10px;
+}
+
+#result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: larger;
+  padding: auto;
+  background-color: black;
+  color: blanchedalmond;
+  width: 75%;
+  height: 100px;
+}
+
+.btn {
+  display: block;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
 }
