@@ -1,3 +1,23 @@
 h1 {
   color: blue;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  color: lightskyblue
+}
+
+
+.buttons {
+  display: inline;
+  padding: 10px;
+  
+}
+.text-sqaure {
+  background-color: darkblue;
+  color: aqua;
+  width: 400px;
+  height: 250px;
+  margin: 20px;
 }
