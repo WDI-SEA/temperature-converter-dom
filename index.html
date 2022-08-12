@@ -4,10 +4,50 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
+  <title>Temperature Converter</title>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
+  <h1>Temperature Converter</h1>
+<div class="input-div">
+  <input type="number" class="input-bar" id="input-bar"/>
+</div>
+<div class="label">
+  <p>From: </p> 
+  <p>To:</p>
+</div>
+<div class="drop-downs">
+<form>
+  <select id="myList" class="selecter">
+    <option></option>
+    <option>Fahrenheit</option> 
+    <option>Celcius</option> 
+    <option>Kelvin</option>  
+  </select>
+</form>
+
+<form>
+  
+  <select id="myList2" class="selecter">
+    <option></option>
+    <option>Celcius</option>
+    <option>Fahrenheit</option>
+    <option>Kelvin</option>  
+  </select>
+</form>
+</div>
+
+<div class="buttons">
+  <section>
+    <button class="submit">Submit</button>
+  </section>
+
+  <section>
+    <button id="clear">Clear</button>
+  </section>
+</div>
+<div class="output">
+  <p class="temp" id="output"></p>
+</div>
 
   <script type="text/javascript" src="js/script.js"></script>
 </body>

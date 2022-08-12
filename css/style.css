@@ -1,3 +1,89 @@
+body{
+  background-color:#d3d3d3;
+}
+
 h1 {
-  color: blue;
+  color: #808080;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 40px;
+  font-family: sans-serif;  
+}
+
+.input-bar{
+  display: block;
+  margin: 0 auto;
+  height: 40px;
+  width: 400px;
+  text-align: center;
+  font-size: 35px;
+  border-radius: 8px;
+}
+
+.buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button{
+  height: 30px;
+  width: 80px;
+  box-shadow: 2px;
+}
+.drop-downs{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons section{
+  display: inline;
+  position: relative;
+  padding: 10px;
+  padding-bottom: 30px;
+}
+
+.drop-downs select{
+  display: inline;
+  position: relative;
+  padding: 10px;
+  height: 80px;
+  width: 200px;
+  background-color: lightcyan;
+  font-size: 25px;
+}
+form{
+  padding: 15px;
+  padding-top: 0px;
+}
+
+.output{
+  background-color: black;
+  text-align: center;
+  width: 600px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.temp{
+  font-size: 80px;
+  text-align: center;
+}
+
+p{
+  display: inline;
+  position: relative;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 25px;
+}
+
+.label{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.temp{
+  color: azure;
 }
