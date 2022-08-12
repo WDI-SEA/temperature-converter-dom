@@ -1,3 +1,33 @@
+body {
+  text-align: center;
+}
+
 h1 {
   color: blue;
+}
+
+#convertTo {
+  margin-top: 10px;
+}
+
+.btns section {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: inline-block;
+  position: relative;
+}
+
+input {
+  text-align: center;
+  width: 400px;
+  height: 40px;
+}
+
+.result {
+  text-align: center;
+  padding: 20px;
+  background-color: red;
+  height: 55px;
+  width: 200px;
+  margin: 0 auto
 }

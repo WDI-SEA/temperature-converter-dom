@@ -6,8 +6,40 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <title>Hello Front-End</title>
 </head>
+
+
 <body>
-  <h1>Hello Front-End</h1>
+  <div>
+    <h1>Temperature Converter</h1>
+  </div>
+
+  <div>
+    <input id="tempInput" placeholder="enter temp here">
+  </div>
+
+  <div class="dropdown">
+    <select id="convertTo">
+      <option value="C">Celcius</option>
+      <option value="F">Fahrenheit</option>
+    </select>
+  </div>
+
+  <div class = "btns">
+
+    <section>
+      <button class="bttn">Submit</button>
+    </section>
+
+    <section>
+      <button class="bttn">Clear</button>
+    </section>
+
+  </div>
+
+  <div>
+    <p class="result">placeholder for temp conversion result</p>
+  </div>
+  
 
   <script type="text/javascript" src="js/script.js"></script>
 </body>
