@@ -1,3 +1,36 @@
+body{
+  background-color:beige;
+}
 h1 {
   color: blue;
+  margin-top: 50px;
 }
+.tempConverter{
+  text-align: center;
+}
+#input {
+  margin: 20px;
+  padding: 20px;
+  font-size: 30px;
+  width: 100px;
+  text-align: center;
+}
+button {
+  font-size: 16px;
+}
+#runConvert{
+  margin-top: 20px;
+  margin-bottom: -20px;
+}
+#resultDiv{
+  height: 100px;
+  width: 200px;
+  background-color: red;
+  font-size: 35px;
+  margin: 0 auto
+}
+p {
+  transform: translate(0%, 60%);
+  color: white;
+}
+    
