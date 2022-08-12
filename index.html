@@ -4,11 +4,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
+  <title>Temperature Converter</title>
 </head>
+
 <body>
-  <h1>Hello Front-End</h1>
+  <!-- header -->
+  <div>
+  <h1>Temperature Converter</h1>
+  </div>
+
+  <!-- temperature input -->
+  <div class="input">
+    <input type=number id="inputTemp" placeholder="enter temp here">
+  </div>
+
+  <!-- dropdown menu -->
+  <div>
+    <select id="convertTo">
+					
+      <option value="C">Celsius</option>
+      <option value="F">Fahrenheit</option>
+      
+    </select>
+  </div>
+
+  <!-- action buttons - submit/clear -->
+    <div>
+      <button id="submitButton">Submit</button>
+      <button id="clearButton">Clear</button>
+    </div>
+   
+   <!-- show RESULTS placeholder for now -->
+    <div class="results">                           
+        <p id="temp-out"></p>
+    </div>
+
 
   <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
+
+
+
