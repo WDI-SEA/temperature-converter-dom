@@ -4,10 +4,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
+  <title>Temperature Converter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>Hello Front-End</h1>
+  <h1>Temperature Converter</h1>
+  <input id = "input">
+  <div class = "radio">
+    <div id = "radioF">
+    <label for = "farenheit">&deg;F</label>
+    <input type= "radio" id= "far" name= "temp" value= "deg">
+    </div>
+    <div id = "radioC">
+    <label for = "celcius">&deg;C</label>
+    <input type= "radio" id= "cel" name= "temp" value= "deg">
+    </div> 
+  </div>
+
+  <div class = "btns">
+    <button id = "submit">Convert</button>
+    <button id = "clear">Clear</button>
+  </div>
+  <div class = "result">
+    <p></p>
+  </div>
+
+
 
   <script type="text/javascript" src="js/script.js"></script>
 </body>

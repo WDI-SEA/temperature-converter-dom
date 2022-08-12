@@ -1,3 +1,61 @@
 h1 {
+  color: Orange;
+  font-size: 60px;
+  font-family: 'DynaPuff', cursive;
+}
+
+body {
+  text-align : center;
+  background-color: #c6EEE4;
+  font-family: sans-serif;
+}
+
+p {
+  background-color: lightgrey;
+  font-size: 40px;
+  font-family: 'Concert One', cursive;
+  border-style: solid;
+  border-color: mintcream;
+  border-width: 10px;
+  padding: 20px;
+  }
+
+ 
+#input {
+  font-size: 30px;
+  padding: 10px;
+  margin-bottom: 15px;
+  margin-top: 50px;
+  text-align: center;
+  font-family: 'Concert One', cursive;
+}
+
+
+.btns #submit {
+  font-size: 25px;
   color: blue;
+  font-family: 'Concert One', cursive;
+  margin-top: 50px
+}
+
+.btns #clear {
+  font-size: 25px;
+  color: red;
+  margin: 50px 0 0 20px;
+  font-family: 'Concert One', cursive;
+}
+
+.radio {
+  font-family: 'Concert One', cursive;
+  font-size: 20px;
+  display: block;
+}
+
+.radio #radioF {
+  display: inline-block;
+}
+
+.radio #radioC {
+  margin-left: 25px;
+  display: inline-block;
 }
