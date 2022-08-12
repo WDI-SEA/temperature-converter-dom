@@ -1,24 +1,22 @@
-console.log('Hello, front end');
+let input = document.querySelector('#input')
+let fToC = document.querySelector('#fToC')
+let cToF = document.querySelector('#cToF')
+let clear = document.querySelector('#clear')
+let result = document.querySelector('#result')
 
-let theSquares = document.getElementsByClassName('square')
-console.log(theSquares[0])
-
-function tempConvert(temp, convert) {
-  if(convert.toLowerCase() === "c"){ 
-      temp = (temp - 32) * (5/9);
-      Math.floor()
-  } else if (convert.toLowerCase() === "k") {
-      temp = (temp + 459.67) * (5/9);
-  }
-  return temp;
-}
-
-console.log(tempConvert(67, "c"));
-
-btn.addEventListener("click", function(e) {
-  console.log(e)
+fToC.addEventListener("click", function(e) {
+  let preConversion = input.value
+  let postConversion = (preConversion - 32) * (5/9)
+  result.innerText = postConversion
 })
 
-btn.addEventListener("click", function(e) {
-  console.log(input.value)
+cToF.addEventListener("click", function(e) {
+  let preConversion = input.value
+  let postConversion = (preConversion * 1.8) + 32
+  result.innerText = postConversion
 })
+
+clear.addEventListener("click", function(e) {
+  result.innerText = ''
+  input.value = ''
+}) 
