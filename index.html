@@ -11,17 +11,19 @@
   <h1>Temperature converter</h1>
 </div>
 
-<div class="">
-<input id="input">
-</div>
+<form class="flexbox">
+  <div class="stretch" >
+      <input type="number" name="Temperature" value="34">
+      </div>
+  </form>
 
 <div class="buttons">
   <section>
-    <p><input type="radio">℉</p>
-  </section>
-
-  <section>
-    <p><input type="radio">℃</p>
+    <p><input type="radio" name="option" class="radio-input">℉</p>
+    </section>
+    
+    <section>
+    <p><input type="radio" name="option" class="radio-input">℃</p>
   </section>
 </div>
 
@@ -29,6 +31,7 @@
 <button>Submit</button>
 <button>Clear</button>
 </div>
+
 
   <script type="text/javascript" src="js/script.js"></script>
 </body>
