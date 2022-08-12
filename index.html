@@ -1,14 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
+
+  <title>Temperature Converter</title>
+
+  
 </head>
 <body>
-  <h1>Hello Front-End</h1>
+  <h1>Temperature Converter</h1>
 
-  <script type="text/javascript" src="js/script.js"></script>
+
+<!-- Box for final temp -->
+<div class = "tempBox"></div>
+</head>
+<body>
+
+  <!-- Calculator for Temp  -->
+<div class="temp_calculator">
+    <form action="" name="form">
+      <div class="temp_calculator_inputs" >
+        <div class="calculator_value">
+          <input type="text" placeholder="0" name="value" id="input_value">
+        </div>
+          <!-- Input could not get default button to work -->
+        <div class="calculator_input">
+          <label for="" style = "position: absolute; left:34%; top:20% ;">From: </label>
+          <select name="input" id="input" style = "position: absolute; left: 38%; top: 20%;">
+            <option value="celsius">Celsius (°C)</option>
+            <option value="fahrenheit">Fahrenheit (°F)</option>
+          </select>
+        </div>
+          <!-- Output  -->
+        <div class="calculator_input">
+          <label for="" style = "position: absolute; right:50%; top:20% ;">To:</label>
+          <select name="output" id="output" style = "position: absolute; right:40%; top:20% ;">
+            <option value="celsius">Celsius (°C)</option>
+            <option value="fahrenheit">Fahrenheit (°F)</option>
+          </select>
+        </div>          
+      </div>
+      <!-- Buttons(Style only changed here and not in css idk why) -->
+      <button type="button" id="clear" class="cal-btn" onclick="reset()" style = "position: absolute; right: 46%; top: 26%;">Clear</button>
+      <button type="button" id="convert" class="cal-btn" onclick="convertTemperature()" style = "position: absolute; left: 44%; top: 26%;">Convert</button>
+      <div class="result_area">
+        
+        <input type="text" value="" id="result">
+      </div>
+    </form>
+  </div>
+
+  <!-- I did script in here and not in Js because it was easier to see in the same window-->
+  <script>
+    function convertTemperature(){
+      let val = document.getElementById("input_value");
+      let result = document.getElementById("result");
+      let input = document.getElementById("input");
+      let output = document.getElementById("output");
+
+      val.addEventListener("keyup", convertTemperature);
+      input.addEventListener("change", convertTemperature);
+      output.addEventListener("change", convertTemperature);
+
+      let inputValue = input.value;
+      let outputValue = output.value;
+
+      //Celsius
+      if(inputValue === "celsius" && outputValue === "fahrenheit"){
+        result.value = Number((val.value) * 9/5) + 32;
+      }else if(inputValue === "celsius" && outputValue === "celsius"){
+        result.value = val.value;
+      }
+
+
+      //Fahrenheit
+      if(inputValue === "fahrenheit" && outputValue === "celsius"){
+        result.value = Number((val.value - 32) * 5) / 9;
+      }else if(inputValue === "fahrenheit" && outputValue === "fahrenheit"){
+        result.value = val.value;
+      }
+
+
+    }
+    // reset
+    function reset(){
+      convertTemperature();
+    }
+  </script>
+
+<!-- I need to study DOM wayyyy more! This took way too long. -->
+
 </body>
 </html>
