@@ -1,3 +1,84 @@
-h1 {
-  color: blue;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  font-family: Lato, sans-serif;
+  font-size: 2em;
+}
+
+header {
+  width: 70vw;
+  text-align: center;
+  font-weight: bold;
+}
+
+.user-selection {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 1.5em;
+  height: 33.3vh;
+  width: 70vw;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20vh;
+  text-align: center;
+}
+
+.display {
+  background-color: #888888;
+  width: 30vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: center;
+}
+
+#solution {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#radio label {
+  padding-right: 10px;
+}
+
+.selector {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: center;
+}
+
+#user-input {
+  text-align: center;
+}
+
+.button, .temp-input {
+  background-color: white;
+  border: none;
+  font-family: Lato, sans-serif;
+  font-size: 1.2rem;
+  padding: .5em 1.5em;
+  box-shadow: 0 0 8px #e1e1e1;
+}
+
+.temp-input {
+  display: block;
+  margin-bottom: 5px; 
+}
+
+.button {
+  font-weight: 900;
+}
+
+#answer {
+  font-size: 2em;
+  font-weight: 900;
 }
