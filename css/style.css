@@ -11,6 +11,22 @@ h1 {
   margin-top: 10px;
 }
 
+.bttn {
+  border: none;
+  padding: 15px, 32px;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+#submit {
+  background-color: #4CAF50;
+}
+
+#clear {
+  background-color: #f44336;
+}
+
 .btns section {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -22,6 +38,10 @@ input {
   text-align: center;
   width: 400px;
   height: 40px;
+}
+
+#changeTo {
+  margin-top: 20px;
 }
 
 #result {
