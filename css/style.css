@@ -1,3 +1,44 @@
-h1 {
-  color: blue;
+body {
+  background-color: rgb(198, 197, 197);
 }
+
+h1 {
+  color: grey;
+  text-align: center;
+}
+
+#input {
+  display: block;
+  margin: auto;
+  width:75%;
+  height:50px;
+  text-align: center;
+  font-size: large;
+  border-radius: 10px;
+}
+#abt {
+  text-align: center;
+
+}
+
+#result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 20px;
+  margin-left:auto;
+  margin-right: auto;
+  font-size: larger;
+  padding: auto;
+  background-color: black;
+  color: blanchedalmond;
+  width: 75%;
+  height: 100px;
+}
+div {
+  text-align: center;
+}
+
+
+
