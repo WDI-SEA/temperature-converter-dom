@@ -1,3 +1,35 @@
+body {
+  background-color: lightgoldenrodyellow;
+}
+
 h1 {
-  color: blue;
+  color: peru;
+  text-align: center;
+  font-size: 6em;
+}
+
+p {
+  text-align: center;
+}
+
+.myDiveOne {
+  padding: 2em;
+  border-style: groove;
+  text-align: center;
+}
+
+.inputField {
+  background-color: aliceblue;
+  text-align: center;
+  margin: 100pt, 300pt;
+  border: 100pt;
+  font-family: sans-serif;
+}
+
+#outputBox {
+  background-color: aliceblue;
+  margin: 10pt, 50pt;
+  text-align: center;
+  border: 6pt;
+  border-style: groove;
 }

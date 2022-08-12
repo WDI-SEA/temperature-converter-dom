@@ -4,11 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
+  <title>Fahrenhiet Converter</title>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
-
-  <script type="text/javascript" src="js/script.js"></script>
+  <h1>Fahrenhiet Converter</h1>
+  <div class="inputField">
+    <input id= "temperatureInput"/>
+  
+  <p>Unit of Conversion</p>
+  <div class="myDivOne">
+    <input type="radio" id="radioCelcius" name="unit" checked/>
+    <label for="radioCelcius">Celcius</label>
+    <input type="radio" id="radioKelvin" name="unit" />
+    <label for="radioKelvin">Kelvin</label>
+  </div>
+  
+<button onclick="determineTemperature()">Submit</button>
+<button onclick="clearTemperature()">Clear</button>
+</div>
+<br/>
+<div class="redClass" id="outputBox">
+  <h2></h2>
+</div>
+<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
+
+
