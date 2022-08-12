@@ -1,3 +1,57 @@
-h1 {
-  color: blue;
+body {
+    background-color: black;
 }
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+/* Gabe's code
+
+
+#input {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 60px;
+    width: 75%;
+    border-radius: 10px;
+    text-align: center;
+    font-size: large;
+}
+
+.btn {
+    display: inline:block
+    text-align: center;
+}
+
+#result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: larger;
+    padding: auto;
+    background-color: black;
+    color: blanchedalmond;
+    width: 75%;
+    height: 100px;
+}
+
+div {
+    text-align: center;
+}
+
+/*
+.#btn-container {
+    text-align: center;
+    display: inline;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+*/
