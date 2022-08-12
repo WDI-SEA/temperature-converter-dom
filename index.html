@@ -8,9 +8,39 @@
 </head>
 <body>
   <h1>Temperature Converter</h1>
+
+  <div class="dropdown">
+    <div class="first">
+      <label class="begin">Choose a beginning unit:</label>
+      <div>
+        <select id="forBegin">
+          <option id="startB">Select</option>
+          <option id="Fahrenheit">Fahrenheit</option>
+          <option id="Celcius">Celcius</option>
+          <option id="Kelvin">Kelvin</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="second">
+      <label class="end">Choose an ending unit:</label>
+      <div>
+        <select id="toEnd">
+          <option id="startE">Select</option>
+          <option id="Fahrenheit">Fahrenheit</option>
+          <option id="Celcius">Celcius</option>
+          <option id="Kelvin">Kelvin</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
   <input id="tempInp">
-  <button id="Submit">Submit</button>
-  <button id="Clear">Clear</button>
+
+  <div>
+    <button id="Submit">Submit</button>
+    <button id="Clear">Clear</button>
+  </div>
 
   <div class="output">
     <h2 class="display"></h2>
