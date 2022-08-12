@@ -26,15 +26,15 @@ btnSubmit.addEventListener("click", function (e) {
         if(convertedToF > 100) {
         output.style.backgroundColor = "red"
         output.style.color = "white"
-        output.innerText = `${convertedToF} \u00B0C`
+        output.innerText = `${convertedToF} \u00B0F`
     } else if (convertedToF < 60) {
         output.style.backgroundColor = "blue"
         output.style.color = "white"
-        output.innerText = `${convertedToF} \u00B0C`
+        output.innerText = `${convertedToF} \u00B0F`
     } else {
         output.style.backgroundColor = "lightgray"
         output.style.color = "black"
-        output.innerText = `${convertedToF} \u00B0C`
+        output.innerText = `${convertedToF} \u00B0F`
     }
     } else {
         output.style.backgroundColor = "lightgray"
