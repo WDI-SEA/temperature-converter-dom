@@ -22,7 +22,6 @@ console.log(celToFahr(32))
 
 // SUBMIT BUTTON VARIABLE
 let submitButton = document.querySelector('#submit')
-
 submitButton.addEventListener('click', submitValue);
 
 function submitValue(){
@@ -39,12 +38,16 @@ function submitValue(){
      const result = celToFahr(inputValue.value)
         console.log(result)
         endResult.innerText = result
-    }
-    
+    }  
 }
 
-let endResult = document.getElementById('result')
-endResult.innerText = "example"
+let clearButton = document.querySelector('#clear')
+clearButton.addEventListener('click', clearResult);
+
+function clearResult(){
+    result.innerText = ""
+}
+
 
 // RESULT TEXT
 // let finalResult = document.getElementsByClassName('result')

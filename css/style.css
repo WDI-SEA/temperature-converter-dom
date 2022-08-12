@@ -1,5 +1,6 @@
 body {
   text-align: center;
+  background-color: rgb(221, 206, 206);
 }
 
 h1 {
@@ -26,7 +27,7 @@ input {
 #result {
   text-align: center;
   padding: 20px;
-  background-color: red;
+  background-color: rgb(0, 255, 145);
   height: 55px;
   width: 200px;
   margin: 0 auto
