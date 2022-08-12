@@ -1,3 +1,23 @@
 h1 {
   color: blue;
+  text-align: center;
+}
+
+body {
+  text-align: center;
+}
+.block {
+  text-align: center;
+  height: 50px;
+  width: 70px;
+  position:relative;
+}
+
+.clear {
+  text-align: center;
+  position:relative;
+}
+
+.conversionBlock {
+  
 }
