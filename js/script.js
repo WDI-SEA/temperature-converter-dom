@@ -45,10 +45,8 @@ let clearButton = document.querySelector('#clear')
 clearButton.addEventListener('click', clearResult);
 
 function clearResult(){
-    result.innerText = ""
+    endResult.innerText = ""
 }
 
-
-// RESULT TEXT
-// let finalResult = document.getElementsByClassName('result')
+let endResult = document.getElementById('result')
 
