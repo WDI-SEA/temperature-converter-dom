@@ -33,19 +33,29 @@ function submitValue(){
     }  
 }
 
+// clear result value
 let endResult = document.getElementById('result')
 let clearButton = document.querySelector('#clear')
 clearButton.addEventListener('click', clearResult);
 
 function clearResult(){
-    endResult.innerText = ""
+    endResult.innerText = "";
     
 }
+
+// need function to clear input value
 
 // let clearInput = document.querySelector('#tempImput')
 // clearInput.addEventListener('click', clearTempInput)
 
 // function clearTempInput(){
-//     clearTempInput.innerText = ""
+//     tempInput.innerText = ""
+// }
+
+// let clearInput = document.querySelector('input')
+// clearInput.addEventListener('click', clearTempInput);
+
+// function clearTempInput(){
+//     clearInput.innerText = ""
 // }
 
