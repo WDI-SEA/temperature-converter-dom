@@ -1,3 +1,11 @@
 h1 {
-  color: blue;
+  color: black;
 }
+body{
+  text-align:center;
+  background-color:aliceblue;   
+}
+#textSec{
+  text-align:center ;
+}
+
