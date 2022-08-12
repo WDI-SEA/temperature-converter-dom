@@ -1,5 +1,6 @@
 body {
-  background-color: lightgray
+  background-color: lightgray;
+  text-align: center;
 }
 h1 {
   color: grey;
