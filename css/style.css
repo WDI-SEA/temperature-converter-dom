@@ -36,3 +36,8 @@ h1 {
   cursor: pointer;
   outline: none;
 }
+.square {
+  color: red;
+  height: 100px;
+  width: 100px;
+}
