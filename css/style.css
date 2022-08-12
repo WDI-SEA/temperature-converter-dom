@@ -1,3 +1,52 @@
+body {
+background-color: dimgray;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
 h1 {
-  color: blue;
+  color: royalblue;
+  text-align: center;
+  font: 20px;
+  margin: 30px;
+}
+
+.content {
+display: flex;
+justify-content: center;
+height: 50px;
+}
+
+.inputTemp{
+display: flex;
+text-align: center;
+align-self: center;
+display: center;
+margin: auto;
+}
+.inlineButton{
+  display: inline-block;
+  align-items: center;
+  width: fit-content;
+}
+.clear{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.output{
+  background-color: red;
+  margin: auto;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}
+
+.output p {
+  display: inline-block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 20px;
+  margin-inline-end: 0px;
 }
