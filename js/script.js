@@ -4,19 +4,23 @@ let input = document.querySelector("#input")
 let result = document.querySelector("#resultText")
 let clear = document.querySelector("#clear")
 
-function toCel(a){
-    resultText.innerText = input.value
-    return ((input.value - 32) * (5/9))
-}
 
-function toFar() {
-    resultText.innerText = input.value
-    return ((1.8 * input.value) + 32)
-}
 
-submitF.addEventListener("click", toFar)
-submitC.addEventListener("click", toCel)
+//Event listeners
+submitF.addEventListener("click", function(e){
+    let preConversion = input.value
+    let postConversion = (preConversion - 32) * (5/9)
+    result.innerText = (postConversion + ' C')
+})
+
+submitC.addEventListener("click", function(e){
+    let preConversion = input.value
+    let postConversion = (preConversion * 1.8) + (32)
+    result.innerText = (postConversion + ' F')
+})
+
 clear.addEventListener("click", function(e){
-    result = result.style.visibility = "hidden"
+    result.innerText = ''
+    input.value = ''
 })
 
