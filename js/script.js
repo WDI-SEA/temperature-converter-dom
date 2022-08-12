@@ -5,6 +5,8 @@ console.log('Hello, front end');
 
 //need to enable clear button to reset result
 
+// FUNCTION TO CHECK WHICH DROP DOWN OPTION IS SELECTED
+
 
 // FAHRENHEIT TO CELSIUS FUNCTION
 function fahrToCel(fahrenheit){
@@ -24,10 +26,28 @@ function celToFahr(celsius){
 console.log(celToFahr(32))
 
 
+// FOR SELECTOR
+let select = document.getElementById('changeTo')
+let value = select.options[select.selectedIndex].value;
+console.log(value);
+// let cOption = document.querySelector('changeTo')
+// let fOption =
+
 //CONSOLE LOGS THE VALUE OF THE INPUT (works if in html file add: value=20)
 let inputValue = document.querySelector('input')
-
 console.log(inputValue.value)
+
+// SUBMIT BUTTON VARIABLE
+let submitButton = document.querySelector('#submit')
+
+submitButton.addEventListener('click', submitValue);
+
+function submitValue(){
+    console.log(inputValue.value)
+    
+}
+
+
 
 // let title = document.querySelector('h1')
 // title.innerHTML = "Temp Conv"
