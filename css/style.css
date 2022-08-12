@@ -23,7 +23,7 @@ input {
   height: 40px;
 }
 
-.result {
+#result {
   text-align: center;
   padding: 20px;
   background-color: red;

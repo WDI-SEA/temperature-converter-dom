@@ -1,13 +1,5 @@
 console.log('Hello, front end');
 
-
-//need to grab the input value from the input box
-
-//need to enable clear button to reset result
-
-// FUNCTION TO CHECK WHICH DROP DOWN OPTION IS SELECTED
-
-
 // FAHRENHEIT TO CELSIUS FUNCTION
 function fahrToCel(fahrenheit){
     let fTemp = fahrenheit
@@ -26,16 +18,7 @@ function celToFahr(celsius){
 console.log(celToFahr(32))
 
 
-// FOR SELECTOR
-let select = document.getElementById('changeTo')
-let value = select.options[select.selectedIndex].value;
-console.log(value);
-// let cOption = document.querySelector('changeTo')
-// let fOption =
 
-//CONSOLE LOGS THE VALUE OF THE INPUT (works if in html file add: value=20)
-let inputValue = document.querySelector('input')
-console.log(inputValue.value)
 
 // SUBMIT BUTTON VARIABLE
 let submitButton = document.querySelector('#submit')
@@ -43,16 +26,26 @@ let submitButton = document.querySelector('#submit')
 submitButton.addEventListener('click', submitValue);
 
 function submitValue(){
-    console.log(inputValue.value)
+    let select = document.getElementById('changeTo')
+    let value = select.options[select.selectedIndex].value;
+    let inputValue = document.querySelector('input')
+    let endResult = document.getElementById('result')
+    console.log(value)
+    if(value === "C"){
+     const result = fahrToCel(inputValue.value)
+        console.log(result)
+        endResult.innerText = result
+    } else {
+     const result = celToFahr(inputValue.value)
+        console.log(result)
+        endResult.innerText = result
+    }
     
 }
 
-
-
-// let title = document.querySelector('h1')
-// title.innerHTML = "Temp Conv"
+let endResult = document.getElementById('result')
+endResult.innerText = "example"
 
 // RESULT TEXT
-let result = document.getElementsByClassName('result')
+// let finalResult = document.getElementsByClassName('result')
 
-console.log(result.innerTEXT)

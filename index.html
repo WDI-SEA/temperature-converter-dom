@@ -7,7 +7,6 @@
   <title>Hello Front-End</title>
 </head>
 
-
 <body>
   <!-- TOP TITLE -->
   <div>
@@ -16,33 +15,30 @@
 
   <!-- INPUT FOR TEMP TO BE CONVERTED -->
   <div>
-    <input id="tempInput" placeholder="enter temp here" value="test">
+    <input id="tempInput" placeholder="enter temp here">
   </div>
 
   <!-- DROP DOWN TEMP TYPE SELECTOR -->
   <div class="dropdown">
     <select id="changeTo">
-      <option value="C">Celcius</option>
-      <option value="F">Fahrenheit</option>
+      <option value="C">To Celcius</option>
+      <option selected value="F">To Fahrenheit</option>
     </select>
   </div>
 
   <!-- BUTTONS -->
   <div class = "btns">
-
     <section>
       <button class="bttn" id="submit">Submit</button>
     </section>
-
     <section>
       <button class="bttn" id="clear">Clear</button>
     </section>
-
   </div>
 
   <!-- RESULTS -->
   <div>
-    <p class="result">placeholder for temp conversion result</p>
+    <p id="result">placeholder for temp conversion result</p>
   </div>
   
 
