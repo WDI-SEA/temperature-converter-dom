@@ -1,3 +1,28 @@
 h1 {
-  color: blue;
+  color: darkcyan;
+  text-align: center;
+}
+
+.tempbttn {
+  text-align: center;
+}
+
+#enter {
+  text-align: center;
+}
+
+.subbttn {
+  text-align: center;
+}
+
+#enter1 {
+  text-align: center;
+}
+
+.output {
+  text-align: center;
+}
+
+body {
+  background-color: lightgrey;
 }

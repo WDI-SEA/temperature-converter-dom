@@ -4,10 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
+  <title>Josh's Temp COnvertor</title>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
+  <h1>Converting from Fahrenheit to Celsius</h1>
+ <div id="enter">
+  <input id="enter1" type="text" placeholder="Enter Temperature">
+  </div>
+
+  <section class="tempbttn">
+  <input id="cbttn" type="radio" name="temp" value="Celcius">
+  <label for="Celcius">Celcius</label>
+  <input id="fbttn" type="radio" name="temp" value="Fahrenheit">
+  <label for="Fahrenheit">Fahrenheit</label>
+</section>
+
+<div class="subbttn">
+  <input id="submitbttn" type="submit" value="Submit">
+  <button id="clearbttn" onclick="document.getElementById('enter1').value = ''">
+  Clear </button>
+  </div>
+
+  <div class="output">
+    <input type="text">
+  </div>
 
   <script type="text/javascript" src="js/script.js"></script>
 </body>
