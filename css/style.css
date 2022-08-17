@@ -1,3 +1,55 @@
 h1 {
-  color: blue;
+  text-align: center;
+  color: Grey;
+}
+#input {
+display: block;
+margin-left: auto;
+margin-right: auto;
+height: 60px;
+width 75%;
+border-radious: 10px
+text-align: center;
+font-size: large;
+
+}
+
+
+
+body {
+  background-color: lightgrey;
+} 
+
+#btn {
+  display:block;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  border: 1px solid red;
+  padding: 100px;
+}
+
+.boxy
+{
+  text-align:center;
+
+}
+div{
+  text-align: center;
+}
+
+#button1
+{
+  text-align: center;
+  position: relative -400px;
+  padding: 9px 20px;
+ 
+}
+#button2
+{
+  text-align: center;
+  position: relative -400px;
+  padding: 9px 20px;
+  box-shadow: 3px 1px;
+    
 }
