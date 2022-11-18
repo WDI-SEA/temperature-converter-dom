@@ -8,10 +8,13 @@
     margin: 20px 0;
 }
 
+#temp-area {
+    width: 85vw;
+    height: 75px;
+}
+
 #input {
     width: 75vw; /* view width */
     height: 25px;
     background-color: white;
 }
-
-

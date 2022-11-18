@@ -14,6 +14,14 @@ let ftocConversion = function() {
     let preConValue = input.value
     let postConValue =(preConValue - 32) * (5/9)
     tempText.innerText = postConValue
+
+    if (postConValue <= 0) {
+        tempText.style.backgroundColor ='cornflowerblue'
+    }
+
+    if (postConValue >= 36) {
+        tempText.style.backgroundColor ='crimson'
+    }
 }
 
 ftoc.addEventListener('click', ftocConversion) 
@@ -24,9 +32,19 @@ let ctofConversion = function() {
     let preConValue = input.value
     let postConValue =(preConValue * (9/5)) + 32
     tempText.innerText = postConValue
-}
 
+    if (postConValue <= 32) {
+        tempText.style.backgroundColor ='cornflowerblue'
+    }
+
+    if (postConValue >= 100) {
+        tempText.style.backgroundColor ='crimson'
+    }
+   
+}
 ctof.addEventListener('click', ctofConversion) 
+
+
 
 //clear button
 clear.addEventListener('click', function(e){
