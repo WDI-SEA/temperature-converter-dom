@@ -1,3 +1,25 @@
+body {
+  background-color: lightgray;
+  text-align: center;
+}
+
+.thermometer {
+  display: block;
+  position: static;
+  border: 5px solid black;
+  margin: 350px;
+  padding: 25px 50px;
+}
+
 h1 {
   color: blue;
+}
+
+input {
+  margin: .4rem;
+}
+
+.buttons {
+  margin: 10px;
+  
 }
