@@ -4,11 +4,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
+  <script type="text/javascript" src="js/script.js" defer></script>
+  <title>Temperature Converter</title>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
 
-  <script type="text/javascript" src="js/script.js"></script>
+  <!-- title -->
+
+  <h1 id="title">Temperature Converter</h1>
+  <h3>Convert Fahrenheit to Celsius</h3>
+
+  <!-- input from user -->
+  <input id="input" type="text" placeholder="°F">
+
+  <!-- Radio F/C buttons (still working 😬)-->
+  <!-- <div>
+    <input type="radio" name="temp" value="fahrenheit" class="radio" id="radio1">°F
+    <input type="radio" name="temp" value="celsius" class="radio" id="radio2">°C
+  </div> -->
+
+  <div id='btn-container'>
+  <!-- calculate button -->
+  <button id="calc-btn">Calculate</button>
+
+  <!-- clear button -->
+  <button id="clear-btn">Clear</button>
+  </div>
+
+  <!-- Results block -->
+  <h2 id="result">Result</h2>
+
 </body>
 </html>
