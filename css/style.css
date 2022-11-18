@@ -1,3 +1,58 @@
-h1 {
-  color: blue;
+.center{
+  text-align:center;
+  margin: 0 auto;
 }
+button{
+  border-bottom: 2px solid rgb(108,108,108);
+  border-left: 2px solid rgb(108,108,108);
+  border-top: 1px solid rgb(210,210,210);
+  border-left: 1px solid rgb(210,210,210);
+  background-color:rgb(191,191,191);
+}
+body{
+  background-color: rgb(210,210,210);
+  font-family: Helvetica, sans-serif
+}
+h1{
+  color: rgb(127,127,127)
+}
+.radio { color: rgb(127,127,127);
+  ;
+  }
+.answer{
+  
+  margin: 20px auto;
+  border: 20px solid red;
+  background-color: red;
+  height: 80px;
+  width: 60%;
+  
+}
+.answer > h1{
+ margin: auto; 
+ font-weight: lighter;
+  color: white;
+  text-align: center;
+  font-size: 75px;
+}
+
+
+/* 
+walkthrough with gabe
+*{
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgb(215, 207, 207);
+}
+#btn-container{
+  margin: 20px 0px;
+}
+#input{
+  width: 75vw;
+  height: 25px;
+  background-color: whitesmoke;
+}
+#temp-area{
+  width: 85vw;
+  height: 3em;
+} */
