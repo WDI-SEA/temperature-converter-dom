@@ -1,3 +1,15 @@
-h1 {
-  color: blue;
+* {
+  margin: 0 auto;
+  text-align: center;
+  background-color: silver;
+}
+
+#btn-container {
+  margin: 20px 0px;
+}
+
+#input {
+  width: 75vw;
+  height: 25px;
+  background-color: white;
 }
