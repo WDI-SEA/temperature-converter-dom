@@ -1,3 +1,29 @@
+body {
+	background-color: rgb(0, 0, 0);
+	text-align: center;
+    color: white;
+}
+
+.thermometer {
+	display: block;
+	position: static;
+	border: 5px solid rgb(255, 255, 255);
+	margin: 350px;
+	padding: 25px 50px;
+}
+
+p {
+    color: white;
+}
+
 h1 {
-  color: blue;
+	color: blue;
+}
+
+input {
+	margin: 0.4rem;
+}
+
+.buttons {
+	margin: 10px;
 }
