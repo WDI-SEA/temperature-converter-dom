@@ -4,10 +4,44 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
+  <title>My not so Awesome Temperature Converter</title>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
+  <h1>Temperature Converter</h1>
+
+    <div>
+      <p>What is the temperature?</p>
+    </div>
+
+    <div>
+      <p>From</p>
+      <div>
+        <input type="radio" id="fromC" name="fromSelect" value="Celsius">
+        <label for="fromC">Celsius</label>
+      </div>
+      <div>
+        <input type="radio" id="fromF" name="fromSelect" value="Fahrenheit">
+        <label for="fromF">Fahrenheit</label>
+      </div>
+    </div>
+
+    <div>
+      <input placeholder="Temperature" id="numTemp">
+    </div>
+
+    <div id="to">
+      <p>To</p>
+      <input type="radio" id="toC" name="toSelect"><p>Celsius</p>
+      <input type="radio" id="toF" name="toSelect"><p>Fahrenheit</p>
+    </div>    
+
+    <div>
+      <button id="submit">Submit</button><button id="clear">Clear</button>
+    </div>
+
+    <div>
+      <p id="output"></p>
+    </div>
 
   <script type="text/javascript" src="js/script.js"></script>
 </body>
