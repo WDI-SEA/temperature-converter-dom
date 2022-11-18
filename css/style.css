@@ -1,3 +1,30 @@
+body{
+  text-align: center;
+  color: rgb(82, 76, 76);
+
+}
+
 h1 {
-  color: blue;
+  color: rgb(82, 76, 76);
+}
+
+fieldset{
+  border: none;
+}
+
+#temp_convert{
+  border-style: solid;
+  boarder-color:  rgb(82, 76, 76);
+}
+
+.button_submit , .button_clear {
+  border-style: solid;
+  border-color:rgb(206, 176, 176);
+  padding: 5px 20px;
+  color: rgb(82, 76, 76);
+  background-color: rgb(240, 230, 230);
+  border-width: thin;
+  margin: 10px 5px;
+  
+
 }
