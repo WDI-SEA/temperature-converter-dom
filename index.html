@@ -7,7 +7,52 @@
   <title>Hello Front-End</title>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
+
+  <h1>Temperature Converter</h1>
+
+  
+
+    <p>Choose your starting temperature</p>
+    
+    <form class="reset">
+      <div class="radioBtn">
+        <input type="radio" name="unit" id="farenheit">
+        <label for="farenheit">F</label>
+        <input type="radio" name="unit" id="celsius">
+        <label for="celsius">C</label>
+      </div>
+    </form>
+
+  
+
+  <div class="textBox">
+    <input type="text" id="textBox"/>
+  </div> 
+
+    <p>Choose your final temperature</p>
+
+    
+    <form class="reset">
+    <div class="radioBtn">
+      <input type="radio" name="unitTwo" id="farenheitTwo">
+      <label for="farenheitTwo">F</label>
+      <input type="radio" name="unitTwo" id="celsiusTwo">
+      <label for="celsiusTwo">C</label>
+    </div>
+    </form>
+    
+  
+    <!-- These would have been the better coding -->
+<!-- <input type="reset" value="Reset"> -->
+<!-- <input type="submit" value="Submit"> -->
+  <div class="buttons">
+    <button id="submit">Calculate</button>
+    <button id="clearBtn">Clear</button>
+  </div>
+
+  <div>
+    <h2 id="temp"> </h2>
+  </div>
 
   <script type="text/javascript" src="js/script.js"></script>
 </body>

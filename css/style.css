@@ -1,3 +1,42 @@
+body {
+  background: grey
+  
+}
 h1 {
-  color: blue;
+  color: rgb(89, 89, 185);
+  background: white;
+  padding: 40px;
+  border: 3px solid rgb(80, 80, 188);
+  border-radius: 30px;
+  text-align: center;
+  
+}
+#temp {
+  background: blue;
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+}
+p {
+  color: white;
+  font-size:medium;
+  text-align: center;
+}
+.radioBtn{
+  padding: 5px;
+  margin: 10px;
+  text-align: center;
+}
+.textBox {
+  text-align: center;
+}
+.buttons {
+  text-align: center;
+}
+#submit, #clearBtn {
+  background-color: rgb(66, 128, 174);
+  padding: 10px;
+  margin: 5px;
 }
