@@ -44,3 +44,9 @@ body {
   height: 25px;
   background-color: whitesmoke;
 }
+
+#temp-area {
+  width: 75vw;
+  height: 45px;
+  background-color: whitesmoke;
+}

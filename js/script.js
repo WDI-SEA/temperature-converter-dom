@@ -5,13 +5,20 @@ let ftoc = document.getElementById('ftoc')
 let ctof = document.getElementById('ctof')
 let submit = document.getElementById('submit')
 let clear = document.getElementById('clear')
-let tempArea = document.getElementById('temp-text')
+let tempArea = document.getElementById('temp-area')
+let tempText = document.getElementById('temp-text')
 
 // F to C conversion
 let ftocConversion = function() {
     let preConValue = input.value
     let postConValue = (preConValue - 32) * (5/9)
     tempText.innerText = postConValue
+
+    if (postConValue <= 0) {
+        tempText.style.backgroundColor = 'cornflowerblue'
+    } else if (postConValue >= 100) {
+        tempText.style.backgroundColor = 'red'
+    }
 }
 
 ftoc.addEventListener('click', ftocConversion)
@@ -21,8 +28,13 @@ ftoc.addEventListener('click', ftocConversion)
 let ctofConversion = function() {
     let preConValue = input.value
     let postConValue = (preConValue * 9 / 5) + 32
-    tempText
-    .innerText = postConValue
+    tempText.innerText = postConValue
+
+    if (postConValue <= 32) {
+        tempText.style.backgroundColor = 'cornflowerblue'
+    } else if (postConValue >= 212) {
+        tempText.style.backgroundColor = 'red'
+    }
 }
 
 ctof.addEventListener("click",ctofConversion)
@@ -31,9 +43,13 @@ ctof.addEventListener("click",ctofConversion)
 clear.addEventListener('click', function(e){
     input.value = ''
     tempText.innerText = "Temp goes here"
+    tempText.style.backgroundColor = blue
 })
 
-
+//submit
+let submitFunction = function(e) {
+    if ()
+}
 
 
 /* my attempt
