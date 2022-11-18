@@ -1,3 +1,31 @@
 h1 {
-  color: blue;
+  color: grey;
+}
+
+* {
+  margin: 0 auto;
+  text-align: center;
+  background-color: lightgrey;
+}
+
+h1 {
+  margin: 20px 0px;
+}
+
+#buttons {
+  margin: 20px 0px;
+}
+
+#input {
+  width: 60vw;
+  height: 30px;
+  background-color: white; 
+  font-size: 100%; 
+}
+
+#temp-text {
+  width: 75vw;
+  margin: 0 auto;
+  text-align: center;
+  color: white; 
 }
