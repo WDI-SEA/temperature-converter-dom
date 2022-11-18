@@ -1,3 +1,19 @@
-h1 {
-  color: blue;
+* {
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgb(240, 192, 192);
+}
+
+#btn-container {
+  margin: 20px 0px;
+}
+
+#temp-area {
+  width: 85vw;
+}
+
+#input {
+  width: 75vw;
+  height: 25px;
+  background-color: rgb(109, 181, 202);
 }
