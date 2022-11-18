@@ -1,0 +1,17 @@
+* {
+    margin: 0 auto;
+    text-align: center;
+    background: silver;
+}
+
+#button-container {
+    margin: 20px 0;
+}
+
+#input {
+    width: 75vw; /* view width */
+    height: 25px;
+    background-color: white;
+}
+
+
