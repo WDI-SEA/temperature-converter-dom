@@ -7,8 +7,28 @@
   <title>Hello Front-End</title>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
-
+  <h1>Temperature Conversion</h1>
+  <div class="selection">
+    <input id="degrees" type="number" value = "0"></input>
+    <br />
+    <select id="temperatures">
+      <option value="Farenheit" selected="selected">Farenheit</option>
+      <option value="Celsius">Celsius</option>
+      <option value="Kelvin">Kelvin</option>
+    </select>
+    <p> into</p>
+    <div id="toType">
+    <input name="tempType" type="radio" id="Farenheit"><label for="Farenheit">Farenheit</label>
+    <input name="tempType" type="radio" id="Celsius"><label for="Celsius" checked>Celsius</label>
+    <input name="tempType" type="radio" id="Kelvin"><label for="Kelvin">Kelvin</label>
+    </div>
+    <br />
+    <button id="button" type="submit" onclick="convertDegree()">Convert</button>
+  </div>
+  <div class="result">
+    <p id="result">result</p>
+  </div>
+  
   <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
