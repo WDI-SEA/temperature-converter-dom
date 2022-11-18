@@ -1,3 +1,25 @@
-h1 {
-  color: blue;
+/* #hello {
+  background: yellow;
+}
+#gb {
+  background: orange
+}
+.sqaure {
+  height: 100px;
+  width: 100px;
+} */
+* {     
+  margin: 0 auto;
+  text-align: center;
+  background-color: whitesmoke;
+} /*an asterisk there means this applies to everything*/
+
+#buttonContainer {
+  margin: 20px 0px;
+}
+
+#input {
+  width: 75vw; 
+  height: 25px;
+  background-color: whitesmoke;
 }
