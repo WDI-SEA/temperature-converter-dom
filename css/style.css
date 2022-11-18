@@ -1,3 +1,55 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgb(195, 229, 132);
+}
+
+#container {
+  margin: 50px auto;
+
+  width: 400px;
+  /* centers container */
+  display: table;
+  /* centers text */
+  text-align: center;
+  border: 5px black;
+  background-color: grey;
+
+}
+
+#convert {
+  margin-top: 10px;
+  background-color: tan;
+}
+
+#reset {
+  margin-top: 10px;
+  background-color: rgb(184, 37, 20);
+}
+
+#convert:hover {
+  background-color: purple;
+}
+
 h1 {
-  color: blue;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: fuchsia;
+}
+
+input {
+  display: center;
+  padding: 10px;
+  margin-top: 10px;
+  color: grey;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 400;
+}
+
+button {
+  padding: 10px;
+  color: white;
+}
+
+#container {
+  border: 4px solid black;
+  padding: 20px;
 }
