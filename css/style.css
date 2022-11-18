@@ -1,3 +1,19 @@
-h1 {
-  color: blue;
+h1, h2 {
+  color: blueviolet;
+  text-align:center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: aqua;
+  text-align: center;
+}
+
+button {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.put {
+  text-align: center;
 }
