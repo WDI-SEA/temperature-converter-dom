@@ -1,3 +1,24 @@
-h1 {
-  color: blue;
+/* body and * are almost the same thing... * this just gets everything */
+
+* {
+  text-align: center;
+  background-color: lightblue;
 }
+h1 { 
+  font-size: 80px;
+}
+#temperature {
+  width: 200px;
+  height: 40px;
+  font-size: 20px;
+}
+.buttons {
+  position: static;
+  padding: 20px;
+}
+.green {
+  background-color: lightgreen;
+}
+.red {
+  background-color: red;
+}  
