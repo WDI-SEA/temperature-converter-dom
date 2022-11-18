@@ -1,3 +1,18 @@
-h1 {
-  color: blue;
+body {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color:linen ;
+}
+
+.header {
+  text-align: center;
+}
+
+.text-boxes {
+  text-align: center;
+
+}
+
+.buttons {
+  text-align: center;
+  margin: 15px;
 }
