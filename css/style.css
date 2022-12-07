@@ -1,3 +1,49 @@
+body {
+  background-color: rgba(7, 240, 248, 0.376);
+  text-align: center;
+}
+
+/* .thermometer {
+  display: block;
+  position: static;
+  border: 5px solid rgb(2, 1, 1);
+  margin: 350px;
+  padding: 25px 50px;
+}
+
 h1 {
-  color: blue;
+  color: rgb(7, 7, 8);
+  font-family: 'Fuzzy Bubbles', cursive;
+
+}
+
+input {
+  border: 2px solid rgb(1, 11, 30);
+ 
+  
+}
+
+.buttons {
+  margin: 10px;
+  
+  
+} */
+* {
+  margin: 0 auto;
+  text-align: center;
+  background-color: silver;
+}
+
+#btn-container {
+  margin: 20px 0px;
+}
+
+#temp-area {
+  width: 85vw;
+}
+
+#input {
+  width: 75vw;
+  height: 25px;
+  background-color: whitesmoke;
 }

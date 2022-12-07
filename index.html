@@ -1,14 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
+<head> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Fuzzy+Bubbles:wght@700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
+  <title>Temp Converter</title>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
+  <div class="thermometer">
+    <h1 id="title">Temperature Converter</h1>
+
+  
+
+    
+
+    </div> 
+  
+     <input type ="number" id="input"/>
+    <div class="buttons">
+      <button id="submit">Submit</button> 
+     <button id="clear">Clear</button>
+      <button id="ftoc"> F to C</button> 
+      <button id="ctof"> C to F</button> 
+    </div>
+
+    <div class="display">
+        <h1 id="temp-text">Display here</h1>
+    </div>
+  </div>
 
   <script type="text/javascript" src="js/script.js"></script>
 </body>
-</html>
+</html>   
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temp Converter Dom</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <h1 id="title">Temperature Converter</h1>
+     type="number" will prevent letters and such
+    <input type="number" id="input"/>
+    <div id="btn-container">
+        <button id="ftoc"> F to C</button>
+        <button id="ctof"> C to F</button>
+        
+        <button id="clear"> Clear</button>
+    </div>
+    <div id="temp-area">
+        <h1 id="temp-text">Temp goes here</h1>
+    </div>
+</body>
+</html> -->
