@@ -14,12 +14,14 @@ const displayInput = () => {
 Please try again with a numeric value!`);
   } else {
     display.innerHTML = `${convertToCelsius(input)}° C`;
+    display.style.padding = "10px";
   }
 };
 
 const clearInput = () => {
   inputField.value = "";
   display.innerHTML = "";
+  display.style.padding = "";
 };
 
 const addListeners = () => {
