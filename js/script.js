@@ -3,6 +3,7 @@
     const tempInC = (tempInF - 32) * 5/9
     return tempInC 
  }
+//  fToC.addEventListener('click', fToC)
 // let cToF = function(tempInC){
 //     const tempInF = (tempInC * 9/5) + 32
 //     return tempInF
@@ -11,6 +12,15 @@
 //F->C (32°F − 32) × 5/9 = 0°C
 
 //(32°C × 9/5) + 32 = 89.6°F
+
+// let input = document.querySelector(".input")
+// let input = document.querySelector(".cToF")
+// let input = document.querySelector(".fToC")
+// let input = document.querySelector(".submitButton")
+// let input = document.querySelector(".clearButton")
+
+
+
 
 // temp input
 const input = document.querySelector("#Temperature")
@@ -37,3 +47,8 @@ clearButton.addEventListener("click", function(){
 })
 
 /*set to clear answer and not input value, oops. At least something gets cleared?*/
+
+
+//let clearButton = function() {
+   // input.innerText = "" 
+//} in class 
