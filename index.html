@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script defer type="text/javascript" src="js/script.js"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <title>Hello Front-End</title>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
-
-  <script type="text/javascript" src="js/script.js"></script>
+  <div class="flexbody">
+  <h1>Temp Converter</h1>
+  <div class="input">
+    <label for="userInput">Enter Fahrenheit</label>
+    <input id="userInput" type="text"/>
+  </div>
+  <button id="returnTemp">Get Answer</button>
+  <button id="getClear">Clear</button>
+  <h2 id="answer">Celsius is</h2>
+  </div>
 </body>
 </html>
