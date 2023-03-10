@@ -1,3 +1,126 @@
+body {
+  background-color: rgb(211, 211, 211);
+  font-family: Verdana, sans-serif;
+}
+header {
+  display: flex;
+  /* border: 3px solid hotpink; */
+  justify-content: center;
+  border-bottom: 3px solid black;
+  margin-bottom: 1em;
+}
 h1 {
-  color: blue;
+  /* box-sizing: border-box; */
+  /* margin: 0 auto; */
+  text-align: center;
+  color: green;
+  /* border: 3px solid black; */
+}
+.tempInput {
+  display: flex;
+  /* border: 3px solid green; */
+  justify-content: center;
+  margin-bottom: -1em;
+}
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.tempInputValue {
+  /* border: 3px solid blue; */
+  height: 5vh;
+  width: 40vw;
+  margin: 0.5em;
+  text-align: center;
+  border-radius: 10px;
+  border: 3px solid gray;
+  background-color: rgb(246, 246, 246);
+  font-weight: bold;
+  font-size: 2em;
+  color: rgb(73, 73, 73);
+  /* get rid of counter on right side */
+}
+input::placeholder {
+  font-size: .75em;
+  color:rgba(211, 211, 211, .5);
+  justify-content: center;
+}
+.radioButtons {
+  display: flex;
+  justify-content: center;
+  /* border: 3px solid yellow; */
+}
+.radioButtons > label {
+  color: gray;
+  font-weight: 500;
+  font-size: 1.3em;
+  display: flex;
+  /* align-content: center; */
+  margin: 1vw;
+  /* border: 3px solid orange; */
+}
+.radioButtons > label input {
+  /* border: 3px solid orange; */
+  margin: 0 0.2em 0 0;
+  vertical-align: center;
+}
+.actionButton {
+  display: flex;
+  justify-content: center;
+  /* border: 3px solid purple; */
+}
+.button {
+  background-color: rgb(246, 246, 246);
+  padding: 0.3em 0.6em;
+  margin: 0 0.5em 0 0;
+  border: 3px solid gray;
+  border-radius: 10px;
+  font-weight: bold;
+  color: rgb(73, 73, 73);
+/* button click color change from blue to gray */
+}
+.tempContainer {
+  background-color: rgb(12, 148, 39);
+  height: 12vh;
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2vh;
+  border-radius: 10px;
+  border: 3px solid darkgreen;
+}
+.tempContainerHot {
+  background-color: red;
+  height: 12vh;
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2vh;
+  border-radius: 10px;
+  border: 3px solid darkred;
+
+}
+.tempContainerCold {
+  background-color: blue;
+  height: 12vh;
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2vh;
+  border-radius: 10px;
+  border: 3px solid darkblue;
+
+}
+.tempResult { 
+  font-size: 10vh;
+  color: white;
+  text-align: center;
+  /* border: 3px solid black; */
 }
