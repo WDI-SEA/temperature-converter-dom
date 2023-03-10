@@ -1,4 +1,4 @@
-let input = document.querySelector("input");
+let inputField = document.querySelector("input");
 let submitButton = document.querySelector("#submit-button");
 let clearButton = document.querySelector("#clear-button");
 
@@ -11,7 +11,7 @@ const sayGoodbye = () => {
 };
 
 const clearInput = () => {
-  input.value = "";
+  inputField.value = "";
 };
 
 const addListeners = () => {
