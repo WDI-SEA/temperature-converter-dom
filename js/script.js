@@ -3,14 +3,6 @@ let submitButton = document.querySelector("#submit-button");
 let clearButton = document.querySelector("#clear-button");
 let display = document.querySelector("#display");
 
-const sayHello = () => {
-  console.log("hello");
-};
-
-const sayGoodbye = () => {
-  console.log("goodbye");
-};
-
 const displayInput = () => {
   input = inputField.value;
   if (isNaN(input)) {
