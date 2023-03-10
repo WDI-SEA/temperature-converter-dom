@@ -11,10 +11,10 @@ let tempColor = document.getElementById("tempContainer");
         // console.log("Far " + inputTemp);
         outputTemp = ((inputTemp - 32) * (5/9)).toFixed(1);
         // console.log("Cel " + outputTemp);
-        document.getElementById("tempResult").innerHTML = (outputTemp + "°");
+        document.getElementById("tempResult").innerHTML = (outputTemp + "°C");
         // console.log(tempResultNum);
         // let tempResultNum.innerText = outputTemp.value;
-        if (inputTemp > 79) {
+        if (inputTemp > 119) {
            console.log("background should be red");
            tempColor.className = "tempContainerHot";
         } else if (inputTemp < 33) {
@@ -29,8 +29,8 @@ let tempColor = document.getElementById("tempContainer");
     // console.log("Cel " + inputTemp);
     outputTemp = ((inputTemp * 5/9) + 32).toFixed(1);
     // console.log("Far " + outputTemp);
-    document.getElementById("tempResult").innerHTML = (outputTemp + "°");
-    if (inputTemp > 25) {
+    document.getElementById("tempResult").innerHTML = (outputTemp + "°F");
+    if (inputTemp > 48) {
         console.log("background should be red");
         tempColor.className = "tempContainerHot";
      } else if (inputTemp < 1) {
@@ -49,5 +49,5 @@ let tempColor = document.getElementById("tempContainer");
 document.getElementById("clearValue").addEventListener("click", function(event) {
     document.getElementById("tempInputValue").value = ""; //clear out the input
     document.getElementById("tempResult").innerText = "";
-    tempColor.className = "tempContainer";
+    tempColor.className = "tempContainer"; //clear out the temp result
 })
