@@ -4,11 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
+     <title>Temperature Converter</title>
+  <script defer type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
+  
+  <h1>Temperature Converter</h1>
+ <p>Helping you understand what the temperature is in the rest of the world!</p>
+  
+ <div class="inputTools">
+    
+  <input class="input" id="Temperature" placeholder="Enter the temp" type="number"/>
+    <input class="cToF" type="radio" name="temp" id="celsius">
+      <label for="celsius">Celsius</label> 
+    <input class="fToC"type="radio" name="temp" id="fahrenheit">
+      <label for="fahrenheit">Fahrenheit</label>
+    
+      <button id="submitButton">Submit</button>
+    
+      <button id="clearButton" value="reset">Clear</button>
 
-  <script type="text/javascript" src="js/script.js"></script>
+  </div>
+
+  <div id="result">
+
+  </div>
+  
 </body>
 </html>
