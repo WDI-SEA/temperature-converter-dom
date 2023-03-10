@@ -16,6 +16,7 @@ for (let i=0; i<radials.length; i++) {
     }
 }
 
+console.log(unit)
   // get the temperature value from the input
   const value = parseFloat(input.value);
 
@@ -25,41 +26,30 @@ for (let i=0; i<radials.length; i++) {
     return;
   }
 
-  // convert the temperature to the other two scales
+  // convert the temperature to the other two temps
   let fahrenheit, celsius, kelvin;
   fahrenheit = value * 9/5 + 32;
   celsius = (value - 32) * 5/9;
   kelvin = celsius + 273.15;
 
-  // display the converted temperatures
+// display the converted temperature
+let displayUnit, displayUnit2;
+if (unit === "Celsius") {
+    displayUnit = `${fahrenheit.toFixed(2)};F`
+    displayUnit2 = `${kelvin.toFixed(2)};K`
+} else if (unit === "Fahrenheit") {
+    displayUnit = `${celsius.toFixed(2)};C`
+    displayUnit2 = `${kelvin.toFixed(2)};K`    
+} else if (unit === "Kelvin") {
+    displayUnit = `${fahrenheit.toFixed(2)};F`
+    displayUnit2 = `${celsius.toFixed(2)};C`      
+} else {
+    displayUnit = "undefined"
+    displayUnit2 = "undefined"
+}
 
-  let displayValue, displayUnit;
-  switch (unit) {
-    case 'fahrenheit':
-      displayValue = fahrenheit.toFixed(2);
-      displayUnit = '&deg;F';
-      break;
-    case 'celsius':
-      displayValue = celsius.toFixed(2);
-      displayUnit = '&deg;C';
-      break;
-    case 'kelvin':
-      displayValue = kelvin.toFixed(2);
-      displayUnit = ' K';
-      break;
-    default:
-      displayValue = 'N/A';
-      displayUnit = '';
-  }
-  const temperatureDisplay = `${displayValue}${displayUnit}`;
-  document.querySelector('#temperature-display').innerHTML = temperatureDisplay;
-
-});
-
-//   const fahrenheitDisplay = `${fahrenheit.toFixed(2)}&deg;F`;
-//   const celsiusDisplay = `${celsius.toFixed(2)}&deg;C`;
-//   const kelvinDisplay = `${kelvin.toFixed(2)} K`;
-//   document.querySelector('#fahrenheit').innerHTML = fahrenheitDisplay;
-//   document.querySelector('#celsius').innerHTML = celsiusDisplay;
-//   document.querySelector('#kelvin').innerHTML = kelvinDisplay;
+// display the converted temperatures on the screen
+document.querySelector('#celsius').innerHTML = `Celsius: ${displayUnit}`;
+document.querySelector('#fahrenheit').innerHTML = `Fahrenheit: ${displayUnit}`;
+document.querySelector('#kelvin').innerHTML = `Kelvin: ${displayUnit}`;
 });
