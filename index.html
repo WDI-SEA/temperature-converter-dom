@@ -4,11 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="js/script.js" defer></script>
   <title>Hello Front-End</title>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
+  <!-- header -->
+  <header>
+    <h1>Temperature converter</h1>
+  </header>
+  <!-- user input box -->
+  <div>
+    <label for="tempInput"></label>
+    <input class="input_box" id="tempInput" placeholder="Enter the temperature you wish to convert here">
 
-  <script type="text/javascript" src="js/script.js"></script>
+    <div class="measurement">
+      <select id="changeMeasurement">
+        <option value="0">Fahrenheit</option>
+        <option value="1">Celcius</option>
+      </select>
+    </div>
+    <div class="user_buttons">
+      <button id="convert">Convert</button>
+      <button id="clear">Clear</button>
+    </div>
+  </div>
+  <!--  Conversion Box  -->
+  <div class="conversion_box">
+    <p id="conversionDisplay"></p>
+  </div>
 </body>
 </html>

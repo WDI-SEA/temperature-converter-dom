@@ -1,3 +1,42 @@
-h1 {
-  color: blue;
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: "roboto";
+  color: #F4A261;
+  background-color: #264653
 }
+
+/* styles the input box */
+ .input_box {
+  height: 2rem;
+  width: 20rem;
+  text-align: center;
+ }
+
+ .measurement {
+  display: flex;
+  justify-content: center;
+  margin: .5rem;
+ }
+
+ .user_buttons {
+  display: flex;
+  justify-content: center;
+ }
+
+ .user_buttons button {
+  width: 4rem;
+  height: 1.5rem;
+ }
+
+ /* This styles the conversion box */
+
+ .conversion_box {
+  display: flex;
+  justify-content: center;
+  width: 30rem;
+  border: solid;
+  margin: 2rem;
+  font-size: 3rem;
+ }
