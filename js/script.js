@@ -28,15 +28,6 @@ for (let i=0; i<radials.length; i++) {
 
   // convert the temperature to the other two temps
   let fahrenheit, celsius, kelvin;
-//   fahrenheit = value * 9/5 + 32;
-//   celsius = value - 32 * 5/9;
-//   kelvin = celsius + 273.15;
-
-//   if (unit === Celsius) {
-//     celsius = value
-//     fahrenheit = value * 9/5 + 32
-//     kelvin = value + 273.15
-//   }
 
   let celsiusResult, fahrenheitResult, kelvinResult
 
