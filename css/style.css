@@ -1,3 +1,43 @@
 h1 {
-  color: blue;
+  color: black;
+}
+
+body {
+  display: flex;
+  background-color: antiquewhite;
+  justify-content: space-around;
+
+}
+
+.card {
+  display: flex;
+  background-color: slategray;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.top-card {
+  display: flex;
+
+}
+
+.radio-card {
+  display: flex;
+  justify-content: center;
+
+}
+
+.buttons-card {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px;
+}
+
+button {
+  padding: 20px 50px;
+}
+
+span {
+  font-size: 18px;
+  font-weight: bold;
 }

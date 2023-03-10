@@ -1,0 +1,26 @@
+* {
+  background-color: silver;
+  text-align: center;
+}
+
+h1 {
+  color: rgb(99,37,99)
+;
+}
+
+.input {
+  background-color: whitesmoke;
+  width: 50vw;
+  height: 30px;
+}
+
+.btn-container {
+  margin: 15px 0px;
+}
+
+.temp-area {
+  width: 55vw;
+  margin: 0 auto;
+  font-size: 55px;
+  color: antiquewhite;
+}

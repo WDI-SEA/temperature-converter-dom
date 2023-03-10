@@ -7,9 +7,9 @@ We will be using JavaScript to make a temperature conversion utility. A folder i
 * Fork and clone this repository
 
 ## Requirements
-* Create a single page using HTML/CSS that contains an input field and a submit button
-* Additionally, add a clear button
-* When the submit button is pressed, convert the inputted temperature from F to C using the appropriate conversion formula (may need to Google it)
+* Create a single page using HTML/CSS that contains an input field and a submit button (button 1)
+* Additionally, add a clear button (button 2)
+* When the submit button is pressed, convert the inputted temperature from F to C using the appropriate conversion formula (F * (5/9) + 32 = C)
 
 ## User Experience
 
@@ -32,7 +32,7 @@ We will be using JavaScript to make a temperature conversion utility. A folder i
   * colors
   * borders
   
-5. **Bonus #2:** Add the ability to convert to and from Kelvins! 
+5. **Bonus #2:** Add the ability to convert to and from Kelvins! (C + 273 = K)
 
 ## Deliverables
 
