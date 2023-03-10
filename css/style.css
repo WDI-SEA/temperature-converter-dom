@@ -1,0 +1,42 @@
+#temperature-display.visual {
+  display: flex;
+  background-color: white;
+  margin: 50px;
+}
+
+number {
+  border-width: 2px;
+  width: 60rem;
+}
+
+#temperature {
+  width: 25%;
+  margin-bottom: 10px;
+}
+
+.tempbox {
+  margin-bottom: 20px; /* add margin between the tempbox and buttons */
+}
+
+.buttons {
+  margin: 20px;
+}
+
+.header {
+  color: white;
+}
+
+.visual {
+  width: 21%;
+}
+
+body {
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 100%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  text-align: center;
+}
