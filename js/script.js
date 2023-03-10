@@ -9,7 +9,7 @@ const convertToCelsius = (num) => {
 
 const displayInput = () => {
   input = inputField.value;
-  if (isNaN(input)) {
+  if (isNaN(input) || input === "") {
     alert(`Ah dang.  ${input} isn't a number :(
 Please try again with a numeric value!`);
   } else {
