@@ -2,6 +2,7 @@
 const input = document.querySelector('#temperature');
 const radials = document.querySelectorAll('.temp');
 const convertBtn = document.querySelector('#convert-btn');
+const clearBtn = document.querySelector('#clear-btn');
 
 // add event listener to the convert button
 convertBtn.addEventListener('click', () => {
@@ -71,4 +72,14 @@ if (unit === "Celsius") {
 document.querySelector('#celsius').innerHTML = celsiusResult;
 document.querySelector('#fahrenheit').innerHTML = fahrenheitResult;
 document.querySelector('#kelvin').innerHTML = kelvinResult;
+});
+
+clearBtn.addEventListener('click', () => {
+
+    input.value = '';
+    document.querySelector('#celsius').innerHTML = '';
+    document.querySelector('#fahrenheit').innerHTML = '';
+    document.querySelector('#kelvin').innerHTML = '';
+    const radio = document.querySelector('input[type=radio]:checked')
+    radio.checked = false;
 });
