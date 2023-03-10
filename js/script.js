@@ -17,7 +17,7 @@ const displayInput = () => {
     alert(`Ah dang.  ${input} isn't a number :(
 Please try again with a numeric value!`);
   } else {
-    display.innerHTML = input;
+    display.innerHTML = `${input}° C`;
   }
 };
 
