@@ -1,7 +1,9 @@
 #temperature-display.visual {
   display: flex;
   background-color: white;
-  margin: 50px;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 number {
@@ -15,7 +17,8 @@ number {
 }
 
 .tempbox {
-  margin-bottom: 20px; /* add margin between the tempbox and buttons */
+  margin-bottom: 20px;
+  color: white;
 }
 
 .buttons {
