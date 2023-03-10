@@ -1,3 +1,30 @@
+body {
+  background-color: rgb(211, 211, 211);
+  text-align: center;
+}
 h1 {
-  color: blue;
+  color: rgb(23, 112, 78);
+  Font-family: "Climate Crisis", cursive;
+  text-align: center;
+}
+#tempInput{
+  width: 75vw;
+  height: 30px;
+  align-items: center;
+  text-align: center;
+  }
+
+#submitButton {
+  align-items: center;
+  color: rgb(192,192,192)
+}
+#clearButton {
+  align-items: center;
+  color: rgb(192,192,192)
+}
+.square {
+  background-color: red;
+  width: 85vw;
+  height: 100px;
+  margin: o auto;
 }
