@@ -7,8 +7,43 @@
   <title>Hello Front-End</title>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
+  <div id="titles">
+  <h1>Temperature Converter</h1>
+</div>
+  <div class="inputs">
+  <input id="tempinput" type="number" placeholder="ex. 33"></input>
+</div>
+
+<div class="buttons">
+  <button id="updatetemp">Convert Temperature</button>
+  <button id="cleartemp">Clear Temperature</button>
+
+  <select name="units" id="units">
+    <option value="celsius">C to F</option>
+    <option value="fahrenheit">F to C</option>
+
+  </select>
+  </div>
+  
+  <div class="results">
+    <div id="result"> </div>
+  </div>
+  <div class="results">
+  <div id="dangerbar"> </div>
+</div>
+<!-- Im not a big fan of minions or anything it just made me laugh -->
+<div id="minion">
+<img src="https://www.designbolts.com/wp-content/uploads/2013/09/Albert-Einstein-Minion.jpg" alt="Albert-Einstein-Minion"/>
+</div>
+
 
   <script type="text/javascript" src="js/script.js"></script>
 </body>
+
+
+
+<!-- User puts value into the text field -->
+<!-- User clicks on button -->
+<!-- page gets updated with the converted temperature value -->
+<!-- clicking clear button resets text field -->
 </html>
