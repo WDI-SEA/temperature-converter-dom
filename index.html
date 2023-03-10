@@ -3,11 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
+  <title>temperature converter</title>
+
 </head>
 <body>
-  <h1>Hello Front-End</h1>
+  <h1>temperature converter</h1>
+
+    <div class="temps">
+      <div class="tempInput">
+        <label for="tempInput">Temperature:</label>
+        <input id="tempInput" placeholder="enter temperature..." type="number"/>
+      </div>
+
+      <div class="radio-buttons" id="radioButtons">
+        <input type="radio" id="fahrenheit" name="scaleSelector" checked />
+        <label for="fahrenheit">°F</label>
+        <input type="radio" id="celsius"  name="scaleSelector"/>
+        <label for="celsius">°C</label>
+      </div>
+    </div>
+
+    <div class ="temp-buttons" id="tempButtons">
+      <button id="submit">Submit</button>
+      <button id="clear">Clear</button>
+    </div>
+
+  <div class="resultsdiv" id="resultsdiv">
+    <img src="./img/Firegif1.gif" class="firegif" id="fire1" alt="fire">
+    <img src="./img/Snowgif1.gif" class="snowgif" id="snow1" alt="snow">
+
+    <p class ="conversionResult" id="conversionResult"></p>
+
+    <img src="./img/Firegif1.gif" class="firegif" id="fire2" alt="fire">
+    <img src="./img/Snowgif1.gif" class="snowgif" id="snow2" alt="snow">
+  </div>
 
   <script type="text/javascript" src="js/script.js"></script>
 </body>

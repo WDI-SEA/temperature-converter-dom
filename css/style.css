@@ -1,3 +1,59 @@
-h1 {
-  color: blue;
+body {
+  background-color: rgb(210, 210, 210);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Press Start 2P', cursive;
 }
+
+h1 {
+  color: rgb(128, 128, 128);
+  margin: 150px 0 0 0;
+}
+
+.temps {
+  display: flex;
+  align-items: baseline;
+}
+
+.tempInput {
+  margin: 50px 0 0 0;
+}
+
+button {
+  margin: 15px 0;
+  font-family: 'Press Start 2P', cursive;
+  height: 40px;
+  width: 200px;
+}
+
+.radio-buttons {
+  margin: 20px;
+}
+
+.conversionResult {
+  font-size: 40px;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.resultsdiv {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 60vw;
+  height: 60px;
+}
+
+.firegif {
+  height: 50px;
+  width: 50px;
+  display: none;
+}
+
+.snowgif {
+  height: 50px;
+  width: 50px;
+  display: none;
+}
+
+
