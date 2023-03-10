@@ -1,3 +1,14 @@
 h1 {
   color: blue;
 }
+
+
+/* the formulas for F to C
+
+c-f =(c*1.8)+32
+c-k=c+273.15
+
+f-c=(f-32)/1.8
+f-k=((f-32)/1.8)+273.15
+
+*/
