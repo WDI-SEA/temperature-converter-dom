@@ -72,14 +72,3 @@ clearBtn.addEventListener("click", () => {
   const radio = document.querySelector("input[type=radio]:checked");
   radio.checked = false;
 });
-
-const temperatureDisplay = document.querySelector("#temperature-display");
-
-// check if the temperature is too cold or too hot and set the background color accordingly
-if (celsius < 0 || fahrenheit < 32 || kelvin < 273.15) {
-  temperatureDisplay.style.backgroundColor = "blue";
-} else if (celsius > 100 || fahrenheit > 212 || kelvin > 373.15) {
-  temperatureDisplay.style.backgroundColor = "red";
-} else {
-  temperatureDisplay.style.backgroundColor = "";
-}
