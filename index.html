@@ -1,14 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  <h1>Hello Front-End</h1>
-
-  <script type="text/javascript" src="js/script.js"></script>
+    <div class="container">
+      <div class="innerCont">
+          <h1>Temperature Converter</h1>
+        <form id="temperature-form">
+            <input type="text" id="temperature" placeholder="Enter temperature">
+            <select id="unit">
+                <option value="celsius">Celsius (°C)</option>
+                <option value="fahrenheit">Fahrenheit (°F)</option>
+                <option value="kelvin">Kelvin (K)</option>
+            </select>
+            <button type="submit">Convert</button>
+            <button class="clear" type="button" onclick="clearInput()">Clear</button>
+        </form>
+        <p class="result"></p>
+      </div>
+    </div>
+    
+    <script src="./js/script.js"></script>
 </body>
 </html>
